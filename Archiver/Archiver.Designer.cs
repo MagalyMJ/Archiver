@@ -150,6 +150,18 @@
             this.buttonClearM = new System.Windows.Forms.Button();
             this.buttonDeleteM = new System.Windows.Forms.Button();
             this.buttonSaveM = new System.Windows.Forms.Button();
+            this.dataGridViewBaptism = new System.Windows.Forms.DataGridView();
+            this.labelSearchB = new System.Windows.Forms.Label();
+            this.textBoxSearchB = new System.Windows.Forms.TextBox();
+            this.textBoxSearchF = new System.Windows.Forms.TextBox();
+            this.labelSearchF = new System.Windows.Forms.Label();
+            this.dataGridViewFisrtComunion = new System.Windows.Forms.DataGridView();
+            this.textBoxSearchC = new System.Windows.Forms.TextBox();
+            this.labelSearchC = new System.Windows.Forms.Label();
+            this.dataGridViewConfirmation = new System.Windows.Forms.DataGridView();
+            this.textBoxSearchM = new System.Windows.Forms.TextBox();
+            this.labelSearchM = new System.Windows.Forms.Label();
+            this.dataGridViewMarriage = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabBaptism.SuspendLayout();
             this.groupBoxBaptismGender.SuspendLayout();
@@ -159,6 +171,10 @@
             this.groupBoxWifeM.SuspendLayout();
             this.groupBoxHusbandM.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaptism)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFisrtComunion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConfirmation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMarriage)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -171,7 +187,7 @@
             this.tabControl1.Location = new System.Drawing.Point(3, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(856, 495);
+            this.tabControl1.Size = new System.Drawing.Size(856, 689);
             this.tabControl1.TabIndex = 0;
             // 
             // tabHome
@@ -190,6 +206,9 @@
             // 
             this.tabBaptism.BackColor = System.Drawing.Color.Gainsboro;
             this.tabBaptism.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabBaptism.Controls.Add(this.textBoxSearchB);
+            this.tabBaptism.Controls.Add(this.labelSearchB);
+            this.tabBaptism.Controls.Add(this.dataGridViewBaptism);
             this.tabBaptism.Controls.Add(this.buttonClearB);
             this.tabBaptism.Controls.Add(this.buttonDeleteB);
             this.tabBaptism.Controls.Add(this.buttonSaveB);
@@ -221,7 +240,7 @@
             this.tabBaptism.Location = new System.Drawing.Point(4, 22);
             this.tabBaptism.Name = "tabBaptism";
             this.tabBaptism.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBaptism.Size = new System.Drawing.Size(848, 469);
+            this.tabBaptism.Size = new System.Drawing.Size(848, 663);
             this.tabBaptism.TabIndex = 1;
             this.tabBaptism.Text = "Bautismo";
             this.tabBaptism.Click += new System.EventHandler(this.tabBaptism_Click);
@@ -421,7 +440,7 @@
             // 
             this.groupBoxBaptismGender.Controls.Add(this.radioButtonMasculinB);
             this.groupBoxBaptismGender.Controls.Add(this.radioButtonFemeninB);
-            this.groupBoxBaptismGender.Location = new System.Drawing.Point(711, 72);
+            this.groupBoxBaptismGender.Location = new System.Drawing.Point(88, 225);
             this.groupBoxBaptismGender.Name = "groupBoxBaptismGender";
             this.groupBoxBaptismGender.Size = new System.Drawing.Size(114, 73);
             this.groupBoxBaptismGender.TabIndex = 2;
@@ -462,7 +481,7 @@
             // 
             // dateTimePickerBaptism
             // 
-            this.dateTimePickerBaptism.Location = new System.Drawing.Point(625, 27);
+            this.dateTimePickerBaptism.Location = new System.Drawing.Point(38, 6);
             this.dateTimePickerBaptism.Name = "dateTimePickerBaptism";
             this.dateTimePickerBaptism.Size = new System.Drawing.Size(200, 20);
             this.dateTimePickerBaptism.TabIndex = 0;
@@ -470,6 +489,9 @@
             // tabFirstComunion
             // 
             this.tabFirstComunion.BackColor = System.Drawing.Color.SlateGray;
+            this.tabFirstComunion.Controls.Add(this.textBoxSearchF);
+            this.tabFirstComunion.Controls.Add(this.labelSearchF);
+            this.tabFirstComunion.Controls.Add(this.dataGridViewFisrtComunion);
             this.tabFirstComunion.Controls.Add(this.buttonClearF);
             this.tabFirstComunion.Controls.Add(this.buttonDeleteF);
             this.tabFirstComunion.Controls.Add(this.buttonSaveF);
@@ -498,7 +520,7 @@
             this.tabFirstComunion.Controls.Add(this.dateTimePickerFirstComunion);
             this.tabFirstComunion.Location = new System.Drawing.Point(4, 22);
             this.tabFirstComunion.Name = "tabFirstComunion";
-            this.tabFirstComunion.Size = new System.Drawing.Size(848, 469);
+            this.tabFirstComunion.Size = new System.Drawing.Size(848, 663);
             this.tabFirstComunion.TabIndex = 2;
             this.tabFirstComunion.Text = "Primera Comunión";
             // 
@@ -705,7 +727,7 @@
             // dateTimePickerFirstComunion
             // 
             this.dateTimePickerFirstComunion.CalendarMonthBackground = System.Drawing.SystemColors.Info;
-            this.dateTimePickerFirstComunion.Location = new System.Drawing.Point(619, 66);
+            this.dateTimePickerFirstComunion.Location = new System.Drawing.Point(54, 35);
             this.dateTimePickerFirstComunion.Name = "dateTimePickerFirstComunion";
             this.dateTimePickerFirstComunion.Size = new System.Drawing.Size(200, 20);
             this.dateTimePickerFirstComunion.TabIndex = 18;
@@ -713,6 +735,9 @@
             // tabConfirmation
             // 
             this.tabConfirmation.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.tabConfirmation.Controls.Add(this.textBoxSearchC);
+            this.tabConfirmation.Controls.Add(this.labelSearchC);
+            this.tabConfirmation.Controls.Add(this.dataGridViewConfirmation);
             this.tabConfirmation.Controls.Add(this.buttonClearC);
             this.tabConfirmation.Controls.Add(this.buttonDeleteC);
             this.tabConfirmation.Controls.Add(this.buttonSaveC);
@@ -741,7 +766,7 @@
             this.tabConfirmation.Controls.Add(this.dateTimePickerConfirmation);
             this.tabConfirmation.Location = new System.Drawing.Point(4, 22);
             this.tabConfirmation.Name = "tabConfirmation";
-            this.tabConfirmation.Size = new System.Drawing.Size(848, 469);
+            this.tabConfirmation.Size = new System.Drawing.Size(848, 663);
             this.tabConfirmation.TabIndex = 3;
             this.tabConfirmation.Text = "Confirmación";
             // 
@@ -750,7 +775,7 @@
             this.textBoxNotesC.AcceptsReturn = true;
             this.textBoxNotesC.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxNotesC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxNotesC.Location = new System.Drawing.Point(477, 222);
+            this.textBoxNotesC.Location = new System.Drawing.Point(73, 528);
             this.textBoxNotesC.Multiline = true;
             this.textBoxNotesC.Name = "textBoxNotesC";
             this.textBoxNotesC.Size = new System.Drawing.Size(191, 93);
@@ -759,7 +784,7 @@
             // labelNotesC
             // 
             this.labelNotesC.AutoSize = true;
-            this.labelNotesC.Location = new System.Drawing.Point(433, 222);
+            this.labelNotesC.Location = new System.Drawing.Point(29, 528);
             this.labelNotesC.Name = "labelNotesC";
             this.labelNotesC.Size = new System.Drawing.Size(38, 13);
             this.labelNotesC.TabIndex = 56;
@@ -769,7 +794,7 @@
             // 
             this.textBoxMunicipalityC.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxMunicipalityC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxMunicipalityC.Location = new System.Drawing.Point(548, 168);
+            this.textBoxMunicipalityC.Location = new System.Drawing.Point(144, 474);
             this.textBoxMunicipalityC.Name = "textBoxMunicipalityC";
             this.textBoxMunicipalityC.Size = new System.Drawing.Size(100, 20);
             this.textBoxMunicipalityC.TabIndex = 55;
@@ -777,7 +802,7 @@
             // labelMunicipalityC
             // 
             this.labelMunicipalityC.AutoSize = true;
-            this.labelMunicipalityC.Location = new System.Drawing.Point(495, 171);
+            this.labelMunicipalityC.Location = new System.Drawing.Point(91, 477);
             this.labelMunicipalityC.Name = "labelMunicipalityC";
             this.labelMunicipalityC.Size = new System.Drawing.Size(55, 13);
             this.labelMunicipalityC.TabIndex = 54;
@@ -787,7 +812,7 @@
             // 
             this.textBoxStateC.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxStateC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxStateC.Location = new System.Drawing.Point(558, 135);
+            this.textBoxStateC.Location = new System.Drawing.Point(154, 441);
             this.textBoxStateC.Name = "textBoxStateC";
             this.textBoxStateC.Size = new System.Drawing.Size(100, 20);
             this.textBoxStateC.TabIndex = 53;
@@ -795,7 +820,7 @@
             // labelStateC
             // 
             this.labelStateC.AutoSize = true;
-            this.labelStateC.Location = new System.Drawing.Point(505, 138);
+            this.labelStateC.Location = new System.Drawing.Point(101, 444);
             this.labelStateC.Name = "labelStateC";
             this.labelStateC.Size = new System.Drawing.Size(43, 13);
             this.labelStateC.TabIndex = 52;
@@ -948,7 +973,7 @@
             // dateTimePickerConfirmation
             // 
             this.dateTimePickerConfirmation.CalendarMonthBackground = System.Drawing.SystemColors.Info;
-            this.dateTimePickerConfirmation.Location = new System.Drawing.Point(619, 66);
+            this.dateTimePickerConfirmation.Location = new System.Drawing.Point(65, 288);
             this.dateTimePickerConfirmation.Name = "dateTimePickerConfirmation";
             this.dateTimePickerConfirmation.Size = new System.Drawing.Size(200, 20);
             this.dateTimePickerConfirmation.TabIndex = 35;
@@ -956,6 +981,9 @@
             // tabMarriage
             // 
             this.tabMarriage.BackColor = System.Drawing.Color.Thistle;
+            this.tabMarriage.Controls.Add(this.textBoxSearchM);
+            this.tabMarriage.Controls.Add(this.labelSearchM);
+            this.tabMarriage.Controls.Add(this.dataGridViewMarriage);
             this.tabMarriage.Controls.Add(this.buttonClearM);
             this.tabMarriage.Controls.Add(this.buttonDeleteM);
             this.tabMarriage.Controls.Add(this.buttonSaveM);
@@ -980,7 +1008,7 @@
             this.tabMarriage.Controls.Add(this.dateTimePickerMarriage);
             this.tabMarriage.Location = new System.Drawing.Point(4, 22);
             this.tabMarriage.Name = "tabMarriage";
-            this.tabMarriage.Size = new System.Drawing.Size(848, 469);
+            this.tabMarriage.Size = new System.Drawing.Size(848, 663);
             this.tabMarriage.TabIndex = 4;
             this.tabMarriage.Text = "Matrimonio";
             // 
@@ -989,7 +1017,7 @@
             this.textBoxNotesM.AcceptsReturn = true;
             this.textBoxNotesM.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxNotesM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxNotesM.Location = new System.Drawing.Point(618, 219);
+            this.textBoxNotesM.Location = new System.Drawing.Point(87, 528);
             this.textBoxNotesM.Multiline = true;
             this.textBoxNotesM.Name = "textBoxNotesM";
             this.textBoxNotesM.Size = new System.Drawing.Size(191, 93);
@@ -998,7 +1026,7 @@
             // labelNotesM
             // 
             this.labelNotesM.AutoSize = true;
-            this.labelNotesM.Location = new System.Drawing.Point(574, 219);
+            this.labelNotesM.Location = new System.Drawing.Point(43, 528);
             this.labelNotesM.Name = "labelNotesM";
             this.labelNotesM.Size = new System.Drawing.Size(38, 13);
             this.labelNotesM.TabIndex = 62;
@@ -1008,7 +1036,7 @@
             // 
             this.textBoxMunicipalityM.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxMunicipalityM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxMunicipalityM.Location = new System.Drawing.Point(689, 165);
+            this.textBoxMunicipalityM.Location = new System.Drawing.Point(158, 474);
             this.textBoxMunicipalityM.Name = "textBoxMunicipalityM";
             this.textBoxMunicipalityM.Size = new System.Drawing.Size(100, 20);
             this.textBoxMunicipalityM.TabIndex = 61;
@@ -1016,7 +1044,7 @@
             // labelMunicipalityM
             // 
             this.labelMunicipalityM.AutoSize = true;
-            this.labelMunicipalityM.Location = new System.Drawing.Point(636, 168);
+            this.labelMunicipalityM.Location = new System.Drawing.Point(105, 477);
             this.labelMunicipalityM.Name = "labelMunicipalityM";
             this.labelMunicipalityM.Size = new System.Drawing.Size(55, 13);
             this.labelMunicipalityM.TabIndex = 60;
@@ -1026,7 +1054,7 @@
             // 
             this.textBoxStateM.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxStateM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxStateM.Location = new System.Drawing.Point(699, 132);
+            this.textBoxStateM.Location = new System.Drawing.Point(168, 441);
             this.textBoxStateM.Name = "textBoxStateM";
             this.textBoxStateM.Size = new System.Drawing.Size(100, 20);
             this.textBoxStateM.TabIndex = 59;
@@ -1034,7 +1062,7 @@
             // labelStateM
             // 
             this.labelStateM.AutoSize = true;
-            this.labelStateM.Location = new System.Drawing.Point(646, 135);
+            this.labelStateM.Location = new System.Drawing.Point(115, 444);
             this.labelStateM.Name = "labelStateM";
             this.labelStateM.Size = new System.Drawing.Size(43, 13);
             this.labelStateM.TabIndex = 58;
@@ -1271,7 +1299,7 @@
             // dateTimePickerMarriage
             // 
             this.dateTimePickerMarriage.CalendarMonthBackground = System.Drawing.SystemColors.Info;
-            this.dateTimePickerMarriage.Location = new System.Drawing.Point(619, 66);
+            this.dateTimePickerMarriage.Location = new System.Drawing.Point(34, 12);
             this.dateTimePickerMarriage.Name = "dateTimePickerMarriage";
             this.dateTimePickerMarriage.Size = new System.Drawing.Size(200, 20);
             this.dateTimePickerMarriage.TabIndex = 18;
@@ -1282,7 +1310,7 @@
             this.flowLayoutPanel1.Controls.Add(this.tabControl1);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(859, 498);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(859, 692);
             this.flowLayoutPanel1.TabIndex = 1;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
@@ -1406,6 +1434,110 @@
             this.buttonSaveM.Text = "Guardar";
             this.buttonSaveM.UseVisualStyleBackColor = false;
             // 
+            // dataGridViewBaptism
+            // 
+            this.dataGridViewBaptism.AllowUserToAddRows = false;
+            this.dataGridViewBaptism.AllowUserToDeleteRows = false;
+            this.dataGridViewBaptism.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewBaptism.Location = new System.Drawing.Point(630, 155);
+            this.dataGridViewBaptism.Name = "dataGridViewBaptism";
+            this.dataGridViewBaptism.Size = new System.Drawing.Size(187, 142);
+            this.dataGridViewBaptism.TabIndex = 80;
+            // 
+            // labelSearchB
+            // 
+            this.labelSearchB.AutoSize = true;
+            this.labelSearchB.Location = new System.Drawing.Point(624, 121);
+            this.labelSearchB.Name = "labelSearchB";
+            this.labelSearchB.Size = new System.Drawing.Size(40, 13);
+            this.labelSearchB.TabIndex = 81;
+            this.labelSearchB.Text = "Buscar";
+            // 
+            // textBoxSearchB
+            // 
+            this.textBoxSearchB.Location = new System.Drawing.Point(680, 118);
+            this.textBoxSearchB.Name = "textBoxSearchB";
+            this.textBoxSearchB.Size = new System.Drawing.Size(136, 20);
+            this.textBoxSearchB.TabIndex = 82;
+            // 
+            // textBoxSearchF
+            // 
+            this.textBoxSearchF.Location = new System.Drawing.Point(652, 85);
+            this.textBoxSearchF.Name = "textBoxSearchF";
+            this.textBoxSearchF.Size = new System.Drawing.Size(136, 20);
+            this.textBoxSearchF.TabIndex = 85;
+            // 
+            // labelSearchF
+            // 
+            this.labelSearchF.AutoSize = true;
+            this.labelSearchF.Location = new System.Drawing.Point(596, 88);
+            this.labelSearchF.Name = "labelSearchF";
+            this.labelSearchF.Size = new System.Drawing.Size(40, 13);
+            this.labelSearchF.TabIndex = 84;
+            this.labelSearchF.Text = "Buscar";
+            // 
+            // dataGridViewFisrtComunion
+            // 
+            this.dataGridViewFisrtComunion.AllowUserToAddRows = false;
+            this.dataGridViewFisrtComunion.AllowUserToDeleteRows = false;
+            this.dataGridViewFisrtComunion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewFisrtComunion.Location = new System.Drawing.Point(602, 122);
+            this.dataGridViewFisrtComunion.Name = "dataGridViewFisrtComunion";
+            this.dataGridViewFisrtComunion.Size = new System.Drawing.Size(187, 142);
+            this.dataGridViewFisrtComunion.TabIndex = 83;
+            // 
+            // textBoxSearchC
+            // 
+            this.textBoxSearchC.Location = new System.Drawing.Point(581, 41);
+            this.textBoxSearchC.Name = "textBoxSearchC";
+            this.textBoxSearchC.Size = new System.Drawing.Size(136, 20);
+            this.textBoxSearchC.TabIndex = 85;
+            // 
+            // labelSearchC
+            // 
+            this.labelSearchC.AutoSize = true;
+            this.labelSearchC.Location = new System.Drawing.Point(525, 44);
+            this.labelSearchC.Name = "labelSearchC";
+            this.labelSearchC.Size = new System.Drawing.Size(40, 13);
+            this.labelSearchC.TabIndex = 84;
+            this.labelSearchC.Text = "Buscar";
+            // 
+            // dataGridViewConfirmation
+            // 
+            this.dataGridViewConfirmation.AllowUserToAddRows = false;
+            this.dataGridViewConfirmation.AllowUserToDeleteRows = false;
+            this.dataGridViewConfirmation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewConfirmation.Location = new System.Drawing.Point(531, 78);
+            this.dataGridViewConfirmation.Name = "dataGridViewConfirmation";
+            this.dataGridViewConfirmation.Size = new System.Drawing.Size(187, 142);
+            this.dataGridViewConfirmation.TabIndex = 83;
+            // 
+            // textBoxSearchM
+            // 
+            this.textBoxSearchM.Location = new System.Drawing.Point(663, 38);
+            this.textBoxSearchM.Name = "textBoxSearchM";
+            this.textBoxSearchM.Size = new System.Drawing.Size(136, 20);
+            this.textBoxSearchM.TabIndex = 85;
+            // 
+            // labelSearchM
+            // 
+            this.labelSearchM.AutoSize = true;
+            this.labelSearchM.Location = new System.Drawing.Point(607, 41);
+            this.labelSearchM.Name = "labelSearchM";
+            this.labelSearchM.Size = new System.Drawing.Size(40, 13);
+            this.labelSearchM.TabIndex = 84;
+            this.labelSearchM.Text = "Buscar";
+            // 
+            // dataGridViewMarriage
+            // 
+            this.dataGridViewMarriage.AllowUserToAddRows = false;
+            this.dataGridViewMarriage.AllowUserToDeleteRows = false;
+            this.dataGridViewMarriage.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMarriage.Location = new System.Drawing.Point(613, 75);
+            this.dataGridViewMarriage.Name = "dataGridViewMarriage";
+            this.dataGridViewMarriage.Size = new System.Drawing.Size(187, 142);
+            this.dataGridViewMarriage.TabIndex = 83;
+            // 
             // Archiver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1434,6 +1566,10 @@
             this.groupBoxHusbandM.ResumeLayout(false);
             this.groupBoxHusbandM.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaptism)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFisrtComunion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConfirmation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMarriage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1562,6 +1698,18 @@
         private System.Windows.Forms.Button buttonClearM;
         private System.Windows.Forms.Button buttonDeleteM;
         private System.Windows.Forms.Button buttonSaveM;
+        private System.Windows.Forms.TextBox textBoxSearchB;
+        private System.Windows.Forms.Label labelSearchB;
+        private System.Windows.Forms.DataGridView dataGridViewBaptism;
+        private System.Windows.Forms.TextBox textBoxSearchF;
+        private System.Windows.Forms.Label labelSearchF;
+        private System.Windows.Forms.DataGridView dataGridViewFisrtComunion;
+        private System.Windows.Forms.TextBox textBoxSearchC;
+        private System.Windows.Forms.Label labelSearchC;
+        private System.Windows.Forms.DataGridView dataGridViewConfirmation;
+        private System.Windows.Forms.TextBox textBoxSearchM;
+        private System.Windows.Forms.Label labelSearchM;
+        private System.Windows.Forms.DataGridView dataGridViewMarriage;
     }
 }
 

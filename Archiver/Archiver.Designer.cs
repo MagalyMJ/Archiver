@@ -47,8 +47,6 @@
             this.labelMotherNameB = new System.Windows.Forms.Label();
             this.textBoxNameB = new System.Windows.Forms.TextBox();
             this.groupBoxBaptismGender = new System.Windows.Forms.GroupBox();
-            this.checkBoxMasculinB = new System.Windows.Forms.CheckBox();
-            this.checkBoxFemeninB = new System.Windows.Forms.CheckBox();
             this.labelNameB = new System.Windows.Forms.Label();
             this.dateTimePickerBaptism = new System.Windows.Forms.DateTimePicker();
             this.tabFirstComunion = new System.Windows.Forms.TabPage();
@@ -117,8 +115,28 @@
             this.labelStateC = new System.Windows.Forms.Label();
             this.textBoxMunicipalityC = new System.Windows.Forms.TextBox();
             this.labelMunicipalityC = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxNotesC = new System.Windows.Forms.TextBox();
+            this.labelNotesC = new System.Windows.Forms.Label();
+            this.textBoxNotesM = new System.Windows.Forms.TextBox();
+            this.labelNotesM = new System.Windows.Forms.Label();
+            this.textBoxMunicipalityM = new System.Windows.Forms.TextBox();
+            this.labelMunicipalityM = new System.Windows.Forms.Label();
+            this.textBoxStateM = new System.Windows.Forms.TextBox();
+            this.labelStateM = new System.Windows.Forms.Label();
+            this.textBoxNotesF = new System.Windows.Forms.TextBox();
+            this.labelNotesF = new System.Windows.Forms.Label();
+            this.textBoxMunicipalityF = new System.Windows.Forms.TextBox();
+            this.labelMunicipalityF = new System.Windows.Forms.Label();
+            this.textBoxStateF = new System.Windows.Forms.TextBox();
+            this.labelStateF = new System.Windows.Forms.Label();
+            this.textBoxNotesB = new System.Windows.Forms.TextBox();
+            this.labelNotesB = new System.Windows.Forms.Label();
+            this.textBoxMunicipalityB = new System.Windows.Forms.TextBox();
+            this.labelMunicipalityB = new System.Windows.Forms.Label();
+            this.textBoxStateB = new System.Windows.Forms.TextBox();
+            this.labelStateB = new System.Windows.Forms.Label();
+            this.radioButtonFemeninB = new System.Windows.Forms.RadioButton();
+            this.radioButtonMasculinB = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tabBaptism.SuspendLayout();
             this.groupBoxBaptismGender.SuspendLayout();
@@ -157,6 +175,12 @@
             // 
             this.tabBaptism.BackColor = System.Drawing.Color.White;
             this.tabBaptism.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabBaptism.Controls.Add(this.textBoxNotesB);
+            this.tabBaptism.Controls.Add(this.labelNotesB);
+            this.tabBaptism.Controls.Add(this.textBoxMunicipalityB);
+            this.tabBaptism.Controls.Add(this.labelMunicipalityB);
+            this.tabBaptism.Controls.Add(this.textBoxStateB);
+            this.tabBaptism.Controls.Add(this.labelStateB);
             this.tabBaptism.Controls.Add(this.textBoxEntryNumberB);
             this.tabBaptism.Controls.Add(this.labelEntryNumberB);
             this.tabBaptism.Controls.Add(this.textBoxSheetNumberB);
@@ -304,34 +328,14 @@
             // 
             // groupBoxBaptismGender
             // 
-            this.groupBoxBaptismGender.Controls.Add(this.checkBoxMasculinB);
-            this.groupBoxBaptismGender.Controls.Add(this.checkBoxFemeninB);
+            this.groupBoxBaptismGender.Controls.Add(this.radioButtonMasculinB);
+            this.groupBoxBaptismGender.Controls.Add(this.radioButtonFemeninB);
             this.groupBoxBaptismGender.Location = new System.Drawing.Point(711, 72);
             this.groupBoxBaptismGender.Name = "groupBoxBaptismGender";
-            this.groupBoxBaptismGender.Size = new System.Drawing.Size(114, 81);
+            this.groupBoxBaptismGender.Size = new System.Drawing.Size(114, 73);
             this.groupBoxBaptismGender.TabIndex = 2;
             this.groupBoxBaptismGender.TabStop = false;
             this.groupBoxBaptismGender.Text = "Sexo";
-            // 
-            // checkBoxMasculinB
-            // 
-            this.checkBoxMasculinB.AutoSize = true;
-            this.checkBoxMasculinB.Location = new System.Drawing.Point(13, 53);
-            this.checkBoxMasculinB.Name = "checkBoxMasculinB";
-            this.checkBoxMasculinB.Size = new System.Drawing.Size(74, 17);
-            this.checkBoxMasculinB.TabIndex = 1;
-            this.checkBoxMasculinB.Text = "Masculino";
-            this.checkBoxMasculinB.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFemeninB
-            // 
-            this.checkBoxFemeninB.AutoSize = true;
-            this.checkBoxFemeninB.Location = new System.Drawing.Point(13, 24);
-            this.checkBoxFemeninB.Name = "checkBoxFemeninB";
-            this.checkBoxFemeninB.Size = new System.Drawing.Size(72, 17);
-            this.checkBoxFemeninB.TabIndex = 0;
-            this.checkBoxFemeninB.Text = "Femenino";
-            this.checkBoxFemeninB.UseVisualStyleBackColor = true;
             // 
             // labelNameB
             // 
@@ -352,6 +356,12 @@
             // 
             // tabFirstComunion
             // 
+            this.tabFirstComunion.Controls.Add(this.textBoxNotesF);
+            this.tabFirstComunion.Controls.Add(this.labelNotesF);
+            this.tabFirstComunion.Controls.Add(this.textBoxMunicipalityF);
+            this.tabFirstComunion.Controls.Add(this.labelMunicipalityF);
+            this.tabFirstComunion.Controls.Add(this.textBoxStateF);
+            this.tabFirstComunion.Controls.Add(this.labelStateF);
             this.tabFirstComunion.Controls.Add(this.textBoxEntryNumberF);
             this.tabFirstComunion.Controls.Add(this.labelEntryNumberF);
             this.tabFirstComunion.Controls.Add(this.textBoxSheetNumberF);
@@ -513,8 +523,8 @@
             // 
             // tabConfirmation
             // 
-            this.tabConfirmation.Controls.Add(this.textBox1);
-            this.tabConfirmation.Controls.Add(this.label1);
+            this.tabConfirmation.Controls.Add(this.textBoxNotesC);
+            this.tabConfirmation.Controls.Add(this.labelNotesC);
             this.tabConfirmation.Controls.Add(this.textBoxMunicipalityC);
             this.tabConfirmation.Controls.Add(this.labelMunicipalityC);
             this.tabConfirmation.Controls.Add(this.textBoxStateC);
@@ -545,6 +555,12 @@
             // 
             // tabMarriage
             // 
+            this.tabMarriage.Controls.Add(this.textBoxNotesM);
+            this.tabMarriage.Controls.Add(this.labelNotesM);
+            this.tabMarriage.Controls.Add(this.textBoxMunicipalityM);
+            this.tabMarriage.Controls.Add(this.labelMunicipalityM);
+            this.tabMarriage.Controls.Add(this.textBoxStateM);
+            this.tabMarriage.Controls.Add(this.labelStateM);
             this.tabMarriage.Controls.Add(this.groupBoxWifeM);
             this.tabMarriage.Controls.Add(this.groupBoxHusbandM);
             this.tabMarriage.Controls.Add(this.textBoxEntryNumberM);
@@ -945,24 +961,199 @@
             this.labelMunicipalityC.TabIndex = 54;
             this.labelMunicipalityC.Text = "Municipio:";
             // 
-            // textBox1
+            // textBoxNotesC
             // 
-            this.textBox1.AcceptsReturn = true;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(477, 222);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 93);
-            this.textBox1.TabIndex = 57;
+            this.textBoxNotesC.AcceptsReturn = true;
+            this.textBoxNotesC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxNotesC.Location = new System.Drawing.Point(477, 222);
+            this.textBoxNotesC.Multiline = true;
+            this.textBoxNotesC.Name = "textBoxNotesC";
+            this.textBoxNotesC.Size = new System.Drawing.Size(191, 93);
+            this.textBoxNotesC.TabIndex = 57;
             // 
-            // label1
+            // labelNotesC
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(433, 222);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 56;
-            this.label1.Text = "Notas:";
+            this.labelNotesC.AutoSize = true;
+            this.labelNotesC.Location = new System.Drawing.Point(433, 222);
+            this.labelNotesC.Name = "labelNotesC";
+            this.labelNotesC.Size = new System.Drawing.Size(38, 13);
+            this.labelNotesC.TabIndex = 56;
+            this.labelNotesC.Text = "Notas:";
+            // 
+            // textBoxNotesM
+            // 
+            this.textBoxNotesM.AcceptsReturn = true;
+            this.textBoxNotesM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxNotesM.Location = new System.Drawing.Point(618, 219);
+            this.textBoxNotesM.Multiline = true;
+            this.textBoxNotesM.Name = "textBoxNotesM";
+            this.textBoxNotesM.Size = new System.Drawing.Size(191, 93);
+            this.textBoxNotesM.TabIndex = 63;
+            // 
+            // labelNotesM
+            // 
+            this.labelNotesM.AutoSize = true;
+            this.labelNotesM.Location = new System.Drawing.Point(574, 219);
+            this.labelNotesM.Name = "labelNotesM";
+            this.labelNotesM.Size = new System.Drawing.Size(38, 13);
+            this.labelNotesM.TabIndex = 62;
+            this.labelNotesM.Text = "Notas:";
+            // 
+            // textBoxMunicipalityM
+            // 
+            this.textBoxMunicipalityM.Location = new System.Drawing.Point(689, 165);
+            this.textBoxMunicipalityM.Name = "textBoxMunicipalityM";
+            this.textBoxMunicipalityM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMunicipalityM.TabIndex = 61;
+            // 
+            // labelMunicipalityM
+            // 
+            this.labelMunicipalityM.AutoSize = true;
+            this.labelMunicipalityM.Location = new System.Drawing.Point(636, 168);
+            this.labelMunicipalityM.Name = "labelMunicipalityM";
+            this.labelMunicipalityM.Size = new System.Drawing.Size(55, 13);
+            this.labelMunicipalityM.TabIndex = 60;
+            this.labelMunicipalityM.Text = "Municipio:";
+            // 
+            // textBoxStateM
+            // 
+            this.textBoxStateM.Location = new System.Drawing.Point(699, 132);
+            this.textBoxStateM.Name = "textBoxStateM";
+            this.textBoxStateM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxStateM.TabIndex = 59;
+            // 
+            // labelStateM
+            // 
+            this.labelStateM.AutoSize = true;
+            this.labelStateM.Location = new System.Drawing.Point(646, 135);
+            this.labelStateM.Name = "labelStateM";
+            this.labelStateM.Size = new System.Drawing.Size(43, 13);
+            this.labelStateM.TabIndex = 58;
+            this.labelStateM.Text = "Estado:";
+            // 
+            // textBoxNotesF
+            // 
+            this.textBoxNotesF.AcceptsReturn = true;
+            this.textBoxNotesF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxNotesF.Location = new System.Drawing.Point(351, 227);
+            this.textBoxNotesF.Multiline = true;
+            this.textBoxNotesF.Name = "textBoxNotesF";
+            this.textBoxNotesF.Size = new System.Drawing.Size(191, 93);
+            this.textBoxNotesF.TabIndex = 69;
+            // 
+            // labelNotesF
+            // 
+            this.labelNotesF.AutoSize = true;
+            this.labelNotesF.Location = new System.Drawing.Point(307, 227);
+            this.labelNotesF.Name = "labelNotesF";
+            this.labelNotesF.Size = new System.Drawing.Size(38, 13);
+            this.labelNotesF.TabIndex = 68;
+            this.labelNotesF.Text = "Notas:";
+            // 
+            // textBoxMunicipalityF
+            // 
+            this.textBoxMunicipalityF.Location = new System.Drawing.Point(422, 173);
+            this.textBoxMunicipalityF.Name = "textBoxMunicipalityF";
+            this.textBoxMunicipalityF.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMunicipalityF.TabIndex = 67;
+            // 
+            // labelMunicipalityF
+            // 
+            this.labelMunicipalityF.AutoSize = true;
+            this.labelMunicipalityF.Location = new System.Drawing.Point(369, 176);
+            this.labelMunicipalityF.Name = "labelMunicipalityF";
+            this.labelMunicipalityF.Size = new System.Drawing.Size(55, 13);
+            this.labelMunicipalityF.TabIndex = 66;
+            this.labelMunicipalityF.Text = "Municipio:";
+            // 
+            // textBoxStateF
+            // 
+            this.textBoxStateF.Location = new System.Drawing.Point(432, 140);
+            this.textBoxStateF.Name = "textBoxStateF";
+            this.textBoxStateF.Size = new System.Drawing.Size(100, 20);
+            this.textBoxStateF.TabIndex = 65;
+            // 
+            // labelStateF
+            // 
+            this.labelStateF.AutoSize = true;
+            this.labelStateF.Location = new System.Drawing.Point(379, 143);
+            this.labelStateF.Name = "labelStateF";
+            this.labelStateF.Size = new System.Drawing.Size(43, 13);
+            this.labelStateF.TabIndex = 64;
+            this.labelStateF.Text = "Estado:";
+            // 
+            // textBoxNotesB
+            // 
+            this.textBoxNotesB.AcceptsReturn = true;
+            this.textBoxNotesB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxNotesB.Location = new System.Drawing.Point(390, 152);
+            this.textBoxNotesB.Multiline = true;
+            this.textBoxNotesB.Name = "textBoxNotesB";
+            this.textBoxNotesB.Size = new System.Drawing.Size(191, 93);
+            this.textBoxNotesB.TabIndex = 75;
+            // 
+            // labelNotesB
+            // 
+            this.labelNotesB.AutoSize = true;
+            this.labelNotesB.Location = new System.Drawing.Point(346, 152);
+            this.labelNotesB.Name = "labelNotesB";
+            this.labelNotesB.Size = new System.Drawing.Size(38, 13);
+            this.labelNotesB.TabIndex = 74;
+            this.labelNotesB.Text = "Notas:";
+            // 
+            // textBoxMunicipalityB
+            // 
+            this.textBoxMunicipalityB.Location = new System.Drawing.Point(461, 98);
+            this.textBoxMunicipalityB.Name = "textBoxMunicipalityB";
+            this.textBoxMunicipalityB.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMunicipalityB.TabIndex = 73;
+            // 
+            // labelMunicipalityB
+            // 
+            this.labelMunicipalityB.AutoSize = true;
+            this.labelMunicipalityB.Location = new System.Drawing.Point(408, 101);
+            this.labelMunicipalityB.Name = "labelMunicipalityB";
+            this.labelMunicipalityB.Size = new System.Drawing.Size(55, 13);
+            this.labelMunicipalityB.TabIndex = 72;
+            this.labelMunicipalityB.Text = "Municipio:";
+            // 
+            // textBoxStateB
+            // 
+            this.textBoxStateB.Location = new System.Drawing.Point(471, 65);
+            this.textBoxStateB.Name = "textBoxStateB";
+            this.textBoxStateB.Size = new System.Drawing.Size(100, 20);
+            this.textBoxStateB.TabIndex = 71;
+            // 
+            // labelStateB
+            // 
+            this.labelStateB.AutoSize = true;
+            this.labelStateB.Location = new System.Drawing.Point(418, 68);
+            this.labelStateB.Name = "labelStateB";
+            this.labelStateB.Size = new System.Drawing.Size(43, 13);
+            this.labelStateB.TabIndex = 70;
+            this.labelStateB.Text = "Estado:";
+            // 
+            // radioButtonFemeninB
+            // 
+            this.radioButtonFemeninB.AutoSize = true;
+            this.radioButtonFemeninB.Location = new System.Drawing.Point(13, 23);
+            this.radioButtonFemeninB.Name = "radioButtonFemeninB";
+            this.radioButtonFemeninB.Size = new System.Drawing.Size(71, 17);
+            this.radioButtonFemeninB.TabIndex = 2;
+            this.radioButtonFemeninB.TabStop = true;
+            this.radioButtonFemeninB.Text = "Femenino";
+            this.radioButtonFemeninB.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonMasculinB
+            // 
+            this.radioButtonMasculinB.AutoSize = true;
+            this.radioButtonMasculinB.Location = new System.Drawing.Point(13, 46);
+            this.radioButtonMasculinB.Name = "radioButtonMasculinB";
+            this.radioButtonMasculinB.Size = new System.Drawing.Size(73, 17);
+            this.radioButtonMasculinB.TabIndex = 3;
+            this.radioButtonMasculinB.TabStop = true;
+            this.radioButtonMasculinB.Text = "Masculino";
+            this.radioButtonMasculinB.UseVisualStyleBackColor = true;
             // 
             // Archiver
             // 
@@ -1019,8 +1210,6 @@
         private System.Windows.Forms.Label labelMotherNameB;
         private System.Windows.Forms.TextBox textBoxNameB;
         private System.Windows.Forms.GroupBox groupBoxBaptismGender;
-        private System.Windows.Forms.CheckBox checkBoxMasculinB;
-        private System.Windows.Forms.CheckBox checkBoxFemeninB;
         private System.Windows.Forms.Label labelNameB;
         private System.Windows.Forms.DateTimePicker dateTimePickerBaptism;
         private System.Windows.Forms.GroupBox groupBoxWifeM;
@@ -1065,8 +1254,8 @@
         private System.Windows.Forms.TextBox textBoxNameF;
         private System.Windows.Forms.Label labelNameF;
         private System.Windows.Forms.DateTimePicker dateTimePickerFirstComunion;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxNotesC;
+        private System.Windows.Forms.Label labelNotesC;
         private System.Windows.Forms.TextBox textBoxMunicipalityC;
         private System.Windows.Forms.Label labelMunicipalityC;
         private System.Windows.Forms.TextBox textBoxStateC;
@@ -1088,6 +1277,26 @@
         private System.Windows.Forms.TextBox textBoxNameC;
         private System.Windows.Forms.Label labelNameC;
         private System.Windows.Forms.DateTimePicker dateTimePickerConfirmation;
+        private System.Windows.Forms.TextBox textBoxNotesB;
+        private System.Windows.Forms.Label labelNotesB;
+        private System.Windows.Forms.TextBox textBoxMunicipalityB;
+        private System.Windows.Forms.Label labelMunicipalityB;
+        private System.Windows.Forms.TextBox textBoxStateB;
+        private System.Windows.Forms.Label labelStateB;
+        private System.Windows.Forms.RadioButton radioButtonMasculinB;
+        private System.Windows.Forms.RadioButton radioButtonFemeninB;
+        private System.Windows.Forms.TextBox textBoxNotesF;
+        private System.Windows.Forms.Label labelNotesF;
+        private System.Windows.Forms.TextBox textBoxMunicipalityF;
+        private System.Windows.Forms.Label labelMunicipalityF;
+        private System.Windows.Forms.TextBox textBoxStateF;
+        private System.Windows.Forms.Label labelStateF;
+        private System.Windows.Forms.TextBox textBoxNotesM;
+        private System.Windows.Forms.Label labelNotesM;
+        private System.Windows.Forms.TextBox textBoxMunicipalityM;
+        private System.Windows.Forms.Label labelMunicipalityM;
+        private System.Windows.Forms.TextBox textBoxStateM;
+        private System.Windows.Forms.Label labelStateM;
     }
 }
 

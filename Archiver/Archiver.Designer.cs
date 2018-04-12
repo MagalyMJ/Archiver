@@ -79,9 +79,27 @@
             this.labelWifeNameM = new System.Windows.Forms.Label();
             this.groupBoxHusbandM = new System.Windows.Forms.GroupBox();
             this.groupBoxWifeM = new System.Windows.Forms.GroupBox();
+            this.textBoxEntryNumberF = new System.Windows.Forms.TextBox();
+            this.labelEntryNumberF = new System.Windows.Forms.Label();
+            this.textBoxSheetNumberF = new System.Windows.Forms.TextBox();
+            this.labelSheetNumberF = new System.Windows.Forms.Label();
+            this.textBoxBookNumberF = new System.Windows.Forms.TextBox();
+            this.labelBookNumberF = new System.Windows.Forms.Label();
+            this.textBoxGodFather2F = new System.Windows.Forms.TextBox();
+            this.labelGodFather2F = new System.Windows.Forms.Label();
+            this.textBoxGodFather1F = new System.Windows.Forms.TextBox();
+            this.labelGodFather1F = new System.Windows.Forms.Label();
+            this.textBoxFatherNameF = new System.Windows.Forms.TextBox();
+            this.labelFatherNameF = new System.Windows.Forms.Label();
+            this.textBoxMotherNameF = new System.Windows.Forms.TextBox();
+            this.labelMotherNameF = new System.Windows.Forms.Label();
+            this.textBoxNameF = new System.Windows.Forms.TextBox();
+            this.labelNameF = new System.Windows.Forms.Label();
+            this.dateTimePickerFirstComunion = new System.Windows.Forms.DateTimePicker();
             this.tabControl1.SuspendLayout();
             this.tabBaptism.SuspendLayout();
             this.groupBoxBaptismGender.SuspendLayout();
+            this.tabFirstComunion.SuspendLayout();
             this.tabMarriage.SuspendLayout();
             this.groupBoxHusbandM.SuspendLayout();
             this.groupBoxWifeM.SuspendLayout();
@@ -310,6 +328,23 @@
             // 
             // tabFirstComunion
             // 
+            this.tabFirstComunion.Controls.Add(this.textBoxEntryNumberF);
+            this.tabFirstComunion.Controls.Add(this.labelEntryNumberF);
+            this.tabFirstComunion.Controls.Add(this.textBoxSheetNumberF);
+            this.tabFirstComunion.Controls.Add(this.labelSheetNumberF);
+            this.tabFirstComunion.Controls.Add(this.textBoxBookNumberF);
+            this.tabFirstComunion.Controls.Add(this.labelBookNumberF);
+            this.tabFirstComunion.Controls.Add(this.textBoxGodFather2F);
+            this.tabFirstComunion.Controls.Add(this.labelGodFather2F);
+            this.tabFirstComunion.Controls.Add(this.textBoxGodFather1F);
+            this.tabFirstComunion.Controls.Add(this.labelGodFather1F);
+            this.tabFirstComunion.Controls.Add(this.textBoxFatherNameF);
+            this.tabFirstComunion.Controls.Add(this.labelFatherNameF);
+            this.tabFirstComunion.Controls.Add(this.textBoxMotherNameF);
+            this.tabFirstComunion.Controls.Add(this.labelMotherNameF);
+            this.tabFirstComunion.Controls.Add(this.textBoxNameF);
+            this.tabFirstComunion.Controls.Add(this.labelNameF);
+            this.tabFirstComunion.Controls.Add(this.dateTimePickerFirstComunion);
             this.tabFirstComunion.Location = new System.Drawing.Point(4, 22);
             this.tabFirstComunion.Name = "tabFirstComunion";
             this.tabFirstComunion.Size = new System.Drawing.Size(849, 460);
@@ -561,6 +596,141 @@
             this.groupBoxWifeM.TabStop = false;
             this.groupBoxWifeM.Text = "Esposa";
             // 
+            // textBoxEntryNumberF
+            // 
+            this.textBoxEntryNumberF.Location = new System.Drawing.Point(531, 373);
+            this.textBoxEntryNumberF.Name = "textBoxEntryNumberF";
+            this.textBoxEntryNumberF.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEntryNumberF.TabIndex = 34;
+            // 
+            // labelEntryNumberF
+            // 
+            this.labelEntryNumberF.AutoSize = true;
+            this.labelEntryNumberF.Location = new System.Drawing.Point(441, 376);
+            this.labelEntryNumberF.Name = "labelEntryNumberF";
+            this.labelEntryNumberF.Size = new System.Drawing.Size(81, 13);
+            this.labelEntryNumberF.TabIndex = 33;
+            this.labelEntryNumberF.Text = "Partida número:";
+            // 
+            // textBoxSheetNumberF
+            // 
+            this.textBoxSheetNumberF.Location = new System.Drawing.Point(316, 374);
+            this.textBoxSheetNumberF.Name = "textBoxSheetNumberF";
+            this.textBoxSheetNumberF.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSheetNumberF.TabIndex = 32;
+            // 
+            // labelSheetNumberF
+            // 
+            this.labelSheetNumberF.AutoSize = true;
+            this.labelSheetNumberF.Location = new System.Drawing.Point(240, 377);
+            this.labelSheetNumberF.Name = "labelSheetNumberF";
+            this.labelSheetNumberF.Size = new System.Drawing.Size(70, 13);
+            this.labelSheetNumberF.TabIndex = 31;
+            this.labelSheetNumberF.Text = "Folio número:";
+            // 
+            // textBoxBookNumberF
+            // 
+            this.textBoxBookNumberF.Location = new System.Drawing.Point(116, 371);
+            this.textBoxBookNumberF.Name = "textBoxBookNumberF";
+            this.textBoxBookNumberF.Size = new System.Drawing.Size(100, 20);
+            this.textBoxBookNumberF.TabIndex = 30;
+            // 
+            // labelBookNumberF
+            // 
+            this.labelBookNumberF.AutoSize = true;
+            this.labelBookNumberF.Location = new System.Drawing.Point(39, 371);
+            this.labelBookNumberF.Name = "labelBookNumberF";
+            this.labelBookNumberF.Size = new System.Drawing.Size(71, 13);
+            this.labelBookNumberF.TabIndex = 29;
+            this.labelBookNumberF.Text = "Libro número:";
+            // 
+            // textBoxGodFather2F
+            // 
+            this.textBoxGodFather2F.Location = new System.Drawing.Point(154, 216);
+            this.textBoxGodFather2F.Name = "textBoxGodFather2F";
+            this.textBoxGodFather2F.Size = new System.Drawing.Size(100, 20);
+            this.textBoxGodFather2F.TabIndex = 28;
+            // 
+            // labelGodFather2F
+            // 
+            this.labelGodFather2F.AutoSize = true;
+            this.labelGodFather2F.Location = new System.Drawing.Point(29, 219);
+            this.labelGodFather2F.Name = "labelGodFather2F";
+            this.labelGodFather2F.Size = new System.Drawing.Size(114, 13);
+            this.labelGodFather2F.TabIndex = 27;
+            this.labelGodFather2F.Text = "Nombre del padrino(2):";
+            // 
+            // textBoxGodFather1F
+            // 
+            this.textBoxGodFather1F.Location = new System.Drawing.Point(153, 190);
+            this.textBoxGodFather1F.Name = "textBoxGodFather1F";
+            this.textBoxGodFather1F.Size = new System.Drawing.Size(100, 20);
+            this.textBoxGodFather1F.TabIndex = 26;
+            // 
+            // labelGodFather1F
+            // 
+            this.labelGodFather1F.AutoSize = true;
+            this.labelGodFather1F.Location = new System.Drawing.Point(29, 193);
+            this.labelGodFather1F.Name = "labelGodFather1F";
+            this.labelGodFather1F.Size = new System.Drawing.Size(114, 13);
+            this.labelGodFather1F.TabIndex = 25;
+            this.labelGodFather1F.Text = "Nombre del padrino(1):";
+            // 
+            // textBoxFatherNameF
+            // 
+            this.textBoxFatherNameF.Location = new System.Drawing.Point(148, 164);
+            this.textBoxFatherNameF.Name = "textBoxFatherNameF";
+            this.textBoxFatherNameF.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFatherNameF.TabIndex = 24;
+            // 
+            // labelFatherNameF
+            // 
+            this.labelFatherNameF.AutoSize = true;
+            this.labelFatherNameF.Location = new System.Drawing.Point(29, 167);
+            this.labelFatherNameF.Name = "labelFatherNameF";
+            this.labelFatherNameF.Size = new System.Drawing.Size(94, 13);
+            this.labelFatherNameF.TabIndex = 23;
+            this.labelFatherNameF.Text = "Nombre del padre:";
+            // 
+            // textBoxMotherNameF
+            // 
+            this.textBoxMotherNameF.Location = new System.Drawing.Point(147, 135);
+            this.textBoxMotherNameF.Name = "textBoxMotherNameF";
+            this.textBoxMotherNameF.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMotherNameF.TabIndex = 22;
+            // 
+            // labelMotherNameF
+            // 
+            this.labelMotherNameF.AutoSize = true;
+            this.labelMotherNameF.Location = new System.Drawing.Point(29, 138);
+            this.labelMotherNameF.Name = "labelMotherNameF";
+            this.labelMotherNameF.Size = new System.Drawing.Size(108, 13);
+            this.labelMotherNameF.TabIndex = 21;
+            this.labelMotherNameF.Text = "Nombre de la madre: ";
+            // 
+            // textBoxNameF
+            // 
+            this.textBoxNameF.Location = new System.Drawing.Point(82, 108);
+            this.textBoxNameF.Name = "textBoxNameF";
+            this.textBoxNameF.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNameF.TabIndex = 20;
+            // 
+            // labelNameF
+            // 
+            this.labelNameF.AutoSize = true;
+            this.labelNameF.Location = new System.Drawing.Point(29, 111);
+            this.labelNameF.Name = "labelNameF";
+            this.labelNameF.Size = new System.Drawing.Size(47, 13);
+            this.labelNameF.TabIndex = 19;
+            this.labelNameF.Text = "Nombre:";
+            // 
+            // dateTimePickerFirstComunion
+            // 
+            this.dateTimePickerFirstComunion.Location = new System.Drawing.Point(619, 66);
+            this.dateTimePickerFirstComunion.Name = "dateTimePickerFirstComunion";
+            this.dateTimePickerFirstComunion.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerFirstComunion.TabIndex = 18;
+            // 
             // Archiver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -578,6 +748,8 @@
             this.tabBaptism.PerformLayout();
             this.groupBoxBaptismGender.ResumeLayout(false);
             this.groupBoxBaptismGender.PerformLayout();
+            this.tabFirstComunion.ResumeLayout(false);
+            this.tabFirstComunion.PerformLayout();
             this.tabMarriage.ResumeLayout(false);
             this.tabMarriage.PerformLayout();
             this.groupBoxHusbandM.ResumeLayout(false);
@@ -641,6 +813,23 @@
         private System.Windows.Forms.TextBox textBoxGodFather1M;
         private System.Windows.Forms.Label labelGodFather1M;
         private System.Windows.Forms.DateTimePicker dateTimePickerMarriage;
+        private System.Windows.Forms.TextBox textBoxEntryNumberF;
+        private System.Windows.Forms.Label labelEntryNumberF;
+        private System.Windows.Forms.TextBox textBoxSheetNumberF;
+        private System.Windows.Forms.Label labelSheetNumberF;
+        private System.Windows.Forms.TextBox textBoxBookNumberF;
+        private System.Windows.Forms.Label labelBookNumberF;
+        private System.Windows.Forms.TextBox textBoxGodFather2F;
+        private System.Windows.Forms.Label labelGodFather2F;
+        private System.Windows.Forms.TextBox textBoxGodFather1F;
+        private System.Windows.Forms.Label labelGodFather1F;
+        private System.Windows.Forms.TextBox textBoxFatherNameF;
+        private System.Windows.Forms.Label labelFatherNameF;
+        private System.Windows.Forms.TextBox textBoxMotherNameF;
+        private System.Windows.Forms.Label labelMotherNameF;
+        private System.Windows.Forms.TextBox textBoxNameF;
+        private System.Windows.Forms.Label labelNameF;
+        private System.Windows.Forms.DateTimePicker dateTimePickerFirstComunion;
     }
 }
 

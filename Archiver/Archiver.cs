@@ -41,5 +41,10 @@ namespace Archiver
         {
 
         }
+
+        private void tabBaptism_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

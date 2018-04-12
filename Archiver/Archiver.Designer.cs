@@ -138,6 +138,18 @@
             this.labelGodFather1M = new System.Windows.Forms.Label();
             this.dateTimePickerMarriage = new System.Windows.Forms.DateTimePicker();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.buttonSaveB = new System.Windows.Forms.Button();
+            this.buttonDeleteB = new System.Windows.Forms.Button();
+            this.buttonClearB = new System.Windows.Forms.Button();
+            this.buttonClearF = new System.Windows.Forms.Button();
+            this.buttonDeleteF = new System.Windows.Forms.Button();
+            this.buttonSaveF = new System.Windows.Forms.Button();
+            this.buttonClearC = new System.Windows.Forms.Button();
+            this.buttonDeleteC = new System.Windows.Forms.Button();
+            this.buttonSaveC = new System.Windows.Forms.Button();
+            this.buttonClearM = new System.Windows.Forms.Button();
+            this.buttonDeleteM = new System.Windows.Forms.Button();
+            this.buttonSaveM = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabBaptism.SuspendLayout();
             this.groupBoxBaptismGender.SuspendLayout();
@@ -178,6 +190,9 @@
             // 
             this.tabBaptism.BackColor = System.Drawing.Color.Gainsboro;
             this.tabBaptism.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabBaptism.Controls.Add(this.buttonClearB);
+            this.tabBaptism.Controls.Add(this.buttonDeleteB);
+            this.tabBaptism.Controls.Add(this.buttonSaveB);
             this.tabBaptism.Controls.Add(this.textBoxNotesB);
             this.tabBaptism.Controls.Add(this.labelNotesB);
             this.tabBaptism.Controls.Add(this.textBoxMunicipalityB);
@@ -206,9 +221,10 @@
             this.tabBaptism.Location = new System.Drawing.Point(4, 22);
             this.tabBaptism.Name = "tabBaptism";
             this.tabBaptism.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBaptism.Size = new System.Drawing.Size(848, 459);
+            this.tabBaptism.Size = new System.Drawing.Size(848, 469);
             this.tabBaptism.TabIndex = 1;
             this.tabBaptism.Text = "Bautismo";
+            this.tabBaptism.Click += new System.EventHandler(this.tabBaptism_Click);
             // 
             // textBoxNotesB
             // 
@@ -454,6 +470,9 @@
             // tabFirstComunion
             // 
             this.tabFirstComunion.BackColor = System.Drawing.Color.SlateGray;
+            this.tabFirstComunion.Controls.Add(this.buttonClearF);
+            this.tabFirstComunion.Controls.Add(this.buttonDeleteF);
+            this.tabFirstComunion.Controls.Add(this.buttonSaveF);
             this.tabFirstComunion.Controls.Add(this.textBoxNotesF);
             this.tabFirstComunion.Controls.Add(this.labelNotesF);
             this.tabFirstComunion.Controls.Add(this.textBoxMunicipalityF);
@@ -479,7 +498,7 @@
             this.tabFirstComunion.Controls.Add(this.dateTimePickerFirstComunion);
             this.tabFirstComunion.Location = new System.Drawing.Point(4, 22);
             this.tabFirstComunion.Name = "tabFirstComunion";
-            this.tabFirstComunion.Size = new System.Drawing.Size(848, 459);
+            this.tabFirstComunion.Size = new System.Drawing.Size(848, 469);
             this.tabFirstComunion.TabIndex = 2;
             this.tabFirstComunion.Text = "Primera Comunión";
             // 
@@ -694,6 +713,9 @@
             // tabConfirmation
             // 
             this.tabConfirmation.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.tabConfirmation.Controls.Add(this.buttonClearC);
+            this.tabConfirmation.Controls.Add(this.buttonDeleteC);
+            this.tabConfirmation.Controls.Add(this.buttonSaveC);
             this.tabConfirmation.Controls.Add(this.textBoxNotesC);
             this.tabConfirmation.Controls.Add(this.labelNotesC);
             this.tabConfirmation.Controls.Add(this.textBoxMunicipalityC);
@@ -719,7 +741,7 @@
             this.tabConfirmation.Controls.Add(this.dateTimePickerConfirmation);
             this.tabConfirmation.Location = new System.Drawing.Point(4, 22);
             this.tabConfirmation.Name = "tabConfirmation";
-            this.tabConfirmation.Size = new System.Drawing.Size(848, 459);
+            this.tabConfirmation.Size = new System.Drawing.Size(848, 469);
             this.tabConfirmation.TabIndex = 3;
             this.tabConfirmation.Text = "Confirmación";
             // 
@@ -934,6 +956,9 @@
             // tabMarriage
             // 
             this.tabMarriage.BackColor = System.Drawing.Color.Thistle;
+            this.tabMarriage.Controls.Add(this.buttonClearM);
+            this.tabMarriage.Controls.Add(this.buttonDeleteM);
+            this.tabMarriage.Controls.Add(this.buttonSaveM);
             this.tabMarriage.Controls.Add(this.textBoxNotesM);
             this.tabMarriage.Controls.Add(this.labelNotesM);
             this.tabMarriage.Controls.Add(this.textBoxMunicipalityM);
@@ -955,7 +980,7 @@
             this.tabMarriage.Controls.Add(this.dateTimePickerMarriage);
             this.tabMarriage.Location = new System.Drawing.Point(4, 22);
             this.tabMarriage.Name = "tabMarriage";
-            this.tabMarriage.Size = new System.Drawing.Size(848, 459);
+            this.tabMarriage.Size = new System.Drawing.Size(848, 469);
             this.tabMarriage.TabIndex = 4;
             this.tabMarriage.Text = "Matrimonio";
             // 
@@ -1261,6 +1286,126 @@
             this.flowLayoutPanel1.TabIndex = 1;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
+            // buttonSaveB
+            // 
+            this.buttonSaveB.BackColor = System.Drawing.Color.Coral;
+            this.buttonSaveB.Location = new System.Drawing.Point(38, 387);
+            this.buttonSaveB.Name = "buttonSaveB";
+            this.buttonSaveB.Size = new System.Drawing.Size(87, 38);
+            this.buttonSaveB.TabIndex = 77;
+            this.buttonSaveB.Text = "Guardar";
+            this.buttonSaveB.UseVisualStyleBackColor = false;
+            // 
+            // buttonDeleteB
+            // 
+            this.buttonDeleteB.BackColor = System.Drawing.Color.Coral;
+            this.buttonDeleteB.Location = new System.Drawing.Point(269, 387);
+            this.buttonDeleteB.Name = "buttonDeleteB";
+            this.buttonDeleteB.Size = new System.Drawing.Size(87, 38);
+            this.buttonDeleteB.TabIndex = 78;
+            this.buttonDeleteB.Text = "Eliminar";
+            this.buttonDeleteB.UseVisualStyleBackColor = false;
+            // 
+            // buttonClearB
+            // 
+            this.buttonClearB.BackColor = System.Drawing.Color.Coral;
+            this.buttonClearB.Location = new System.Drawing.Point(390, 387);
+            this.buttonClearB.Name = "buttonClearB";
+            this.buttonClearB.Size = new System.Drawing.Size(87, 38);
+            this.buttonClearB.TabIndex = 79;
+            this.buttonClearB.Text = "Limpiar";
+            this.buttonClearB.UseVisualStyleBackColor = false;
+            // 
+            // buttonClearF
+            // 
+            this.buttonClearF.BackColor = System.Drawing.Color.Coral;
+            this.buttonClearF.Location = new System.Drawing.Point(455, 399);
+            this.buttonClearF.Name = "buttonClearF";
+            this.buttonClearF.Size = new System.Drawing.Size(87, 38);
+            this.buttonClearF.TabIndex = 82;
+            this.buttonClearF.Text = "Limpiar";
+            this.buttonClearF.UseVisualStyleBackColor = false;
+            // 
+            // buttonDeleteF
+            // 
+            this.buttonDeleteF.BackColor = System.Drawing.Color.Coral;
+            this.buttonDeleteF.Location = new System.Drawing.Point(334, 399);
+            this.buttonDeleteF.Name = "buttonDeleteF";
+            this.buttonDeleteF.Size = new System.Drawing.Size(87, 38);
+            this.buttonDeleteF.TabIndex = 81;
+            this.buttonDeleteF.Text = "Eliminar";
+            this.buttonDeleteF.UseVisualStyleBackColor = false;
+            // 
+            // buttonSaveF
+            // 
+            this.buttonSaveF.BackColor = System.Drawing.Color.Coral;
+            this.buttonSaveF.Location = new System.Drawing.Point(103, 399);
+            this.buttonSaveF.Name = "buttonSaveF";
+            this.buttonSaveF.Size = new System.Drawing.Size(87, 38);
+            this.buttonSaveF.TabIndex = 80;
+            this.buttonSaveF.Text = "Guardar";
+            this.buttonSaveF.UseVisualStyleBackColor = false;
+            // 
+            // buttonClearC
+            // 
+            this.buttonClearC.BackColor = System.Drawing.Color.Coral;
+            this.buttonClearC.Location = new System.Drawing.Point(468, 397);
+            this.buttonClearC.Name = "buttonClearC";
+            this.buttonClearC.Size = new System.Drawing.Size(87, 38);
+            this.buttonClearC.TabIndex = 82;
+            this.buttonClearC.Text = "Limpiar";
+            this.buttonClearC.UseVisualStyleBackColor = false;
+            // 
+            // buttonDeleteC
+            // 
+            this.buttonDeleteC.BackColor = System.Drawing.Color.Coral;
+            this.buttonDeleteC.Location = new System.Drawing.Point(347, 397);
+            this.buttonDeleteC.Name = "buttonDeleteC";
+            this.buttonDeleteC.Size = new System.Drawing.Size(87, 38);
+            this.buttonDeleteC.TabIndex = 81;
+            this.buttonDeleteC.Text = "Eliminar";
+            this.buttonDeleteC.UseVisualStyleBackColor = false;
+            // 
+            // buttonSaveC
+            // 
+            this.buttonSaveC.BackColor = System.Drawing.Color.Coral;
+            this.buttonSaveC.Location = new System.Drawing.Point(116, 397);
+            this.buttonSaveC.Name = "buttonSaveC";
+            this.buttonSaveC.Size = new System.Drawing.Size(87, 38);
+            this.buttonSaveC.TabIndex = 80;
+            this.buttonSaveC.Text = "Guardar";
+            this.buttonSaveC.UseVisualStyleBackColor = false;
+            // 
+            // buttonClearM
+            // 
+            this.buttonClearM.BackColor = System.Drawing.Color.Coral;
+            this.buttonClearM.Location = new System.Drawing.Point(450, 400);
+            this.buttonClearM.Name = "buttonClearM";
+            this.buttonClearM.Size = new System.Drawing.Size(87, 38);
+            this.buttonClearM.TabIndex = 82;
+            this.buttonClearM.Text = "Limpiar";
+            this.buttonClearM.UseVisualStyleBackColor = false;
+            // 
+            // buttonDeleteM
+            // 
+            this.buttonDeleteM.BackColor = System.Drawing.Color.Coral;
+            this.buttonDeleteM.Location = new System.Drawing.Point(329, 400);
+            this.buttonDeleteM.Name = "buttonDeleteM";
+            this.buttonDeleteM.Size = new System.Drawing.Size(87, 38);
+            this.buttonDeleteM.TabIndex = 81;
+            this.buttonDeleteM.Text = "Eliminar";
+            this.buttonDeleteM.UseVisualStyleBackColor = false;
+            // 
+            // buttonSaveM
+            // 
+            this.buttonSaveM.BackColor = System.Drawing.Color.Coral;
+            this.buttonSaveM.Location = new System.Drawing.Point(98, 400);
+            this.buttonSaveM.Name = "buttonSaveM";
+            this.buttonSaveM.Size = new System.Drawing.Size(87, 38);
+            this.buttonSaveM.TabIndex = 80;
+            this.buttonSaveM.Text = "Guardar";
+            this.buttonSaveM.UseVisualStyleBackColor = false;
+            // 
             // Archiver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1405,6 +1550,18 @@
         private System.Windows.Forms.TextBox textBoxStateM;
         private System.Windows.Forms.Label labelStateM;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button buttonClearB;
+        private System.Windows.Forms.Button buttonDeleteB;
+        private System.Windows.Forms.Button buttonSaveB;
+        private System.Windows.Forms.Button buttonClearF;
+        private System.Windows.Forms.Button buttonDeleteF;
+        private System.Windows.Forms.Button buttonSaveF;
+        private System.Windows.Forms.Button buttonClearC;
+        private System.Windows.Forms.Button buttonDeleteC;
+        private System.Windows.Forms.Button buttonSaveC;
+        private System.Windows.Forms.Button buttonClearM;
+        private System.Windows.Forms.Button buttonDeleteM;
+        private System.Windows.Forms.Button buttonSaveM;
     }
 }
 

@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,6 +53,10 @@
     <Compile Include="Archiver.Designer.cs">
       <DependentUpon>Archiver.cs</DependentUpon>
     </Compile>
+    <Compile Include="archiverClasses\BaptismClass.cs" />
+    <Compile Include="archiverClasses\ConfirmationClass.cs" />
+    <Compile Include="archiverClasses\FirstComunionClass.cs" />
+    <Compile Include="archiverClasses\MarriageClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Archiver.resx">

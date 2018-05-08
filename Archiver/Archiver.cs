@@ -371,18 +371,37 @@ namespace Archiver
             // Get data from data grid view into text boxes
             int rowIndex = e.RowIndex;
             textBoxIdF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[0].Value.ToString();
-            dateTimePickerFirstComunion.Value = Convert.ToDateTime(dataGridViewFisrtComunion.Rows[rowIndex].Cells[1].Value); ;
-            textBoxNameF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[2].Value.ToString(); ;
-            textBoxFatherNameF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[3].Value.ToString(); ;
-            textBoxMotherNameF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[4].Value.ToString(); ;
-            textBoxGodFather1F.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[5].Value.ToString(); ;
-            textBoxGodFather2F.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[6].Value.ToString(); ;
-            textBoxStateF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[7].Value.ToString(); ;
-            textBoxMunicipalityF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[8].Value.ToString(); ;
-            textBoxNotesF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[9].Value.ToString(); ;
-            textBoxBookNumberF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[10].Value.ToString(); ;
-            textBoxSheetNumberF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[11].Value.ToString(); ;
-            textBoxEntryNumberF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[12].Value.ToString(); ;
+            dateTimePickerFirstComunion.Value = Convert.ToDateTime(dataGridViewFisrtComunion.Rows[rowIndex].Cells[1].Value);
+            textBoxNameF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[2].Value.ToString();
+            textBoxFatherNameF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[3].Value.ToString();
+            textBoxMotherNameF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[4].Value.ToString();
+            textBoxGodFather1F.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[5].Value.ToString();
+            textBoxGodFather2F.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[6].Value.ToString();
+            textBoxStateF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[7].Value.ToString();
+            textBoxMunicipalityF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[8].Value.ToString();
+            textBoxNotesF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[9].Value.ToString();
+            textBoxBookNumberF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[10].Value.ToString();
+            textBoxSheetNumberF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[11].Value.ToString();
+            textBoxEntryNumberF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[12].Value.ToString();
+        }
+
+        private void dataGridViewConfirmation_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            // Get data from data grid view into text boxes
+            int rowIndex = e.RowIndex;
+            textBoxIdC.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[0].Value.ToString();
+            dateTimePickerConfirmation.Value = Convert.ToDateTime(dataGridViewConfirmation.Rows[rowIndex].Cells[1].Value);
+            textBoxNameC.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[2].Value.ToString(); ;
+            textBoxFatherNameC.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[3].Value.ToString(); ;
+            textBoxMotherNameC.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[4].Value.ToString(); ;
+            textBoxGodFather1C.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[5].Value.ToString(); ;
+            textBoxGodFather2C.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[6].Value.ToString(); ;
+            textBoxStateC.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[7].Value.ToString(); ;
+            textBoxMunicipalityC.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[8].Value.ToString(); ;
+            textBoxNotesC.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[9].Value.ToString(); ;
+            textBoxBookNumberC.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[10].Value.ToString(); ;
+            textBoxSheetNumberC.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[11].Value.ToString(); ;
+            textBoxEntryNumberC.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[12].Value.ToString(); ;
         }
     }
 }

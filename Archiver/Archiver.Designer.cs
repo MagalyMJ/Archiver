@@ -164,6 +164,7 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.textBoxIdB = new System.Windows.Forms.TextBox();
             this.textBoxIdF = new System.Windows.Forms.TextBox();
+            this.textBoxIdC = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabBaptism.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaptism)).BeginInit();
@@ -854,6 +855,7 @@
             // tabConfirmation
             // 
             this.tabConfirmation.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.tabConfirmation.Controls.Add(this.textBoxIdC);
             this.tabConfirmation.Controls.Add(this.textBoxSearchC);
             this.tabConfirmation.Controls.Add(this.labelSearchC);
             this.tabConfirmation.Controls.Add(this.dataGridViewConfirmation);
@@ -915,6 +917,7 @@
             this.dataGridViewConfirmation.Name = "dataGridViewConfirmation";
             this.dataGridViewConfirmation.Size = new System.Drawing.Size(187, 142);
             this.dataGridViewConfirmation.TabIndex = 83;
+            this.dataGridViewConfirmation.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewConfirmation_RowHeaderMouseDoubleClick);
             // 
             // buttonClearC
             // 
@@ -1564,6 +1567,14 @@
             this.textBoxIdF.TabIndex = 86;
             this.textBoxIdF.Visible = false;
             // 
+            // textBoxIdC
+            // 
+            this.textBoxIdC.Location = new System.Drawing.Point(400, 26);
+            this.textBoxIdC.Name = "textBoxIdC";
+            this.textBoxIdC.Size = new System.Drawing.Size(58, 20);
+            this.textBoxIdC.TabIndex = 86;
+            this.textBoxIdC.Visible = false;
+            // 
             // Archiver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1737,6 +1748,7 @@
         private System.Windows.Forms.DataGridView dataGridViewMarriage;
         private System.Windows.Forms.TextBox textBoxIdB;
         private System.Windows.Forms.TextBox textBoxIdF;
+        private System.Windows.Forms.TextBox textBoxIdC;
     }
 }
 

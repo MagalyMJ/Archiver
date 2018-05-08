@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Archiver.archiverClasses
 {
@@ -47,7 +48,7 @@ namespace Archiver.archiverClasses
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
             finally
             {
@@ -98,7 +99,7 @@ namespace Archiver.archiverClasses
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
             finally
             {
@@ -148,7 +149,7 @@ namespace Archiver.archiverClasses
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
             finally
             {
@@ -169,7 +170,7 @@ namespace Archiver.archiverClasses
             try
             {
                 // Query
-                string sql = "DELETE FROM tbl_fisrt_comunion WHERE Id = @id";
+                string sql = "DELETE FROM tbl_first_comunion WHERE Id = @id";
 
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@id", firstComunion.Id);
@@ -187,7 +188,7 @@ namespace Archiver.archiverClasses
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
             finally
             {

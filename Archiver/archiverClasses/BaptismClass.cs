@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Archiver.archiverClasses
 {
@@ -48,7 +49,7 @@ namespace Archiver.archiverClasses
             }
             catch(Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
             finally
             {
@@ -100,7 +101,7 @@ namespace Archiver.archiverClasses
             }
             catch(Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
             finally
             {
@@ -152,7 +153,7 @@ namespace Archiver.archiverClasses
             }
             catch(Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
             finally
             {
@@ -191,7 +192,7 @@ namespace Archiver.archiverClasses
             }
             catch(Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
             finally
             {

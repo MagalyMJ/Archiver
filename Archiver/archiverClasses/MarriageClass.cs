@@ -51,7 +51,7 @@ namespace Archiver.archiverClasses
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
             finally
             {
@@ -104,7 +104,7 @@ namespace Archiver.archiverClasses
             }
             catch (Exception ex)
             {
-           
+                MessageBox.Show(ex.Message);
             }
             finally
             {
@@ -157,7 +157,7 @@ namespace Archiver.archiverClasses
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
             finally
             {
@@ -196,7 +196,7 @@ namespace Archiver.archiverClasses
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
             finally
             {

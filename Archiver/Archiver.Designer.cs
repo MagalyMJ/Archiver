@@ -305,6 +305,7 @@
             this.buttonDeleteB.TabIndex = 78;
             this.buttonDeleteB.Text = "Eliminar";
             this.buttonDeleteB.UseVisualStyleBackColor = false;
+            this.buttonDeleteB.Click += new System.EventHandler(this.buttonDeleteB_Click);
             // 
             // buttonSaveB
             // 
@@ -653,6 +654,7 @@
             this.buttonDeleteF.TabIndex = 81;
             this.buttonDeleteF.Text = "Eliminar";
             this.buttonDeleteF.UseVisualStyleBackColor = false;
+            this.buttonDeleteF.Click += new System.EventHandler(this.buttonDeleteF_Click);
             // 
             // buttonSaveF
             // 
@@ -969,6 +971,7 @@
             this.buttonDeleteC.TabIndex = 81;
             this.buttonDeleteC.Text = "Eliminar";
             this.buttonDeleteC.UseVisualStyleBackColor = false;
+            this.buttonDeleteC.Click += new System.EventHandler(this.buttonDeleteC_Click);
             // 
             // buttonSaveC
             // 
@@ -1281,6 +1284,7 @@
             this.buttonDeleteM.TabIndex = 81;
             this.buttonDeleteM.Text = "Eliminar";
             this.buttonDeleteM.UseVisualStyleBackColor = false;
+            this.buttonDeleteM.Click += new System.EventHandler(this.buttonDeleteM_Click);
             // 
             // buttonSaveM
             // 

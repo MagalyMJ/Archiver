@@ -107,7 +107,7 @@ namespace Archiver
 
         private void buttonSaveB_Click(object sender, EventArgs e)
         {
-            // Get values from inputs
+            // Get values from text boxes
             baptism.Id = int.Parse(textBoxIdB.Text);
             baptism.date = dateTimePickerBaptism.Value;
             baptism.name = textBoxNameB.Text;
@@ -178,7 +178,7 @@ namespace Archiver
 
         private void buttonSaveF_Click(object sender, EventArgs e)
         {
-            // Get values from inputs
+            // Get values from text boxes
             firstComunion.Id = int.Parse(textBoxIdF.Text);
             firstComunion.date = dateTimePickerFirstComunion.Value;
             firstComunion.name = textBoxNameF.Text;
@@ -252,7 +252,7 @@ namespace Archiver
 
         private void buttonSaveC_Click(object sender, EventArgs e)
         {
-            // Get values from inputs
+            // Get values from text boxes
             confirmation.Id = int.Parse(textBoxIdC.Text);
             confirmation.date = dateTimePickerConfirmation.Value;
             confirmation.name = textBoxNameC.Text;
@@ -326,7 +326,7 @@ namespace Archiver
 
         private void buttonSaveM_Click(object sender, EventArgs e)
         {
-            // Get values from inputs
+            // Get values from text boxes
             marriage.Id = int.Parse(textBoxIdM.Text);
             marriage.date = dateTimePickerMarriage.Value;
             marriage.wifeName = textBoxWifeNameM.Text;
@@ -508,6 +508,82 @@ namespace Archiver
         private void buttonClearM_Click(object sender, EventArgs e)
         {
             clearMarriage();
+        }
+
+        private void buttonDeleteB_Click(object sender, EventArgs e)
+        {
+            // Get id from text box
+            baptism.Id = int.Parse(textBoxIdB.Text);
+
+            // Delete data
+            if (baptism.Delete(baptism))
+            {
+                MessageBox.Show("El registro se elimino exitosamente.");
+                clearBaptism();
+            }
+            else
+                MessageBox.Show("No se pudo eliminar el registro, inténtelo nuevamente.");
+
+            // Load data in gridView
+            DataTable dt = baptism.Select();
+            dataGridViewBaptism.DataSource = dt;
+        }
+
+        private void buttonDeleteF_Click(object sender, EventArgs e)
+        {
+            // Get id from text box
+            firstComunion.Id = int.Parse(textBoxIdF.Text);
+
+            // Delete data
+            if (firstComunion.Delete(firstComunion))
+            {
+                MessageBox.Show("El registro se elimino exitosamente.");
+                clearFirstComunion();
+            }
+            else
+                MessageBox.Show("No se pudo eliminar el registro, inténtelo nuevamente.");
+
+            // Load data in gridView
+            DataTable dt = firstComunion.Select();
+            dataGridViewFisrtComunion.DataSource = dt;
+        }
+
+        private void buttonDeleteC_Click(object sender, EventArgs e)
+        {
+            // Get id from text box
+            confirmation.Id = int.Parse(textBoxIdC.Text);
+
+            // Delete data
+            if (confirmation.Delete(confirmation))
+            {
+                MessageBox.Show("El registro se elimino exitosamente.");
+                clearConfirmation();
+            }
+            else
+                MessageBox.Show("No se pudo eliminar el registro, inténtelo nuevamente.");
+
+            // Load data in gridView
+            DataTable dt = confirmation.Select();
+            dataGridViewConfirmation.DataSource = dt;
+        }
+
+        private void buttonDeleteM_Click(object sender, EventArgs e)
+        {
+            // Get id from text box
+            marriage.Id = int.Parse(textBoxIdM.Text);
+
+            // Delete data
+            if (marriage.Delete(marriage))
+            {
+                MessageBox.Show("El registro se elimino exitosamente.");
+                clearMarriage();
+            }
+            else
+                MessageBox.Show("No se pudo eliminar el registro, inténtelo nuevamente.");
+
+            // Load data in gridView
+            DataTable dt = marriage.Select();
+            dataGridViewMarriage.DataSource = dt;
         }
     }
 }

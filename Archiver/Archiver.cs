@@ -23,7 +23,7 @@ namespace Archiver
         ConfirmationClass confirmation = new ConfirmationClass();
         MarriageClass marriage = new MarriageClass();
 
-        // Clear baptism inputs
+        // Clear baptism text boxes
         public void clearBaptism()
         {
             textBoxIdB.Text = "0";
@@ -41,7 +41,15 @@ namespace Archiver
             textBoxEntryNumberB.Text = "";
         }
 
-        // Clear first comunion inputs
+        public void clearSearchBaptism()
+        {
+            textBoxSearchNameB.Text = "";
+            textBoxSearchBookB.Text = "";
+            textBoxSearchSheetB.Text = "";
+            textBoxEntryNumberB.Text = "";
+        }
+
+        // Clear first comunion text boxes
         public void clearFirstComunion()
         {
             textBoxIdF.Text = "0";
@@ -59,7 +67,15 @@ namespace Archiver
             textBoxEntryNumberF.Text = "";
         }
 
-        // Clear confirmation inputs
+        public void clearSearchFirstComunion()
+        {
+            textBoxSearchNameF.Text = "";
+            textBoxSearchBookF.Text = "";
+            textBoxSearchSheetF.Text = "";
+            textBoxEntryNumberF.Text = "";
+        }
+
+        // Clear confirmation text boxes
         public void clearConfirmation()
         {
             textBoxIdC.Text = "0";
@@ -77,7 +93,15 @@ namespace Archiver
             textBoxEntryNumberC.Text = "";
         }
 
-        // Clear confirmation inputs
+        public void clearSearchConfirmation()
+        {
+            textBoxSearchNameC.Text = "";
+            textBoxSearchBookC.Text = "";
+            textBoxSearchSheetC.Text = "";
+            textBoxEntryNumberC.Text = "";
+        }
+
+        // Clear confirmation text boxes
         public void clearMarriage()
         {
             textBoxIdM.Text = "0";
@@ -95,6 +119,14 @@ namespace Archiver
             textBoxNotesM.Text = "";
             textBoxBookNumberM.Text = "";
             textBoxSheetNumberM.Text = "";
+            textBoxEntryNumberM.Text = "";
+        }
+
+        public void clearSearchMarriage()
+        {
+            textBoxSearchNameM.Text = "";
+            textBoxSearchBookM.Text = "";
+            textBoxSearchSheetM.Text = "";
             textBoxEntryNumberM.Text = "";
         }
 
@@ -584,6 +616,87 @@ namespace Archiver
             // Load data in gridView
             DataTable dt = marriage.Select();
             dataGridViewMarriage.DataSource = dt;
+        }
+
+        private void buttonSearchB_Click(object sender, EventArgs e)
+        {
+            string sqlOptions = " WHERE 1=1";
+
+            // Get values to search
+            if (textBoxSearchNameB.Text != "")
+                sqlOptions += " AND name LIKE '%" + textBoxSearchNameB.Text + "%'";
+            if (textBoxSearchBookB.Text != "")
+                sqlOptions += " AND book_number = " + textBoxSearchBookB.Text;
+            if (textBoxSearchSheetB.Text != "")
+                sqlOptions += " AND sheet_number = " + textBoxSearchSheetB.Text;
+            if (textBoxSearchEntryB.Text != "")
+                sqlOptions += " AND entry_number = " + textBoxSearchEntryB.Text;
+
+            DataTable dt = baptism.Select(sqlOptions);
+            dataGridViewBaptism.DataSource = dt;
+
+            clearSearchBaptism();
+        }
+
+        private void buttonSearchF_Click(object sender, EventArgs e)
+        {
+            string sqlOptions = " WHERE 1=1";
+
+            // Get values to search
+            if (textBoxSearchNameF.Text != "")
+                sqlOptions += " AND name LIKE '%" + textBoxSearchNameF.Text + "%'";
+            if (textBoxSearchBookF.Text != "")
+                sqlOptions += " AND book_number = " + textBoxSearchBookF.Text;
+            if (textBoxSearchSheetF.Text != "")
+                sqlOptions += " AND sheet_number = " + textBoxSearchSheetF.Text;
+            if (textBoxSearchEntryF.Text != "")
+                sqlOptions += " AND entry_number = " + textBoxSearchEntryF.Text;
+
+            DataTable dt = firstComunion.Select(sqlOptions);
+            dataGridViewFisrtComunion.DataSource = dt;
+
+            clearSearchFirstComunion();
+        }
+
+        private void buttonSearchC_Click(object sender, EventArgs e)
+        {
+            string sqlOptions = " WHERE 1=1";
+
+            // Get values to search
+            if (textBoxSearchNameC.Text != "")
+                sqlOptions += " AND name LIKE '%" + textBoxSearchNameC.Text + "%'";
+            if (textBoxSearchBookC.Text != "")
+                sqlOptions += " AND book_number = " + textBoxSearchBookC.Text;
+            if (textBoxSearchSheetC.Text != "")
+                sqlOptions += " AND sheet_number = " + textBoxSearchSheetC.Text;
+            if (textBoxSearchEntryC.Text != "")
+                sqlOptions += " AND entry_number = " + textBoxSearchEntryC.Text;
+
+            DataTable dt = confirmation.Select(sqlOptions);
+            dataGridViewConfirmation.DataSource = dt;
+
+            clearSearchConfirmation();
+        }
+
+        private void buttonSearchM_Click(object sender, EventArgs e)
+        {
+            string sqlOptions = " WHERE 1=1";
+
+            // Get values to search
+            if (textBoxSearchNameM.Text != "")
+                sqlOptions += " AND name LIKE '%" + textBoxSearchNameM.Text + "%'";
+            if (textBoxSearchBookM.Text != "")
+                sqlOptions += " AND book_number = " + textBoxSearchBookM.Text;
+            if (textBoxSearchSheetM.Text != "")
+                sqlOptions += " AND sheet_number = " + textBoxSearchSheetM.Text;
+            if (textBoxSearchEntryM.Text != "")
+                sqlOptions += " AND entry_number = " + textBoxSearchEntryM.Text;
+
+            DataTable dt = marriage.Select(sqlOptions);
+            dataGridViewMarriage.DataSource = dt;
+
+            clearSearchMarriage();
+
         }
     }
 }

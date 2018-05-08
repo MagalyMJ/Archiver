@@ -33,7 +33,7 @@ namespace Archiver.archiverClasses
         static string myconnection = ConfigurationManager.ConnectionStrings["connstring"].ConnectionString;
 
         // Select all from tbl_baptism table
-        public DataTable Select()
+        public DataTable Select(string options = " WHERE 1=1")
         {
             // Database Connection
             SqlConnection conn = new SqlConnection(myconnection);
@@ -41,7 +41,7 @@ namespace Archiver.archiverClasses
             try
             {
                 // Query
-                string sql = "SELECT Id, date, name, gender, father_name, mother_name, first_godfather, second_godfather, state, municipality, notes, book_number, sheet_number, entry_number from tbl_baptism";
+                string sql = "SELECT Id, date, name, gender, father_name, mother_name, first_godfather, second_godfather, state, municipality, notes, book_number, sheet_number, entry_number from tbl_baptism" + options;
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 conn.Open();

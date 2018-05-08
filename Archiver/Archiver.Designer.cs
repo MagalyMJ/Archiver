@@ -294,6 +294,7 @@
             // 
             // textBoxSearchNameB
             // 
+            this.textBoxSearchNameB.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchNameB.Location = new System.Drawing.Point(69, 23);
             this.textBoxSearchNameB.Name = "textBoxSearchNameB";
             this.textBoxSearchNameB.Size = new System.Drawing.Size(136, 20);
@@ -641,6 +642,7 @@
             // 
             // textBoxSearchNameF
             // 
+            this.textBoxSearchNameF.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchNameF.Location = new System.Drawing.Point(64, 25);
             this.textBoxSearchNameF.Name = "textBoxSearchNameF";
             this.textBoxSearchNameF.Size = new System.Drawing.Size(136, 20);
@@ -956,6 +958,7 @@
             // 
             // textBoxSearchNameC
             // 
+            this.textBoxSearchNameC.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchNameC.Location = new System.Drawing.Point(81, 34);
             this.textBoxSearchNameC.Name = "textBoxSearchNameC";
             this.textBoxSearchNameC.Size = new System.Drawing.Size(136, 20);
@@ -1267,6 +1270,7 @@
             // 
             // textBoxSearchSheetM
             // 
+            this.textBoxSearchSheetM.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchSheetM.Location = new System.Drawing.Point(84, 84);
             this.textBoxSearchSheetM.Name = "textBoxSearchSheetM";
             this.textBoxSearchSheetM.Size = new System.Drawing.Size(136, 20);
@@ -1731,6 +1735,7 @@
             // 
             // textBoxSearchBookB
             // 
+            this.textBoxSearchBookB.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchBookB.Location = new System.Drawing.Point(72, 58);
             this.textBoxSearchBookB.Name = "textBoxSearchBookB";
             this.textBoxSearchBookB.Size = new System.Drawing.Size(132, 20);
@@ -1738,6 +1743,7 @@
             // 
             // textBoxSearchSheetB
             // 
+            this.textBoxSearchSheetB.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchSheetB.Location = new System.Drawing.Point(68, 92);
             this.textBoxSearchSheetB.Name = "textBoxSearchSheetB";
             this.textBoxSearchSheetB.Size = new System.Drawing.Size(135, 20);
@@ -1745,6 +1751,7 @@
             // 
             // textBoxSearchEntryB
             // 
+            this.textBoxSearchEntryB.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchEntryB.Location = new System.Drawing.Point(69, 121);
             this.textBoxSearchEntryB.Name = "textBoxSearchEntryB";
             this.textBoxSearchEntryB.Size = new System.Drawing.Size(133, 20);
@@ -1779,6 +1786,7 @@
             // 
             // textBoxSearchBookF
             // 
+            this.textBoxSearchBookF.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchBookF.Location = new System.Drawing.Point(68, 60);
             this.textBoxSearchBookF.Name = "textBoxSearchBookF";
             this.textBoxSearchBookF.Size = new System.Drawing.Size(131, 20);
@@ -1786,6 +1794,7 @@
             // 
             // textBoxSearchSheetF
             // 
+            this.textBoxSearchSheetF.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchSheetF.Location = new System.Drawing.Point(64, 90);
             this.textBoxSearchSheetF.Name = "textBoxSearchSheetF";
             this.textBoxSearchSheetF.Size = new System.Drawing.Size(123, 20);
@@ -1793,6 +1802,7 @@
             // 
             // textBoxSearchEntryF
             // 
+            this.textBoxSearchEntryF.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchEntryF.Location = new System.Drawing.Point(67, 120);
             this.textBoxSearchEntryF.Name = "textBoxSearchEntryF";
             this.textBoxSearchEntryF.Size = new System.Drawing.Size(119, 20);
@@ -1827,6 +1837,7 @@
             // 
             // textBoxSearchBookC
             // 
+            this.textBoxSearchBookC.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchBookC.Location = new System.Drawing.Point(88, 63);
             this.textBoxSearchBookC.Name = "textBoxSearchBookC";
             this.textBoxSearchBookC.Size = new System.Drawing.Size(93, 20);
@@ -1834,6 +1845,7 @@
             // 
             // textBoxSearchSheetC
             // 
+            this.textBoxSearchSheetC.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchSheetC.Location = new System.Drawing.Point(88, 91);
             this.textBoxSearchSheetC.Name = "textBoxSearchSheetC";
             this.textBoxSearchSheetC.Size = new System.Drawing.Size(92, 20);
@@ -1841,6 +1853,7 @@
             // 
             // textBoxSearchEntryC
             // 
+            this.textBoxSearchEntryC.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchEntryC.Location = new System.Drawing.Point(77, 120);
             this.textBoxSearchEntryC.Name = "textBoxSearchEntryC";
             this.textBoxSearchEntryC.Size = new System.Drawing.Size(86, 20);
@@ -1875,6 +1888,7 @@
             // 
             // textBoxSearchNameM
             // 
+            this.textBoxSearchNameM.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchNameM.Location = new System.Drawing.Point(79, 27);
             this.textBoxSearchNameM.Name = "textBoxSearchNameM";
             this.textBoxSearchNameM.Size = new System.Drawing.Size(92, 20);
@@ -1882,6 +1896,7 @@
             // 
             // textBoxSearchBookM
             // 
+            this.textBoxSearchBookM.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchBookM.Location = new System.Drawing.Point(73, 57);
             this.textBoxSearchBookM.Name = "textBoxSearchBookM";
             this.textBoxSearchBookM.Size = new System.Drawing.Size(97, 20);
@@ -1889,6 +1904,7 @@
             // 
             // textBoxSearchEntryM
             // 
+            this.textBoxSearchEntryM.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchEntryM.Location = new System.Drawing.Point(76, 117);
             this.textBoxSearchEntryM.Name = "textBoxSearchEntryM";
             this.textBoxSearchEntryM.Size = new System.Drawing.Size(110, 20);
@@ -1902,6 +1918,7 @@
             this.buttonSearchM.TabIndex = 92;
             this.buttonSearchM.Text = "Buscar";
             this.buttonSearchM.UseVisualStyleBackColor = true;
+            this.buttonSearchM.Click += new System.EventHandler(this.buttonSearchM_Click);
             // 
             // buttonSearchC
             // 
@@ -1911,6 +1928,7 @@
             this.buttonSearchC.TabIndex = 92;
             this.buttonSearchC.Text = "Buscar";
             this.buttonSearchC.UseVisualStyleBackColor = true;
+            this.buttonSearchC.Click += new System.EventHandler(this.buttonSearchC_Click);
             // 
             // buttonSearchF
             // 
@@ -1920,6 +1938,7 @@
             this.buttonSearchF.TabIndex = 92;
             this.buttonSearchF.Text = "Buscar";
             this.buttonSearchF.UseVisualStyleBackColor = true;
+            this.buttonSearchF.Click += new System.EventHandler(this.buttonSearchF_Click);
             // 
             // buttonSearchB
             // 
@@ -1929,6 +1948,7 @@
             this.buttonSearchB.TabIndex = 89;
             this.buttonSearchB.Text = "Buscar";
             this.buttonSearchB.UseVisualStyleBackColor = true;
+            this.buttonSearchB.Click += new System.EventHandler(this.buttonSearchB_Click);
             // 
             // Archiver
             // 

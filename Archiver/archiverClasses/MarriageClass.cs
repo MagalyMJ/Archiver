@@ -42,7 +42,7 @@ namespace Archiver.archiverClasses
             try
             {
                 // Query
-                string sql = "SELECT date, husband_name, wife_name, husband_father_name, husband_mother_name, wife_father_name, wife_mother_name, first_godfather, second_godfather, state, municipality, notes, book_number, sheet_number, entry_number from tbl_marriage";
+                string sql = "SELECT Id, date, husband_name, wife_name, husband_father_name, husband_mother_name, wife_father_name, wife_mother_name, first_godfather, second_godfather, state, municipality, notes, book_number, sheet_number, entry_number from tbl_marriage";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 conn.Open();

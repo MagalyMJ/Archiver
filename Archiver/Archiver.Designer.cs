@@ -165,6 +165,7 @@
             this.textBoxIdB = new System.Windows.Forms.TextBox();
             this.textBoxIdF = new System.Windows.Forms.TextBox();
             this.textBoxIdC = new System.Windows.Forms.TextBox();
+            this.textBoxIdM = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabBaptism.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaptism)).BeginInit();
@@ -1161,6 +1162,7 @@
             // tabMarriage
             // 
             this.tabMarriage.BackColor = System.Drawing.Color.Thistle;
+            this.tabMarriage.Controls.Add(this.textBoxIdM);
             this.tabMarriage.Controls.Add(this.textBoxSearchM);
             this.tabMarriage.Controls.Add(this.labelSearchM);
             this.tabMarriage.Controls.Add(this.dataGridViewMarriage);
@@ -1218,6 +1220,7 @@
             this.dataGridViewMarriage.Name = "dataGridViewMarriage";
             this.dataGridViewMarriage.Size = new System.Drawing.Size(187, 142);
             this.dataGridViewMarriage.TabIndex = 83;
+            this.dataGridViewMarriage.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewMarriage_RowHeaderMouseDoubleClick);
             // 
             // buttonClearM
             // 
@@ -1575,6 +1578,14 @@
             this.textBoxIdC.TabIndex = 86;
             this.textBoxIdC.Visible = false;
             // 
+            // textBoxIdM
+            // 
+            this.textBoxIdM.Location = new System.Drawing.Point(640, 259);
+            this.textBoxIdM.Name = "textBoxIdM";
+            this.textBoxIdM.Size = new System.Drawing.Size(75, 20);
+            this.textBoxIdM.TabIndex = 86;
+            this.textBoxIdM.Visible = false;
+            // 
             // Archiver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1749,6 +1760,7 @@
         private System.Windows.Forms.TextBox textBoxIdB;
         private System.Windows.Forms.TextBox textBoxIdF;
         private System.Windows.Forms.TextBox textBoxIdC;
+        private System.Windows.Forms.TextBox textBoxIdM;
     }
 }
 

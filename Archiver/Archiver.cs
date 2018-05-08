@@ -403,5 +403,27 @@ namespace Archiver
             textBoxSheetNumberC.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[11].Value.ToString(); ;
             textBoxEntryNumberC.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[12].Value.ToString(); ;
         }
+
+        private void dataGridViewMarriage_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            // Get data from data grid view into text boxes
+            int rowIndex = e.RowIndex;
+            textBoxIdM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[0].Value.ToString();
+            dateTimePickerMarriage.Value = Convert.ToDateTime(dataGridViewMarriage.Rows[rowIndex].Cells[1].Value);
+            textBoxWifeNameM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[3].Value.ToString();
+            textBoxHusbandNameM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[2].Value.ToString();
+            textBoxWifeMotherNameM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[7].Value.ToString();
+            textBoxWifeFatherNameM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[6].Value.ToString();
+            textBoxHusbandMotherNameM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[5].Value.ToString();
+            textBoxHusbandFatherNameM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[4].Value.ToString();
+            textBoxGodFather1M.Text = dataGridViewMarriage.Rows[rowIndex].Cells[8].Value.ToString();
+            textBoxGodFather2M.Text = dataGridViewMarriage.Rows[rowIndex].Cells[9].Value.ToString();
+            textBoxStateM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[10].Value.ToString();
+            textBoxMunicipalityM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[11].Value.ToString();
+            textBoxNotesM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[12].Value.ToString();
+            textBoxBookNumberM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[13].Value.ToString();
+            textBoxSheetNumberM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[14].Value.ToString();
+            textBoxEntryNumberM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[15].Value.ToString();
+        }
     }
 }

@@ -19,6 +19,7 @@ namespace Archiver
         }
 
         BaptismClass baptism = new BaptismClass();
+        FirstComunionClass firstComunion = new FirstComunionClass();
 
         // Clear baptism inputs
         public void clearBaptism()
@@ -35,6 +36,23 @@ namespace Archiver
             textBoxBookNumberB.Text = "";
             textBoxSheetNumberB.Text = "";
             textBoxEntryNumberB.Text = "";
+        }
+
+        // Clear first comunion inputs
+        public void clearFirstComunion()
+        {
+            dateTimePickerFirstComunion.Value = DateTime.Now;
+            textBoxNameF.Text = "";
+            textBoxFatherNameF.Text = "";
+            textBoxMotherNameF.Text = "";
+            textBoxGodFather1F.Text = "";
+            textBoxGodFather2F.Text = "";
+            textBoxStateF.Text = "";
+            textBoxMunicipalityF.Text = "";
+            textBoxNotesF.Text = "";
+            textBoxBookNumberF.Text = "";
+            textBoxSheetNumberF.Text = "";
+            textBoxEntryNumberF.Text = "";
         }
 
         private void tabBaptism_Click(object sender, EventArgs e)
@@ -64,17 +82,26 @@ namespace Archiver
             if (int.TryParse(textBoxBookNumberB.Text, out bookValue))
                 baptism.bookNumber = bookValue;
             else
+            {
                 MessageBox.Show("Solo se permiten números enteros para el libro.");
+                return;
+            }
             int sheetValue;
             if (int.TryParse(textBoxSheetNumberB.Text, out sheetValue))
                 baptism.sheetNumber = sheetValue;
             else
+            {
                 MessageBox.Show("Solo se permiten números enteros para el folio.");
+                return;
+            }
             int entryValue;
             if (int.TryParse(textBoxEntryNumberB.Text, out entryValue))
                 baptism.entryNumber = entryValue;
             else
+            {
                 MessageBox.Show("Solo se permiten números enteros para la partida.");
+                return;
+            }
             baptism.created_at = DateTime.Now;
 
             // Insert data
@@ -89,6 +116,65 @@ namespace Archiver
             // Load data in gridView
             DataTable dt = baptism.Select();
             dataGridViewBaptism.DataSource = dt;
+        }
+
+        private void buttonSaveF_Click(object sender, EventArgs e)
+        {
+            // Get values from inputs
+            firstComunion.date = dateTimePickerFirstComunion.Value;
+            firstComunion.name = textBoxNameF.Text;
+            firstComunion.fatherName = textBoxFatherNameF.Text;
+            firstComunion.motherName = textBoxMotherNameF.Text;
+            firstComunion.firstGodfather = textBoxGodFather1F.Text;
+            firstComunion.secondGodfather = textBoxGodFather2F.Text;
+            firstComunion.state = textBoxStateF.Text;
+            firstComunion.municipality = textBoxMunicipalityF.Text;
+            firstComunion.notes = textBoxNotesF.Text;
+            int bookValue;
+            if (int.TryParse(textBoxBookNumberF.Text, out bookValue))
+                firstComunion.bookNumber = bookValue;
+            else
+            {
+                MessageBox.Show("Solo se permiten números enteros para el libro.");
+                return;
+            }
+            int sheetValue;
+            if (int.TryParse(textBoxSheetNumberF.Text, out sheetValue))
+                firstComunion.sheetNumber = sheetValue;
+            else
+            {
+                MessageBox.Show("Solo se permiten números enteros para el folio.");
+                return;
+            }
+            int entryValue;
+            if (int.TryParse(textBoxEntryNumberF.Text, out entryValue))
+                firstComunion.entryNumber = entryValue;
+            else
+            {
+                MessageBox.Show("Solo se permiten números enteros para la partida.");
+                return;
+            }
+            firstComunion.created_at = DateTime.Now;
+
+            // Insert data
+            if (firstComunion.Insert(firstComunion))
+            {
+                MessageBox.Show("El registro fue guardado exitosamente.");
+                clearFirstComunion();
+            }
+            else
+                MessageBox.Show("No se pudo guardar el registro, inténtelo nuevamente.");
+
+            // Load data in gridView
+            DataTable dt = firstComunion.Select();
+            dataGridViewFisrtComunion.DataSource = dt;
+        }
+
+        private void tabFirstComunion_Click(object sender, EventArgs e)
+        {
+            // Load data in gridView
+            DataTable dt = firstComunion.Select();
+            dataGridViewFisrtComunion.DataSource = dt;
         }
     }
 }

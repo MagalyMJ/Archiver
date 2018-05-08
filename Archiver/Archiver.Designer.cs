@@ -578,6 +578,7 @@
             this.tabFirstComunion.Size = new System.Drawing.Size(848, 663);
             this.tabFirstComunion.TabIndex = 2;
             this.tabFirstComunion.Text = "Primera Comunión";
+            this.tabFirstComunion.Click += new System.EventHandler(this.tabFirstComunion_Click);
             // 
             // textBoxSearchF
             // 
@@ -634,6 +635,7 @@
             this.buttonSaveF.TabIndex = 80;
             this.buttonSaveF.Text = "Guardar";
             this.buttonSaveF.UseVisualStyleBackColor = false;
+            this.buttonSaveF.Click += new System.EventHandler(this.buttonSaveF_Click);
             // 
             // textBoxNotesF
             // 
@@ -1542,7 +1544,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(858, 498);
+            this.ClientSize = new System.Drawing.Size(875, 515);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Archiver";
             this.Text = "Archiver";

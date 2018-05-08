@@ -32,8 +32,8 @@
             this.tabHome = new System.Windows.Forms.TabPage();
             this.tabBaptism = new System.Windows.Forms.TabPage();
             this.textBoxIdB = new System.Windows.Forms.TextBox();
-            this.textBoxSearchB = new System.Windows.Forms.TextBox();
-            this.labelSearchB = new System.Windows.Forms.Label();
+            this.textBoxSearchNameB = new System.Windows.Forms.TextBox();
+            this.labelSearchNameB = new System.Windows.Forms.Label();
             this.dataGridViewBaptism = new System.Windows.Forms.DataGridView();
             this.buttonClearB = new System.Windows.Forms.Button();
             this.buttonDeleteB = new System.Windows.Forms.Button();
@@ -66,8 +66,8 @@
             this.dateTimePickerBaptism = new System.Windows.Forms.DateTimePicker();
             this.tabFirstComunion = new System.Windows.Forms.TabPage();
             this.textBoxIdF = new System.Windows.Forms.TextBox();
-            this.textBoxSearchF = new System.Windows.Forms.TextBox();
-            this.labelSearchF = new System.Windows.Forms.Label();
+            this.textBoxSearchNameF = new System.Windows.Forms.TextBox();
+            this.labelSearchNameF = new System.Windows.Forms.Label();
             this.dataGridViewFisrtComunion = new System.Windows.Forms.DataGridView();
             this.buttonClearF = new System.Windows.Forms.Button();
             this.buttonDeleteF = new System.Windows.Forms.Button();
@@ -97,8 +97,8 @@
             this.dateTimePickerFirstComunion = new System.Windows.Forms.DateTimePicker();
             this.tabConfirmation = new System.Windows.Forms.TabPage();
             this.textBoxIdC = new System.Windows.Forms.TextBox();
-            this.textBoxSearchC = new System.Windows.Forms.TextBox();
-            this.labelSearchC = new System.Windows.Forms.Label();
+            this.textBoxSearchNameC = new System.Windows.Forms.TextBox();
+            this.labelSearchNameC = new System.Windows.Forms.Label();
             this.dataGridViewConfirmation = new System.Windows.Forms.DataGridView();
             this.buttonClearC = new System.Windows.Forms.Button();
             this.buttonDeleteC = new System.Windows.Forms.Button();
@@ -128,8 +128,8 @@
             this.dateTimePickerConfirmation = new System.Windows.Forms.DateTimePicker();
             this.tabMarriage = new System.Windows.Forms.TabPage();
             this.textBoxIdM = new System.Windows.Forms.TextBox();
-            this.textBoxSearchM = new System.Windows.Forms.TextBox();
-            this.labelSearchM = new System.Windows.Forms.Label();
+            this.textBoxSearchSheetM = new System.Windows.Forms.TextBox();
+            this.labelSearchSheetM = new System.Windows.Forms.Label();
             this.dataGridViewMarriage = new System.Windows.Forms.DataGridView();
             this.buttonClearM = new System.Windows.Forms.Button();
             this.buttonDeleteM = new System.Windows.Forms.Button();
@@ -166,6 +166,38 @@
             this.labelGodFather1M = new System.Windows.Forms.Label();
             this.dateTimePickerMarriage = new System.Windows.Forms.DateTimePicker();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.groupBoxSearchB = new System.Windows.Forms.GroupBox();
+            this.groupBoxSearchF = new System.Windows.Forms.GroupBox();
+            this.groupBoxSearchC = new System.Windows.Forms.GroupBox();
+            this.groupBoxSearchM = new System.Windows.Forms.GroupBox();
+            this.labelSearchBookB = new System.Windows.Forms.Label();
+            this.labelSearchSheetB = new System.Windows.Forms.Label();
+            this.labelSearchEntryB = new System.Windows.Forms.Label();
+            this.textBoxSearchBookB = new System.Windows.Forms.TextBox();
+            this.textBoxSearchSheetB = new System.Windows.Forms.TextBox();
+            this.textBoxSearchEntryB = new System.Windows.Forms.TextBox();
+            this.labelSearchBookF = new System.Windows.Forms.Label();
+            this.labelSearchSheetF = new System.Windows.Forms.Label();
+            this.labelSearchEntryF = new System.Windows.Forms.Label();
+            this.textBoxSearchBookF = new System.Windows.Forms.TextBox();
+            this.textBoxSearchSheetF = new System.Windows.Forms.TextBox();
+            this.textBoxSearchEntryF = new System.Windows.Forms.TextBox();
+            this.labelSearchBookC = new System.Windows.Forms.Label();
+            this.labelSearchSheetC = new System.Windows.Forms.Label();
+            this.labelSearchEntryC = new System.Windows.Forms.Label();
+            this.textBoxSearchBookC = new System.Windows.Forms.TextBox();
+            this.textBoxSearchSheetC = new System.Windows.Forms.TextBox();
+            this.textBoxSearchEntryC = new System.Windows.Forms.TextBox();
+            this.labelSearchNameM = new System.Windows.Forms.Label();
+            this.labelSearchBookM = new System.Windows.Forms.Label();
+            this.labelSearchEntryM = new System.Windows.Forms.Label();
+            this.textBoxSearchNameM = new System.Windows.Forms.TextBox();
+            this.textBoxSearchBookM = new System.Windows.Forms.TextBox();
+            this.textBoxSearchEntryM = new System.Windows.Forms.TextBox();
+            this.buttonSearchM = new System.Windows.Forms.Button();
+            this.buttonSearchC = new System.Windows.Forms.Button();
+            this.buttonSearchF = new System.Windows.Forms.Button();
+            this.buttonSearchB = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabBaptism.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaptism)).BeginInit();
@@ -179,6 +211,10 @@
             this.groupBoxWifeM.SuspendLayout();
             this.groupBoxHusbandM.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            this.groupBoxSearchB.SuspendLayout();
+            this.groupBoxSearchF.SuspendLayout();
+            this.groupBoxSearchC.SuspendLayout();
+            this.groupBoxSearchM.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -209,10 +245,8 @@
             // 
             this.tabBaptism.BackColor = System.Drawing.Color.Gainsboro;
             this.tabBaptism.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabBaptism.Controls.Add(this.groupBoxSearchB);
             this.tabBaptism.Controls.Add(this.textBoxIdB);
-            this.tabBaptism.Controls.Add(this.textBoxSearchB);
-            this.tabBaptism.Controls.Add(this.labelSearchB);
-            this.tabBaptism.Controls.Add(this.dataGridViewBaptism);
             this.tabBaptism.Controls.Add(this.buttonClearB);
             this.tabBaptism.Controls.Add(this.buttonDeleteB);
             this.tabBaptism.Controls.Add(this.buttonSaveB);
@@ -258,30 +292,30 @@
             this.textBoxIdB.Text = "0";
             this.textBoxIdB.Visible = false;
             // 
-            // textBoxSearchB
+            // textBoxSearchNameB
             // 
-            this.textBoxSearchB.Location = new System.Drawing.Point(680, 118);
-            this.textBoxSearchB.Name = "textBoxSearchB";
-            this.textBoxSearchB.Size = new System.Drawing.Size(136, 20);
-            this.textBoxSearchB.TabIndex = 82;
+            this.textBoxSearchNameB.Location = new System.Drawing.Point(69, 23);
+            this.textBoxSearchNameB.Name = "textBoxSearchNameB";
+            this.textBoxSearchNameB.Size = new System.Drawing.Size(136, 20);
+            this.textBoxSearchNameB.TabIndex = 82;
             // 
-            // labelSearchB
+            // labelSearchNameB
             // 
-            this.labelSearchB.AutoSize = true;
-            this.labelSearchB.Location = new System.Drawing.Point(624, 121);
-            this.labelSearchB.Name = "labelSearchB";
-            this.labelSearchB.Size = new System.Drawing.Size(40, 13);
-            this.labelSearchB.TabIndex = 81;
-            this.labelSearchB.Text = "Buscar";
+            this.labelSearchNameB.AutoSize = true;
+            this.labelSearchNameB.Location = new System.Drawing.Point(15, 23);
+            this.labelSearchNameB.Name = "labelSearchNameB";
+            this.labelSearchNameB.Size = new System.Drawing.Size(47, 13);
+            this.labelSearchNameB.TabIndex = 81;
+            this.labelSearchNameB.Text = "Nombre:";
             // 
             // dataGridViewBaptism
             // 
             this.dataGridViewBaptism.AllowUserToAddRows = false;
             this.dataGridViewBaptism.AllowUserToDeleteRows = false;
             this.dataGridViewBaptism.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewBaptism.Location = new System.Drawing.Point(630, 155);
+            this.dataGridViewBaptism.Location = new System.Drawing.Point(0, 217);
             this.dataGridViewBaptism.Name = "dataGridViewBaptism";
-            this.dataGridViewBaptism.Size = new System.Drawing.Size(187, 142);
+            this.dataGridViewBaptism.Size = new System.Drawing.Size(187, 124);
             this.dataGridViewBaptism.TabIndex = 80;
             this.dataGridViewBaptism.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewBaptism_RowHeaderMouseDoubleClick);
             // 
@@ -378,7 +412,7 @@
             // 
             this.textBoxEntryNumberB.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxEntryNumberB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxEntryNumberB.Location = new System.Drawing.Point(537, 334);
+            this.textBoxEntryNumberB.Location = new System.Drawing.Point(495, 356);
             this.textBoxEntryNumberB.Name = "textBoxEntryNumberB";
             this.textBoxEntryNumberB.Size = new System.Drawing.Size(100, 20);
             this.textBoxEntryNumberB.TabIndex = 17;
@@ -386,7 +420,7 @@
             // labelEntryNumberB
             // 
             this.labelEntryNumberB.AutoSize = true;
-            this.labelEntryNumberB.Location = new System.Drawing.Point(447, 337);
+            this.labelEntryNumberB.Location = new System.Drawing.Point(408, 358);
             this.labelEntryNumberB.Name = "labelEntryNumberB";
             this.labelEntryNumberB.Size = new System.Drawing.Size(81, 13);
             this.labelEntryNumberB.TabIndex = 16;
@@ -561,10 +595,8 @@
             // tabFirstComunion
             // 
             this.tabFirstComunion.BackColor = System.Drawing.Color.SlateGray;
+            this.tabFirstComunion.Controls.Add(this.groupBoxSearchF);
             this.tabFirstComunion.Controls.Add(this.textBoxIdF);
-            this.tabFirstComunion.Controls.Add(this.textBoxSearchF);
-            this.tabFirstComunion.Controls.Add(this.labelSearchF);
-            this.tabFirstComunion.Controls.Add(this.dataGridViewFisrtComunion);
             this.tabFirstComunion.Controls.Add(this.buttonClearF);
             this.tabFirstComunion.Controls.Add(this.buttonDeleteF);
             this.tabFirstComunion.Controls.Add(this.buttonSaveF);
@@ -607,28 +639,28 @@
             this.textBoxIdF.Text = "0";
             this.textBoxIdF.Visible = false;
             // 
-            // textBoxSearchF
+            // textBoxSearchNameF
             // 
-            this.textBoxSearchF.Location = new System.Drawing.Point(652, 85);
-            this.textBoxSearchF.Name = "textBoxSearchF";
-            this.textBoxSearchF.Size = new System.Drawing.Size(136, 20);
-            this.textBoxSearchF.TabIndex = 85;
+            this.textBoxSearchNameF.Location = new System.Drawing.Point(64, 25);
+            this.textBoxSearchNameF.Name = "textBoxSearchNameF";
+            this.textBoxSearchNameF.Size = new System.Drawing.Size(136, 20);
+            this.textBoxSearchNameF.TabIndex = 85;
             // 
-            // labelSearchF
+            // labelSearchNameF
             // 
-            this.labelSearchF.AutoSize = true;
-            this.labelSearchF.Location = new System.Drawing.Point(596, 88);
-            this.labelSearchF.Name = "labelSearchF";
-            this.labelSearchF.Size = new System.Drawing.Size(40, 13);
-            this.labelSearchF.TabIndex = 84;
-            this.labelSearchF.Text = "Buscar";
+            this.labelSearchNameF.AutoSize = true;
+            this.labelSearchNameF.Location = new System.Drawing.Point(10, 28);
+            this.labelSearchNameF.Name = "labelSearchNameF";
+            this.labelSearchNameF.Size = new System.Drawing.Size(47, 13);
+            this.labelSearchNameF.TabIndex = 84;
+            this.labelSearchNameF.Text = "Nombre:";
             // 
             // dataGridViewFisrtComunion
             // 
             this.dataGridViewFisrtComunion.AllowUserToAddRows = false;
             this.dataGridViewFisrtComunion.AllowUserToDeleteRows = false;
             this.dataGridViewFisrtComunion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewFisrtComunion.Location = new System.Drawing.Point(602, 122);
+            this.dataGridViewFisrtComunion.Location = new System.Drawing.Point(6, 215);
             this.dataGridViewFisrtComunion.Name = "dataGridViewFisrtComunion";
             this.dataGridViewFisrtComunion.Size = new System.Drawing.Size(187, 142);
             this.dataGridViewFisrtComunion.TabIndex = 83;
@@ -727,7 +759,7 @@
             // 
             this.textBoxEntryNumberF.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxEntryNumberF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxEntryNumberF.Location = new System.Drawing.Point(531, 373);
+            this.textBoxEntryNumberF.Location = new System.Drawing.Point(432, 346);
             this.textBoxEntryNumberF.Name = "textBoxEntryNumberF";
             this.textBoxEntryNumberF.Size = new System.Drawing.Size(100, 20);
             this.textBoxEntryNumberF.TabIndex = 34;
@@ -735,7 +767,7 @@
             // labelEntryNumberF
             // 
             this.labelEntryNumberF.AutoSize = true;
-            this.labelEntryNumberF.Location = new System.Drawing.Point(441, 376);
+            this.labelEntryNumberF.Location = new System.Drawing.Point(348, 346);
             this.labelEntryNumberF.Name = "labelEntryNumberF";
             this.labelEntryNumberF.Size = new System.Drawing.Size(81, 13);
             this.labelEntryNumberF.TabIndex = 33;
@@ -878,10 +910,8 @@
             // tabConfirmation
             // 
             this.tabConfirmation.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.tabConfirmation.Controls.Add(this.groupBoxSearchC);
             this.tabConfirmation.Controls.Add(this.textBoxIdC);
-            this.tabConfirmation.Controls.Add(this.textBoxSearchC);
-            this.tabConfirmation.Controls.Add(this.labelSearchC);
-            this.tabConfirmation.Controls.Add(this.dataGridViewConfirmation);
             this.tabConfirmation.Controls.Add(this.buttonClearC);
             this.tabConfirmation.Controls.Add(this.buttonDeleteC);
             this.tabConfirmation.Controls.Add(this.buttonSaveC);
@@ -917,35 +947,35 @@
             // 
             // textBoxIdC
             // 
-            this.textBoxIdC.Location = new System.Drawing.Point(400, 26);
+            this.textBoxIdC.Location = new System.Drawing.Point(186, 18);
             this.textBoxIdC.Name = "textBoxIdC";
             this.textBoxIdC.Size = new System.Drawing.Size(58, 20);
             this.textBoxIdC.TabIndex = 86;
             this.textBoxIdC.Text = "0";
             this.textBoxIdC.Visible = false;
             // 
-            // textBoxSearchC
+            // textBoxSearchNameC
             // 
-            this.textBoxSearchC.Location = new System.Drawing.Point(581, 41);
-            this.textBoxSearchC.Name = "textBoxSearchC";
-            this.textBoxSearchC.Size = new System.Drawing.Size(136, 20);
-            this.textBoxSearchC.TabIndex = 85;
+            this.textBoxSearchNameC.Location = new System.Drawing.Point(81, 34);
+            this.textBoxSearchNameC.Name = "textBoxSearchNameC";
+            this.textBoxSearchNameC.Size = new System.Drawing.Size(136, 20);
+            this.textBoxSearchNameC.TabIndex = 85;
             // 
-            // labelSearchC
+            // labelSearchNameC
             // 
-            this.labelSearchC.AutoSize = true;
-            this.labelSearchC.Location = new System.Drawing.Point(525, 44);
-            this.labelSearchC.Name = "labelSearchC";
-            this.labelSearchC.Size = new System.Drawing.Size(40, 13);
-            this.labelSearchC.TabIndex = 84;
-            this.labelSearchC.Text = "Buscar";
+            this.labelSearchNameC.AutoSize = true;
+            this.labelSearchNameC.Location = new System.Drawing.Point(21, 34);
+            this.labelSearchNameC.Name = "labelSearchNameC";
+            this.labelSearchNameC.Size = new System.Drawing.Size(47, 13);
+            this.labelSearchNameC.TabIndex = 84;
+            this.labelSearchNameC.Text = "Nombre:";
             // 
             // dataGridViewConfirmation
             // 
             this.dataGridViewConfirmation.AllowUserToAddRows = false;
             this.dataGridViewConfirmation.AllowUserToDeleteRows = false;
             this.dataGridViewConfirmation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewConfirmation.Location = new System.Drawing.Point(531, 78);
+            this.dataGridViewConfirmation.Location = new System.Drawing.Point(199, 117);
             this.dataGridViewConfirmation.Name = "dataGridViewConfirmation";
             this.dataGridViewConfirmation.Size = new System.Drawing.Size(187, 142);
             this.dataGridViewConfirmation.TabIndex = 83;
@@ -1195,10 +1225,8 @@
             // tabMarriage
             // 
             this.tabMarriage.BackColor = System.Drawing.Color.Thistle;
+            this.tabMarriage.Controls.Add(this.groupBoxSearchM);
             this.tabMarriage.Controls.Add(this.textBoxIdM);
-            this.tabMarriage.Controls.Add(this.textBoxSearchM);
-            this.tabMarriage.Controls.Add(this.labelSearchM);
-            this.tabMarriage.Controls.Add(this.dataGridViewMarriage);
             this.tabMarriage.Controls.Add(this.buttonClearM);
             this.tabMarriage.Controls.Add(this.buttonDeleteM);
             this.tabMarriage.Controls.Add(this.buttonSaveM);
@@ -1230,35 +1258,35 @@
             // 
             // textBoxIdM
             // 
-            this.textBoxIdM.Location = new System.Drawing.Point(640, 259);
+            this.textBoxIdM.Location = new System.Drawing.Point(363, 304);
             this.textBoxIdM.Name = "textBoxIdM";
             this.textBoxIdM.Size = new System.Drawing.Size(75, 20);
             this.textBoxIdM.TabIndex = 86;
             this.textBoxIdM.Text = "0";
             this.textBoxIdM.Visible = false;
             // 
-            // textBoxSearchM
+            // textBoxSearchSheetM
             // 
-            this.textBoxSearchM.Location = new System.Drawing.Point(663, 38);
-            this.textBoxSearchM.Name = "textBoxSearchM";
-            this.textBoxSearchM.Size = new System.Drawing.Size(136, 20);
-            this.textBoxSearchM.TabIndex = 85;
+            this.textBoxSearchSheetM.Location = new System.Drawing.Point(84, 84);
+            this.textBoxSearchSheetM.Name = "textBoxSearchSheetM";
+            this.textBoxSearchSheetM.Size = new System.Drawing.Size(136, 20);
+            this.textBoxSearchSheetM.TabIndex = 85;
             // 
-            // labelSearchM
+            // labelSearchSheetM
             // 
-            this.labelSearchM.AutoSize = true;
-            this.labelSearchM.Location = new System.Drawing.Point(607, 41);
-            this.labelSearchM.Name = "labelSearchM";
-            this.labelSearchM.Size = new System.Drawing.Size(40, 13);
-            this.labelSearchM.TabIndex = 84;
-            this.labelSearchM.Text = "Buscar";
+            this.labelSearchSheetM.AutoSize = true;
+            this.labelSearchSheetM.Location = new System.Drawing.Point(14, 84);
+            this.labelSearchSheetM.Name = "labelSearchSheetM";
+            this.labelSearchSheetM.Size = new System.Drawing.Size(32, 13);
+            this.labelSearchSheetM.TabIndex = 84;
+            this.labelSearchSheetM.Text = "Folio:";
             // 
             // dataGridViewMarriage
             // 
             this.dataGridViewMarriage.AllowUserToAddRows = false;
             this.dataGridViewMarriage.AllowUserToDeleteRows = false;
             this.dataGridViewMarriage.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewMarriage.Location = new System.Drawing.Point(613, 75);
+            this.dataGridViewMarriage.Location = new System.Drawing.Point(33, 198);
             this.dataGridViewMarriage.Name = "dataGridViewMarriage";
             this.dataGridViewMarriage.Size = new System.Drawing.Size(187, 142);
             this.dataGridViewMarriage.TabIndex = 83;
@@ -1598,13 +1626,317 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(859, 692);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
+            // groupBoxSearchB
+            // 
+            this.groupBoxSearchB.Controls.Add(this.buttonSearchB);
+            this.groupBoxSearchB.Controls.Add(this.textBoxSearchEntryB);
+            this.groupBoxSearchB.Controls.Add(this.textBoxSearchSheetB);
+            this.groupBoxSearchB.Controls.Add(this.textBoxSearchBookB);
+            this.groupBoxSearchB.Controls.Add(this.labelSearchEntryB);
+            this.groupBoxSearchB.Controls.Add(this.labelSearchSheetB);
+            this.groupBoxSearchB.Controls.Add(this.labelSearchBookB);
+            this.groupBoxSearchB.Controls.Add(this.dataGridViewBaptism);
+            this.groupBoxSearchB.Controls.Add(this.textBoxSearchNameB);
+            this.groupBoxSearchB.Controls.Add(this.labelSearchNameB);
+            this.groupBoxSearchB.Location = new System.Drawing.Point(603, 53);
+            this.groupBoxSearchB.Name = "groupBoxSearchB";
+            this.groupBoxSearchB.Size = new System.Drawing.Size(211, 347);
+            this.groupBoxSearchB.TabIndex = 84;
+            this.groupBoxSearchB.TabStop = false;
+            this.groupBoxSearchB.Text = "Buscar";
+            // 
+            // groupBoxSearchF
+            // 
+            this.groupBoxSearchF.Controls.Add(this.buttonSearchF);
+            this.groupBoxSearchF.Controls.Add(this.textBoxSearchEntryF);
+            this.groupBoxSearchF.Controls.Add(this.textBoxSearchSheetF);
+            this.groupBoxSearchF.Controls.Add(this.textBoxSearchBookF);
+            this.groupBoxSearchF.Controls.Add(this.labelSearchEntryF);
+            this.groupBoxSearchF.Controls.Add(this.labelSearchSheetF);
+            this.groupBoxSearchF.Controls.Add(this.labelSearchBookF);
+            this.groupBoxSearchF.Controls.Add(this.dataGridViewFisrtComunion);
+            this.groupBoxSearchF.Controls.Add(this.textBoxSearchNameF);
+            this.groupBoxSearchF.Controls.Add(this.labelSearchNameF);
+            this.groupBoxSearchF.Location = new System.Drawing.Point(599, 61);
+            this.groupBoxSearchF.Name = "groupBoxSearchF";
+            this.groupBoxSearchF.Size = new System.Drawing.Size(206, 363);
+            this.groupBoxSearchF.TabIndex = 87;
+            this.groupBoxSearchF.TabStop = false;
+            this.groupBoxSearchF.Text = "Buscar";
+            // 
+            // groupBoxSearchC
+            // 
+            this.groupBoxSearchC.Controls.Add(this.buttonSearchC);
+            this.groupBoxSearchC.Controls.Add(this.textBoxSearchEntryC);
+            this.groupBoxSearchC.Controls.Add(this.textBoxSearchSheetC);
+            this.groupBoxSearchC.Controls.Add(this.textBoxSearchBookC);
+            this.groupBoxSearchC.Controls.Add(this.labelSearchEntryC);
+            this.groupBoxSearchC.Controls.Add(this.labelSearchSheetC);
+            this.groupBoxSearchC.Controls.Add(this.labelSearchBookC);
+            this.groupBoxSearchC.Controls.Add(this.dataGridViewConfirmation);
+            this.groupBoxSearchC.Controls.Add(this.textBoxSearchNameC);
+            this.groupBoxSearchC.Controls.Add(this.labelSearchNameC);
+            this.groupBoxSearchC.Location = new System.Drawing.Point(305, 47);
+            this.groupBoxSearchC.Name = "groupBoxSearchC";
+            this.groupBoxSearchC.Size = new System.Drawing.Size(442, 284);
+            this.groupBoxSearchC.TabIndex = 87;
+            this.groupBoxSearchC.TabStop = false;
+            this.groupBoxSearchC.Text = "Guardado";
+            // 
+            // groupBoxSearchM
+            // 
+            this.groupBoxSearchM.Controls.Add(this.buttonSearchM);
+            this.groupBoxSearchM.Controls.Add(this.textBoxSearchEntryM);
+            this.groupBoxSearchM.Controls.Add(this.textBoxSearchBookM);
+            this.groupBoxSearchM.Controls.Add(this.textBoxSearchNameM);
+            this.groupBoxSearchM.Controls.Add(this.labelSearchEntryM);
+            this.groupBoxSearchM.Controls.Add(this.labelSearchBookM);
+            this.groupBoxSearchM.Controls.Add(this.labelSearchNameM);
+            this.groupBoxSearchM.Controls.Add(this.dataGridViewMarriage);
+            this.groupBoxSearchM.Controls.Add(this.textBoxSearchSheetM);
+            this.groupBoxSearchM.Controls.Add(this.labelSearchSheetM);
+            this.groupBoxSearchM.Location = new System.Drawing.Point(577, 12);
+            this.groupBoxSearchM.Name = "groupBoxSearchM";
+            this.groupBoxSearchM.Size = new System.Drawing.Size(239, 355);
+            this.groupBoxSearchM.TabIndex = 87;
+            this.groupBoxSearchM.TabStop = false;
+            this.groupBoxSearchM.Text = "Información guardada";
+            // 
+            // labelSearchBookB
+            // 
+            this.labelSearchBookB.AutoSize = true;
+            this.labelSearchBookB.Location = new System.Drawing.Point(17, 58);
+            this.labelSearchBookB.Name = "labelSearchBookB";
+            this.labelSearchBookB.Size = new System.Drawing.Size(33, 13);
+            this.labelSearchBookB.TabIndex = 83;
+            this.labelSearchBookB.Text = "Libro:";
+            // 
+            // labelSearchSheetB
+            // 
+            this.labelSearchSheetB.AutoSize = true;
+            this.labelSearchSheetB.Location = new System.Drawing.Point(17, 84);
+            this.labelSearchSheetB.Name = "labelSearchSheetB";
+            this.labelSearchSheetB.Size = new System.Drawing.Size(29, 13);
+            this.labelSearchSheetB.TabIndex = 84;
+            this.labelSearchSheetB.Text = "Folio";
+            // 
+            // labelSearchEntryB
+            // 
+            this.labelSearchEntryB.AutoSize = true;
+            this.labelSearchEntryB.Location = new System.Drawing.Point(13, 113);
+            this.labelSearchEntryB.Name = "labelSearchEntryB";
+            this.labelSearchEntryB.Size = new System.Drawing.Size(43, 13);
+            this.labelSearchEntryB.TabIndex = 85;
+            this.labelSearchEntryB.Text = "Partida:";
+            // 
+            // textBoxSearchBookB
+            // 
+            this.textBoxSearchBookB.Location = new System.Drawing.Point(72, 58);
+            this.textBoxSearchBookB.Name = "textBoxSearchBookB";
+            this.textBoxSearchBookB.Size = new System.Drawing.Size(132, 20);
+            this.textBoxSearchBookB.TabIndex = 86;
+            // 
+            // textBoxSearchSheetB
+            // 
+            this.textBoxSearchSheetB.Location = new System.Drawing.Point(68, 92);
+            this.textBoxSearchSheetB.Name = "textBoxSearchSheetB";
+            this.textBoxSearchSheetB.Size = new System.Drawing.Size(135, 20);
+            this.textBoxSearchSheetB.TabIndex = 87;
+            // 
+            // textBoxSearchEntryB
+            // 
+            this.textBoxSearchEntryB.Location = new System.Drawing.Point(69, 121);
+            this.textBoxSearchEntryB.Name = "textBoxSearchEntryB";
+            this.textBoxSearchEntryB.Size = new System.Drawing.Size(133, 20);
+            this.textBoxSearchEntryB.TabIndex = 88;
+            // 
+            // labelSearchBookF
+            // 
+            this.labelSearchBookF.AutoSize = true;
+            this.labelSearchBookF.Location = new System.Drawing.Point(15, 67);
+            this.labelSearchBookF.Name = "labelSearchBookF";
+            this.labelSearchBookF.Size = new System.Drawing.Size(33, 13);
+            this.labelSearchBookF.TabIndex = 86;
+            this.labelSearchBookF.Text = "Libro:";
+            // 
+            // labelSearchSheetF
+            // 
+            this.labelSearchSheetF.AutoSize = true;
+            this.labelSearchSheetF.Location = new System.Drawing.Point(15, 97);
+            this.labelSearchSheetF.Name = "labelSearchSheetF";
+            this.labelSearchSheetF.Size = new System.Drawing.Size(32, 13);
+            this.labelSearchSheetF.TabIndex = 87;
+            this.labelSearchSheetF.Text = "Folio:";
+            // 
+            // labelSearchEntryF
+            // 
+            this.labelSearchEntryF.AutoSize = true;
+            this.labelSearchEntryF.Location = new System.Drawing.Point(15, 123);
+            this.labelSearchEntryF.Name = "labelSearchEntryF";
+            this.labelSearchEntryF.Size = new System.Drawing.Size(43, 13);
+            this.labelSearchEntryF.TabIndex = 88;
+            this.labelSearchEntryF.Text = "Partida:";
+            // 
+            // textBoxSearchBookF
+            // 
+            this.textBoxSearchBookF.Location = new System.Drawing.Point(68, 60);
+            this.textBoxSearchBookF.Name = "textBoxSearchBookF";
+            this.textBoxSearchBookF.Size = new System.Drawing.Size(131, 20);
+            this.textBoxSearchBookF.TabIndex = 89;
+            // 
+            // textBoxSearchSheetF
+            // 
+            this.textBoxSearchSheetF.Location = new System.Drawing.Point(64, 90);
+            this.textBoxSearchSheetF.Name = "textBoxSearchSheetF";
+            this.textBoxSearchSheetF.Size = new System.Drawing.Size(123, 20);
+            this.textBoxSearchSheetF.TabIndex = 90;
+            // 
+            // textBoxSearchEntryF
+            // 
+            this.textBoxSearchEntryF.Location = new System.Drawing.Point(67, 120);
+            this.textBoxSearchEntryF.Name = "textBoxSearchEntryF";
+            this.textBoxSearchEntryF.Size = new System.Drawing.Size(119, 20);
+            this.textBoxSearchEntryF.TabIndex = 91;
+            // 
+            // labelSearchBookC
+            // 
+            this.labelSearchBookC.AutoSize = true;
+            this.labelSearchBookC.Location = new System.Drawing.Point(27, 63);
+            this.labelSearchBookC.Name = "labelSearchBookC";
+            this.labelSearchBookC.Size = new System.Drawing.Size(33, 13);
+            this.labelSearchBookC.TabIndex = 86;
+            this.labelSearchBookC.Text = "Libro:";
+            // 
+            // labelSearchSheetC
+            // 
+            this.labelSearchSheetC.AutoSize = true;
+            this.labelSearchSheetC.Location = new System.Drawing.Point(26, 90);
+            this.labelSearchSheetC.Name = "labelSearchSheetC";
+            this.labelSearchSheetC.Size = new System.Drawing.Size(32, 13);
+            this.labelSearchSheetC.TabIndex = 87;
+            this.labelSearchSheetC.Text = "Folio:";
+            // 
+            // labelSearchEntryC
+            // 
+            this.labelSearchEntryC.AutoSize = true;
+            this.labelSearchEntryC.Location = new System.Drawing.Point(24, 114);
+            this.labelSearchEntryC.Name = "labelSearchEntryC";
+            this.labelSearchEntryC.Size = new System.Drawing.Size(43, 13);
+            this.labelSearchEntryC.TabIndex = 88;
+            this.labelSearchEntryC.Text = "Partida:";
+            // 
+            // textBoxSearchBookC
+            // 
+            this.textBoxSearchBookC.Location = new System.Drawing.Point(88, 63);
+            this.textBoxSearchBookC.Name = "textBoxSearchBookC";
+            this.textBoxSearchBookC.Size = new System.Drawing.Size(93, 20);
+            this.textBoxSearchBookC.TabIndex = 89;
+            // 
+            // textBoxSearchSheetC
+            // 
+            this.textBoxSearchSheetC.Location = new System.Drawing.Point(88, 91);
+            this.textBoxSearchSheetC.Name = "textBoxSearchSheetC";
+            this.textBoxSearchSheetC.Size = new System.Drawing.Size(92, 20);
+            this.textBoxSearchSheetC.TabIndex = 90;
+            // 
+            // textBoxSearchEntryC
+            // 
+            this.textBoxSearchEntryC.Location = new System.Drawing.Point(77, 120);
+            this.textBoxSearchEntryC.Name = "textBoxSearchEntryC";
+            this.textBoxSearchEntryC.Size = new System.Drawing.Size(86, 20);
+            this.textBoxSearchEntryC.TabIndex = 91;
+            // 
+            // labelSearchNameM
+            // 
+            this.labelSearchNameM.AutoSize = true;
+            this.labelSearchNameM.Location = new System.Drawing.Point(15, 29);
+            this.labelSearchNameM.Name = "labelSearchNameM";
+            this.labelSearchNameM.Size = new System.Drawing.Size(47, 13);
+            this.labelSearchNameM.TabIndex = 86;
+            this.labelSearchNameM.Text = "Nombre:";
+            // 
+            // labelSearchBookM
+            // 
+            this.labelSearchBookM.AutoSize = true;
+            this.labelSearchBookM.Location = new System.Drawing.Point(16, 55);
+            this.labelSearchBookM.Name = "labelSearchBookM";
+            this.labelSearchBookM.Size = new System.Drawing.Size(33, 13);
+            this.labelSearchBookM.TabIndex = 87;
+            this.labelSearchBookM.Text = "Libro:";
+            // 
+            // labelSearchEntryM
+            // 
+            this.labelSearchEntryM.AutoSize = true;
+            this.labelSearchEntryM.Location = new System.Drawing.Point(19, 120);
+            this.labelSearchEntryM.Name = "labelSearchEntryM";
+            this.labelSearchEntryM.Size = new System.Drawing.Size(43, 13);
+            this.labelSearchEntryM.TabIndex = 88;
+            this.labelSearchEntryM.Text = "Partida:";
+            // 
+            // textBoxSearchNameM
+            // 
+            this.textBoxSearchNameM.Location = new System.Drawing.Point(79, 27);
+            this.textBoxSearchNameM.Name = "textBoxSearchNameM";
+            this.textBoxSearchNameM.Size = new System.Drawing.Size(92, 20);
+            this.textBoxSearchNameM.TabIndex = 89;
+            // 
+            // textBoxSearchBookM
+            // 
+            this.textBoxSearchBookM.Location = new System.Drawing.Point(73, 57);
+            this.textBoxSearchBookM.Name = "textBoxSearchBookM";
+            this.textBoxSearchBookM.Size = new System.Drawing.Size(97, 20);
+            this.textBoxSearchBookM.TabIndex = 90;
+            // 
+            // textBoxSearchEntryM
+            // 
+            this.textBoxSearchEntryM.Location = new System.Drawing.Point(76, 117);
+            this.textBoxSearchEntryM.Name = "textBoxSearchEntryM";
+            this.textBoxSearchEntryM.Size = new System.Drawing.Size(110, 20);
+            this.textBoxSearchEntryM.TabIndex = 91;
+            // 
+            // buttonSearchM
+            // 
+            this.buttonSearchM.Location = new System.Drawing.Point(60, 148);
+            this.buttonSearchM.Name = "buttonSearchM";
+            this.buttonSearchM.Size = new System.Drawing.Size(125, 29);
+            this.buttonSearchM.TabIndex = 92;
+            this.buttonSearchM.Text = "Buscar";
+            this.buttonSearchM.UseVisualStyleBackColor = true;
+            // 
+            // buttonSearchC
+            // 
+            this.buttonSearchC.Location = new System.Drawing.Point(43, 157);
+            this.buttonSearchC.Name = "buttonSearchC";
+            this.buttonSearchC.Size = new System.Drawing.Size(136, 40);
+            this.buttonSearchC.TabIndex = 92;
+            this.buttonSearchC.Text = "Buscar";
+            this.buttonSearchC.UseVisualStyleBackColor = true;
+            // 
+            // buttonSearchF
+            // 
+            this.buttonSearchF.Location = new System.Drawing.Point(34, 154);
+            this.buttonSearchF.Name = "buttonSearchF";
+            this.buttonSearchF.Size = new System.Drawing.Size(105, 34);
+            this.buttonSearchF.TabIndex = 92;
+            this.buttonSearchF.Text = "Buscar";
+            this.buttonSearchF.UseVisualStyleBackColor = true;
+            // 
+            // buttonSearchB
+            // 
+            this.buttonSearchB.Location = new System.Drawing.Point(34, 157);
+            this.buttonSearchB.Name = "buttonSearchB";
+            this.buttonSearchB.Size = new System.Drawing.Size(152, 54);
+            this.buttonSearchB.TabIndex = 89;
+            this.buttonSearchB.Text = "Buscar";
+            this.buttonSearchB.UseVisualStyleBackColor = true;
+            // 
             // Archiver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(875, 515);
+            this.ClientSize = new System.Drawing.Size(858, 498);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Archiver";
             this.Text = "Archiver";
@@ -1629,6 +1961,14 @@
             this.groupBoxHusbandM.ResumeLayout(false);
             this.groupBoxHusbandM.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.groupBoxSearchB.ResumeLayout(false);
+            this.groupBoxSearchB.PerformLayout();
+            this.groupBoxSearchF.ResumeLayout(false);
+            this.groupBoxSearchF.PerformLayout();
+            this.groupBoxSearchC.ResumeLayout(false);
+            this.groupBoxSearchC.PerformLayout();
+            this.groupBoxSearchM.ResumeLayout(false);
+            this.groupBoxSearchM.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1757,22 +2097,54 @@
         private System.Windows.Forms.Button buttonClearM;
         private System.Windows.Forms.Button buttonDeleteM;
         private System.Windows.Forms.Button buttonSaveM;
-        private System.Windows.Forms.TextBox textBoxSearchB;
-        private System.Windows.Forms.Label labelSearchB;
+        private System.Windows.Forms.TextBox textBoxSearchNameB;
+        private System.Windows.Forms.Label labelSearchNameB;
         private System.Windows.Forms.DataGridView dataGridViewBaptism;
-        private System.Windows.Forms.TextBox textBoxSearchF;
-        private System.Windows.Forms.Label labelSearchF;
+        private System.Windows.Forms.TextBox textBoxSearchNameF;
+        private System.Windows.Forms.Label labelSearchNameF;
         private System.Windows.Forms.DataGridView dataGridViewFisrtComunion;
-        private System.Windows.Forms.TextBox textBoxSearchC;
-        private System.Windows.Forms.Label labelSearchC;
+        private System.Windows.Forms.TextBox textBoxSearchNameC;
+        private System.Windows.Forms.Label labelSearchNameC;
         private System.Windows.Forms.DataGridView dataGridViewConfirmation;
-        private System.Windows.Forms.TextBox textBoxSearchM;
-        private System.Windows.Forms.Label labelSearchM;
+        private System.Windows.Forms.TextBox textBoxSearchSheetM;
+        private System.Windows.Forms.Label labelSearchSheetM;
         private System.Windows.Forms.DataGridView dataGridViewMarriage;
         private System.Windows.Forms.TextBox textBoxIdB;
         private System.Windows.Forms.TextBox textBoxIdF;
         private System.Windows.Forms.TextBox textBoxIdC;
         private System.Windows.Forms.TextBox textBoxIdM;
+        private System.Windows.Forms.GroupBox groupBoxSearchB;
+        private System.Windows.Forms.TextBox textBoxSearchEntryB;
+        private System.Windows.Forms.TextBox textBoxSearchSheetB;
+        private System.Windows.Forms.TextBox textBoxSearchBookB;
+        private System.Windows.Forms.Label labelSearchEntryB;
+        private System.Windows.Forms.Label labelSearchSheetB;
+        private System.Windows.Forms.Label labelSearchBookB;
+        private System.Windows.Forms.GroupBox groupBoxSearchF;
+        private System.Windows.Forms.GroupBox groupBoxSearchC;
+        private System.Windows.Forms.GroupBox groupBoxSearchM;
+        private System.Windows.Forms.TextBox textBoxSearchEntryF;
+        private System.Windows.Forms.TextBox textBoxSearchSheetF;
+        private System.Windows.Forms.TextBox textBoxSearchBookF;
+        private System.Windows.Forms.Label labelSearchEntryF;
+        private System.Windows.Forms.Label labelSearchSheetF;
+        private System.Windows.Forms.Label labelSearchBookF;
+        private System.Windows.Forms.TextBox textBoxSearchEntryC;
+        private System.Windows.Forms.TextBox textBoxSearchSheetC;
+        private System.Windows.Forms.TextBox textBoxSearchBookC;
+        private System.Windows.Forms.Label labelSearchEntryC;
+        private System.Windows.Forms.Label labelSearchSheetC;
+        private System.Windows.Forms.Label labelSearchBookC;
+        private System.Windows.Forms.TextBox textBoxSearchEntryM;
+        private System.Windows.Forms.TextBox textBoxSearchBookM;
+        private System.Windows.Forms.TextBox textBoxSearchNameM;
+        private System.Windows.Forms.Label labelSearchEntryM;
+        private System.Windows.Forms.Label labelSearchBookM;
+        private System.Windows.Forms.Label labelSearchNameM;
+        private System.Windows.Forms.Button buttonSearchB;
+        private System.Windows.Forms.Button buttonSearchF;
+        private System.Windows.Forms.Button buttonSearchC;
+        private System.Windows.Forms.Button buttonSearchM;
     }
 }
 

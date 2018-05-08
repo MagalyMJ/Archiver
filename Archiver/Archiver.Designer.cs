@@ -294,6 +294,7 @@
             this.buttonClearB.TabIndex = 79;
             this.buttonClearB.Text = "Limpiar";
             this.buttonClearB.UseVisualStyleBackColor = false;
+            this.buttonClearB.Click += new System.EventHandler(this.buttonClearB_Click);
             // 
             // buttonDeleteB
             // 
@@ -641,6 +642,7 @@
             this.buttonClearF.TabIndex = 82;
             this.buttonClearF.Text = "Limpiar";
             this.buttonClearF.UseVisualStyleBackColor = false;
+            this.buttonClearF.Click += new System.EventHandler(this.buttonClearF_Click);
             // 
             // buttonDeleteF
             // 
@@ -956,6 +958,7 @@
             this.buttonClearC.TabIndex = 82;
             this.buttonClearC.Text = "Limpiar";
             this.buttonClearC.UseVisualStyleBackColor = false;
+            this.buttonClearC.Click += new System.EventHandler(this.buttonClearC_Click);
             // 
             // buttonDeleteC
             // 
@@ -1267,6 +1270,7 @@
             this.buttonClearM.TabIndex = 82;
             this.buttonClearM.Text = "Limpiar";
             this.buttonClearM.UseVisualStyleBackColor = false;
+            this.buttonClearM.Click += new System.EventHandler(this.buttonClearM_Click);
             // 
             // buttonDeleteM
             // 

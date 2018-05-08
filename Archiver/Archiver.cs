@@ -489,5 +489,25 @@ namespace Archiver
             textBoxSheetNumberM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[14].Value.ToString();
             textBoxEntryNumberM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[15].Value.ToString();
         }
+
+        private void buttonClearB_Click(object sender, EventArgs e)
+        {
+            clearBaptism();
+        }
+
+        private void buttonClearF_Click(object sender, EventArgs e)
+        {
+            clearFirstComunion();
+        }
+
+        private void buttonClearC_Click(object sender, EventArgs e)
+        {
+            clearConfirmation();
+        }
+
+        private void buttonClearM_Click(object sender, EventArgs e)
+        {
+            clearMarriage();
+        }
     }
 }

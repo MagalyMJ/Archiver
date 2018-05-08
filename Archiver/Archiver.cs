@@ -20,6 +20,7 @@ namespace Archiver
 
         BaptismClass baptism = new BaptismClass();
         FirstComunionClass firstComunion = new FirstComunionClass();
+        ConfirmationClass confirmation = new ConfirmationClass();
 
         // Clear baptism inputs
         public void clearBaptism()
@@ -53,6 +54,23 @@ namespace Archiver
             textBoxBookNumberF.Text = "";
             textBoxSheetNumberF.Text = "";
             textBoxEntryNumberF.Text = "";
+        }
+
+        // Clear confirmation inputs
+        public void clearConfirmation()
+        {
+            dateTimePickerConfirmation.Value = DateTime.Now;
+            textBoxNameC.Text = "";
+            textBoxFatherNameC.Text = "";
+            textBoxMotherNameC.Text = "";
+            textBoxGodFather1C.Text = "";
+            textBoxGodFather2C.Text = "";
+            textBoxStateC.Text = "";
+            textBoxMunicipalityC.Text = "";
+            textBoxNotesC.Text = "";
+            textBoxBookNumberC.Text = "";
+            textBoxSheetNumberC.Text = "";
+            textBoxEntryNumberC.Text = "";
         }
 
         private void tabBaptism_Click(object sender, EventArgs e)
@@ -175,6 +193,58 @@ namespace Archiver
             // Load data in gridView
             DataTable dt = firstComunion.Select();
             dataGridViewFisrtComunion.DataSource = dt;
+        }
+
+        private void buttonSaveC_Click(object sender, EventArgs e)
+        {
+            // Get values from inputs
+            confirmation.date = dateTimePickerConfirmation.Value;
+            confirmation.name = textBoxNameC.Text;
+            confirmation.fatherName = textBoxFatherNameC.Text;
+            confirmation.motherName = textBoxMotherNameC.Text;
+            confirmation.firstGodfather = textBoxGodFather1C.Text;
+            confirmation.secondGodfather = textBoxGodFather2C.Text;
+            confirmation.state = textBoxStateC.Text;
+            confirmation.municipality = textBoxMunicipalityC.Text;
+            confirmation.notes = textBoxNotesC.Text;
+            int bookValue;
+            if (int.TryParse(textBoxBookNumberC.Text, out bookValue))
+                confirmation.bookNumber = bookValue;
+            else
+            {
+                MessageBox.Show("Solo se permiten números enteros para el libro.");
+                return;
+            }
+            int sheetValue;
+            if (int.TryParse(textBoxSheetNumberC.Text, out sheetValue))
+                confirmation.sheetNumber = sheetValue;
+            else
+            {
+                MessageBox.Show("Solo se permiten números enteros para el folio.");
+                return;
+            }
+            int entryValue;
+            if (int.TryParse(textBoxEntryNumberC.Text, out entryValue))
+                confirmation.entryNumber = entryValue;
+            else
+            {
+                MessageBox.Show("Solo se permiten números enteros para la partida.");
+                return;
+            }
+            confirmation.created_at = DateTime.Now;
+
+            // Insert data
+            if (confirmation.Insert(confirmation))
+            {
+                MessageBox.Show("El registro fue guardado exitosamente.");
+                clearConfirmation();
+            }
+            else
+                MessageBox.Show("No se pudo guardar el registro, inténtelo nuevamente.");
+
+            // Load data in gridView
+            DataTable dt = confirmation.Select();
+            dataGridViewConfirmation.DataSource = dt;
         }
     }
 }

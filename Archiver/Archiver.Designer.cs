@@ -938,6 +938,7 @@
             this.buttonSaveC.TabIndex = 80;
             this.buttonSaveC.Text = "Guardar";
             this.buttonSaveC.UseVisualStyleBackColor = false;
+            this.buttonSaveC.Click += new System.EventHandler(this.buttonSaveC_Click);
             // 
             // textBoxNotesC
             // 

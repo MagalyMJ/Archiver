@@ -39,7 +39,7 @@ namespace Archiver.archiverClasses
             try
             {
                 // Query
-                string sql = "SELECT date, name, father_name, mother_name, first_godfather, second_godfather, state, municipality, notes, book_number, sheet_number, entry_number from tbl_first_comunion";
+                string sql = "SELECT Id, date, name, father_name, mother_name, first_godfather, second_godfather, state, municipality, notes, book_number, sheet_number, entry_number from tbl_first_comunion";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 conn.Open();

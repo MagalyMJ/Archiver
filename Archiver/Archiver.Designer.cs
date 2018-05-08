@@ -163,6 +163,7 @@
             this.dateTimePickerMarriage = new System.Windows.Forms.DateTimePicker();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.textBoxIdB = new System.Windows.Forms.TextBox();
+            this.textBoxIdF = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabBaptism.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaptism)).BeginInit();
@@ -513,7 +514,6 @@
             this.radioButtonMasculinB.Name = "radioButtonMasculinB";
             this.radioButtonMasculinB.Size = new System.Drawing.Size(73, 17);
             this.radioButtonMasculinB.TabIndex = 3;
-            this.radioButtonMasculinB.TabStop = true;
             this.radioButtonMasculinB.Text = "Masculino";
             this.radioButtonMasculinB.UseVisualStyleBackColor = true;
             // 
@@ -548,6 +548,7 @@
             // tabFirstComunion
             // 
             this.tabFirstComunion.BackColor = System.Drawing.Color.SlateGray;
+            this.tabFirstComunion.Controls.Add(this.textBoxIdF);
             this.tabFirstComunion.Controls.Add(this.textBoxSearchF);
             this.tabFirstComunion.Controls.Add(this.labelSearchF);
             this.tabFirstComunion.Controls.Add(this.dataGridViewFisrtComunion);
@@ -609,6 +610,7 @@
             this.dataGridViewFisrtComunion.Name = "dataGridViewFisrtComunion";
             this.dataGridViewFisrtComunion.Size = new System.Drawing.Size(187, 142);
             this.dataGridViewFisrtComunion.TabIndex = 83;
+            this.dataGridViewFisrtComunion.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewFisrtComunion_RowHeaderMouseDoubleClick);
             // 
             // buttonClearF
             // 
@@ -1554,6 +1556,14 @@
             this.textBoxIdB.TabIndex = 83;
             this.textBoxIdB.Visible = false;
             // 
+            // textBoxIdF
+            // 
+            this.textBoxIdF.Location = new System.Drawing.Point(522, 21);
+            this.textBoxIdF.Name = "textBoxIdF";
+            this.textBoxIdF.Size = new System.Drawing.Size(80, 20);
+            this.textBoxIdF.TabIndex = 86;
+            this.textBoxIdF.Visible = false;
+            // 
             // Archiver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1726,6 +1736,7 @@
         private System.Windows.Forms.Label labelSearchM;
         private System.Windows.Forms.DataGridView dataGridViewMarriage;
         private System.Windows.Forms.TextBox textBoxIdB;
+        private System.Windows.Forms.TextBox textBoxIdF;
     }
 }
 

@@ -366,5 +366,23 @@ namespace Archiver
             textBoxEntryNumberB.Text = dataGridViewBaptism.Rows[rowIndex].Cells[13].Value.ToString();
         }
 
+        private void dataGridViewFisrtComunion_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            // Get data from data grid view into text boxes
+            int rowIndex = e.RowIndex;
+            textBoxIdF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[0].Value.ToString();
+            dateTimePickerFirstComunion.Value = Convert.ToDateTime(dataGridViewFisrtComunion.Rows[rowIndex].Cells[1].Value); ;
+            textBoxNameF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[2].Value.ToString(); ;
+            textBoxFatherNameF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[3].Value.ToString(); ;
+            textBoxMotherNameF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[4].Value.ToString(); ;
+            textBoxGodFather1F.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[5].Value.ToString(); ;
+            textBoxGodFather2F.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[6].Value.ToString(); ;
+            textBoxStateF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[7].Value.ToString(); ;
+            textBoxMunicipalityF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[8].Value.ToString(); ;
+            textBoxNotesF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[9].Value.ToString(); ;
+            textBoxBookNumberF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[10].Value.ToString(); ;
+            textBoxSheetNumberF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[11].Value.ToString(); ;
+            textBoxEntryNumberF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[12].Value.ToString(); ;
+        }
     }
 }

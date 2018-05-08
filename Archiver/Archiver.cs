@@ -268,6 +268,13 @@ namespace Archiver
             dataGridViewConfirmation.DataSource = dt;
         }
 
+        private void tabConfirmation_Click(object sender, EventArgs e)
+        {
+            // Load data in gridView
+            DataTable dt = confirmation.Select();
+            dataGridViewConfirmation.DataSource = dt;
+        }
+
         private void buttonSaveM_Click(object sender, EventArgs e)
         {
             // Get values from inputs
@@ -322,5 +329,42 @@ namespace Archiver
             DataTable dt = marriage.Select();
             dataGridViewMarriage.DataSource = dt;
         }
+
+        private void tabMarriage_Click(object sender, EventArgs e)
+        {
+            // Load data in gridView
+            DataTable dt = marriage.Select();
+            dataGridViewMarriage.DataSource = dt;
+        }
+
+        private void dataGridViewBaptism_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            // Get data from data grid view into text boxes
+            int rowIndex = e.RowIndex;
+            textBoxIdB.Text = dataGridViewBaptism.Rows[rowIndex].Cells[0].Value.ToString();
+            dateTimePickerBaptism.Value = Convert.ToDateTime(dataGridViewBaptism.Rows[rowIndex].Cells[1].Value);
+            textBoxNameB.Text = dataGridViewBaptism.Rows[rowIndex].Cells[2].Value.ToString();
+            if (dataGridViewBaptism.Rows[rowIndex].Cells[3].Value.ToString() == "Femenino")
+            {
+                radioButtonFemeninB.Checked = true;
+                radioButtonMasculinB.Checked = false;
+            }
+            else
+            {
+                radioButtonFemeninB.Checked = false;
+                radioButtonMasculinB.Checked = true;
+            }
+            textBoxFatherNameB.Text = dataGridViewBaptism.Rows[rowIndex].Cells[4].Value.ToString();
+            textBoxMotherNameB.Text = dataGridViewBaptism.Rows[rowIndex].Cells[5].Value.ToString();
+            textBoxGodFather1B.Text = dataGridViewBaptism.Rows[rowIndex].Cells[6].Value.ToString();
+            textBoxGodFather2B.Text = dataGridViewBaptism.Rows[rowIndex].Cells[7].Value.ToString();
+            textBoxStateB.Text = dataGridViewBaptism.Rows[rowIndex].Cells[8].Value.ToString();
+            textBoxMunicipalityB.Text = dataGridViewBaptism.Rows[rowIndex].Cells[9].Value.ToString();
+            textBoxNotesB.Text = dataGridViewBaptism.Rows[rowIndex].Cells[10].Value.ToString();
+            textBoxBookNumberB.Text = dataGridViewBaptism.Rows[rowIndex].Cells[11].Value.ToString();
+            textBoxSheetNumberB.Text = dataGridViewBaptism.Rows[rowIndex].Cells[12].Value.ToString();
+            textBoxEntryNumberB.Text = dataGridViewBaptism.Rows[rowIndex].Cells[13].Value.ToString();
+        }
+
     }
 }

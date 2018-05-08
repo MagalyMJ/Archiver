@@ -31,6 +31,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
             this.tabBaptism = new System.Windows.Forms.TabPage();
+            this.textBoxIdB = new System.Windows.Forms.TextBox();
             this.textBoxSearchB = new System.Windows.Forms.TextBox();
             this.labelSearchB = new System.Windows.Forms.Label();
             this.dataGridViewBaptism = new System.Windows.Forms.DataGridView();
@@ -64,6 +65,7 @@
             this.labelNameB = new System.Windows.Forms.Label();
             this.dateTimePickerBaptism = new System.Windows.Forms.DateTimePicker();
             this.tabFirstComunion = new System.Windows.Forms.TabPage();
+            this.textBoxIdF = new System.Windows.Forms.TextBox();
             this.textBoxSearchF = new System.Windows.Forms.TextBox();
             this.labelSearchF = new System.Windows.Forms.Label();
             this.dataGridViewFisrtComunion = new System.Windows.Forms.DataGridView();
@@ -94,6 +96,7 @@
             this.labelNameF = new System.Windows.Forms.Label();
             this.dateTimePickerFirstComunion = new System.Windows.Forms.DateTimePicker();
             this.tabConfirmation = new System.Windows.Forms.TabPage();
+            this.textBoxIdC = new System.Windows.Forms.TextBox();
             this.textBoxSearchC = new System.Windows.Forms.TextBox();
             this.labelSearchC = new System.Windows.Forms.Label();
             this.dataGridViewConfirmation = new System.Windows.Forms.DataGridView();
@@ -124,6 +127,7 @@
             this.labelNameC = new System.Windows.Forms.Label();
             this.dateTimePickerConfirmation = new System.Windows.Forms.DateTimePicker();
             this.tabMarriage = new System.Windows.Forms.TabPage();
+            this.textBoxIdM = new System.Windows.Forms.TextBox();
             this.textBoxSearchM = new System.Windows.Forms.TextBox();
             this.labelSearchM = new System.Windows.Forms.Label();
             this.dataGridViewMarriage = new System.Windows.Forms.DataGridView();
@@ -162,10 +166,6 @@
             this.labelGodFather1M = new System.Windows.Forms.Label();
             this.dateTimePickerMarriage = new System.Windows.Forms.DateTimePicker();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.textBoxIdB = new System.Windows.Forms.TextBox();
-            this.textBoxIdF = new System.Windows.Forms.TextBox();
-            this.textBoxIdC = new System.Windows.Forms.TextBox();
-            this.textBoxIdM = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabBaptism.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaptism)).BeginInit();
@@ -248,6 +248,15 @@
             this.tabBaptism.TabIndex = 1;
             this.tabBaptism.Text = "Bautismo";
             this.tabBaptism.Click += new System.EventHandler(this.tabBaptism_Click);
+            // 
+            // textBoxIdB
+            // 
+            this.textBoxIdB.Location = new System.Drawing.Point(702, 9);
+            this.textBoxIdB.Name = "textBoxIdB";
+            this.textBoxIdB.Size = new System.Drawing.Size(79, 20);
+            this.textBoxIdB.TabIndex = 83;
+            this.textBoxIdB.Text = "0";
+            this.textBoxIdB.Visible = false;
             // 
             // textBoxSearchB
             // 
@@ -587,6 +596,15 @@
             this.tabFirstComunion.Text = "Primera Comunión";
             this.tabFirstComunion.Click += new System.EventHandler(this.tabFirstComunion_Click);
             // 
+            // textBoxIdF
+            // 
+            this.textBoxIdF.Location = new System.Drawing.Point(522, 21);
+            this.textBoxIdF.Name = "textBoxIdF";
+            this.textBoxIdF.Size = new System.Drawing.Size(80, 20);
+            this.textBoxIdF.TabIndex = 86;
+            this.textBoxIdF.Text = "0";
+            this.textBoxIdF.Visible = false;
+            // 
             // textBoxSearchF
             // 
             this.textBoxSearchF.Location = new System.Drawing.Point(652, 85);
@@ -893,6 +911,15 @@
             this.tabConfirmation.Text = "Confirmación";
             this.tabConfirmation.Click += new System.EventHandler(this.tabConfirmation_Click);
             // 
+            // textBoxIdC
+            // 
+            this.textBoxIdC.Location = new System.Drawing.Point(400, 26);
+            this.textBoxIdC.Name = "textBoxIdC";
+            this.textBoxIdC.Size = new System.Drawing.Size(58, 20);
+            this.textBoxIdC.TabIndex = 86;
+            this.textBoxIdC.Text = "0";
+            this.textBoxIdC.Visible = false;
+            // 
             // textBoxSearchC
             // 
             this.textBoxSearchC.Location = new System.Drawing.Point(581, 41);
@@ -1194,6 +1221,15 @@
             this.tabMarriage.TabIndex = 4;
             this.tabMarriage.Text = "Matrimonio";
             this.tabMarriage.Click += new System.EventHandler(this.tabMarriage_Click);
+            // 
+            // textBoxIdM
+            // 
+            this.textBoxIdM.Location = new System.Drawing.Point(640, 259);
+            this.textBoxIdM.Name = "textBoxIdM";
+            this.textBoxIdM.Size = new System.Drawing.Size(75, 20);
+            this.textBoxIdM.TabIndex = 86;
+            this.textBoxIdM.Text = "0";
+            this.textBoxIdM.Visible = false;
             // 
             // textBoxSearchM
             // 
@@ -1554,45 +1590,13 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(859, 692);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
-            // textBoxIdB
-            // 
-            this.textBoxIdB.Location = new System.Drawing.Point(702, 9);
-            this.textBoxIdB.Name = "textBoxIdB";
-            this.textBoxIdB.Size = new System.Drawing.Size(79, 20);
-            this.textBoxIdB.TabIndex = 83;
-            this.textBoxIdB.Visible = false;
-            // 
-            // textBoxIdF
-            // 
-            this.textBoxIdF.Location = new System.Drawing.Point(522, 21);
-            this.textBoxIdF.Name = "textBoxIdF";
-            this.textBoxIdF.Size = new System.Drawing.Size(80, 20);
-            this.textBoxIdF.TabIndex = 86;
-            this.textBoxIdF.Visible = false;
-            // 
-            // textBoxIdC
-            // 
-            this.textBoxIdC.Location = new System.Drawing.Point(400, 26);
-            this.textBoxIdC.Name = "textBoxIdC";
-            this.textBoxIdC.Size = new System.Drawing.Size(58, 20);
-            this.textBoxIdC.TabIndex = 86;
-            this.textBoxIdC.Visible = false;
-            // 
-            // textBoxIdM
-            // 
-            this.textBoxIdM.Location = new System.Drawing.Point(640, 259);
-            this.textBoxIdM.Name = "textBoxIdM";
-            this.textBoxIdM.Size = new System.Drawing.Size(75, 20);
-            this.textBoxIdM.TabIndex = 86;
-            this.textBoxIdM.Visible = false;
-            // 
             // Archiver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(858, 498);
+            this.ClientSize = new System.Drawing.Size(875, 515);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Archiver";
             this.Text = "Archiver";

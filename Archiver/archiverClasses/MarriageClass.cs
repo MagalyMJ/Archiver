@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Archiver.archiverClasses
 {
@@ -103,7 +104,7 @@ namespace Archiver.archiverClasses
             }
             catch (Exception ex)
             {
-
+           
             }
             finally
             {
@@ -123,7 +124,7 @@ namespace Archiver.archiverClasses
             try
             {
                 // Query
-                string sql = "UPDATE tbl_first_comunion SET date = @date, husband_name = @husband_name, wife_name = @wife_name, husband_father_name = @husband_father_name, husband_mother_name = @husband_mother_name, wife_father_name = @wife_father_name, wife_mother_name = @wife_mother_name, first_godfather = @first_godfather, second_godfather = @second_godfather, state = @state, municipality = @municipality, notes = @notes, book_number = @book_number, sheet_number = @sheet_number, entry_number = @entry_number WHERE Id = @id";
+                string sql = "UPDATE tbl_marriage SET date = @date, husband_name = @husband_name, wife_name = @wife_name, husband_father_name = @husband_father_name, husband_mother_name = @husband_mother_name, wife_father_name = @wife_father_name, wife_mother_name = @wife_mother_name, first_godfather = @first_godfather, second_godfather = @second_godfather, state = @state, municipality = @municipality, notes = @notes, book_number = @book_number, sheet_number = @sheet_number, entry_number = @entry_number WHERE Id = @id";
 
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@date", marriage.date);

@@ -26,6 +26,7 @@ namespace Archiver
         // Clear baptism inputs
         public void clearBaptism()
         {
+            textBoxIdB.Text = "0";
             dateTimePickerBaptism.Value = DateTime.Now;
             textBoxNameB.Text = "";
             textBoxFatherNameB.Text = "";
@@ -43,6 +44,7 @@ namespace Archiver
         // Clear first comunion inputs
         public void clearFirstComunion()
         {
+            textBoxIdF.Text = "0";
             dateTimePickerFirstComunion.Value = DateTime.Now;
             textBoxNameF.Text = "";
             textBoxFatherNameF.Text = "";
@@ -60,6 +62,7 @@ namespace Archiver
         // Clear confirmation inputs
         public void clearConfirmation()
         {
+            textBoxIdC.Text = "0";
             dateTimePickerConfirmation.Value = DateTime.Now;
             textBoxNameC.Text = "";
             textBoxFatherNameC.Text = "";
@@ -77,6 +80,7 @@ namespace Archiver
         // Clear confirmation inputs
         public void clearMarriage()
         {
+            textBoxIdM.Text = "0";
             dateTimePickerMarriage.Value = DateTime.Now;
             textBoxWifeNameM.Text = "";
             textBoxHusbandNameM.Text = "";
@@ -104,6 +108,7 @@ namespace Archiver
         private void buttonSaveB_Click(object sender, EventArgs e)
         {
             // Get values from inputs
+            baptism.Id = int.Parse(textBoxIdB.Text);
             baptism.date = dateTimePickerBaptism.Value;
             baptism.name = textBoxNameB.Text;
             baptism.fatherName = textBoxFatherNameB.Text;
@@ -143,14 +148,28 @@ namespace Archiver
             }
             baptism.created_at = DateTime.Now;
 
-            // Insert data
-            if (baptism.Insert(baptism))
+            if(baptism.Id > 0)
             {
-                MessageBox.Show("El registro fue guardado exitosamente.");
-                clearBaptism();
+                // Update data
+                if(baptism.Update(baptism))
+                {
+                    MessageBox.Show("El registro fue guardado exitosamente.");
+                    clearBaptism();
+                }
+                else
+                    MessageBox.Show("No se pudo guardar el registro, inténtelo nuevamente.");
             }
             else
-                MessageBox.Show("No se pudo guardar el registro, inténtelo nuevamente.");
+            {
+                // Insert data
+                if (baptism.Insert(baptism))
+                {
+                    MessageBox.Show("El registro fue guardado exitosamente.");
+                    clearBaptism();
+                }
+                else
+                    MessageBox.Show("No se pudo guardar el registro, inténtelo nuevamente.");
+            }
 
             // Load data in gridView
             DataTable dt = baptism.Select();
@@ -160,6 +179,7 @@ namespace Archiver
         private void buttonSaveF_Click(object sender, EventArgs e)
         {
             // Get values from inputs
+            firstComunion.Id = int.Parse(textBoxIdF.Text);
             firstComunion.date = dateTimePickerFirstComunion.Value;
             firstComunion.name = textBoxNameF.Text;
             firstComunion.fatherName = textBoxFatherNameF.Text;
@@ -195,14 +215,28 @@ namespace Archiver
             }
             firstComunion.created_at = DateTime.Now;
 
-            // Insert data
-            if (firstComunion.Insert(firstComunion))
+            if (firstComunion.Id > 0)
             {
-                MessageBox.Show("El registro fue guardado exitosamente.");
-                clearFirstComunion();
+                // Update data
+                if (firstComunion.Update(firstComunion))
+                {
+                    MessageBox.Show("El registro fue guardado exitosamente.");
+                    clearFirstComunion();
+                }
+                else
+                    MessageBox.Show("No se pudo guardar el registro, inténtelo nuevamente.");
             }
             else
-                MessageBox.Show("No se pudo guardar el registro, inténtelo nuevamente.");
+            {
+                // Insert data
+                if (firstComunion.Insert(firstComunion))
+                {
+                    MessageBox.Show("El registro fue guardado exitosamente.");
+                    clearFirstComunion();
+                }
+                else
+                    MessageBox.Show("No se pudo guardar el registro, inténtelo nuevamente.");
+            }
 
             // Load data in gridView
             DataTable dt = firstComunion.Select();
@@ -219,6 +253,7 @@ namespace Archiver
         private void buttonSaveC_Click(object sender, EventArgs e)
         {
             // Get values from inputs
+            confirmation.Id = int.Parse(textBoxIdC.Text);
             confirmation.date = dateTimePickerConfirmation.Value;
             confirmation.name = textBoxNameC.Text;
             confirmation.fatherName = textBoxFatherNameC.Text;
@@ -254,14 +289,28 @@ namespace Archiver
             }
             confirmation.created_at = DateTime.Now;
 
-            // Insert data
-            if (confirmation.Insert(confirmation))
+            if (confirmation.Id > 0)
             {
-                MessageBox.Show("El registro fue guardado exitosamente.");
-                clearConfirmation();
+                // Update data
+                if (confirmation.Update(confirmation))
+                {
+                    MessageBox.Show("El registro fue guardado exitosamente.");
+                    clearConfirmation();
+                }
+                else
+                    MessageBox.Show("No se pudo guardar el registro, inténtelo nuevamente.");
             }
             else
-                MessageBox.Show("No se pudo guardar el registro, inténtelo nuevamente.");
+            {
+                // Insert data
+                if (confirmation.Insert(confirmation))
+                {
+                    MessageBox.Show("El registro fue guardado exitosamente.");
+                    clearConfirmation();
+                }
+                else
+                    MessageBox.Show("No se pudo guardar el registro, inténtelo nuevamente.");
+            }
 
             // Load data in gridView
             DataTable dt = confirmation.Select();
@@ -278,6 +327,7 @@ namespace Archiver
         private void buttonSaveM_Click(object sender, EventArgs e)
         {
             // Get values from inputs
+            marriage.Id = int.Parse(textBoxIdM.Text);
             marriage.date = dateTimePickerMarriage.Value;
             marriage.wifeName = textBoxWifeNameM.Text;
             marriage.husbandName = textBoxHusbandNameM.Text;
@@ -316,14 +366,28 @@ namespace Archiver
             }
             marriage.created_at = DateTime.Now;
 
-            // Insert data
-            if (marriage.Insert(marriage))
+            if (marriage.Id > 0)
             {
-                MessageBox.Show("El registro fue guardado exitosamente.");
-                clearMarriage();
+                // Update data
+                if (marriage.Update(marriage))
+                {
+                    MessageBox.Show("El registro fue guardado exitosamente.");
+                    clearMarriage();
+                }
+                else
+                    MessageBox.Show("No se pudo guardar el registro, inténtelo nuevamente.");
             }
             else
-                MessageBox.Show("No se pudo guardar el registro, inténtelo nuevamente.");
+            {
+                // Insert data
+                if (marriage.Insert(marriage))
+                {
+                    MessageBox.Show("El registro fue guardado exitosamente.");
+                    clearMarriage();
+                }
+                else
+                    MessageBox.Show("No se pudo guardar el registro, inténtelo nuevamente.");
+            }
 
             // Load data in gridView
             DataTable dt = marriage.Select();

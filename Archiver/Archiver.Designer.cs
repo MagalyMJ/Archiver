@@ -31,6 +31,12 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
             this.tabBaptism = new System.Windows.Forms.TabPage();
+            this.textBoxSearchB = new System.Windows.Forms.TextBox();
+            this.labelSearchB = new System.Windows.Forms.Label();
+            this.dataGridViewBaptism = new System.Windows.Forms.DataGridView();
+            this.buttonClearB = new System.Windows.Forms.Button();
+            this.buttonDeleteB = new System.Windows.Forms.Button();
+            this.buttonSaveB = new System.Windows.Forms.Button();
             this.textBoxNotesB = new System.Windows.Forms.TextBox();
             this.labelNotesB = new System.Windows.Forms.Label();
             this.textBoxMunicipalityB = new System.Windows.Forms.TextBox();
@@ -58,6 +64,12 @@
             this.labelNameB = new System.Windows.Forms.Label();
             this.dateTimePickerBaptism = new System.Windows.Forms.DateTimePicker();
             this.tabFirstComunion = new System.Windows.Forms.TabPage();
+            this.textBoxSearchF = new System.Windows.Forms.TextBox();
+            this.labelSearchF = new System.Windows.Forms.Label();
+            this.dataGridViewFisrtComunion = new System.Windows.Forms.DataGridView();
+            this.buttonClearF = new System.Windows.Forms.Button();
+            this.buttonDeleteF = new System.Windows.Forms.Button();
+            this.buttonSaveF = new System.Windows.Forms.Button();
             this.textBoxNotesF = new System.Windows.Forms.TextBox();
             this.labelNotesF = new System.Windows.Forms.Label();
             this.textBoxMunicipalityF = new System.Windows.Forms.TextBox();
@@ -82,6 +94,12 @@
             this.labelNameF = new System.Windows.Forms.Label();
             this.dateTimePickerFirstComunion = new System.Windows.Forms.DateTimePicker();
             this.tabConfirmation = new System.Windows.Forms.TabPage();
+            this.textBoxSearchC = new System.Windows.Forms.TextBox();
+            this.labelSearchC = new System.Windows.Forms.Label();
+            this.dataGridViewConfirmation = new System.Windows.Forms.DataGridView();
+            this.buttonClearC = new System.Windows.Forms.Button();
+            this.buttonDeleteC = new System.Windows.Forms.Button();
+            this.buttonSaveC = new System.Windows.Forms.Button();
             this.textBoxNotesC = new System.Windows.Forms.TextBox();
             this.labelNotesC = new System.Windows.Forms.Label();
             this.textBoxMunicipalityC = new System.Windows.Forms.TextBox();
@@ -106,6 +124,12 @@
             this.labelNameC = new System.Windows.Forms.Label();
             this.dateTimePickerConfirmation = new System.Windows.Forms.DateTimePicker();
             this.tabMarriage = new System.Windows.Forms.TabPage();
+            this.textBoxSearchM = new System.Windows.Forms.TextBox();
+            this.labelSearchM = new System.Windows.Forms.Label();
+            this.dataGridViewMarriage = new System.Windows.Forms.DataGridView();
+            this.buttonClearM = new System.Windows.Forms.Button();
+            this.buttonDeleteM = new System.Windows.Forms.Button();
+            this.buttonSaveM = new System.Windows.Forms.Button();
             this.textBoxNotesM = new System.Windows.Forms.TextBox();
             this.labelNotesM = new System.Windows.Forms.Label();
             this.textBoxMunicipalityM = new System.Windows.Forms.TextBox();
@@ -138,43 +162,19 @@
             this.labelGodFather1M = new System.Windows.Forms.Label();
             this.dateTimePickerMarriage = new System.Windows.Forms.DateTimePicker();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.buttonSaveB = new System.Windows.Forms.Button();
-            this.buttonDeleteB = new System.Windows.Forms.Button();
-            this.buttonClearB = new System.Windows.Forms.Button();
-            this.buttonClearF = new System.Windows.Forms.Button();
-            this.buttonDeleteF = new System.Windows.Forms.Button();
-            this.buttonSaveF = new System.Windows.Forms.Button();
-            this.buttonClearC = new System.Windows.Forms.Button();
-            this.buttonDeleteC = new System.Windows.Forms.Button();
-            this.buttonSaveC = new System.Windows.Forms.Button();
-            this.buttonClearM = new System.Windows.Forms.Button();
-            this.buttonDeleteM = new System.Windows.Forms.Button();
-            this.buttonSaveM = new System.Windows.Forms.Button();
-            this.dataGridViewBaptism = new System.Windows.Forms.DataGridView();
-            this.labelSearchB = new System.Windows.Forms.Label();
-            this.textBoxSearchB = new System.Windows.Forms.TextBox();
-            this.textBoxSearchF = new System.Windows.Forms.TextBox();
-            this.labelSearchF = new System.Windows.Forms.Label();
-            this.dataGridViewFisrtComunion = new System.Windows.Forms.DataGridView();
-            this.textBoxSearchC = new System.Windows.Forms.TextBox();
-            this.labelSearchC = new System.Windows.Forms.Label();
-            this.dataGridViewConfirmation = new System.Windows.Forms.DataGridView();
-            this.textBoxSearchM = new System.Windows.Forms.TextBox();
-            this.labelSearchM = new System.Windows.Forms.Label();
-            this.dataGridViewMarriage = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabBaptism.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaptism)).BeginInit();
             this.groupBoxBaptismGender.SuspendLayout();
             this.tabFirstComunion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFisrtComunion)).BeginInit();
             this.tabConfirmation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConfirmation)).BeginInit();
             this.tabMarriage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMarriage)).BeginInit();
             this.groupBoxWifeM.SuspendLayout();
             this.groupBoxHusbandM.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaptism)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFisrtComunion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConfirmation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMarriage)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -197,10 +197,9 @@
             this.tabHome.Location = new System.Drawing.Point(4, 22);
             this.tabHome.Name = "tabHome";
             this.tabHome.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHome.Size = new System.Drawing.Size(848, 469);
+            this.tabHome.Size = new System.Drawing.Size(848, 663);
             this.tabHome.TabIndex = 0;
             this.tabHome.Text = "Inicio";
-            this.tabHome.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // tabBaptism
             // 
@@ -244,6 +243,63 @@
             this.tabBaptism.TabIndex = 1;
             this.tabBaptism.Text = "Bautismo";
             this.tabBaptism.Click += new System.EventHandler(this.tabBaptism_Click);
+            // 
+            // textBoxSearchB
+            // 
+            this.textBoxSearchB.Location = new System.Drawing.Point(680, 118);
+            this.textBoxSearchB.Name = "textBoxSearchB";
+            this.textBoxSearchB.Size = new System.Drawing.Size(136, 20);
+            this.textBoxSearchB.TabIndex = 82;
+            // 
+            // labelSearchB
+            // 
+            this.labelSearchB.AutoSize = true;
+            this.labelSearchB.Location = new System.Drawing.Point(624, 121);
+            this.labelSearchB.Name = "labelSearchB";
+            this.labelSearchB.Size = new System.Drawing.Size(40, 13);
+            this.labelSearchB.TabIndex = 81;
+            this.labelSearchB.Text = "Buscar";
+            // 
+            // dataGridViewBaptism
+            // 
+            this.dataGridViewBaptism.AllowUserToAddRows = false;
+            this.dataGridViewBaptism.AllowUserToDeleteRows = false;
+            this.dataGridViewBaptism.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewBaptism.Location = new System.Drawing.Point(630, 155);
+            this.dataGridViewBaptism.Name = "dataGridViewBaptism";
+            this.dataGridViewBaptism.Size = new System.Drawing.Size(187, 142);
+            this.dataGridViewBaptism.TabIndex = 80;
+            // 
+            // buttonClearB
+            // 
+            this.buttonClearB.BackColor = System.Drawing.Color.Coral;
+            this.buttonClearB.Location = new System.Drawing.Point(390, 387);
+            this.buttonClearB.Name = "buttonClearB";
+            this.buttonClearB.Size = new System.Drawing.Size(87, 38);
+            this.buttonClearB.TabIndex = 79;
+            this.buttonClearB.Text = "Limpiar";
+            this.buttonClearB.UseVisualStyleBackColor = false;
+            // 
+            // buttonDeleteB
+            // 
+            this.buttonDeleteB.BackColor = System.Drawing.Color.Coral;
+            this.buttonDeleteB.Location = new System.Drawing.Point(269, 387);
+            this.buttonDeleteB.Name = "buttonDeleteB";
+            this.buttonDeleteB.Size = new System.Drawing.Size(87, 38);
+            this.buttonDeleteB.TabIndex = 78;
+            this.buttonDeleteB.Text = "Eliminar";
+            this.buttonDeleteB.UseVisualStyleBackColor = false;
+            // 
+            // buttonSaveB
+            // 
+            this.buttonSaveB.BackColor = System.Drawing.Color.Coral;
+            this.buttonSaveB.Location = new System.Drawing.Point(38, 387);
+            this.buttonSaveB.Name = "buttonSaveB";
+            this.buttonSaveB.Size = new System.Drawing.Size(87, 38);
+            this.buttonSaveB.TabIndex = 77;
+            this.buttonSaveB.Text = "Guardar";
+            this.buttonSaveB.UseVisualStyleBackColor = false;
+            this.buttonSaveB.Click += new System.EventHandler(this.buttonSaveB_Click);
             // 
             // textBoxNotesB
             // 
@@ -477,7 +533,6 @@
             this.labelNameB.Size = new System.Drawing.Size(47, 13);
             this.labelNameB.TabIndex = 1;
             this.labelNameB.Text = "Nombre:";
-            this.labelNameB.Click += new System.EventHandler(this.labelName_Click);
             // 
             // dateTimePickerBaptism
             // 
@@ -523,6 +578,62 @@
             this.tabFirstComunion.Size = new System.Drawing.Size(848, 663);
             this.tabFirstComunion.TabIndex = 2;
             this.tabFirstComunion.Text = "Primera Comunión";
+            // 
+            // textBoxSearchF
+            // 
+            this.textBoxSearchF.Location = new System.Drawing.Point(652, 85);
+            this.textBoxSearchF.Name = "textBoxSearchF";
+            this.textBoxSearchF.Size = new System.Drawing.Size(136, 20);
+            this.textBoxSearchF.TabIndex = 85;
+            // 
+            // labelSearchF
+            // 
+            this.labelSearchF.AutoSize = true;
+            this.labelSearchF.Location = new System.Drawing.Point(596, 88);
+            this.labelSearchF.Name = "labelSearchF";
+            this.labelSearchF.Size = new System.Drawing.Size(40, 13);
+            this.labelSearchF.TabIndex = 84;
+            this.labelSearchF.Text = "Buscar";
+            // 
+            // dataGridViewFisrtComunion
+            // 
+            this.dataGridViewFisrtComunion.AllowUserToAddRows = false;
+            this.dataGridViewFisrtComunion.AllowUserToDeleteRows = false;
+            this.dataGridViewFisrtComunion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewFisrtComunion.Location = new System.Drawing.Point(602, 122);
+            this.dataGridViewFisrtComunion.Name = "dataGridViewFisrtComunion";
+            this.dataGridViewFisrtComunion.Size = new System.Drawing.Size(187, 142);
+            this.dataGridViewFisrtComunion.TabIndex = 83;
+            // 
+            // buttonClearF
+            // 
+            this.buttonClearF.BackColor = System.Drawing.Color.Coral;
+            this.buttonClearF.Location = new System.Drawing.Point(455, 399);
+            this.buttonClearF.Name = "buttonClearF";
+            this.buttonClearF.Size = new System.Drawing.Size(87, 38);
+            this.buttonClearF.TabIndex = 82;
+            this.buttonClearF.Text = "Limpiar";
+            this.buttonClearF.UseVisualStyleBackColor = false;
+            // 
+            // buttonDeleteF
+            // 
+            this.buttonDeleteF.BackColor = System.Drawing.Color.Coral;
+            this.buttonDeleteF.Location = new System.Drawing.Point(334, 399);
+            this.buttonDeleteF.Name = "buttonDeleteF";
+            this.buttonDeleteF.Size = new System.Drawing.Size(87, 38);
+            this.buttonDeleteF.TabIndex = 81;
+            this.buttonDeleteF.Text = "Eliminar";
+            this.buttonDeleteF.UseVisualStyleBackColor = false;
+            // 
+            // buttonSaveF
+            // 
+            this.buttonSaveF.BackColor = System.Drawing.Color.Coral;
+            this.buttonSaveF.Location = new System.Drawing.Point(103, 399);
+            this.buttonSaveF.Name = "buttonSaveF";
+            this.buttonSaveF.Size = new System.Drawing.Size(87, 38);
+            this.buttonSaveF.TabIndex = 80;
+            this.buttonSaveF.Text = "Guardar";
+            this.buttonSaveF.UseVisualStyleBackColor = false;
             // 
             // textBoxNotesF
             // 
@@ -770,6 +881,62 @@
             this.tabConfirmation.TabIndex = 3;
             this.tabConfirmation.Text = "Confirmación";
             // 
+            // textBoxSearchC
+            // 
+            this.textBoxSearchC.Location = new System.Drawing.Point(581, 41);
+            this.textBoxSearchC.Name = "textBoxSearchC";
+            this.textBoxSearchC.Size = new System.Drawing.Size(136, 20);
+            this.textBoxSearchC.TabIndex = 85;
+            // 
+            // labelSearchC
+            // 
+            this.labelSearchC.AutoSize = true;
+            this.labelSearchC.Location = new System.Drawing.Point(525, 44);
+            this.labelSearchC.Name = "labelSearchC";
+            this.labelSearchC.Size = new System.Drawing.Size(40, 13);
+            this.labelSearchC.TabIndex = 84;
+            this.labelSearchC.Text = "Buscar";
+            // 
+            // dataGridViewConfirmation
+            // 
+            this.dataGridViewConfirmation.AllowUserToAddRows = false;
+            this.dataGridViewConfirmation.AllowUserToDeleteRows = false;
+            this.dataGridViewConfirmation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewConfirmation.Location = new System.Drawing.Point(531, 78);
+            this.dataGridViewConfirmation.Name = "dataGridViewConfirmation";
+            this.dataGridViewConfirmation.Size = new System.Drawing.Size(187, 142);
+            this.dataGridViewConfirmation.TabIndex = 83;
+            // 
+            // buttonClearC
+            // 
+            this.buttonClearC.BackColor = System.Drawing.Color.Coral;
+            this.buttonClearC.Location = new System.Drawing.Point(468, 397);
+            this.buttonClearC.Name = "buttonClearC";
+            this.buttonClearC.Size = new System.Drawing.Size(87, 38);
+            this.buttonClearC.TabIndex = 82;
+            this.buttonClearC.Text = "Limpiar";
+            this.buttonClearC.UseVisualStyleBackColor = false;
+            // 
+            // buttonDeleteC
+            // 
+            this.buttonDeleteC.BackColor = System.Drawing.Color.Coral;
+            this.buttonDeleteC.Location = new System.Drawing.Point(347, 397);
+            this.buttonDeleteC.Name = "buttonDeleteC";
+            this.buttonDeleteC.Size = new System.Drawing.Size(87, 38);
+            this.buttonDeleteC.TabIndex = 81;
+            this.buttonDeleteC.Text = "Eliminar";
+            this.buttonDeleteC.UseVisualStyleBackColor = false;
+            // 
+            // buttonSaveC
+            // 
+            this.buttonSaveC.BackColor = System.Drawing.Color.Coral;
+            this.buttonSaveC.Location = new System.Drawing.Point(116, 397);
+            this.buttonSaveC.Name = "buttonSaveC";
+            this.buttonSaveC.Size = new System.Drawing.Size(87, 38);
+            this.buttonSaveC.TabIndex = 80;
+            this.buttonSaveC.Text = "Guardar";
+            this.buttonSaveC.UseVisualStyleBackColor = false;
+            // 
             // textBoxNotesC
             // 
             this.textBoxNotesC.AcceptsReturn = true;
@@ -1011,6 +1178,62 @@
             this.tabMarriage.Size = new System.Drawing.Size(848, 663);
             this.tabMarriage.TabIndex = 4;
             this.tabMarriage.Text = "Matrimonio";
+            // 
+            // textBoxSearchM
+            // 
+            this.textBoxSearchM.Location = new System.Drawing.Point(663, 38);
+            this.textBoxSearchM.Name = "textBoxSearchM";
+            this.textBoxSearchM.Size = new System.Drawing.Size(136, 20);
+            this.textBoxSearchM.TabIndex = 85;
+            // 
+            // labelSearchM
+            // 
+            this.labelSearchM.AutoSize = true;
+            this.labelSearchM.Location = new System.Drawing.Point(607, 41);
+            this.labelSearchM.Name = "labelSearchM";
+            this.labelSearchM.Size = new System.Drawing.Size(40, 13);
+            this.labelSearchM.TabIndex = 84;
+            this.labelSearchM.Text = "Buscar";
+            // 
+            // dataGridViewMarriage
+            // 
+            this.dataGridViewMarriage.AllowUserToAddRows = false;
+            this.dataGridViewMarriage.AllowUserToDeleteRows = false;
+            this.dataGridViewMarriage.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMarriage.Location = new System.Drawing.Point(613, 75);
+            this.dataGridViewMarriage.Name = "dataGridViewMarriage";
+            this.dataGridViewMarriage.Size = new System.Drawing.Size(187, 142);
+            this.dataGridViewMarriage.TabIndex = 83;
+            // 
+            // buttonClearM
+            // 
+            this.buttonClearM.BackColor = System.Drawing.Color.Coral;
+            this.buttonClearM.Location = new System.Drawing.Point(450, 400);
+            this.buttonClearM.Name = "buttonClearM";
+            this.buttonClearM.Size = new System.Drawing.Size(87, 38);
+            this.buttonClearM.TabIndex = 82;
+            this.buttonClearM.Text = "Limpiar";
+            this.buttonClearM.UseVisualStyleBackColor = false;
+            // 
+            // buttonDeleteM
+            // 
+            this.buttonDeleteM.BackColor = System.Drawing.Color.Coral;
+            this.buttonDeleteM.Location = new System.Drawing.Point(329, 400);
+            this.buttonDeleteM.Name = "buttonDeleteM";
+            this.buttonDeleteM.Size = new System.Drawing.Size(87, 38);
+            this.buttonDeleteM.TabIndex = 81;
+            this.buttonDeleteM.Text = "Eliminar";
+            this.buttonDeleteM.UseVisualStyleBackColor = false;
+            // 
+            // buttonSaveM
+            // 
+            this.buttonSaveM.BackColor = System.Drawing.Color.Coral;
+            this.buttonSaveM.Location = new System.Drawing.Point(98, 400);
+            this.buttonSaveM.Name = "buttonSaveM";
+            this.buttonSaveM.Size = new System.Drawing.Size(87, 38);
+            this.buttonSaveM.TabIndex = 80;
+            this.buttonSaveM.Text = "Guardar";
+            this.buttonSaveM.UseVisualStyleBackColor = false;
             // 
             // textBoxNotesM
             // 
@@ -1312,231 +1535,6 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(859, 692);
             this.flowLayoutPanel1.TabIndex = 1;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
-            // 
-            // buttonSaveB
-            // 
-            this.buttonSaveB.BackColor = System.Drawing.Color.Coral;
-            this.buttonSaveB.Location = new System.Drawing.Point(38, 387);
-            this.buttonSaveB.Name = "buttonSaveB";
-            this.buttonSaveB.Size = new System.Drawing.Size(87, 38);
-            this.buttonSaveB.TabIndex = 77;
-            this.buttonSaveB.Text = "Guardar";
-            this.buttonSaveB.UseVisualStyleBackColor = false;
-            // 
-            // buttonDeleteB
-            // 
-            this.buttonDeleteB.BackColor = System.Drawing.Color.Coral;
-            this.buttonDeleteB.Location = new System.Drawing.Point(269, 387);
-            this.buttonDeleteB.Name = "buttonDeleteB";
-            this.buttonDeleteB.Size = new System.Drawing.Size(87, 38);
-            this.buttonDeleteB.TabIndex = 78;
-            this.buttonDeleteB.Text = "Eliminar";
-            this.buttonDeleteB.UseVisualStyleBackColor = false;
-            // 
-            // buttonClearB
-            // 
-            this.buttonClearB.BackColor = System.Drawing.Color.Coral;
-            this.buttonClearB.Location = new System.Drawing.Point(390, 387);
-            this.buttonClearB.Name = "buttonClearB";
-            this.buttonClearB.Size = new System.Drawing.Size(87, 38);
-            this.buttonClearB.TabIndex = 79;
-            this.buttonClearB.Text = "Limpiar";
-            this.buttonClearB.UseVisualStyleBackColor = false;
-            // 
-            // buttonClearF
-            // 
-            this.buttonClearF.BackColor = System.Drawing.Color.Coral;
-            this.buttonClearF.Location = new System.Drawing.Point(455, 399);
-            this.buttonClearF.Name = "buttonClearF";
-            this.buttonClearF.Size = new System.Drawing.Size(87, 38);
-            this.buttonClearF.TabIndex = 82;
-            this.buttonClearF.Text = "Limpiar";
-            this.buttonClearF.UseVisualStyleBackColor = false;
-            // 
-            // buttonDeleteF
-            // 
-            this.buttonDeleteF.BackColor = System.Drawing.Color.Coral;
-            this.buttonDeleteF.Location = new System.Drawing.Point(334, 399);
-            this.buttonDeleteF.Name = "buttonDeleteF";
-            this.buttonDeleteF.Size = new System.Drawing.Size(87, 38);
-            this.buttonDeleteF.TabIndex = 81;
-            this.buttonDeleteF.Text = "Eliminar";
-            this.buttonDeleteF.UseVisualStyleBackColor = false;
-            // 
-            // buttonSaveF
-            // 
-            this.buttonSaveF.BackColor = System.Drawing.Color.Coral;
-            this.buttonSaveF.Location = new System.Drawing.Point(103, 399);
-            this.buttonSaveF.Name = "buttonSaveF";
-            this.buttonSaveF.Size = new System.Drawing.Size(87, 38);
-            this.buttonSaveF.TabIndex = 80;
-            this.buttonSaveF.Text = "Guardar";
-            this.buttonSaveF.UseVisualStyleBackColor = false;
-            // 
-            // buttonClearC
-            // 
-            this.buttonClearC.BackColor = System.Drawing.Color.Coral;
-            this.buttonClearC.Location = new System.Drawing.Point(468, 397);
-            this.buttonClearC.Name = "buttonClearC";
-            this.buttonClearC.Size = new System.Drawing.Size(87, 38);
-            this.buttonClearC.TabIndex = 82;
-            this.buttonClearC.Text = "Limpiar";
-            this.buttonClearC.UseVisualStyleBackColor = false;
-            // 
-            // buttonDeleteC
-            // 
-            this.buttonDeleteC.BackColor = System.Drawing.Color.Coral;
-            this.buttonDeleteC.Location = new System.Drawing.Point(347, 397);
-            this.buttonDeleteC.Name = "buttonDeleteC";
-            this.buttonDeleteC.Size = new System.Drawing.Size(87, 38);
-            this.buttonDeleteC.TabIndex = 81;
-            this.buttonDeleteC.Text = "Eliminar";
-            this.buttonDeleteC.UseVisualStyleBackColor = false;
-            // 
-            // buttonSaveC
-            // 
-            this.buttonSaveC.BackColor = System.Drawing.Color.Coral;
-            this.buttonSaveC.Location = new System.Drawing.Point(116, 397);
-            this.buttonSaveC.Name = "buttonSaveC";
-            this.buttonSaveC.Size = new System.Drawing.Size(87, 38);
-            this.buttonSaveC.TabIndex = 80;
-            this.buttonSaveC.Text = "Guardar";
-            this.buttonSaveC.UseVisualStyleBackColor = false;
-            // 
-            // buttonClearM
-            // 
-            this.buttonClearM.BackColor = System.Drawing.Color.Coral;
-            this.buttonClearM.Location = new System.Drawing.Point(450, 400);
-            this.buttonClearM.Name = "buttonClearM";
-            this.buttonClearM.Size = new System.Drawing.Size(87, 38);
-            this.buttonClearM.TabIndex = 82;
-            this.buttonClearM.Text = "Limpiar";
-            this.buttonClearM.UseVisualStyleBackColor = false;
-            // 
-            // buttonDeleteM
-            // 
-            this.buttonDeleteM.BackColor = System.Drawing.Color.Coral;
-            this.buttonDeleteM.Location = new System.Drawing.Point(329, 400);
-            this.buttonDeleteM.Name = "buttonDeleteM";
-            this.buttonDeleteM.Size = new System.Drawing.Size(87, 38);
-            this.buttonDeleteM.TabIndex = 81;
-            this.buttonDeleteM.Text = "Eliminar";
-            this.buttonDeleteM.UseVisualStyleBackColor = false;
-            // 
-            // buttonSaveM
-            // 
-            this.buttonSaveM.BackColor = System.Drawing.Color.Coral;
-            this.buttonSaveM.Location = new System.Drawing.Point(98, 400);
-            this.buttonSaveM.Name = "buttonSaveM";
-            this.buttonSaveM.Size = new System.Drawing.Size(87, 38);
-            this.buttonSaveM.TabIndex = 80;
-            this.buttonSaveM.Text = "Guardar";
-            this.buttonSaveM.UseVisualStyleBackColor = false;
-            // 
-            // dataGridViewBaptism
-            // 
-            this.dataGridViewBaptism.AllowUserToAddRows = false;
-            this.dataGridViewBaptism.AllowUserToDeleteRows = false;
-            this.dataGridViewBaptism.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewBaptism.Location = new System.Drawing.Point(630, 155);
-            this.dataGridViewBaptism.Name = "dataGridViewBaptism";
-            this.dataGridViewBaptism.Size = new System.Drawing.Size(187, 142);
-            this.dataGridViewBaptism.TabIndex = 80;
-            // 
-            // labelSearchB
-            // 
-            this.labelSearchB.AutoSize = true;
-            this.labelSearchB.Location = new System.Drawing.Point(624, 121);
-            this.labelSearchB.Name = "labelSearchB";
-            this.labelSearchB.Size = new System.Drawing.Size(40, 13);
-            this.labelSearchB.TabIndex = 81;
-            this.labelSearchB.Text = "Buscar";
-            // 
-            // textBoxSearchB
-            // 
-            this.textBoxSearchB.Location = new System.Drawing.Point(680, 118);
-            this.textBoxSearchB.Name = "textBoxSearchB";
-            this.textBoxSearchB.Size = new System.Drawing.Size(136, 20);
-            this.textBoxSearchB.TabIndex = 82;
-            // 
-            // textBoxSearchF
-            // 
-            this.textBoxSearchF.Location = new System.Drawing.Point(652, 85);
-            this.textBoxSearchF.Name = "textBoxSearchF";
-            this.textBoxSearchF.Size = new System.Drawing.Size(136, 20);
-            this.textBoxSearchF.TabIndex = 85;
-            // 
-            // labelSearchF
-            // 
-            this.labelSearchF.AutoSize = true;
-            this.labelSearchF.Location = new System.Drawing.Point(596, 88);
-            this.labelSearchF.Name = "labelSearchF";
-            this.labelSearchF.Size = new System.Drawing.Size(40, 13);
-            this.labelSearchF.TabIndex = 84;
-            this.labelSearchF.Text = "Buscar";
-            // 
-            // dataGridViewFisrtComunion
-            // 
-            this.dataGridViewFisrtComunion.AllowUserToAddRows = false;
-            this.dataGridViewFisrtComunion.AllowUserToDeleteRows = false;
-            this.dataGridViewFisrtComunion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewFisrtComunion.Location = new System.Drawing.Point(602, 122);
-            this.dataGridViewFisrtComunion.Name = "dataGridViewFisrtComunion";
-            this.dataGridViewFisrtComunion.Size = new System.Drawing.Size(187, 142);
-            this.dataGridViewFisrtComunion.TabIndex = 83;
-            // 
-            // textBoxSearchC
-            // 
-            this.textBoxSearchC.Location = new System.Drawing.Point(581, 41);
-            this.textBoxSearchC.Name = "textBoxSearchC";
-            this.textBoxSearchC.Size = new System.Drawing.Size(136, 20);
-            this.textBoxSearchC.TabIndex = 85;
-            // 
-            // labelSearchC
-            // 
-            this.labelSearchC.AutoSize = true;
-            this.labelSearchC.Location = new System.Drawing.Point(525, 44);
-            this.labelSearchC.Name = "labelSearchC";
-            this.labelSearchC.Size = new System.Drawing.Size(40, 13);
-            this.labelSearchC.TabIndex = 84;
-            this.labelSearchC.Text = "Buscar";
-            // 
-            // dataGridViewConfirmation
-            // 
-            this.dataGridViewConfirmation.AllowUserToAddRows = false;
-            this.dataGridViewConfirmation.AllowUserToDeleteRows = false;
-            this.dataGridViewConfirmation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewConfirmation.Location = new System.Drawing.Point(531, 78);
-            this.dataGridViewConfirmation.Name = "dataGridViewConfirmation";
-            this.dataGridViewConfirmation.Size = new System.Drawing.Size(187, 142);
-            this.dataGridViewConfirmation.TabIndex = 83;
-            // 
-            // textBoxSearchM
-            // 
-            this.textBoxSearchM.Location = new System.Drawing.Point(663, 38);
-            this.textBoxSearchM.Name = "textBoxSearchM";
-            this.textBoxSearchM.Size = new System.Drawing.Size(136, 20);
-            this.textBoxSearchM.TabIndex = 85;
-            // 
-            // labelSearchM
-            // 
-            this.labelSearchM.AutoSize = true;
-            this.labelSearchM.Location = new System.Drawing.Point(607, 41);
-            this.labelSearchM.Name = "labelSearchM";
-            this.labelSearchM.Size = new System.Drawing.Size(40, 13);
-            this.labelSearchM.TabIndex = 84;
-            this.labelSearchM.Text = "Buscar";
-            // 
-            // dataGridViewMarriage
-            // 
-            this.dataGridViewMarriage.AllowUserToAddRows = false;
-            this.dataGridViewMarriage.AllowUserToDeleteRows = false;
-            this.dataGridViewMarriage.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewMarriage.Location = new System.Drawing.Point(613, 75);
-            this.dataGridViewMarriage.Name = "dataGridViewMarriage";
-            this.dataGridViewMarriage.Size = new System.Drawing.Size(187, 142);
-            this.dataGridViewMarriage.TabIndex = 83;
             // 
             // Archiver
             // 
@@ -1549,27 +1547,26 @@
             this.Name = "Archiver";
             this.Text = "Archiver";
             this.TransparencyKey = System.Drawing.Color.White;
-            this.Load += new System.EventHandler(this.Archiver_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabBaptism.ResumeLayout(false);
             this.tabBaptism.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaptism)).EndInit();
             this.groupBoxBaptismGender.ResumeLayout(false);
             this.groupBoxBaptismGender.PerformLayout();
             this.tabFirstComunion.ResumeLayout(false);
             this.tabFirstComunion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFisrtComunion)).EndInit();
             this.tabConfirmation.ResumeLayout(false);
             this.tabConfirmation.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConfirmation)).EndInit();
             this.tabMarriage.ResumeLayout(false);
             this.tabMarriage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMarriage)).EndInit();
             this.groupBoxWifeM.ResumeLayout(false);
             this.groupBoxWifeM.PerformLayout();
             this.groupBoxHusbandM.ResumeLayout(false);
             this.groupBoxHusbandM.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaptism)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFisrtComunion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConfirmation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMarriage)).EndInit();
             this.ResumeLayout(false);
 
         }

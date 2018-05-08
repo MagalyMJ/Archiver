@@ -136,7 +136,6 @@ namespace Archiver.archiverClasses
                 cmd.Parameters.AddWithValue("@book_number", baptism.bookNumber);
                 cmd.Parameters.AddWithValue("@sheet_number", baptism.sheetNumber);
                 cmd.Parameters.AddWithValue("@entry_number", baptism.entryNumber);
-                cmd.Parameters.AddWithValue("@created_at", baptism.created_at);
                 cmd.Parameters.AddWithValue("@id", baptism.Id);
 
                 conn.Open();

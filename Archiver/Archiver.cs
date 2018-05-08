@@ -21,6 +21,7 @@ namespace Archiver
         BaptismClass baptism = new BaptismClass();
         FirstComunionClass firstComunion = new FirstComunionClass();
         ConfirmationClass confirmation = new ConfirmationClass();
+        MarriageClass marriage = new MarriageClass();
 
         // Clear baptism inputs
         public void clearBaptism()
@@ -71,6 +72,26 @@ namespace Archiver
             textBoxBookNumberC.Text = "";
             textBoxSheetNumberC.Text = "";
             textBoxEntryNumberC.Text = "";
+        }
+
+        // Clear confirmation inputs
+        public void clearMarriage()
+        {
+            dateTimePickerMarriage.Value = DateTime.Now;
+            textBoxWifeNameM.Text = "";
+            textBoxHusbandNameM.Text = "";
+            textBoxWifeMotherNameM.Text = "";
+            textBoxWifeFatherNameM.Text = "";
+            textBoxHusbandMotherNameM.Text = "";
+            textBoxHusbandFatherNameM.Text = "";
+            textBoxGodFather1M.Text = "";
+            textBoxGodFather2M.Text = "";
+            textBoxStateM.Text = "";
+            textBoxMunicipalityM.Text = "";
+            textBoxNotesM.Text = "";
+            textBoxBookNumberM.Text = "";
+            textBoxSheetNumberM.Text = "";
+            textBoxEntryNumberM.Text = "";
         }
 
         private void tabBaptism_Click(object sender, EventArgs e)
@@ -245,6 +266,61 @@ namespace Archiver
             // Load data in gridView
             DataTable dt = confirmation.Select();
             dataGridViewConfirmation.DataSource = dt;
+        }
+
+        private void buttonSaveM_Click(object sender, EventArgs e)
+        {
+            // Get values from inputs
+            marriage.date = dateTimePickerMarriage.Value;
+            marriage.wifeName = textBoxWifeNameM.Text;
+            marriage.husbandName = textBoxHusbandNameM.Text;
+            marriage.wifeMotherName = textBoxWifeMotherNameM.Text;
+            marriage.wifeFatherName = textBoxWifeFatherNameM.Text;
+            marriage.husbandMotherName = textBoxHusbandMotherNameM.Text;
+            marriage.husbandFatherName = textBoxHusbandFatherNameM.Text;
+            marriage.firstGodfather = textBoxGodFather1M.Text;
+            marriage.secondGodfather = textBoxGodFather2M.Text;
+            marriage.state = textBoxStateM.Text;
+            marriage.municipality = textBoxMunicipalityM.Text;
+            marriage.notes = textBoxNotesM.Text;
+            int bookValue;
+            if (int.TryParse(textBoxBookNumberM.Text, out bookValue))
+                marriage.bookNumber = bookValue;
+            else
+            {
+                MessageBox.Show("Solo se permiten números enteros para el libro.");
+                return;
+            }
+            int sheetValue;
+            if (int.TryParse(textBoxSheetNumberM.Text, out sheetValue))
+                marriage.sheetNumber = sheetValue;
+            else
+            {
+                MessageBox.Show("Solo se permiten números enteros para el folio.");
+                return;
+            }
+            int entryValue;
+            if (int.TryParse(textBoxEntryNumberM.Text, out entryValue))
+                marriage.entryNumber = entryValue;
+            else
+            {
+                MessageBox.Show("Solo se permiten números enteros para la partida.");
+                return;
+            }
+            marriage.created_at = DateTime.Now;
+
+            // Insert data
+            if (marriage.Insert(marriage))
+            {
+                MessageBox.Show("El registro fue guardado exitosamente.");
+                clearMarriage();
+            }
+            else
+                MessageBox.Show("No se pudo guardar el registro, inténtelo nuevamente.");
+
+            // Load data in gridView
+            DataTable dt = marriage.Select();
+            dataGridViewMarriage.DataSource = dt;
         }
     }
 }

@@ -142,7 +142,7 @@
             this.textBoxWifeNameM = new System.Windows.Forms.TextBox();
             this.textBoxWifeMotherNameM = new System.Windows.Forms.TextBox();
             this.labelWifeFatherNameM = new System.Windows.Forms.Label();
-            this.textWifeFatherNameM = new System.Windows.Forms.TextBox();
+            this.textBoxWifeFatherNameM = new System.Windows.Forms.TextBox();
             this.groupBoxHusbandM = new System.Windows.Forms.GroupBox();
             this.labelHusbandNameM = new System.Windows.Forms.Label();
             this.textBoxHusbandNameM = new System.Windows.Forms.TextBox();
@@ -1237,6 +1237,7 @@
             this.buttonSaveM.TabIndex = 80;
             this.buttonSaveM.Text = "Guardar";
             this.buttonSaveM.UseVisualStyleBackColor = false;
+            this.buttonSaveM.Click += new System.EventHandler(this.buttonSaveM_Click);
             // 
             // textBoxNotesM
             // 
@@ -1301,7 +1302,7 @@
             this.groupBoxWifeM.Controls.Add(this.textBoxWifeNameM);
             this.groupBoxWifeM.Controls.Add(this.textBoxWifeMotherNameM);
             this.groupBoxWifeM.Controls.Add(this.labelWifeFatherNameM);
-            this.groupBoxWifeM.Controls.Add(this.textWifeFatherNameM);
+            this.groupBoxWifeM.Controls.Add(this.textBoxWifeFatherNameM);
             this.groupBoxWifeM.Location = new System.Drawing.Point(34, 158);
             this.groupBoxWifeM.Name = "groupBoxWifeM";
             this.groupBoxWifeM.Size = new System.Drawing.Size(522, 118);
@@ -1354,14 +1355,14 @@
             this.labelWifeFatherNameM.TabIndex = 38;
             this.labelWifeFatherNameM.Text = "Nombre del padre:";
             // 
-            // textWifeFatherNameM
+            // textBoxWifeFatherNameM
             // 
-            this.textWifeFatherNameM.BackColor = System.Drawing.SystemColors.Info;
-            this.textWifeFatherNameM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textWifeFatherNameM.Location = new System.Drawing.Point(135, 78);
-            this.textWifeFatherNameM.Name = "textWifeFatherNameM";
-            this.textWifeFatherNameM.Size = new System.Drawing.Size(100, 20);
-            this.textWifeFatherNameM.TabIndex = 39;
+            this.textBoxWifeFatherNameM.BackColor = System.Drawing.SystemColors.Info;
+            this.textBoxWifeFatherNameM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxWifeFatherNameM.Location = new System.Drawing.Point(135, 78);
+            this.textBoxWifeFatherNameM.Name = "textBoxWifeFatherNameM";
+            this.textBoxWifeFatherNameM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxWifeFatherNameM.TabIndex = 39;
             // 
             // groupBoxHusbandM
             // 
@@ -1606,7 +1607,7 @@
         private System.Windows.Forms.TextBox textBoxWifeNameM;
         private System.Windows.Forms.TextBox textBoxWifeMotherNameM;
         private System.Windows.Forms.Label labelWifeFatherNameM;
-        private System.Windows.Forms.TextBox textWifeFatherNameM;
+        private System.Windows.Forms.TextBox textBoxWifeFatherNameM;
         private System.Windows.Forms.GroupBox groupBoxHusbandM;
         private System.Windows.Forms.Label labelHusbandNameM;
         private System.Windows.Forms.TextBox textBoxHusbandNameM;

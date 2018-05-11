@@ -32,16 +32,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
             this.tabBaptism = new System.Windows.Forms.TabPage();
-            this.menupanel = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnBau = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.logopanel = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lbsistema = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBoxSearchB = new System.Windows.Forms.GroupBox();
             this.buttonSearchB = new System.Windows.Forms.Button();
@@ -209,15 +199,19 @@
             this.textBoxGodFather1M = new System.Windows.Forms.TextBox();
             this.labelGodFather1M = new System.Windows.Forms.Label();
             this.dateTimePickerMarriage = new System.Windows.Forms.DateTimePicker();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.menupanel = new System.Windows.Forms.Panel();
+            this.buttonMarriage = new System.Windows.Forms.Button();
+            this.buttonConfirmation = new System.Windows.Forms.Button();
+            this.buttonFirstComunion = new System.Windows.Forms.Button();
+            this.buttonBaptism = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.logopanel = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbsistema = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabBaptism.SuspendLayout();
-            this.menupanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.logopanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxSearchB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaptism)).BeginInit();
             this.groupBoxBaptismGender.SuspendLayout();
@@ -232,7 +226,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMarriage)).BeginInit();
             this.groupBoxWifeM.SuspendLayout();
             this.groupBoxHusbandM.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.menupanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.logopanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -242,10 +240,11 @@
             this.tabControl1.Controls.Add(this.tabFirstComunion);
             this.tabControl1.Controls.Add(this.tabConfirmation);
             this.tabControl1.Controls.Add(this.tabMarriage);
-            this.tabControl1.Location = new System.Drawing.Point(3, 3);
+            this.tabControl1.Location = new System.Drawing.Point(185, 25);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1100, 689);
+            this.tabControl1.Size = new System.Drawing.Size(1061, 638);
             this.tabControl1.TabIndex = 0;
             // 
             // tabHome
@@ -253,9 +252,9 @@
             this.tabHome.BackColor = System.Drawing.Color.Pink;
             this.tabHome.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.tabHome.Location = new System.Drawing.Point(4, 22);
+            this.tabHome.Margin = new System.Windows.Forms.Padding(0);
             this.tabHome.Name = "tabHome";
-            this.tabHome.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHome.Size = new System.Drawing.Size(1092, 663);
+            this.tabHome.Size = new System.Drawing.Size(1053, 612);
             this.tabHome.TabIndex = 0;
             this.tabHome.Text = "Inicio";
             // 
@@ -263,8 +262,6 @@
             // 
             this.tabBaptism.BackColor = System.Drawing.Color.Gainsboro;
             this.tabBaptism.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabBaptism.Controls.Add(this.panel2);
-            this.tabBaptism.Controls.Add(this.menupanel);
             this.tabBaptism.Controls.Add(this.panel1);
             this.tabBaptism.Controls.Add(this.groupBoxSearchB);
             this.tabBaptism.Controls.Add(this.textBoxIdB);
@@ -299,131 +296,10 @@
             this.tabBaptism.Location = new System.Drawing.Point(4, 22);
             this.tabBaptism.Name = "tabBaptism";
             this.tabBaptism.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBaptism.Size = new System.Drawing.Size(1092, 663);
+            this.tabBaptism.Size = new System.Drawing.Size(1053, 612);
             this.tabBaptism.TabIndex = 1;
             this.tabBaptism.Text = "Bautismo";
             this.tabBaptism.Click += new System.EventHandler(this.tabBaptism_Click);
-            // 
-            // menupanel
-            // 
-            this.menupanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
-            this.menupanel.Controls.Add(this.button3);
-            this.menupanel.Controls.Add(this.button2);
-            this.menupanel.Controls.Add(this.button1);
-            this.menupanel.Controls.Add(this.btnBau);
-            this.menupanel.Controls.Add(this.pictureBox2);
-            this.menupanel.Controls.Add(this.logopanel);
-            this.menupanel.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menupanel.Location = new System.Drawing.Point(0, 0);
-            this.menupanel.Name = "menupanel";
-            this.menupanel.Size = new System.Drawing.Size(189, 662);
-            this.menupanel.TabIndex = 86;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.LightGray;
-            this.button3.Location = new System.Drawing.Point(0, 174);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(189, 45);
-            this.button3.TabIndex = 90;
-            this.button3.Text = "Matrimonio";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.LightGray;
-            this.button2.Location = new System.Drawing.Point(0, 129);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(189, 45);
-            this.button2.TabIndex = 89;
-            this.button2.Text = "Confirmación";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.LightGray;
-            this.button1.Location = new System.Drawing.Point(0, 87);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(189, 45);
-            this.button1.TabIndex = 88;
-            this.button1.Text = "Primera Comunión";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // btnBau
-            // 
-            this.btnBau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
-            this.btnBau.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
-            this.btnBau.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBau.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBau.ForeColor = System.Drawing.Color.LightGray;
-            this.btnBau.Location = new System.Drawing.Point(0, 49);
-            this.btnBau.Name = "btnBau";
-            this.btnBau.Size = new System.Drawing.Size(189, 45);
-            this.btnBau.TabIndex = 87;
-            this.btnBau.Text = "Bautismo";
-            this.btnBau.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(50, 63);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(0, 0);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // logopanel
-            // 
-            this.logopanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(126)))), ((int)(((byte)(49)))));
-            this.logopanel.Controls.Add(this.pictureBox3);
-            this.logopanel.Controls.Add(this.pictureBox1);
-            this.logopanel.Controls.Add(this.lbsistema);
-            this.logopanel.Location = new System.Drawing.Point(-5, 0);
-            this.logopanel.Name = "logopanel";
-            this.logopanel.Size = new System.Drawing.Size(194, 50);
-            this.logopanel.TabIndex = 0;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(34, 7);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(41, 40);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(34, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(0, 0);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lbsistema
-            // 
-            this.lbsistema.AutoSize = true;
-            this.lbsistema.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbsistema.ForeColor = System.Drawing.SystemColors.Info;
-            this.lbsistema.Location = new System.Drawing.Point(71, 12);
-            this.lbsistema.Name = "lbsistema";
-            this.lbsistema.Size = new System.Drawing.Size(90, 25);
-            this.lbsistema.TabIndex = 0;
-            this.lbsistema.Text = "Sistema";
-            this.lbsistema.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -793,7 +669,6 @@
             this.radioButtonMasculinB.TabIndex = 3;
             this.radioButtonMasculinB.Text = "Masculino";
             this.radioButtonMasculinB.UseVisualStyleBackColor = true;
-            this.radioButtonMasculinB.CheckedChanged += new System.EventHandler(this.radioButtonMasculinB_CheckedChanged);
             // 
             // radioButtonFemeninB
             // 
@@ -857,7 +732,7 @@
             this.tabFirstComunion.Controls.Add(this.dateTimePickerFirstComunion);
             this.tabFirstComunion.Location = new System.Drawing.Point(4, 22);
             this.tabFirstComunion.Name = "tabFirstComunion";
-            this.tabFirstComunion.Size = new System.Drawing.Size(1092, 663);
+            this.tabFirstComunion.Size = new System.Drawing.Size(1053, 663);
             this.tabFirstComunion.TabIndex = 2;
             this.tabFirstComunion.Text = "Primera Comunión";
             this.tabFirstComunion.Click += new System.EventHandler(this.tabFirstComunion_Click);
@@ -1253,7 +1128,7 @@
             this.tabConfirmation.Controls.Add(this.dateTimePickerConfirmation);
             this.tabConfirmation.Location = new System.Drawing.Point(4, 22);
             this.tabConfirmation.Name = "tabConfirmation";
-            this.tabConfirmation.Size = new System.Drawing.Size(1092, 663);
+            this.tabConfirmation.Size = new System.Drawing.Size(1053, 663);
             this.tabConfirmation.TabIndex = 3;
             this.tabConfirmation.Text = "Confirmación";
             this.tabConfirmation.Click += new System.EventHandler(this.tabConfirmation_Click);
@@ -1645,7 +1520,7 @@
             this.tabMarriage.Controls.Add(this.dateTimePickerMarriage);
             this.tabMarriage.Location = new System.Drawing.Point(4, 22);
             this.tabMarriage.Name = "tabMarriage";
-            this.tabMarriage.Size = new System.Drawing.Size(1092, 663);
+            this.tabMarriage.Size = new System.Drawing.Size(1053, 663);
             this.tabMarriage.TabIndex = 4;
             this.tabMarriage.Text = "Matrimonio";
             this.tabMarriage.Click += new System.EventHandler(this.tabMarriage_Click);
@@ -2092,22 +1967,135 @@
             this.dateTimePickerMarriage.Size = new System.Drawing.Size(200, 20);
             this.dateTimePickerMarriage.TabIndex = 18;
             // 
-            // flowLayoutPanel1
+            // menupanel
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel1.Controls.Add(this.tabControl1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1100, 692);
-            this.flowLayoutPanel1.TabIndex = 1;
+            this.menupanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
+            this.menupanel.Controls.Add(this.buttonMarriage);
+            this.menupanel.Controls.Add(this.buttonConfirmation);
+            this.menupanel.Controls.Add(this.buttonFirstComunion);
+            this.menupanel.Controls.Add(this.buttonBaptism);
+            this.menupanel.Controls.Add(this.pictureBox2);
+            this.menupanel.Controls.Add(this.logopanel);
+            this.menupanel.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menupanel.Location = new System.Drawing.Point(0, 0);
+            this.menupanel.Name = "menupanel";
+            this.menupanel.Size = new System.Drawing.Size(189, 663);
+            this.menupanel.TabIndex = 86;
+            // 
+            // buttonMarriage
+            // 
+            this.buttonMarriage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
+            this.buttonMarriage.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
+            this.buttonMarriage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMarriage.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMarriage.ForeColor = System.Drawing.Color.LightGray;
+            this.buttonMarriage.Location = new System.Drawing.Point(0, 174);
+            this.buttonMarriage.Name = "buttonMarriage";
+            this.buttonMarriage.Size = new System.Drawing.Size(189, 45);
+            this.buttonMarriage.TabIndex = 90;
+            this.buttonMarriage.Text = "Matrimonio";
+            this.buttonMarriage.UseVisualStyleBackColor = false;
+            this.buttonMarriage.Click += new System.EventHandler(this.buttonMarriage_Click);
+            // 
+            // buttonConfirmation
+            // 
+            this.buttonConfirmation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
+            this.buttonConfirmation.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
+            this.buttonConfirmation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonConfirmation.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonConfirmation.ForeColor = System.Drawing.Color.LightGray;
+            this.buttonConfirmation.Location = new System.Drawing.Point(0, 129);
+            this.buttonConfirmation.Name = "buttonConfirmation";
+            this.buttonConfirmation.Size = new System.Drawing.Size(189, 45);
+            this.buttonConfirmation.TabIndex = 89;
+            this.buttonConfirmation.Text = "Confirmación";
+            this.buttonConfirmation.UseVisualStyleBackColor = false;
+            this.buttonConfirmation.Click += new System.EventHandler(this.buttonConfirmation_Click);
+            // 
+            // buttonFirstComunion
+            // 
+            this.buttonFirstComunion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
+            this.buttonFirstComunion.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
+            this.buttonFirstComunion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonFirstComunion.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonFirstComunion.ForeColor = System.Drawing.Color.LightGray;
+            this.buttonFirstComunion.Location = new System.Drawing.Point(0, 87);
+            this.buttonFirstComunion.Name = "buttonFirstComunion";
+            this.buttonFirstComunion.Size = new System.Drawing.Size(189, 45);
+            this.buttonFirstComunion.TabIndex = 88;
+            this.buttonFirstComunion.Text = "Primera Comunión";
+            this.buttonFirstComunion.UseVisualStyleBackColor = false;
+            this.buttonFirstComunion.Click += new System.EventHandler(this.buttonFirstComunion_Click);
+            // 
+            // buttonBaptism
+            // 
+            this.buttonBaptism.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
+            this.buttonBaptism.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
+            this.buttonBaptism.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBaptism.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBaptism.ForeColor = System.Drawing.Color.LightGray;
+            this.buttonBaptism.Location = new System.Drawing.Point(0, 49);
+            this.buttonBaptism.Name = "buttonBaptism";
+            this.buttonBaptism.Size = new System.Drawing.Size(189, 45);
+            this.buttonBaptism.TabIndex = 87;
+            this.buttonBaptism.Text = "Bautismo";
+            this.buttonBaptism.UseVisualStyleBackColor = false;
+            this.buttonBaptism.Click += new System.EventHandler(this.buttonBaptism_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(50, 63);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(0, 0);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // logopanel
+            // 
+            this.logopanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(126)))), ((int)(((byte)(49)))));
+            this.logopanel.Controls.Add(this.pictureBox3);
+            this.logopanel.Controls.Add(this.pictureBox1);
+            this.logopanel.Controls.Add(this.lbsistema);
+            this.logopanel.Location = new System.Drawing.Point(-5, 0);
+            this.logopanel.Name = "logopanel";
+            this.logopanel.Size = new System.Drawing.Size(194, 50);
+            this.logopanel.TabIndex = 0;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(34, 7);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(41, 40);
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(34, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(0, 0);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lbsistema
+            // 
+            this.lbsistema.AutoSize = true;
+            this.lbsistema.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbsistema.ForeColor = System.Drawing.SystemColors.Info;
+            this.lbsistema.Location = new System.Drawing.Point(71, 12);
+            this.lbsistema.Name = "lbsistema";
+            this.lbsistema.Size = new System.Drawing.Size(90, 25);
+            this.lbsistema.TabIndex = 0;
+            this.lbsistema.Text = "Sistema";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Info;
-            this.panel2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel2.Location = new System.Drawing.Point(189, -1);
+            this.panel2.Location = new System.Drawing.Point(188, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(903, 50);
+            this.panel2.Size = new System.Drawing.Size(1057, 51);
             this.panel2.TabIndex = 87;
             // 
             // Archiver
@@ -2116,20 +2104,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(955, 543);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(1246, 663);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.menupanel);
+            this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Archiver";
             this.Text = "Archiver";
             this.TransparencyKey = System.Drawing.Color.White;
             this.tabControl1.ResumeLayout(false);
             this.tabBaptism.ResumeLayout(false);
             this.tabBaptism.PerformLayout();
-            this.menupanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.logopanel.ResumeLayout(false);
-            this.logopanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxSearchB.ResumeLayout(false);
             this.groupBoxSearchB.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaptism)).EndInit();
@@ -2154,7 +2139,12 @@
             this.groupBoxWifeM.PerformLayout();
             this.groupBoxHusbandM.ResumeLayout(false);
             this.groupBoxHusbandM.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.menupanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.logopanel.ResumeLayout(false);
+            this.logopanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2270,7 +2260,6 @@
         private System.Windows.Forms.Label labelMunicipalityM;
         private System.Windows.Forms.TextBox textBoxStateM;
         private System.Windows.Forms.Label labelStateM;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button buttonClearB;
         private System.Windows.Forms.Button buttonDeleteB;
         private System.Windows.Forms.Button buttonSaveB;
@@ -2336,10 +2325,10 @@
         private System.Windows.Forms.Panel logopanel;
         private System.Windows.Forms.Label lbsistema;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnBau;
+        private System.Windows.Forms.Button buttonMarriage;
+        private System.Windows.Forms.Button buttonConfirmation;
+        private System.Windows.Forms.Button buttonFirstComunion;
+        private System.Windows.Forms.Button buttonBaptism;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel2;

@@ -699,14 +699,24 @@ namespace Archiver
 
         }
 
-        private void radioButtonMasculinB_CheckedChanged(object sender, EventArgs e)
+        private void buttonBaptism_Click(object sender, EventArgs e)
         {
-
+            tabControl1.SelectedTab = tabBaptism;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void buttonFirstComunion_Click(object sender, EventArgs e)
         {
+            tabControl1.SelectedTab = tabFirstComunion;
+        }
 
+        private void buttonConfirmation_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabConfirmation;
+        }
+
+        private void buttonMarriage_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabMarriage;
         }
     }
 }

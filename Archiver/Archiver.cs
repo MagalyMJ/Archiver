@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
+using Word = Microsoft.Office.Interop.Word;
 
 namespace Archiver
 {
@@ -778,6 +779,53 @@ namespace Archiver
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabHome;
+        }
+
+        private void printBaptismF_Click(object sender, EventArgs e)
+        {
+            /*Microsoft.Office.Interop.Word.Application wordApp = new Microsoft.Office.Interop.Word.Application();
+            wordApp.Visible = true;
+            object missing = Missing.Value;
+            Document wordDoc = wordApp.Documents.Add(ref missing, ref missing, ref missing, ref missing);
+
+            wordDoc.Content.SetRange(0, 0);
+            */
+            
+            object objMissing = System.Reflection.Missing.Value;
+            Word.Application objWord = new Word.Application();
+            string route = Application.StartupPath + @"\acta_bautismo.docx";
+            object param = route;
+            Word.Document objDoc = objWord.Documents.Open(param, objMissing);
+
+            DateTime date = dateTimePickerBaptism.Value;
+
+            object dayBookmark = "day";
+            object monthBookmark = "month";
+            object yearBookmark = "year";
+            object nameBookmark = "name";
+
+            Word.Range day = objDoc.Bookmarks.get_Item(ref dayBookmark).Range;
+            Word.Range month = objDoc.Bookmarks.get_Item(ref monthBookmark).Range;
+            Word.Range year = objDoc.Bookmarks.get_Item(ref yearBookmark).Range;
+            Word.Range name = objDoc.Bookmarks.get_Item(ref nameBookmark).Range;
+
+            day.Text = date.ToString("dd");
+            month.Text = date.ToString("MM");
+            year.Text = date.ToString("yy");
+            name.Text = (string)textBoxNameB.Text;
+
+            object dayRange = day;
+            object monthRange = month;
+            object yearRange = year;
+            object nameRange = name;
+
+            objDoc.Bookmarks.Add("day", ref dayRange);
+            objDoc.Bookmarks.Add("month", ref monthRange);
+            objDoc.Bookmarks.Add("year", ref yearRange);
+            objDoc.Bookmarks.Add("name", ref nameRange);
+
+            objWord.Visible = true;
+           
         }
     }
 }

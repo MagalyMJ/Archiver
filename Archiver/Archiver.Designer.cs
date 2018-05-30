@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Archiver));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Archiver));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
             this.tabBaptism = new System.Windows.Forms.TabPage();
@@ -219,6 +219,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.printBaptismF = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabBaptism.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -244,6 +245,7 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.printBaptismF)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -275,6 +277,7 @@
             // 
             this.tabBaptism.BackColor = System.Drawing.Color.Gainsboro;
             this.tabBaptism.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabBaptism.Controls.Add(this.printBaptismF);
             this.tabBaptism.Controls.Add(this.pictureBox6);
             this.tabBaptism.Controls.Add(this.groupBoxSearchB);
             this.tabBaptism.Controls.Add(this.panel4);
@@ -2227,6 +2230,16 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
+            // printBaptismF
+            // 
+            this.printBaptismF.Image = ((System.Drawing.Image)(resources.GetObject("printBaptismF.Image")));
+            this.printBaptismF.Location = new System.Drawing.Point(685, 536);
+            this.printBaptismF.Name = "printBaptismF";
+            this.printBaptismF.Size = new System.Drawing.Size(37, 34);
+            this.printBaptismF.TabIndex = 91;
+            this.printBaptismF.TabStop = false;
+            this.printBaptismF.Click += new System.EventHandler(this.printBaptismF_Click);
+            // 
             // Archiver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2278,6 +2291,7 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.printBaptismF)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2470,6 +2484,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox printBaptismF;
     }
 }
 

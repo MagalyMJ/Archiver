@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using Word = Microsoft.Office.Interop.Word;
+using System.Globalization;
 
 namespace Archiver
 {
@@ -809,7 +810,7 @@ namespace Archiver
                 foreach (Word.ContentControl m in month)
                 {
                     Word.Range r = m.Range;
-                    r.Text = date.ToString("MM");
+                    r.Text = date.ToString("MMMM", CultureInfo.CreateSpecificCulture("es"));
                     Word.Range monthRange = r;
                     objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, monthRange);
                 }

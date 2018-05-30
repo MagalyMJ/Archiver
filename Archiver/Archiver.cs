@@ -783,14 +783,6 @@ namespace Archiver
 
         private void printBaptismF_Click(object sender, EventArgs e)
         {
-            /*Microsoft.Office.Interop.Word.Application wordApp = new Microsoft.Office.Interop.Word.Application();
-            wordApp.Visible = true;
-            object missing = Missing.Value;
-            Document wordDoc = wordApp.Documents.Add(ref missing, ref missing, ref missing, ref missing);
-
-            wordDoc.Content.SetRange(0, 0);
-            */
-            
             object objMissing = System.Reflection.Missing.Value;
             Word.Application objWord = new Word.Application();
             string route = Application.StartupPath + @"\acta_bautismo.docx";
@@ -799,30 +791,53 @@ namespace Archiver
 
             DateTime date = dateTimePickerBaptism.Value;
 
-            object dayBookmark = "day";
-            object monthBookmark = "month";
-            object yearBookmark = "year";
-            object nameBookmark = "name";
+            Word.ContentControls day = objDoc.SelectContentControlsByTag("day");
+            if(day.Count > 0)
+            {
+                foreach (Word.ContentControl d in day)
+                {
+                    Word.Range r = d.Range;
+                    r.Text = date.ToString("dd");
+                    Word.Range dayRange = r;
+                    objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, dayRange);
+                }
+            }
 
-            Word.Range day = objDoc.Bookmarks.get_Item(ref dayBookmark).Range;
-            Word.Range month = objDoc.Bookmarks.get_Item(ref monthBookmark).Range;
-            Word.Range year = objDoc.Bookmarks.get_Item(ref yearBookmark).Range;
-            Word.Range name = objDoc.Bookmarks.get_Item(ref nameBookmark).Range;
+            Word.ContentControls month = objDoc.SelectContentControlsByTag("month");
+            if (month.Count > 0)
+            {
+                foreach (Word.ContentControl m in month)
+                {
+                    Word.Range r = m.Range;
+                    r.Text = date.ToString("MM");
+                    Word.Range monthRange = r;
+                    objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, monthRange);
+                }
+            }
 
-            day.Text = date.ToString("dd");
-            month.Text = date.ToString("MM");
-            year.Text = date.ToString("yy");
-            name.Text = (string)textBoxNameB.Text;
+            Word.ContentControls year = objDoc.SelectContentControlsByTag("year");
+            if (year.Count > 0)
+            {
+                foreach (Word.ContentControl y in year)
+                {
+                    Word.Range r = y.Range;
+                    r.Text = date.ToString("yy");
+                    Word.Range yearRange = r;
+                    objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, yearRange);
+                }
+            }
 
-            object dayRange = day;
-            object monthRange = month;
-            object yearRange = year;
-            object nameRange = name;
-
-            objDoc.Bookmarks.Add("day", ref dayRange);
-            objDoc.Bookmarks.Add("month", ref monthRange);
-            objDoc.Bookmarks.Add("year", ref yearRange);
-            objDoc.Bookmarks.Add("name", ref nameRange);
+            Word.ContentControls name = objDoc.SelectContentControlsByTag("name");
+            if (name.Count > 0)
+            {
+                foreach (Word.ContentControl n in name)
+                {
+                    Word.Range r = n.Range;
+                    r.Text = textBoxNameB.Text;
+                    Word.Range nameRange = r;
+                    objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, nameRange);
+                }
+            }
 
             objWord.Visible = true;
            

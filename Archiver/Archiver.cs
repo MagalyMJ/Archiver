@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 
 namespace Archiver
 {
@@ -698,25 +699,85 @@ namespace Archiver
             clearSearchMarriage();
 
         }
-
+        
         private void buttonBaptism_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabBaptism;
+            buttonBaptism.BackColor = Color.FromArgb(35, 45, 43);
+            buttonFirstComunion.BackColor = Color.FromArgb(41, 53, 55);
+            buttonConfirmation.BackColor = Color.FromArgb(41, 53, 55);
+            buttonMarriage.BackColor = Color.FromArgb(41, 53, 55);
+        }
+
+        private void buttonBaptism_MouseEnter(object sender, EventArgs e)
+        {
+            buttonBaptism.ForeColor = Color.FromArgb(229, 126, 49);
+
+        }
+        private void buttonBaptism_MouseLeave(object sender, EventArgs e)
+        {
+            buttonBaptism.ForeColor = Color.LightGray;
+         
+
         }
 
         private void buttonFirstComunion_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabFirstComunion;
+            buttonBaptism.BackColor = Color.FromArgb(41, 53, 55);
+            buttonFirstComunion.BackColor = Color.FromArgb(35, 45, 43);
+            buttonConfirmation.BackColor = Color.FromArgb(41, 53, 55);
+            buttonMarriage.BackColor = Color.FromArgb(41, 53, 55);
+        }
+
+        private void buttonFirstComunion_Enter(object sender, EventArgs e)
+        {
+            buttonFirstComunion.ForeColor = Color.FromArgb(229, 126, 49);
+
+        }
+        private void buttonFirstComunion_Leave(object sender, EventArgs e)
+        {
+            buttonFirstComunion.ForeColor = Color.LightGray;
         }
 
         private void buttonConfirmation_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabConfirmation;
+            buttonBaptism.BackColor = Color.FromArgb(41, 53, 55);
+            buttonFirstComunion.BackColor = Color.FromArgb(41, 53, 55);
+            buttonConfirmation.BackColor = Color.FromArgb(35, 45, 43);
+            buttonMarriage.BackColor = Color.FromArgb(41, 53, 55);
         }
+        private void buttonConfirmation_Enter(object sender, EventArgs e)
+        {
+            buttonConfirmation.ForeColor = Color.FromArgb(229, 126, 49);
 
+        }
+        private void buttonConfirmation_MouseLeave(object sender, EventArgs e)
+        {
+            buttonConfirmation.ForeColor = Color.LightGray;
+        }
         private void buttonMarriage_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabMarriage;
+            buttonBaptism.BackColor = Color.FromArgb(41, 53, 55);
+            buttonFirstComunion.BackColor = Color.FromArgb(41, 53, 55);
+            buttonConfirmation.BackColor = Color.FromArgb(41, 53, 55);
+            buttonMarriage.BackColor = Color.FromArgb(35, 45, 43);
+        }
+        private void buttonMarriage_Enter(object sender, EventArgs e)
+        {
+            buttonMarriage.ForeColor = Color.FromArgb(229, 126, 49);
+
+        }
+        private void buttonMarriage_MouseLeave(object sender, EventArgs e)
+        {
+            buttonMarriage.ForeColor = Color.LightGray;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabHome;
         }
     }
 }

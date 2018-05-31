@@ -788,60 +788,144 @@ namespace Archiver
             Word.Application objWord = new Word.Application();
             string route = Application.StartupPath + @"\acta_bautismo.docx";
             object param = route;
-            Word.Document objDoc = objWord.Documents.Open(param, objMissing);
+            Word.Document objDoc = objWord.Documents.Open(param, ref objMissing);
 
             DateTime date = dateTimePickerBaptism.Value;
 
-            Word.ContentControls day = objDoc.SelectContentControlsByTag("day");
-            if(day.Count > 0)
+            Word.ContentControls days = objDoc.SelectContentControlsByTag("day");
+            if(days.Count > 0)
             {
-                foreach (Word.ContentControl d in day)
+                foreach (Word.ContentControl day in days)
                 {
-                    Word.Range r = d.Range;
+                    Word.Range r = day.Range;
                     r.Text = date.ToString("dd");
                     Word.Range dayRange = r;
                     objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, dayRange);
                 }
             }
 
-            Word.ContentControls month = objDoc.SelectContentControlsByTag("month");
-            if (month.Count > 0)
+            Word.ContentControls months = objDoc.SelectContentControlsByTag("month");
+            if (months.Count > 0)
             {
-                foreach (Word.ContentControl m in month)
+                foreach (Word.ContentControl month in months)
                 {
-                    Word.Range r = m.Range;
+                    Word.Range r = month.Range;
                     r.Text = date.ToString("MMMM", CultureInfo.CreateSpecificCulture("es"));
                     Word.Range monthRange = r;
                     objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, monthRange);
                 }
             }
 
-            Word.ContentControls year = objDoc.SelectContentControlsByTag("year");
-            if (year.Count > 0)
+            Word.ContentControls years = objDoc.SelectContentControlsByTag("year");
+            if (years.Count > 0)
             {
-                foreach (Word.ContentControl y in year)
+                foreach (Word.ContentControl year in years)
                 {
-                    Word.Range r = y.Range;
+                    Word.Range r = year.Range;
                     r.Text = date.ToString("yy");
                     Word.Range yearRange = r;
                     objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, yearRange);
                 }
             }
 
-            Word.ContentControls name = objDoc.SelectContentControlsByTag("name");
-            if (name.Count > 0)
+            Word.ContentControls names = objDoc.SelectContentControlsByTag("name");
+            if (names.Count > 0)
             {
-                foreach (Word.ContentControl n in name)
+                foreach (Word.ContentControl name in names)
                 {
-                    Word.Range r = n.Range;
+                    Word.Range r = name.Range;
                     r.Text = textBoxNameB.Text;
                     Word.Range nameRange = r;
                     objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, nameRange);
                 }
             }
 
+            Word.ContentControls fathers = objDoc.SelectContentControlsByTag("father");
+            if (fathers.Count > 0)
+            {
+                foreach (Word.ContentControl father in fathers)
+                {
+                    Word.Range r = father.Range;
+                    r.Text = textBoxFatherNameB.Text;
+                    Word.Range fatherRange = r;
+                    objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, fatherRange);
+                }
+            }
+
+            Word.ContentControls mothers = objDoc.SelectContentControlsByTag("mother");
+            if (mothers.Count > 0)
+            {
+                foreach (Word.ContentControl mother in mothers)
+                {
+                    Word.Range r = mother.Range;
+                    r.Text = textBoxMotherNameB.Text;
+                    Word.Range motherRange = r;
+                    objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, motherRange);
+                }
+            }
+
+            Word.ContentControls godfathers = objDoc.SelectContentControlsByTag("godfathers");
+            if (godfathers.Count > 0)
+            {
+                foreach (Word.ContentControl godfather in godfathers)
+                {
+                    Word.Range r = godfather.Range;
+                    r.Text = (textBoxGodFather1B.Text + ", " + textBoxGodFather2B.Text);
+                    Word.Range godfathersRange = r;
+                    objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, godfathersRange);
+                }
+            }
+
+            Word.ContentControls books = objDoc.SelectContentControlsByTag("book");
+            if (books.Count > 0)
+            {
+                foreach (Word.ContentControl book in books)
+                {
+                    Word.Range r = book.Range;
+                    r.Text = textBoxBookNumberB.Text;
+                    Word.Range bookRange = r;
+                    objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, bookRange);
+                }
+            }
+
+            Word.ContentControls sheets = objDoc.SelectContentControlsByTag("sheet");
+            if (sheets.Count > 0)
+            {
+                foreach (Word.ContentControl sheet in sheets)
+                {
+                    Word.Range r = sheet.Range;
+                    r.Text = textBoxSheetNumberB.Text;
+                    Word.Range sheetRange = r;
+                    objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, sheetRange);
+                }
+            }
+
+            Word.ContentControls entries = objDoc.SelectContentControlsByTag("entry");
+            if (entries.Count > 0)
+            {
+                foreach (Word.ContentControl entry in entries)
+                {
+                    Word.Range r = entry.Range;
+                    r.Text = textBoxEntryNumberB.Text;
+                    Word.Range entryRange = r;
+                    objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, entryRange);
+                }
+            }
+
+            Word.ContentControls todays = objDoc.SelectContentControlsByTag("today");
+            if (todays.Count > 0)
+            {
+                foreach (Word.ContentControl today in todays)
+                {
+                    Word.Range r = today.Range;
+                    r.Text = DateTime.Now.ToString("D", new CultureInfo("es-ES"));
+                    Word.Range todayRange = r;
+                    objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, todayRange);
+                }
+            }
+
             objWord.Visible = true;
-           
+            System.Runtime.InteropServices.Marshal.ReleaseComObject(objWord);
         }
     }
 }

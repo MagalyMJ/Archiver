@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Archiver));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
             this.tabBaptism = new System.Windows.Forms.TabPage();
@@ -82,6 +82,8 @@
             this.labelNameB = new System.Windows.Forms.Label();
             this.dateTimePickerBaptism = new System.Windows.Forms.DateTimePicker();
             this.tabFirstComunion = new System.Windows.Forms.TabPage();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.groupBoxSearchF = new System.Windows.Forms.GroupBox();
             this.buttonSearchF = new System.Windows.Forms.Button();
             this.textBoxSearchEntryF = new System.Windows.Forms.TextBox();
@@ -217,9 +219,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbsistema = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPrint = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.printBaptismF = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabBaptism.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -227,6 +230,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaptism)).BeginInit();
             this.groupBoxBaptismGender.SuspendLayout();
             this.tabFirstComunion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.groupBoxSearchF.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFisrtComunion)).BeginInit();
             this.tabConfirmation.SuspendLayout();
@@ -243,9 +247,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPrint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.printBaptismF)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -258,8 +261,9 @@
             this.tabControl1.Location = new System.Drawing.Point(185, 25);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
+            this.tabControl1.Padding = new System.Drawing.Point(0, 0);
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1061, 638);
+            this.tabControl1.Size = new System.Drawing.Size(1152, 800);
             this.tabControl1.TabIndex = 0;
             // 
             // tabHome
@@ -269,7 +273,7 @@
             this.tabHome.Location = new System.Drawing.Point(4, 22);
             this.tabHome.Margin = new System.Windows.Forms.Padding(0);
             this.tabHome.Name = "tabHome";
-            this.tabHome.Size = new System.Drawing.Size(1053, 612);
+            this.tabHome.Size = new System.Drawing.Size(1144, 774);
             this.tabHome.TabIndex = 0;
             this.tabHome.Text = "Inicio";
             // 
@@ -277,7 +281,6 @@
             // 
             this.tabBaptism.BackColor = System.Drawing.Color.Gainsboro;
             this.tabBaptism.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabBaptism.Controls.Add(this.printBaptismF);
             this.tabBaptism.Controls.Add(this.pictureBox6);
             this.tabBaptism.Controls.Add(this.groupBoxSearchB);
             this.tabBaptism.Controls.Add(this.panel4);
@@ -317,7 +320,7 @@
             this.tabBaptism.Location = new System.Drawing.Point(4, 22);
             this.tabBaptism.Name = "tabBaptism";
             this.tabBaptism.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBaptism.Size = new System.Drawing.Size(1053, 612);
+            this.tabBaptism.Size = new System.Drawing.Size(1144, 774);
             this.tabBaptism.TabIndex = 1;
             this.tabBaptism.Text = "Bautismo";
             this.tabBaptism.Click += new System.EventHandler(this.tabBaptism_Click);
@@ -343,9 +346,9 @@
             this.groupBoxSearchB.Controls.Add(this.labelSearchEntryB);
             this.groupBoxSearchB.Controls.Add(this.labelSearchNameB);
             this.groupBoxSearchB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxSearchB.Location = new System.Drawing.Point(584, 141);
+            this.groupBoxSearchB.Location = new System.Drawing.Point(26, 488);
             this.groupBoxSearchB.Name = "groupBoxSearchB";
-            this.groupBoxSearchB.Size = new System.Drawing.Size(595, 153);
+            this.groupBoxSearchB.Size = new System.Drawing.Size(998, 74);
             this.groupBoxSearchB.TabIndex = 84;
             this.groupBoxSearchB.TabStop = false;
             this.groupBoxSearchB.Text = "Buscar";
@@ -353,16 +356,16 @@
             // textBoxSearchSheetB
             // 
             this.textBoxSearchSheetB.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxSearchSheetB.Location = new System.Drawing.Point(226, 73);
+            this.textBoxSearchSheetB.Location = new System.Drawing.Point(621, 28);
             this.textBoxSearchSheetB.Name = "textBoxSearchSheetB";
-            this.textBoxSearchSheetB.Size = new System.Drawing.Size(49, 27);
+            this.textBoxSearchSheetB.Size = new System.Drawing.Size(59, 27);
             this.textBoxSearchSheetB.TabIndex = 87;
             // 
             // buttonSearchB
             // 
             this.buttonSearchB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(176)))), ((int)(((byte)(65)))));
-            this.buttonSearchB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonSearchB.Location = new System.Drawing.Point(188, 118);
+            this.buttonSearchB.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.buttonSearchB.Location = new System.Drawing.Point(865, 31);
             this.buttonSearchB.Name = "buttonSearchB";
             this.buttonSearchB.Size = new System.Drawing.Size(133, 28);
             this.buttonSearchB.TabIndex = 89;
@@ -373,7 +376,7 @@
             // textBoxSearchBookB
             // 
             this.textBoxSearchBookB.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxSearchBookB.Location = new System.Drawing.Point(101, 73);
+            this.textBoxSearchBookB.Location = new System.Drawing.Point(487, 26);
             this.textBoxSearchBookB.Name = "textBoxSearchBookB";
             this.textBoxSearchBookB.Size = new System.Drawing.Size(59, 27);
             this.textBoxSearchBookB.TabIndex = 86;
@@ -381,15 +384,15 @@
             // textBoxSearchEntryB
             // 
             this.textBoxSearchEntryB.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxSearchEntryB.Location = new System.Drawing.Point(378, 73);
+            this.textBoxSearchEntryB.Location = new System.Drawing.Point(784, 28);
             this.textBoxSearchEntryB.Name = "textBoxSearchEntryB";
-            this.textBoxSearchEntryB.Size = new System.Drawing.Size(40, 27);
+            this.textBoxSearchEntryB.Size = new System.Drawing.Size(59, 27);
             this.textBoxSearchEntryB.TabIndex = 88;
             // 
             // labelSearchSheetB
             // 
             this.labelSearchSheetB.AutoSize = true;
-            this.labelSearchSheetB.Location = new System.Drawing.Point(171, 76);
+            this.labelSearchSheetB.Location = new System.Drawing.Point(563, 30);
             this.labelSearchSheetB.Name = "labelSearchSheetB";
             this.labelSearchSheetB.Size = new System.Drawing.Size(44, 21);
             this.labelSearchSheetB.TabIndex = 84;
@@ -398,7 +401,7 @@
             // labelSearchBookB
             // 
             this.labelSearchBookB.AutoSize = true;
-            this.labelSearchBookB.Location = new System.Drawing.Point(17, 73);
+            this.labelSearchBookB.Location = new System.Drawing.Point(423, 28);
             this.labelSearchBookB.Name = "labelSearchBookB";
             this.labelSearchBookB.Size = new System.Drawing.Size(46, 21);
             this.labelSearchBookB.TabIndex = 83;
@@ -409,13 +412,13 @@
             this.textBoxSearchNameB.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchNameB.Location = new System.Drawing.Point(100, 27);
             this.textBoxSearchNameB.Name = "textBoxSearchNameB";
-            this.textBoxSearchNameB.Size = new System.Drawing.Size(318, 27);
+            this.textBoxSearchNameB.Size = new System.Drawing.Size(294, 27);
             this.textBoxSearchNameB.TabIndex = 82;
             // 
             // labelSearchEntryB
             // 
             this.labelSearchEntryB.AutoSize = true;
-            this.labelSearchEntryB.Location = new System.Drawing.Point(291, 76);
+            this.labelSearchEntryB.Location = new System.Drawing.Point(697, 31);
             this.labelSearchEntryB.Name = "labelSearchEntryB";
             this.labelSearchEntryB.Size = new System.Drawing.Size(67, 21);
             this.labelSearchEntryB.TabIndex = 85;
@@ -435,15 +438,15 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
             this.panel4.Location = new System.Drawing.Point(551, 122);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(10, 280);
+            this.panel4.Size = new System.Drawing.Size(10, 285);
             this.panel4.TabIndex = 87;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(132)))), ((int)(((byte)(73)))));
-            this.panel3.Location = new System.Drawing.Point(567, 103);
+            this.panel3.Location = new System.Drawing.Point(23, 458);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(469, 10);
+            this.panel3.Size = new System.Drawing.Size(1019, 10);
             this.panel3.TabIndex = 86;
             // 
             // dataGridViewBaptism
@@ -451,17 +454,17 @@
             this.dataGridViewBaptism.AllowUserToAddRows = false;
             this.dataGridViewBaptism.AllowUserToDeleteRows = false;
             this.dataGridViewBaptism.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewBaptism.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewBaptism.Location = new System.Drawing.Point(605, 293);
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewBaptism.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridViewBaptism.Location = new System.Drawing.Point(47, 568);
             this.dataGridViewBaptism.Name = "dataGridViewBaptism";
-            this.dataGridViewBaptism.Size = new System.Drawing.Size(428, 122);
+            this.dataGridViewBaptism.Size = new System.Drawing.Size(960, 122);
             this.dataGridViewBaptism.TabIndex = 80;
             this.dataGridViewBaptism.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewBaptism_RowHeaderMouseDoubleClick);
             // 
@@ -485,7 +488,7 @@
             // 
             this.buttonClearB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(132)))), ((int)(((byte)(73)))));
             this.buttonClearB.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonClearB.Location = new System.Drawing.Point(461, 566);
+            this.buttonClearB.Location = new System.Drawing.Point(888, 395);
             this.buttonClearB.Name = "buttonClearB";
             this.buttonClearB.Size = new System.Drawing.Size(87, 38);
             this.buttonClearB.TabIndex = 79;
@@ -497,7 +500,7 @@
             // 
             this.buttonDeleteB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
             this.buttonDeleteB.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonDeleteB.Location = new System.Drawing.Point(341, 565);
+            this.buttonDeleteB.Location = new System.Drawing.Point(768, 394);
             this.buttonDeleteB.Name = "buttonDeleteB";
             this.buttonDeleteB.Size = new System.Drawing.Size(87, 38);
             this.buttonDeleteB.TabIndex = 78;
@@ -509,7 +512,7 @@
             // 
             this.buttonSaveB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(97)))), ((int)(((byte)(140)))));
             this.buttonSaveB.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.buttonSaveB.Location = new System.Drawing.Point(224, 565);
+            this.buttonSaveB.Location = new System.Drawing.Point(651, 394);
             this.buttonSaveB.Name = "buttonSaveB";
             this.buttonSaveB.Size = new System.Drawing.Size(87, 38);
             this.buttonSaveB.TabIndex = 77;
@@ -522,21 +525,21 @@
             this.textBoxNotesB.AcceptsReturn = true;
             this.textBoxNotesB.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxNotesB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxNotesB.Location = new System.Drawing.Point(145, 491);
+            this.textBoxNotesB.Location = new System.Drawing.Point(581, 272);
             this.textBoxNotesB.Multiline = true;
             this.textBoxNotesB.Name = "textBoxNotesB";
-            this.textBoxNotesB.Size = new System.Drawing.Size(471, 59);
+            this.textBoxNotesB.Size = new System.Drawing.Size(455, 97);
             this.textBoxNotesB.TabIndex = 75;
             // 
             // labelNotesB
             // 
             this.labelNotesB.AutoSize = true;
             this.labelNotesB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNotesB.Location = new System.Drawing.Point(60, 497);
+            this.labelNotesB.Location = new System.Drawing.Point(588, 237);
             this.labelNotesB.Name = "labelNotesB";
-            this.labelNotesB.Size = new System.Drawing.Size(60, 21);
+            this.labelNotesB.Size = new System.Drawing.Size(56, 21);
             this.labelNotesB.TabIndex = 74;
-            this.labelNotesB.Text = "Notas:";
+            this.labelNotesB.Text = "Notas";
             // 
             // textBoxMunicipalityB
             // 
@@ -582,58 +585,58 @@
             // 
             this.textBoxEntryNumberB.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxEntryNumberB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxEntryNumberB.Location = new System.Drawing.Point(359, 450);
+            this.textBoxEntryNumberB.Location = new System.Drawing.Point(730, 165);
             this.textBoxEntryNumberB.Name = "textBoxEntryNumberB";
-            this.textBoxEntryNumberB.Size = new System.Drawing.Size(38, 23);
+            this.textBoxEntryNumberB.Size = new System.Drawing.Size(191, 23);
             this.textBoxEntryNumberB.TabIndex = 17;
             // 
             // labelEntryNumberB
             // 
             this.labelEntryNumberB.AutoSize = true;
             this.labelEntryNumberB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEntryNumberB.Location = new System.Drawing.Point(209, 447);
+            this.labelEntryNumberB.Location = new System.Drawing.Point(577, 165);
             this.labelEntryNumberB.Name = "labelEntryNumberB";
-            this.labelEntryNumberB.Size = new System.Drawing.Size(135, 21);
+            this.labelEntryNumberB.Size = new System.Drawing.Size(131, 21);
             this.labelEntryNumberB.TabIndex = 16;
-            this.labelEntryNumberB.Text = "Partida número:";
+            this.labelEntryNumberB.Text = "Partida número";
             // 
             // textBoxSheetNumberB
             // 
             this.textBoxSheetNumberB.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSheetNumberB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxSheetNumberB.Location = new System.Drawing.Point(551, 454);
+            this.textBoxSheetNumberB.Location = new System.Drawing.Point(730, 194);
             this.textBoxSheetNumberB.Name = "textBoxSheetNumberB";
-            this.textBoxSheetNumberB.Size = new System.Drawing.Size(38, 23);
+            this.textBoxSheetNumberB.Size = new System.Drawing.Size(191, 23);
             this.textBoxSheetNumberB.TabIndex = 15;
             // 
             // labelSheetNumberB
             // 
             this.labelSheetNumberB.AutoSize = true;
             this.labelSheetNumberB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSheetNumberB.Location = new System.Drawing.Point(413, 450);
+            this.labelSheetNumberB.Location = new System.Drawing.Point(598, 197);
             this.labelSheetNumberB.Name = "labelSheetNumberB";
-            this.labelSheetNumberB.Size = new System.Drawing.Size(112, 21);
+            this.labelSheetNumberB.Size = new System.Drawing.Size(108, 21);
             this.labelSheetNumberB.TabIndex = 14;
-            this.labelSheetNumberB.Text = "Folio número:";
+            this.labelSheetNumberB.Text = "Folio número";
             // 
             // textBoxBookNumberB
             // 
             this.textBoxBookNumberB.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxBookNumberB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxBookNumberB.Location = new System.Drawing.Point(145, 450);
+            this.textBoxBookNumberB.Location = new System.Drawing.Point(730, 135);
             this.textBoxBookNumberB.Name = "textBoxBookNumberB";
-            this.textBoxBookNumberB.Size = new System.Drawing.Size(38, 23);
+            this.textBoxBookNumberB.Size = new System.Drawing.Size(191, 23);
             this.textBoxBookNumberB.TabIndex = 13;
             // 
             // labelBookNumberB
             // 
             this.labelBookNumberB.AutoSize = true;
             this.labelBookNumberB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBookNumberB.Location = new System.Drawing.Point(14, 447);
+            this.labelBookNumberB.Location = new System.Drawing.Point(599, 132);
             this.labelBookNumberB.Name = "labelBookNumberB";
-            this.labelBookNumberB.Size = new System.Drawing.Size(114, 21);
+            this.labelBookNumberB.Size = new System.Drawing.Size(110, 21);
             this.labelBookNumberB.TabIndex = 12;
-            this.labelBookNumberB.Text = "Libro número:";
+            this.labelBookNumberB.Text = "Libro número";
             // 
             // textBoxGodFather2B
             // 
@@ -779,7 +782,9 @@
             // 
             // tabFirstComunion
             // 
-            this.tabFirstComunion.BackColor = System.Drawing.Color.SlateGray;
+            this.tabFirstComunion.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabFirstComunion.Controls.Add(this.panel5);
+            this.tabFirstComunion.Controls.Add(this.pictureBox7);
             this.tabFirstComunion.Controls.Add(this.groupBoxSearchF);
             this.tabFirstComunion.Controls.Add(this.textBoxIdF);
             this.tabFirstComunion.Controls.Add(this.buttonClearF);
@@ -808,12 +813,30 @@
             this.tabFirstComunion.Controls.Add(this.textBoxNameF);
             this.tabFirstComunion.Controls.Add(this.labelNameF);
             this.tabFirstComunion.Controls.Add(this.dateTimePickerFirstComunion);
+            this.tabFirstComunion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabFirstComunion.Location = new System.Drawing.Point(4, 22);
             this.tabFirstComunion.Name = "tabFirstComunion";
-            this.tabFirstComunion.Size = new System.Drawing.Size(1053, 612);
+            this.tabFirstComunion.Size = new System.Drawing.Size(1144, 774);
             this.tabFirstComunion.TabIndex = 2;
             this.tabFirstComunion.Text = "Primera Comunión";
             this.tabFirstComunion.Click += new System.EventHandler(this.tabFirstComunion_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
+            this.panel5.Location = new System.Drawing.Point(541, 132);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(10, 270);
+            this.panel5.TabIndex = 92;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(366, 45);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(67, 74);
+            this.pictureBox7.TabIndex = 91;
+            this.pictureBox7.TabStop = false;
             // 
             // groupBoxSearchF
             // 
@@ -827,71 +850,74 @@
             this.groupBoxSearchF.Controls.Add(this.dataGridViewFisrtComunion);
             this.groupBoxSearchF.Controls.Add(this.textBoxSearchNameF);
             this.groupBoxSearchF.Controls.Add(this.labelSearchNameF);
-            this.groupBoxSearchF.Location = new System.Drawing.Point(42, 263);
+            this.groupBoxSearchF.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxSearchF.Location = new System.Drawing.Point(43, 421);
             this.groupBoxSearchF.Name = "groupBoxSearchF";
-            this.groupBoxSearchF.Size = new System.Drawing.Size(989, 342);
+            this.groupBoxSearchF.Size = new System.Drawing.Size(989, 223);
             this.groupBoxSearchF.TabIndex = 87;
             this.groupBoxSearchF.TabStop = false;
             this.groupBoxSearchF.Text = "Buscar";
             // 
             // buttonSearchF
             // 
-            this.buttonSearchF.Location = new System.Drawing.Point(845, 17);
+            this.buttonSearchF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(176)))), ((int)(((byte)(65)))));
+            this.buttonSearchF.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.buttonSearchF.Location = new System.Drawing.Point(858, 21);
             this.buttonSearchF.Name = "buttonSearchF";
             this.buttonSearchF.Size = new System.Drawing.Size(105, 34);
             this.buttonSearchF.TabIndex = 92;
             this.buttonSearchF.Text = "Buscar";
-            this.buttonSearchF.UseVisualStyleBackColor = true;
+            this.buttonSearchF.UseVisualStyleBackColor = false;
             this.buttonSearchF.Click += new System.EventHandler(this.buttonSearchF_Click);
             // 
             // textBoxSearchEntryF
             // 
             this.textBoxSearchEntryF.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxSearchEntryF.Location = new System.Drawing.Point(678, 25);
+            this.textBoxSearchEntryF.Location = new System.Drawing.Point(691, 29);
             this.textBoxSearchEntryF.Name = "textBoxSearchEntryF";
-            this.textBoxSearchEntryF.Size = new System.Drawing.Size(119, 20);
+            this.textBoxSearchEntryF.Size = new System.Drawing.Size(119, 27);
             this.textBoxSearchEntryF.TabIndex = 91;
             // 
             // textBoxSearchSheetF
             // 
             this.textBoxSearchSheetF.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxSearchSheetF.Location = new System.Drawing.Point(492, 25);
+            this.textBoxSearchSheetF.Location = new System.Drawing.Point(505, 29);
             this.textBoxSearchSheetF.Name = "textBoxSearchSheetF";
-            this.textBoxSearchSheetF.Size = new System.Drawing.Size(123, 20);
+            this.textBoxSearchSheetF.Size = new System.Drawing.Size(123, 27);
             this.textBoxSearchSheetF.TabIndex = 90;
             // 
             // textBoxSearchBookF
             // 
             this.textBoxSearchBookF.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxSearchBookF.Location = new System.Drawing.Point(289, 25);
+            this.textBoxSearchBookF.Location = new System.Drawing.Point(302, 29);
             this.textBoxSearchBookF.Name = "textBoxSearchBookF";
-            this.textBoxSearchBookF.Size = new System.Drawing.Size(131, 20);
+            this.textBoxSearchBookF.Size = new System.Drawing.Size(131, 27);
             this.textBoxSearchBookF.TabIndex = 89;
             // 
             // labelSearchEntryF
             // 
             this.labelSearchEntryF.AutoSize = true;
-            this.labelSearchEntryF.Location = new System.Drawing.Point(626, 28);
+            this.labelSearchEntryF.Location = new System.Drawing.Point(639, 32);
             this.labelSearchEntryF.Name = "labelSearchEntryF";
-            this.labelSearchEntryF.Size = new System.Drawing.Size(43, 13);
+            this.labelSearchEntryF.Size = new System.Drawing.Size(71, 21);
             this.labelSearchEntryF.TabIndex = 88;
             this.labelSearchEntryF.Text = "Partida:";
             // 
             // labelSearchSheetF
             // 
             this.labelSearchSheetF.AutoSize = true;
-            this.labelSearchSheetF.Location = new System.Drawing.Point(443, 32);
+            this.labelSearchSheetF.Location = new System.Drawing.Point(456, 36);
             this.labelSearchSheetF.Name = "labelSearchSheetF";
-            this.labelSearchSheetF.Size = new System.Drawing.Size(32, 13);
+            this.labelSearchSheetF.Size = new System.Drawing.Size(48, 21);
             this.labelSearchSheetF.TabIndex = 87;
             this.labelSearchSheetF.Text = "Folio:";
             // 
             // labelSearchBookF
             // 
             this.labelSearchBookF.AutoSize = true;
-            this.labelSearchBookF.Location = new System.Drawing.Point(236, 32);
+            this.labelSearchBookF.Location = new System.Drawing.Point(249, 36);
             this.labelSearchBookF.Name = "labelSearchBookF";
-            this.labelSearchBookF.Size = new System.Drawing.Size(33, 13);
+            this.labelSearchBookF.Size = new System.Drawing.Size(50, 21);
             this.labelSearchBookF.TabIndex = 86;
             this.labelSearchBookF.Text = "Libro:";
             // 
@@ -900,50 +926,52 @@
             this.dataGridViewFisrtComunion.AllowUserToAddRows = false;
             this.dataGridViewFisrtComunion.AllowUserToDeleteRows = false;
             this.dataGridViewFisrtComunion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewFisrtComunion.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewFisrtComunion.Location = new System.Drawing.Point(25, 70);
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewFisrtComunion.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridViewFisrtComunion.Location = new System.Drawing.Point(26, 76);
             this.dataGridViewFisrtComunion.Name = "dataGridViewFisrtComunion";
-            this.dataGridViewFisrtComunion.Size = new System.Drawing.Size(925, 256);
+            this.dataGridViewFisrtComunion.Size = new System.Drawing.Size(925, 117);
             this.dataGridViewFisrtComunion.TabIndex = 83;
             this.dataGridViewFisrtComunion.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewFisrtComunion_RowHeaderMouseDoubleClick);
             // 
             // textBoxSearchNameF
             // 
             this.textBoxSearchNameF.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxSearchNameF.Location = new System.Drawing.Point(64, 25);
+            this.textBoxSearchNameF.Location = new System.Drawing.Point(77, 29);
             this.textBoxSearchNameF.Name = "textBoxSearchNameF";
-            this.textBoxSearchNameF.Size = new System.Drawing.Size(136, 20);
+            this.textBoxSearchNameF.Size = new System.Drawing.Size(136, 27);
             this.textBoxSearchNameF.TabIndex = 85;
             // 
             // labelSearchNameF
             // 
             this.labelSearchNameF.AutoSize = true;
-            this.labelSearchNameF.Location = new System.Drawing.Point(10, 28);
+            this.labelSearchNameF.Location = new System.Drawing.Point(23, 32);
             this.labelSearchNameF.Name = "labelSearchNameF";
-            this.labelSearchNameF.Size = new System.Drawing.Size(47, 13);
+            this.labelSearchNameF.Size = new System.Drawing.Size(77, 21);
             this.labelSearchNameF.TabIndex = 84;
             this.labelSearchNameF.Text = "Nombre:";
             // 
             // textBoxIdF
             // 
-            this.textBoxIdF.Location = new System.Drawing.Point(522, 21);
+            this.textBoxIdF.Location = new System.Drawing.Point(896, 107);
             this.textBoxIdF.Name = "textBoxIdF";
-            this.textBoxIdF.Size = new System.Drawing.Size(80, 20);
+            this.textBoxIdF.Size = new System.Drawing.Size(80, 27);
             this.textBoxIdF.TabIndex = 86;
             this.textBoxIdF.Text = "0";
             this.textBoxIdF.Visible = false;
             // 
             // buttonClearF
             // 
-            this.buttonClearF.BackColor = System.Drawing.Color.Coral;
-            this.buttonClearF.Location = new System.Drawing.Point(720, 150);
+            this.buttonClearF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(132)))), ((int)(((byte)(73)))));
+            this.buttonClearF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonClearF.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.buttonClearF.Location = new System.Drawing.Point(836, 366);
             this.buttonClearF.Name = "buttonClearF";
             this.buttonClearF.Size = new System.Drawing.Size(87, 38);
             this.buttonClearF.TabIndex = 82;
@@ -953,8 +981,10 @@
             // 
             // buttonDeleteF
             // 
-            this.buttonDeleteF.BackColor = System.Drawing.Color.Coral;
-            this.buttonDeleteF.Location = new System.Drawing.Point(720, 95);
+            this.buttonDeleteF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
+            this.buttonDeleteF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDeleteF.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.buttonDeleteF.Location = new System.Drawing.Point(730, 366);
             this.buttonDeleteF.Name = "buttonDeleteF";
             this.buttonDeleteF.Size = new System.Drawing.Size(87, 38);
             this.buttonDeleteF.TabIndex = 81;
@@ -964,8 +994,10 @@
             // 
             // buttonSaveF
             // 
-            this.buttonSaveF.BackColor = System.Drawing.Color.Coral;
-            this.buttonSaveF.Location = new System.Drawing.Point(720, 37);
+            this.buttonSaveF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(97)))), ((int)(((byte)(140)))));
+            this.buttonSaveF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSaveF.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.buttonSaveF.Location = new System.Drawing.Point(628, 366);
             this.buttonSaveF.Name = "buttonSaveF";
             this.buttonSaveF.Size = new System.Drawing.Size(87, 38);
             this.buttonSaveF.TabIndex = 80;
@@ -978,7 +1010,7 @@
             this.textBoxNotesF.AcceptsReturn = true;
             this.textBoxNotesF.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxNotesF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxNotesF.Location = new System.Drawing.Point(411, 118);
+            this.textBoxNotesF.Location = new System.Drawing.Point(704, 270);
             this.textBoxNotesF.Multiline = true;
             this.textBoxNotesF.Name = "textBoxNotesF";
             this.textBoxNotesF.Size = new System.Drawing.Size(191, 93);
@@ -987,203 +1019,224 @@
             // labelNotesF
             // 
             this.labelNotesF.AutoSize = true;
-            this.labelNotesF.Location = new System.Drawing.Point(367, 118);
+            this.labelNotesF.Location = new System.Drawing.Point(576, 251);
             this.labelNotesF.Name = "labelNotesF";
-            this.labelNotesF.Size = new System.Drawing.Size(38, 13);
+            this.labelNotesF.Size = new System.Drawing.Size(56, 21);
             this.labelNotesF.TabIndex = 68;
-            this.labelNotesF.Text = "Notas:";
+            this.labelNotesF.Text = "Notas";
             // 
             // textBoxMunicipalityF
             // 
             this.textBoxMunicipalityF.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxMunicipalityF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxMunicipalityF.Location = new System.Drawing.Point(492, 92);
+            this.textBoxMunicipalityF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMunicipalityF.Location = new System.Drawing.Point(280, 375);
             this.textBoxMunicipalityF.Name = "textBoxMunicipalityF";
-            this.textBoxMunicipalityF.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMunicipalityF.Size = new System.Drawing.Size(238, 23);
             this.textBoxMunicipalityF.TabIndex = 67;
             // 
             // labelMunicipalityF
             // 
             this.labelMunicipalityF.AutoSize = true;
-            this.labelMunicipalityF.Location = new System.Drawing.Point(439, 95);
+            this.labelMunicipalityF.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMunicipalityF.Location = new System.Drawing.Point(134, 371);
             this.labelMunicipalityF.Name = "labelMunicipalityF";
-            this.labelMunicipalityF.Size = new System.Drawing.Size(55, 13);
+            this.labelMunicipalityF.Size = new System.Drawing.Size(85, 21);
             this.labelMunicipalityF.TabIndex = 66;
-            this.labelMunicipalityF.Text = "Municipio:";
+            this.labelMunicipalityF.Text = "Municipio";
             // 
             // textBoxStateF
             // 
             this.textBoxStateF.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxStateF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxStateF.Location = new System.Drawing.Point(502, 59);
+            this.textBoxStateF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxStateF.Location = new System.Drawing.Point(280, 337);
             this.textBoxStateF.Name = "textBoxStateF";
-            this.textBoxStateF.Size = new System.Drawing.Size(100, 20);
+            this.textBoxStateF.Size = new System.Drawing.Size(238, 23);
             this.textBoxStateF.TabIndex = 65;
             // 
             // labelStateF
             // 
             this.labelStateF.AutoSize = true;
-            this.labelStateF.Location = new System.Drawing.Point(449, 62);
+            this.labelStateF.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStateF.Location = new System.Drawing.Point(159, 337);
             this.labelStateF.Name = "labelStateF";
-            this.labelStateF.Size = new System.Drawing.Size(43, 13);
+            this.labelStateF.Size = new System.Drawing.Size(64, 21);
             this.labelStateF.TabIndex = 64;
-            this.labelStateF.Text = "Estado:";
+            this.labelStateF.Text = "Estado";
             // 
             // textBoxEntryNumberF
             // 
             this.textBoxEntryNumberF.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxEntryNumberF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxEntryNumberF.Location = new System.Drawing.Point(534, 229);
+            this.textBoxEntryNumberF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEntryNumberF.Location = new System.Drawing.Point(716, 208);
             this.textBoxEntryNumberF.Name = "textBoxEntryNumberF";
-            this.textBoxEntryNumberF.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEntryNumberF.Size = new System.Drawing.Size(100, 23);
             this.textBoxEntryNumberF.TabIndex = 34;
             // 
             // labelEntryNumberF
             // 
             this.labelEntryNumberF.AutoSize = true;
-            this.labelEntryNumberF.Location = new System.Drawing.Point(450, 229);
+            this.labelEntryNumberF.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEntryNumberF.Location = new System.Drawing.Point(576, 206);
             this.labelEntryNumberF.Name = "labelEntryNumberF";
-            this.labelEntryNumberF.Size = new System.Drawing.Size(81, 13);
+            this.labelEntryNumberF.Size = new System.Drawing.Size(131, 21);
             this.labelEntryNumberF.TabIndex = 33;
-            this.labelEntryNumberF.Text = "Partida número:";
+            this.labelEntryNumberF.Text = "Partida número";
             // 
             // textBoxSheetNumberF
             // 
             this.textBoxSheetNumberF.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSheetNumberF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxSheetNumberF.Location = new System.Drawing.Point(316, 226);
+            this.textBoxSheetNumberF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSheetNumberF.Location = new System.Drawing.Point(716, 176);
             this.textBoxSheetNumberF.Name = "textBoxSheetNumberF";
-            this.textBoxSheetNumberF.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSheetNumberF.Size = new System.Drawing.Size(100, 23);
             this.textBoxSheetNumberF.TabIndex = 32;
             // 
             // labelSheetNumberF
             // 
             this.labelSheetNumberF.AutoSize = true;
-            this.labelSheetNumberF.Location = new System.Drawing.Point(240, 229);
+            this.labelSheetNumberF.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSheetNumberF.Location = new System.Drawing.Point(596, 174);
             this.labelSheetNumberF.Name = "labelSheetNumberF";
-            this.labelSheetNumberF.Size = new System.Drawing.Size(70, 13);
+            this.labelSheetNumberF.Size = new System.Drawing.Size(108, 21);
             this.labelSheetNumberF.TabIndex = 31;
-            this.labelSheetNumberF.Text = "Folio número:";
+            this.labelSheetNumberF.Text = "Folio número";
             // 
             // textBoxBookNumberF
             // 
             this.textBoxBookNumberF.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxBookNumberF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxBookNumberF.Location = new System.Drawing.Point(116, 223);
+            this.textBoxBookNumberF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxBookNumberF.Location = new System.Drawing.Point(716, 143);
             this.textBoxBookNumberF.Name = "textBoxBookNumberF";
-            this.textBoxBookNumberF.Size = new System.Drawing.Size(100, 20);
+            this.textBoxBookNumberF.Size = new System.Drawing.Size(100, 23);
             this.textBoxBookNumberF.TabIndex = 30;
             // 
             // labelBookNumberF
             // 
             this.labelBookNumberF.AutoSize = true;
-            this.labelBookNumberF.Location = new System.Drawing.Point(39, 223);
+            this.labelBookNumberF.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBookNumberF.Location = new System.Drawing.Point(596, 143);
             this.labelBookNumberF.Name = "labelBookNumberF";
-            this.labelBookNumberF.Size = new System.Drawing.Size(71, 13);
+            this.labelBookNumberF.Size = new System.Drawing.Size(110, 21);
             this.labelBookNumberF.TabIndex = 29;
-            this.labelBookNumberF.Text = "Libro número:";
+            this.labelBookNumberF.Text = "Libro número";
             // 
             // textBoxGodFather2F
             // 
             this.textBoxGodFather2F.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxGodFather2F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxGodFather2F.Location = new System.Drawing.Point(170, 175);
+            this.textBoxGodFather2F.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGodFather2F.Location = new System.Drawing.Point(281, 303);
             this.textBoxGodFather2F.Name = "textBoxGodFather2F";
-            this.textBoxGodFather2F.Size = new System.Drawing.Size(100, 20);
+            this.textBoxGodFather2F.Size = new System.Drawing.Size(238, 23);
             this.textBoxGodFather2F.TabIndex = 28;
             // 
             // labelGodFather2F
             // 
             this.labelGodFather2F.AutoSize = true;
-            this.labelGodFather2F.Location = new System.Drawing.Point(45, 178);
+            this.labelGodFather2F.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGodFather2F.Location = new System.Drawing.Point(39, 297);
             this.labelGodFather2F.Name = "labelGodFather2F";
-            this.labelGodFather2F.Size = new System.Drawing.Size(114, 13);
+            this.labelGodFather2F.Size = new System.Drawing.Size(187, 21);
             this.labelGodFather2F.TabIndex = 27;
-            this.labelGodFather2F.Text = "Nombre del padrino(2):";
+            this.labelGodFather2F.Text = "Nombre del padrino(2)";
             // 
             // textBoxGodFather1F
             // 
             this.textBoxGodFather1F.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxGodFather1F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxGodFather1F.Location = new System.Drawing.Point(170, 150);
+            this.textBoxGodFather1F.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGodFather1F.Location = new System.Drawing.Point(280, 270);
             this.textBoxGodFather1F.Name = "textBoxGodFather1F";
-            this.textBoxGodFather1F.Size = new System.Drawing.Size(100, 20);
+            this.textBoxGodFather1F.Size = new System.Drawing.Size(238, 23);
             this.textBoxGodFather1F.TabIndex = 26;
             // 
             // labelGodFather1F
             // 
             this.labelGodFather1F.AutoSize = true;
-            this.labelGodFather1F.Location = new System.Drawing.Point(45, 152);
+            this.labelGodFather1F.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGodFather1F.Location = new System.Drawing.Point(39, 264);
             this.labelGodFather1F.Name = "labelGodFather1F";
-            this.labelGodFather1F.Size = new System.Drawing.Size(114, 13);
+            this.labelGodFather1F.Size = new System.Drawing.Size(187, 21);
             this.labelGodFather1F.TabIndex = 25;
-            this.labelGodFather1F.Text = "Nombre del padrino(1):";
+            this.labelGodFather1F.Text = "Nombre del padrino(1)";
             // 
             // textBoxFatherNameF
             // 
             this.textBoxFatherNameF.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxFatherNameF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxFatherNameF.Location = new System.Drawing.Point(170, 124);
+            this.textBoxFatherNameF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFatherNameF.Location = new System.Drawing.Point(281, 234);
             this.textBoxFatherNameF.Name = "textBoxFatherNameF";
-            this.textBoxFatherNameF.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFatherNameF.Size = new System.Drawing.Size(238, 23);
             this.textBoxFatherNameF.TabIndex = 24;
             // 
             // labelFatherNameF
             // 
             this.labelFatherNameF.AutoSize = true;
-            this.labelFatherNameF.Location = new System.Drawing.Point(45, 126);
+            this.labelFatherNameF.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFatherNameF.Location = new System.Drawing.Point(73, 233);
             this.labelFatherNameF.Name = "labelFatherNameF";
-            this.labelFatherNameF.Size = new System.Drawing.Size(94, 13);
+            this.labelFatherNameF.Size = new System.Drawing.Size(153, 21);
             this.labelFatherNameF.TabIndex = 23;
-            this.labelFatherNameF.Text = "Nombre del padre:";
+            this.labelFatherNameF.Text = "Nombre del padre";
             // 
             // textBoxMotherNameF
             // 
             this.textBoxMotherNameF.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxMotherNameF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxMotherNameF.Location = new System.Drawing.Point(170, 95);
+            this.textBoxMotherNameF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMotherNameF.Location = new System.Drawing.Point(281, 204);
             this.textBoxMotherNameF.Name = "textBoxMotherNameF";
-            this.textBoxMotherNameF.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMotherNameF.Size = new System.Drawing.Size(238, 23);
             this.textBoxMotherNameF.TabIndex = 22;
             // 
             // labelMotherNameF
             // 
             this.labelMotherNameF.AutoSize = true;
-            this.labelMotherNameF.Location = new System.Drawing.Point(45, 97);
+            this.labelMotherNameF.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMotherNameF.Location = new System.Drawing.Point(55, 200);
             this.labelMotherNameF.Name = "labelMotherNameF";
-            this.labelMotherNameF.Size = new System.Drawing.Size(108, 13);
+            this.labelMotherNameF.Size = new System.Drawing.Size(172, 21);
             this.labelMotherNameF.TabIndex = 21;
-            this.labelMotherNameF.Text = "Nombre de la madre: ";
+            this.labelMotherNameF.Text = "Nombre de la madre";
             // 
             // textBoxNameF
             // 
             this.textBoxNameF.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxNameF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxNameF.Location = new System.Drawing.Point(170, 70);
+            this.textBoxNameF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNameF.Location = new System.Drawing.Point(281, 172);
             this.textBoxNameF.Name = "textBoxNameF";
-            this.textBoxNameF.Size = new System.Drawing.Size(140, 20);
+            this.textBoxNameF.Size = new System.Drawing.Size(238, 23);
             this.textBoxNameF.TabIndex = 20;
             // 
             // labelNameF
             // 
             this.labelNameF.AutoSize = true;
-            this.labelNameF.Location = new System.Drawing.Point(45, 70);
+            this.labelNameF.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameF.Location = new System.Drawing.Point(150, 170);
             this.labelNameF.Name = "labelNameF";
-            this.labelNameF.Size = new System.Drawing.Size(47, 13);
+            this.labelNameF.Size = new System.Drawing.Size(73, 21);
             this.labelNameF.TabIndex = 19;
-            this.labelNameF.Text = "Nombre:";
+            this.labelNameF.Text = "Nombre";
             // 
             // dateTimePickerFirstComunion
             // 
             this.dateTimePickerFirstComunion.CalendarMonthBackground = System.Drawing.SystemColors.Info;
-            this.dateTimePickerFirstComunion.Location = new System.Drawing.Point(54, 35);
+            this.dateTimePickerFirstComunion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerFirstComunion.Location = new System.Drawing.Point(281, 134);
             this.dateTimePickerFirstComunion.Name = "dateTimePickerFirstComunion";
-            this.dateTimePickerFirstComunion.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerFirstComunion.Size = new System.Drawing.Size(237, 22);
             this.dateTimePickerFirstComunion.TabIndex = 18;
             // 
             // tabConfirmation
             // 
-            this.tabConfirmation.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.tabConfirmation.BackColor = System.Drawing.Color.Gainsboro;
             this.tabConfirmation.Controls.Add(this.groupBoxSearchC);
             this.tabConfirmation.Controls.Add(this.textBoxIdC);
             this.tabConfirmation.Controls.Add(this.buttonClearC);
@@ -1214,7 +1267,7 @@
             this.tabConfirmation.Controls.Add(this.dateTimePickerConfirmation);
             this.tabConfirmation.Location = new System.Drawing.Point(4, 22);
             this.tabConfirmation.Name = "tabConfirmation";
-            this.tabConfirmation.Size = new System.Drawing.Size(1053, 612);
+            this.tabConfirmation.Size = new System.Drawing.Size(1144, 774);
             this.tabConfirmation.TabIndex = 3;
             this.tabConfirmation.Text = "Confirmación";
             this.tabConfirmation.Click += new System.EventHandler(this.tabConfirmation_Click);
@@ -1304,14 +1357,14 @@
             this.dataGridViewConfirmation.AllowUserToAddRows = false;
             this.dataGridViewConfirmation.AllowUserToDeleteRows = false;
             this.dataGridViewConfirmation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewConfirmation.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewConfirmation.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewConfirmation.Location = new System.Drawing.Point(199, 117);
             this.dataGridViewConfirmation.Name = "dataGridViewConfirmation";
             this.dataGridViewConfirmation.Size = new System.Drawing.Size(187, 142);
@@ -1346,7 +1399,7 @@
             // 
             // buttonClearC
             // 
-            this.buttonClearC.BackColor = System.Drawing.Color.Coral;
+            this.buttonClearC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(132)))), ((int)(((byte)(73)))));
             this.buttonClearC.Location = new System.Drawing.Point(468, 397);
             this.buttonClearC.Name = "buttonClearC";
             this.buttonClearC.Size = new System.Drawing.Size(87, 38);
@@ -1357,7 +1410,7 @@
             // 
             // buttonDeleteC
             // 
-            this.buttonDeleteC.BackColor = System.Drawing.Color.Coral;
+            this.buttonDeleteC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
             this.buttonDeleteC.Location = new System.Drawing.Point(347, 397);
             this.buttonDeleteC.Name = "buttonDeleteC";
             this.buttonDeleteC.Size = new System.Drawing.Size(87, 38);
@@ -1368,7 +1421,7 @@
             // 
             // buttonSaveC
             // 
-            this.buttonSaveC.BackColor = System.Drawing.Color.Coral;
+            this.buttonSaveC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(97)))), ((int)(((byte)(140)))));
             this.buttonSaveC.Location = new System.Drawing.Point(116, 397);
             this.buttonSaveC.Name = "buttonSaveC";
             this.buttonSaveC.Size = new System.Drawing.Size(87, 38);
@@ -1587,7 +1640,7 @@
             // 
             // tabMarriage
             // 
-            this.tabMarriage.BackColor = System.Drawing.Color.Thistle;
+            this.tabMarriage.BackColor = System.Drawing.Color.Gainsboro;
             this.tabMarriage.Controls.Add(this.groupBoxSearchM);
             this.tabMarriage.Controls.Add(this.textBoxIdM);
             this.tabMarriage.Controls.Add(this.buttonClearM);
@@ -1614,7 +1667,7 @@
             this.tabMarriage.Controls.Add(this.dateTimePickerMarriage);
             this.tabMarriage.Location = new System.Drawing.Point(4, 22);
             this.tabMarriage.Name = "tabMarriage";
-            this.tabMarriage.Size = new System.Drawing.Size(1053, 612);
+            this.tabMarriage.Size = new System.Drawing.Size(1144, 774);
             this.tabMarriage.TabIndex = 4;
             this.tabMarriage.Text = "Matrimonio";
             this.tabMarriage.Click += new System.EventHandler(this.tabMarriage_Click);
@@ -1704,14 +1757,14 @@
             this.dataGridViewMarriage.AllowUserToAddRows = false;
             this.dataGridViewMarriage.AllowUserToDeleteRows = false;
             this.dataGridViewMarriage.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewMarriage.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewMarriage.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewMarriage.Location = new System.Drawing.Point(33, 198);
             this.dataGridViewMarriage.Name = "dataGridViewMarriage";
             this.dataGridViewMarriage.Size = new System.Drawing.Size(187, 142);
@@ -1746,7 +1799,7 @@
             // 
             // buttonClearM
             // 
-            this.buttonClearM.BackColor = System.Drawing.Color.Coral;
+            this.buttonClearM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(132)))), ((int)(((byte)(73)))));
             this.buttonClearM.Location = new System.Drawing.Point(450, 400);
             this.buttonClearM.Name = "buttonClearM";
             this.buttonClearM.Size = new System.Drawing.Size(87, 38);
@@ -1757,7 +1810,7 @@
             // 
             // buttonDeleteM
             // 
-            this.buttonDeleteM.BackColor = System.Drawing.Color.Coral;
+            this.buttonDeleteM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
             this.buttonDeleteM.Location = new System.Drawing.Point(329, 400);
             this.buttonDeleteM.Name = "buttonDeleteM";
             this.buttonDeleteM.Size = new System.Drawing.Size(87, 38);
@@ -1768,7 +1821,7 @@
             // 
             // buttonSaveM
             // 
-            this.buttonSaveM.BackColor = System.Drawing.Color.Coral;
+            this.buttonSaveM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(97)))), ((int)(((byte)(140)))));
             this.buttonSaveM.Location = new System.Drawing.Point(98, 400);
             this.buttonSaveM.Name = "buttonSaveM";
             this.buttonSaveM.Size = new System.Drawing.Size(87, 38);
@@ -2081,7 +2134,7 @@
             this.menupanel.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menupanel.Location = new System.Drawing.Point(0, 0);
             this.menupanel.Name = "menupanel";
-            this.menupanel.Size = new System.Drawing.Size(189, 663);
+            this.menupanel.Size = new System.Drawing.Size(189, 825);
             this.menupanel.TabIndex = 86;
             // 
             // buttonMarriage
@@ -2204,21 +2257,22 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Controls.Add(this.pictureBox5);
+            this.panel2.Controls.Add(this.pictureBoxPrint);
             this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Location = new System.Drawing.Point(562, 0);
+            this.panel2.Location = new System.Drawing.Point(534, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1057, 51);
+            this.panel2.Size = new System.Drawing.Size(632, 51);
             this.panel2.TabIndex = 87;
             // 
-            // pictureBox5
+            // pictureBoxPrint
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(83, 10);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(37, 34);
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
+            this.pictureBoxPrint.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPrint.Image")));
+            this.pictureBoxPrint.Location = new System.Drawing.Point(83, 10);
+            this.pictureBoxPrint.Name = "pictureBoxPrint";
+            this.pictureBoxPrint.Size = new System.Drawing.Size(37, 34);
+            this.pictureBoxPrint.TabIndex = 4;
+            this.pictureBoxPrint.TabStop = false;
+            this.pictureBoxPrint.Click += new System.EventHandler(this.pictureBoxPrint_Click);
             // 
             // pictureBox4
             // 
@@ -2230,15 +2284,21 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // printBaptismF
+            // panel6
             // 
-            this.printBaptismF.Image = ((System.Drawing.Image)(resources.GetObject("printBaptismF.Image")));
-            this.printBaptismF.Location = new System.Drawing.Point(685, 536);
-            this.printBaptismF.Name = "printBaptismF";
-            this.printBaptismF.Size = new System.Drawing.Size(37, 34);
-            this.printBaptismF.TabIndex = 91;
-            this.printBaptismF.TabStop = false;
-            this.printBaptismF.Click += new System.EventHandler(this.printBaptismF_Click);
+            this.panel6.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel6.Location = new System.Drawing.Point(1327, 12);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(10, 813);
+            this.panel6.TabIndex = 91;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel7.Location = new System.Drawing.Point(176, 815);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1158, 10);
+            this.panel7.TabIndex = 92;
             // 
             // Archiver
             // 
@@ -2246,9 +2306,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(1243, 681);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(1354, 703);
             this.Controls.Add(this.menupanel);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Archiver";
@@ -2265,6 +2327,7 @@
             this.groupBoxBaptismGender.PerformLayout();
             this.tabFirstComunion.ResumeLayout(false);
             this.tabFirstComunion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.groupBoxSearchF.ResumeLayout(false);
             this.groupBoxSearchF.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFisrtComunion)).EndInit();
@@ -2289,9 +2352,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPrint)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.printBaptismF)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2479,12 +2541,15 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBoxPrint;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox printBaptismF;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
     }
 }
 

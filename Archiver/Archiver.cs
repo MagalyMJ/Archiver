@@ -1485,5 +1485,10 @@ namespace Archiver
                 System.Runtime.InteropServices.Marshal.ReleaseComObject(objWord);
             }
         }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

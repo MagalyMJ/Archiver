@@ -1124,7 +1124,124 @@ namespace Archiver
             }
             else if (tabControl1.SelectedTab == tabControl1.TabPages["tabConfirmation"])
             {
-                //////////////////////////////////////////////////////////////////////////
+                object objMissing = System.Reflection.Missing.Value;
+                Word.Application objWord = new Word.Application();
+                string route = Application.StartupPath + @"\acta_confirmacion.docx";
+                object param = route;
+                Word.Document objDoc = objWord.Documents.Open(param, ref objMissing);
+
+                DateTime dateVal = dateTimePickerConfirmation.Value;
+
+                Word.ContentControls dates = objDoc.SelectContentControlsByTag("date");
+                if (dates.Count > 0)
+                {
+                    foreach (Word.ContentControl date in dates)
+                    {
+                        Word.Range r = date.Range;
+                        r.Text = dateVal.ToString("D", new CultureInfo("es-ES"));
+                        Word.Range dateRange = r;
+                        objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, dateRange);
+                    }
+                }
+
+                Word.ContentControls names = objDoc.SelectContentControlsByTag("name");
+                if (names.Count > 0)
+                {
+                    foreach (Word.ContentControl name in names)
+                    {
+                        Word.Range r = name.Range;
+                        r.Text = textBoxNameC.Text;
+                        Word.Range nameRange = r;
+                        objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, nameRange);
+                    }
+                }
+
+                Word.ContentControls fathers = objDoc.SelectContentControlsByTag("father");
+                if (fathers.Count > 0)
+                {
+                    foreach (Word.ContentControl father in fathers)
+                    {
+                        Word.Range r = father.Range;
+                        r.Text = textBoxFatherNameC.Text;
+                        Word.Range fatherRange = r;
+                        objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, fatherRange);
+                    }
+                }
+
+                Word.ContentControls mothers = objDoc.SelectContentControlsByTag("mother");
+                if (mothers.Count > 0)
+                {
+                    foreach (Word.ContentControl mother in mothers)
+                    {
+                        Word.Range r = mother.Range;
+                        r.Text = textBoxMotherNameC.Text;
+                        Word.Range motherRange = r;
+                        objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, motherRange);
+                    }
+                }
+
+                Word.ContentControls godparents = objDoc.SelectContentControlsByTag("godparents");
+                if (godparents.Count > 0)
+                {
+                    foreach (Word.ContentControl godparent in godparents)
+                    {
+                        Word.Range r = godparent.Range;
+                        r.Text = (textBoxGodFather1C.Text != "" ? (textBoxGodFather1C.Text + (textBoxGodFather2C.Text != "" ? (", " + textBoxGodFather2C.Text) : "")) : textBoxGodFather2C.Text);
+                        Word.Range godparentsRange = r;
+                        objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, godparentsRange);
+                    }
+                }
+
+                Word.ContentControls books = objDoc.SelectContentControlsByTag("book");
+                if (books.Count > 0)
+                {
+                    foreach (Word.ContentControl book in books)
+                    {
+                        Word.Range r = book.Range;
+                        r.Text = textBoxBookNumberC.Text;
+                        Word.Range bookRange = r;
+                        objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, bookRange);
+                    }
+                }
+
+                Word.ContentControls sheets = objDoc.SelectContentControlsByTag("sheet");
+                if (sheets.Count > 0)
+                {
+                    foreach (Word.ContentControl sheet in sheets)
+                    {
+                        Word.Range r = sheet.Range;
+                        r.Text = textBoxSheetNumberC.Text;
+                        Word.Range sheetRange = r;
+                        objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, sheetRange);
+                    }
+                }
+
+                Word.ContentControls entries = objDoc.SelectContentControlsByTag("entry");
+                if (entries.Count > 0)
+                {
+                    foreach (Word.ContentControl entry in entries)
+                    {
+                        Word.Range r = entry.Range;
+                        r.Text = textBoxEntryNumberC.Text;
+                        Word.Range entryRange = r;
+                        objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, entryRange);
+                    }
+                }
+
+                Word.ContentControls todays = objDoc.SelectContentControlsByTag("today");
+                if (todays.Count > 0)
+                {
+                    foreach (Word.ContentControl today in todays)
+                    {
+                        Word.Range r = today.Range;
+                        r.Text = DateTime.Now.ToString("D", new CultureInfo("es-ES"));
+                        Word.Range todayRange = r;
+                        objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, todayRange);
+                    }
+                }
+
+                objWord.Visible = true;
+                System.Runtime.InteropServices.Marshal.ReleaseComObject(objWord);
             }
             else if (tabControl1.SelectedTab == tabControl1.TabPages["tabMarriage"])
             {

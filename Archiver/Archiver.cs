@@ -900,7 +900,7 @@ namespace Archiver
                     foreach (Word.ContentControl today in todays)
                     {
                         Word.Range r = today.Range;
-                        r.Text = DateTime.Now.ToString("D", new CultureInfo("es-ES"));
+                        r.Text = DateTime.Now.ToString("dd") + " de " + DateTime.Now.ToString("MMMM", new CultureInfo("es-ES")) + " de " + DateTime.Now.ToString("yyyy");
                         Word.Range todayRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, todayRange);
                     }
@@ -1105,7 +1105,7 @@ namespace Archiver
                     foreach (Word.ContentControl today in todays)
                     {
                         Word.Range r = today.Range;
-                        r.Text = DateTime.Now.ToString("D", new CultureInfo("es-ES"));
+                        r.Text = DateTime.Now.ToString("dd") + " de " + DateTime.Now.ToString("MMMM", new CultureInfo("es-ES")) + " de " + DateTime.Now.ToString("yyyy");
                         Word.Range todayRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, todayRange);
                     }
@@ -1226,7 +1226,7 @@ namespace Archiver
                     foreach (Word.ContentControl today in todays)
                     {
                         Word.Range r = today.Range;
-                        r.Text = textBoxMunicipalityC.Text + ", " + textBoxStateC.Text + ", " + DateTime.Now.ToString("D", new CultureInfo("es-ES"));
+                        r.Text = textBoxMunicipalityC.Text + ", " + textBoxStateC.Text + ", " + DateTime.Now.ToString("dd") + " de " + DateTime.Now.ToString("MMMM", new CultureInfo("es-ES")) + " de " + DateTime.Now.ToString("yyyy");
                         Word.Range todayRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, todayRange);
                     }
@@ -1443,7 +1443,7 @@ namespace Archiver
                     foreach (Word.ContentControl today in todays)
                     {
                         Word.Range r = today.Range;
-                        r.Text = DateTime.Now.ToString("D", new CultureInfo("es-ES"));
+                        r.Text = DateTime.Now.ToString("dd") + " de " + DateTime.Now.ToString("MMMM", new CultureInfo("es-ES")) + " de " + DateTime.Now.ToString("yyyy");
                         Word.Range todayRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, todayRange);
                     }

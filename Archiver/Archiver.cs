@@ -522,18 +522,23 @@ namespace Archiver
             // Get id from text box
             baptism.Id = int.Parse(textBoxIdB.Text);
 
-            // Delete data
-            if (baptism.Delete(baptism))
-            {
-                MessageBox.Show("El registro se elimino exitosamente.");
-                clearBaptism();
-            }
-            else
-                MessageBox.Show("No se pudo eliminar el registro, inténtelo nuevamente.");
+            DialogResult result = MessageBox.Show("¿Estas seguro que quieres borrar el registro No. " + baptism.Id + "?", "Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-            // Load data in gridView
-            DataTable dt = baptism.Select();
-            dataGridViewBaptism.DataSource = dt;
+            if (result == DialogResult.Yes)
+            {
+                // Delete data
+                if (baptism.Delete(baptism))
+                {
+                    MessageBox.Show("El registro se elimino exitosamente.");
+                    clearBaptism();
+                }
+                else
+                    MessageBox.Show("No se pudo eliminar el registro, inténtelo nuevamente.");
+
+                // Load data in gridView
+                DataTable dt = baptism.Select();
+                dataGridViewBaptism.DataSource = dt;
+            }
         }
 
         private void buttonDeleteF_Click(object sender, EventArgs e)
@@ -541,18 +546,23 @@ namespace Archiver
             // Get id from text box
             firstComunion.Id = int.Parse(textBoxIdF.Text);
 
-            // Delete data
-            if (firstComunion.Delete(firstComunion))
-            {
-                MessageBox.Show("El registro se elimino exitosamente.");
-                clearFirstComunion();
-            }
-            else
-                MessageBox.Show("No se pudo eliminar el registro, inténtelo nuevamente.");
+            DialogResult result = MessageBox.Show("¿Estas seguro que quieres borrar el registro No. " + firstComunion.Id + "?", "Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-            // Load data in gridView
-            DataTable dt = firstComunion.Select();
-            dataGridViewFisrtComunion.DataSource = dt;
+            if (result == DialogResult.Yes)
+            {
+                // Delete data
+                if (firstComunion.Delete(firstComunion))
+                {
+                    MessageBox.Show("El registro se elimino exitosamente.");
+                    clearFirstComunion();
+                }
+                else
+                    MessageBox.Show("No se pudo eliminar el registro, inténtelo nuevamente.");
+
+                // Load data in gridView
+                DataTable dt = firstComunion.Select();
+                dataGridViewFisrtComunion.DataSource = dt;
+            }
         }
 
         private void buttonDeleteC_Click(object sender, EventArgs e)
@@ -560,18 +570,23 @@ namespace Archiver
             // Get id from text box
             confirmation.Id = int.Parse(textBoxIdC.Text);
 
-            // Delete data
-            if (confirmation.Delete(confirmation))
-            {
-                MessageBox.Show("El registro se elimino exitosamente.");
-                clearConfirmation();
-            }
-            else
-                MessageBox.Show("No se pudo eliminar el registro, inténtelo nuevamente.");
+            DialogResult result = MessageBox.Show("¿Estas seguro que quieres borrar el registro No. " + confirmation.Id + "?", "Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-            // Load data in gridView
-            DataTable dt = confirmation.Select();
-            dataGridViewConfirmation.DataSource = dt;
+            if (result == DialogResult.Yes)
+            {
+                // Delete data
+                if (confirmation.Delete(confirmation))
+                {
+                    MessageBox.Show("El registro se elimino exitosamente.");
+                    clearConfirmation();
+                }
+                else
+                    MessageBox.Show("No se pudo eliminar el registro, inténtelo nuevamente.");
+
+                // Load data in gridView
+                DataTable dt = confirmation.Select();
+                dataGridViewConfirmation.DataSource = dt;
+            }
         }
 
         private void buttonDeleteM_Click(object sender, EventArgs e)
@@ -579,18 +594,23 @@ namespace Archiver
             // Get id from text box
             marriage.Id = int.Parse(textBoxIdM.Text);
 
-            // Delete data
-            if (marriage.Delete(marriage))
-            {
-                MessageBox.Show("El registro se elimino exitosamente.");
-                clearMarriage();
-            }
-            else
-                MessageBox.Show("No se pudo eliminar el registro, inténtelo nuevamente.");
+            DialogResult result = MessageBox.Show("¿Estas seguro que quieres borrar el registro No. " + marriage.Id + "?", "Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-            // Load data in gridView
-            DataTable dt = marriage.Select();
-            dataGridViewMarriage.DataSource = dt;
+            if (result == DialogResult.Yes)
+            {
+                // Delete data
+                if (marriage.Delete(marriage))
+                {
+                    MessageBox.Show("El registro se elimino exitosamente.");
+                    clearMarriage();
+                }
+                else
+                    MessageBox.Show("No se pudo eliminar el registro, inténtelo nuevamente.");
+
+                // Load data in gridView
+                DataTable dt = marriage.Select();
+                dataGridViewMarriage.DataSource = dt;
+            }
         }
 
         private void buttonSearchB_Click(object sender, EventArgs e)

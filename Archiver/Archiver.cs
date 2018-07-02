@@ -133,13 +133,6 @@ namespace Archiver
             textBoxEntryNumberM.Text = "";
         }
 
-        private void tabBaptism_Click(object sender, EventArgs e)
-        {
-            // Load data in gridView
-            DataTable dt = baptism.Select();
-            dataGridViewBaptism.DataSource = dt;
-        }
-
         private void buttonSaveB_Click(object sender, EventArgs e)
         {
             // Get values from text boxes
@@ -278,13 +271,6 @@ namespace Archiver
             dataGridViewFisrtComunion.DataSource = dt;
         }
 
-        private void tabFirstComunion_Click(object sender, EventArgs e)
-        {
-            // Load data in gridView
-            DataTable dt = firstComunion.Select();
-            dataGridViewFisrtComunion.DataSource = dt;
-        }
-
         private void buttonSaveC_Click(object sender, EventArgs e)
         {
             // Get values from text boxes
@@ -347,13 +333,6 @@ namespace Archiver
                     MessageBox.Show("No se pudo guardar el registro, inténtelo nuevamente.");
             }
 
-            // Load data in gridView
-            DataTable dt = confirmation.Select();
-            dataGridViewConfirmation.DataSource = dt;
-        }
-
-        private void tabConfirmation_Click(object sender, EventArgs e)
-        {
             // Load data in gridView
             DataTable dt = confirmation.Select();
             dataGridViewConfirmation.DataSource = dt;
@@ -424,13 +403,6 @@ namespace Archiver
                     MessageBox.Show("No se pudo guardar el registro, inténtelo nuevamente.");
             }
 
-            // Load data in gridView
-            DataTable dt = marriage.Select();
-            dataGridViewMarriage.DataSource = dt;
-        }
-
-        private void tabMarriage_Click(object sender, EventArgs e)
-        {
             // Load data in gridView
             DataTable dt = marriage.Select();
             dataGridViewMarriage.DataSource = dt;
@@ -634,6 +606,8 @@ namespace Archiver
                 sqlOptions += " AND sheet_number = " + textBoxSearchSheetB.Text;
             if (textBoxSearchEntryB.Text != "")
                 sqlOptions += " AND entry_number = " + textBoxSearchEntryB.Text;
+            if (dateTimePickerSearchB.Checked)
+                sqlOptions += " AND date BETWEEN '" + dateTimePickerSearchB.Value.ToShortDateString() + " 00:00' AND '" + dateTimePickerSearchB.Value.ToShortDateString() + " 23:59:59'";
 
             DataTable dt = baptism.Select(sqlOptions);
             dataGridViewBaptism.DataSource = dt;
@@ -654,6 +628,8 @@ namespace Archiver
                 sqlOptions += " AND sheet_number = " + textBoxSearchSheetF.Text;
             if (textBoxSearchEntryF.Text != "")
                 sqlOptions += " AND entry_number = " + textBoxSearchEntryF.Text;
+            if (dateTimePickerSearchF.Checked)
+                sqlOptions += " AND date BETWEEN '" + dateTimePickerSearchF.Value.ToShortDateString() + " 00:00' AND '" + dateTimePickerSearchF.Value.ToShortDateString() + " 23:59:59'";
 
             DataTable dt = firstComunion.Select(sqlOptions);
             dataGridViewFisrtComunion.DataSource = dt;
@@ -674,6 +650,8 @@ namespace Archiver
                 sqlOptions += " AND sheet_number = " + textBoxSearchSheetC.Text;
             if (textBoxSearchEntryC.Text != "")
                 sqlOptions += " AND entry_number = " + textBoxSearchEntryC.Text;
+            if (dateTimePickerSearchC.Checked)
+                sqlOptions += " AND date BETWEEN '" + dateTimePickerSearchC.Value.ToShortDateString() + " 00:00' AND '" + dateTimePickerSearchC.Value.ToShortDateString() + " 23:59:59'";
 
             DataTable dt = confirmation.Select(sqlOptions);
             dataGridViewConfirmation.DataSource = dt;
@@ -694,6 +672,8 @@ namespace Archiver
                 sqlOptions += " AND sheet_number = " + textBoxSearchSheetM.Text;
             if (textBoxSearchEntryM.Text != "")
                 sqlOptions += " AND entry_number = " + textBoxSearchEntryM.Text;
+            if (dateTimePickerSearchM.Checked)
+                sqlOptions += " AND date BETWEEN '" + dateTimePickerSearchM.Value.ToShortDateString() + " 00:00' AND '" + dateTimePickerSearchM.Value.ToShortDateString() + " 23:59:59'";
 
             DataTable dt = marriage.Select(sqlOptions);
             dataGridViewMarriage.DataSource = dt;
@@ -784,15 +764,15 @@ namespace Archiver
 
         private void pictureBoxPrint_Click(object sender, EventArgs e)
         {
-            if (tabControl1.SelectedTab == tabControl1.TabPages["tabBaptism"])
+            if (tabControl1.SelectedTab == tabControl1.TabPages["tabFirstComunion"])
             {
                 object objMissing = System.Reflection.Missing.Value;
                 Word.Application objWord = new Word.Application();
-                string route = Application.StartupPath + @"\acta_bautismo.docx";
+                string route = Application.StartupPath + @"\acta_primera_comunion.docx";
                 object param = route;
                 Word.Document objDoc = objWord.Documents.Open(param, ref objMissing);
 
-                DateTime date = dateTimePickerBaptism.Value;
+                DateTime date = dateTimePickerFirstComunion.Value;
 
                 Word.ContentControls days = objDoc.SelectContentControlsByTag("day");
                 if (days.Count > 0)
@@ -836,7 +816,7 @@ namespace Archiver
                     foreach (Word.ContentControl name in names)
                     {
                         Word.Range r = name.Range;
-                        r.Text = textBoxNameB.Text;
+                        r.Text = textBoxNameF.Text;
                         Word.Range nameRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, nameRange);
                     }
@@ -848,7 +828,7 @@ namespace Archiver
                     foreach (Word.ContentControl father in fathers)
                     {
                         Word.Range r = father.Range;
-                        r.Text = textBoxFatherNameB.Text;
+                        r.Text = textBoxFatherNameF.Text;
                         Word.Range fatherRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, fatherRange);
                     }
@@ -860,7 +840,7 @@ namespace Archiver
                     foreach (Word.ContentControl mother in mothers)
                     {
                         Word.Range r = mother.Range;
-                        r.Text = textBoxMotherNameB.Text;
+                        r.Text = "Y " + textBoxMotherNameF.Text;
                         Word.Range motherRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, motherRange);
                     }
@@ -872,7 +852,7 @@ namespace Archiver
                     foreach (Word.ContentControl godfather in godfathers)
                     {
                         Word.Range r = godfather.Range;
-                        r.Text = (textBoxGodFather1B.Text != "" ? (textBoxGodFather1B.Text + (textBoxGodFather2B.Text != "" ? (", " + textBoxGodFather2B.Text) : "")) : textBoxGodFather2B.Text);
+                        r.Text = (textBoxGodFather1F.Text != "" ? (textBoxGodFather1F.Text + (textBoxGodFather2F.Text != "" ? (" Y " + textBoxGodFather2F.Text) : "")) : textBoxGodFather2F.Text);
                         Word.Range godfathersRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, godfathersRange);
                     }
@@ -884,7 +864,7 @@ namespace Archiver
                     foreach (Word.ContentControl book in books)
                     {
                         Word.Range r = book.Range;
-                        r.Text = textBoxBookNumberB.Text;
+                        r.Text = textBoxBookNumberF.Text;
                         Word.Range bookRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, bookRange);
                     }
@@ -896,7 +876,7 @@ namespace Archiver
                     foreach (Word.ContentControl sheet in sheets)
                     {
                         Word.Range r = sheet.Range;
-                        r.Text = textBoxSheetNumberB.Text;
+                        r.Text = textBoxSheetNumberF.Text;
                         Word.Range sheetRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, sheetRange);
                     }
@@ -908,7 +888,7 @@ namespace Archiver
                     foreach (Word.ContentControl entry in entries)
                     {
                         Word.Range r = entry.Range;
-                        r.Text = textBoxEntryNumberB.Text;
+                        r.Text = textBoxEntryNumberF.Text;
                         Word.Range entryRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, entryRange);
                     }
@@ -929,15 +909,27 @@ namespace Archiver
                 objWord.Visible = true;
                 System.Runtime.InteropServices.Marshal.ReleaseComObject(objWord);
             }
-            else if (tabControl1.SelectedTab == tabControl1.TabPages["tabFirstComunion"])
+            else if (tabControl1.SelectedTab == tabControl1.TabPages["tabBaptism"])
             {
                 object objMissing = System.Reflection.Missing.Value;
                 Word.Application objWord = new Word.Application();
-                string route = Application.StartupPath + @"\acta_matrimonio_primera_comunion.docx";
+                string route = Application.StartupPath + @"\acta_matrimonio_bautismo.docx";
                 object param = route;
                 Word.Document objDoc = objWord.Documents.Open(param, ref objMissing);
 
-                DateTime date = dateTimePickerFirstComunion.Value;
+                Word.ContentControls originals = objDoc.SelectContentControlsByTag("original");
+                if (originals.Count > 0)
+                {
+                    foreach (Word.ContentControl original in originals)
+                    {
+                        Word.Range r = original.Range;
+                        r.Text = "ORIGINAL";
+                        Word.Range originalRange = r;
+                        objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, originalRange);
+                    }
+                }
+
+                DateTime date = dateTimePickerBaptism.Value;
 
                 Word.ContentControls days = objDoc.SelectContentControlsByTag("day");
                 if (days.Count > 0)
@@ -981,7 +973,7 @@ namespace Archiver
                     foreach (Word.ContentControl o in os)
                     {
                         Word.Range r = o.Range;
-                        r.Text = "o";
+                        r.Text = "O";
                         Word.Range oRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, oRange);
                     }
@@ -993,7 +985,7 @@ namespace Archiver
                     foreach (Word.ContentControl sacrament in sacraments)
                     {
                         Word.Range r = sacrament.Range;
-                        r.Text = "la Primera Comunión";
+                        r.Text = "BAUTISMO";
                         Word.Range sacramentRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, sacramentRange);
                     }
@@ -1005,7 +997,7 @@ namespace Archiver
                     foreach (Word.ContentControl name in names)
                     {
                         Word.Range r = name.Range;
-                        r.Text = textBoxNameF.Text;
+                        r.Text = textBoxNameB.Text;
                         Word.Range nameRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, nameRange);
                     }
@@ -1017,7 +1009,7 @@ namespace Archiver
                     foreach (Word.ContentControl eron in erons)
                     {
                         Word.Range r = eron.Range;
-                        r.Text = "o";
+                        r.Text = "O";
                         Word.Range eronRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, eronRange);
                     }
@@ -1029,7 +1021,7 @@ namespace Archiver
                     foreach (Word.ContentControl father in fathers)
                     {
                         Word.Range r = father.Range;
-                        r.Text = textBoxFatherNameF.Text;
+                        r.Text = textBoxFatherNameB.Text;
                         Word.Range fatherRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, fatherRange);
                     }
@@ -1041,7 +1033,7 @@ namespace Archiver
                     foreach (Word.ContentControl mother in mothers)
                     {
                         Word.Range r = mother.Range;
-                        r.Text = textBoxMotherNameF.Text;
+                        r.Text = "Y " + textBoxMotherNameB.Text;
                         Word.Range motherRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, motherRange);
                     }
@@ -1053,7 +1045,7 @@ namespace Archiver
                     foreach (Word.ContentControl godparent1 in godparents1)
                     {
                         Word.Range r = godparent1.Range;
-                        r.Text = textBoxGodFather1F.Text ;
+                        r.Text = "PADRINOS: " + textBoxGodFather1B.Text;
                         Word.Range godparent1Range = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, godparent1Range);
                     }
@@ -1065,7 +1057,7 @@ namespace Archiver
                     foreach (Word.ContentControl godparent2 in godparents2)
                     {
                         Word.Range r = godparent2.Range;
-                        r.Text = textBoxGodFather2F.Text;
+                        r.Text = "Y " + textBoxGodFather2B.Text;
                         Word.Range godparent2Range = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, godparent2Range);
                     }
@@ -1077,7 +1069,7 @@ namespace Archiver
                     foreach (Word.ContentControl book in books)
                     {
                         Word.Range r = book.Range;
-                        r.Text = textBoxBookNumberF.Text;
+                        r.Text = textBoxBookNumberB.Text;
                         Word.Range bookRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, bookRange);
                     }
@@ -1089,7 +1081,7 @@ namespace Archiver
                     foreach (Word.ContentControl sheet in sheets)
                     {
                         Word.Range r = sheet.Range;
-                        r.Text = textBoxSheetNumberF.Text;
+                        r.Text = textBoxSheetNumberB.Text;
                         Word.Range sheetRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, sheetRange);
                     }
@@ -1101,7 +1093,7 @@ namespace Archiver
                     foreach (Word.ContentControl entry in entries)
                     {
                         Word.Range r = entry.Range;
-                        r.Text = textBoxEntryNumberF.Text;
+                        r.Text = textBoxEntryNumberB.Text;
                         Word.Range entryRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, entryRange);
                     }
@@ -1174,7 +1166,7 @@ namespace Archiver
                     foreach (Word.ContentControl mother in mothers)
                     {
                         Word.Range r = mother.Range;
-                        r.Text = textBoxMotherNameC.Text;
+                        r.Text = "Y " + textBoxMotherNameC.Text;
                         Word.Range motherRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, motherRange);
                     }
@@ -1186,7 +1178,7 @@ namespace Archiver
                     foreach (Word.ContentControl godparent in godparents)
                     {
                         Word.Range r = godparent.Range;
-                        r.Text = (textBoxGodFather1C.Text != "" ? (textBoxGodFather1C.Text + (textBoxGodFather2C.Text != "" ? (", " + textBoxGodFather2C.Text) : "")) : textBoxGodFather2C.Text);
+                        r.Text = (textBoxGodFather1C.Text != "" ? (textBoxGodFather1C.Text + (textBoxGodFather2C.Text != "" ? (" Y " + textBoxGodFather2C.Text) : "")) : textBoxGodFather2C.Text);
                         Word.Range godparentsRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, godparentsRange);
                     }
@@ -1234,7 +1226,7 @@ namespace Archiver
                     foreach (Word.ContentControl today in todays)
                     {
                         Word.Range r = today.Range;
-                        r.Text = DateTime.Now.ToString("D", new CultureInfo("es-ES"));
+                        r.Text = textBoxMunicipalityC.Text + ", " + textBoxStateC.Text + ", " + DateTime.Now.ToString("D", new CultureInfo("es-ES"));
                         Word.Range todayRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, todayRange);
                     }
@@ -1250,6 +1242,18 @@ namespace Archiver
                 string route = Application.StartupPath + @"\acta_matrimonio_primera_comunion.docx";
                 object param = route;
                 Word.Document objDoc = objWord.Documents.Open(param, ref objMissing);
+
+                Word.ContentControls originals = objDoc.SelectContentControlsByTag("original");
+                if (originals.Count > 0)
+                {
+                    foreach (Word.ContentControl original in originals)
+                    {
+                        Word.Range r = original.Range;
+                        r.Text = "ORIGINAL";
+                        Word.Range originalRange = r;
+                        objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, originalRange);
+                    }
+                }
 
                 DateTime date = dateTimePickerMarriage.Value;
 
@@ -1295,7 +1299,7 @@ namespace Archiver
                     foreach (Word.ContentControl o in os)
                     {
                         Word.Range r = o.Range;
-                        r.Text = "os";
+                        r.Text = "OS";
                         Word.Range oRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, oRange);
                     }
@@ -1307,7 +1311,7 @@ namespace Archiver
                     foreach (Word.ContentControl sacrament in sacraments)
                     {
                         Word.Range r = sacrament.Range;
-                        r.Text = "matrimonio";
+                        r.Text = "MATRIMONIO";
                         Word.Range sacramentRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, sacramentRange);
                     }
@@ -1319,7 +1323,7 @@ namespace Archiver
                     foreach (Word.ContentControl name1 in names1)
                     {
                         Word.Range r = name1.Range;
-                        r.Text = textBoxHusbandNameM.Text + ",";
+                        r.Text = textBoxHusbandNameM.Text + " Y ";
                         Word.Range name1Range = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, name1Range);
                     }
@@ -1343,35 +1347,11 @@ namespace Archiver
                     foreach (Word.ContentControl eron in erons)
                     {
                         Word.Range r = eron.Range;
-                        r.Text = "eron";
+                        r.Text = "ERON";
                         Word.Range eronRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, eronRange);
                     }
                 }
-
-                string fullNames = textBoxHusbandFatherNameM.Text + ", " + textBoxHusbandMotherNameM.Text + ", " + textBoxWifeFatherNameM.Text + ", " + textBoxWifeMotherNameM.Text;
-                string[] names = fullNames.Split(' ');
-
-                int firstLine = 0, secondLine = 0;
-                string firstNames = "", secondNames = "", thirdNames = "";
-                foreach(string name in names)
-                {
-                    if((firstLine + name.Length) < 50)
-                    {
-                        firstNames += name + " ";
-                        firstLine += name.Length + 1;
-                    }
-                    else if((secondLine + name.Length) < 59)
-                    {
-                        secondNames += name + " ";
-                        secondLine += name.Length + 1;
-                    }
-                    else
-                    {
-                        thirdNames += name + " ";
-                    }
-                }
-
 
                 Word.ContentControls parents1 = objDoc.SelectContentControlsByTag("parents1");
                 if (parents1.Count > 0)
@@ -1379,7 +1359,7 @@ namespace Archiver
                     foreach (Word.ContentControl parent1 in parents1)
                     {
                         Word.Range r = parent1.Range;
-                        r.Text = firstNames;
+                        r.Text = textBoxHusbandFatherNameM.Text + " Y " + textBoxHusbandMotherNameM.Text;
                         Word.Range parent1Range = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, parent1Range);
                     }
@@ -1391,21 +1371,9 @@ namespace Archiver
                     foreach (Word.ContentControl parent2 in parents2)
                     {
                         Word.Range r = parent2.Range;
-                        r.Text = secondNames;
+                        r.Text = textBoxWifeFatherNameM.Text + " Y " + textBoxWifeMotherNameM;
                         Word.Range parent2Range = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, parent2Range);
-                    }
-                }
-
-                Word.ContentControls parents3 = objDoc.SelectContentControlsByTag("parents3");
-                if (parents3.Count > 0)
-                {
-                    foreach (Word.ContentControl parent3 in parents3)
-                    {
-                        Word.Range r = parent3.Range;
-                        r.Text = thirdNames;
-                        Word.Range parent3Range = r;
-                        objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, parent3Range);
                     }
                 }
 
@@ -1415,7 +1383,7 @@ namespace Archiver
                     foreach (Word.ContentControl godparent1 in godparents1)
                     {
                         Word.Range r = godparent1.Range;
-                        r.Text = textBoxGodFather1M.Text + ",";
+                        r.Text = "PADRINOS: " + textBoxGodFather1M.Text + " Y ";
                         Word.Range godparent1Range = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, godparent1Range);
                     }
@@ -1484,11 +1452,6 @@ namespace Archiver
                 objWord.Visible = true;
                 System.Runtime.InteropServices.Marshal.ReleaseComObject(objWord);
             }
-        }
-
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

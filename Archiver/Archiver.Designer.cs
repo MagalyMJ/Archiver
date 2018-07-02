@@ -36,20 +36,22 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
             this.tabBaptism = new System.Windows.Forms.TabPage();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.groupBoxSearchB = new System.Windows.Forms.GroupBox();
+            this.labelSearchDateB = new System.Windows.Forms.Label();
+            this.dateTimePickerSearchB = new System.Windows.Forms.DateTimePicker();
             this.textBoxSearchSheetB = new System.Windows.Forms.TextBox();
             this.buttonSearchB = new System.Windows.Forms.Button();
             this.textBoxSearchBookB = new System.Windows.Forms.TextBox();
             this.textBoxSearchEntryB = new System.Windows.Forms.TextBox();
+            this.dataGridViewBaptism = new System.Windows.Forms.DataGridView();
             this.labelSearchSheetB = new System.Windows.Forms.Label();
             this.labelSearchBookB = new System.Windows.Forms.Label();
             this.textBoxSearchNameB = new System.Windows.Forms.TextBox();
             this.labelSearchEntryB = new System.Windows.Forms.Label();
             this.labelSearchNameB = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dataGridViewBaptism = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBoxIdB = new System.Windows.Forms.TextBox();
             this.buttonClearB = new System.Windows.Forms.Button();
@@ -82,9 +84,11 @@
             this.labelNameB = new System.Windows.Forms.Label();
             this.dateTimePickerBaptism = new System.Windows.Forms.DateTimePicker();
             this.tabFirstComunion = new System.Windows.Forms.TabPage();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.groupBoxSearchF = new System.Windows.Forms.GroupBox();
+            this.dateTimePickerSearchF = new System.Windows.Forms.DateTimePicker();
             this.buttonSearchF = new System.Windows.Forms.Button();
             this.textBoxSearchEntryF = new System.Windows.Forms.TextBox();
             this.textBoxSearchSheetF = new System.Windows.Forms.TextBox();
@@ -123,7 +127,11 @@
             this.labelNameF = new System.Windows.Forms.Label();
             this.dateTimePickerFirstComunion = new System.Windows.Forms.DateTimePicker();
             this.tabConfirmation = new System.Windows.Forms.TabPage();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.groupBoxSearchC = new System.Windows.Forms.GroupBox();
+            this.dateTimePickerSearchC = new System.Windows.Forms.DateTimePicker();
             this.buttonSearchC = new System.Windows.Forms.Button();
             this.textBoxSearchEntryC = new System.Windows.Forms.TextBox();
             this.textBoxSearchSheetC = new System.Windows.Forms.TextBox();
@@ -162,7 +170,11 @@
             this.labelNameC = new System.Windows.Forms.Label();
             this.dateTimePickerConfirmation = new System.Windows.Forms.DateTimePicker();
             this.tabMarriage = new System.Windows.Forms.TabPage();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.groupBoxSearchM = new System.Windows.Forms.GroupBox();
+            this.dateTimePickerSearchM = new System.Windows.Forms.DateTimePicker();
             this.buttonSearchM = new System.Windows.Forms.Button();
             this.textBoxSearchEntryM = new System.Windows.Forms.TextBox();
             this.textBoxSearchBookM = new System.Windows.Forms.TextBox();
@@ -184,6 +196,7 @@
             this.textBoxStateM = new System.Windows.Forms.TextBox();
             this.labelStateM = new System.Windows.Forms.Label();
             this.groupBoxWifeM = new System.Windows.Forms.GroupBox();
+            this.panel14 = new System.Windows.Forms.Panel();
             this.labelWifeNameM = new System.Windows.Forms.Label();
             this.labelWifeMotherNameM = new System.Windows.Forms.Label();
             this.textBoxWifeNameM = new System.Windows.Forms.TextBox();
@@ -191,6 +204,7 @@
             this.labelWifeFatherNameM = new System.Windows.Forms.Label();
             this.textBoxWifeFatherNameM = new System.Windows.Forms.TextBox();
             this.groupBoxHusbandM = new System.Windows.Forms.GroupBox();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.labelHusbandNameM = new System.Windows.Forms.Label();
             this.textBoxHusbandNameM = new System.Windows.Forms.TextBox();
             this.labelHusbandMotherNameM = new System.Windows.Forms.Label();
@@ -223,15 +237,6 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabBaptism.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -243,9 +248,11 @@
             this.groupBoxSearchF.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFisrtComunion)).BeginInit();
             this.tabConfirmation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.groupBoxSearchC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConfirmation)).BeginInit();
             this.tabMarriage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.groupBoxSearchM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMarriage)).BeginInit();
             this.groupBoxWifeM.SuspendLayout();
@@ -258,8 +265,6 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPrint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -333,7 +338,14 @@
             this.tabBaptism.Size = new System.Drawing.Size(1160, 677);
             this.tabBaptism.TabIndex = 1;
             this.tabBaptism.Text = "Bautismo";
-            this.tabBaptism.Click += new System.EventHandler(this.tabBaptism_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(132)))), ((int)(((byte)(73)))));
+            this.panel3.Location = new System.Drawing.Point(23, 429);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1115, 10);
+            this.panel3.TabIndex = 86;
             // 
             // pictureBox6
             // 
@@ -346,6 +358,8 @@
             // 
             // groupBoxSearchB
             // 
+            this.groupBoxSearchB.Controls.Add(this.labelSearchDateB);
+            this.groupBoxSearchB.Controls.Add(this.dateTimePickerSearchB);
             this.groupBoxSearchB.Controls.Add(this.textBoxSearchSheetB);
             this.groupBoxSearchB.Controls.Add(this.buttonSearchB);
             this.groupBoxSearchB.Controls.Add(this.textBoxSearchBookB);
@@ -363,12 +377,33 @@
             this.groupBoxSearchB.TabIndex = 84;
             this.groupBoxSearchB.TabStop = false;
             // 
+            // labelSearchDateB
+            // 
+            this.labelSearchDateB.AutoSize = true;
+            this.labelSearchDateB.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearchDateB.Location = new System.Drawing.Point(0, 26);
+            this.labelSearchDateB.Name = "labelSearchDateB";
+            this.labelSearchDateB.Size = new System.Drawing.Size(0, 20);
+            this.labelSearchDateB.TabIndex = 92;
+            // 
+            // dateTimePickerSearchB
+            // 
+            this.dateTimePickerSearchB.CalendarFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerSearchB.CalendarMonthBackground = System.Drawing.SystemColors.Info;
+            this.dateTimePickerSearchB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerSearchB.Location = new System.Drawing.Point(6, 24);
+            this.dateTimePickerSearchB.Name = "dateTimePickerSearchB";
+            this.dateTimePickerSearchB.ShowCheckBox = true;
+            this.dateTimePickerSearchB.Size = new System.Drawing.Size(250, 23);
+            this.dateTimePickerSearchB.TabIndex = 91;
+            // 
             // textBoxSearchSheetB
             // 
             this.textBoxSearchSheetB.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxSearchSheetB.Location = new System.Drawing.Point(644, 23);
+            this.textBoxSearchSheetB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearchSheetB.Location = new System.Drawing.Point(759, 24);
             this.textBoxSearchSheetB.Name = "textBoxSearchSheetB";
-            this.textBoxSearchSheetB.Size = new System.Drawing.Size(77, 27);
+            this.textBoxSearchSheetB.Size = new System.Drawing.Size(77, 23);
             this.textBoxSearchSheetB.TabIndex = 87;
             // 
             // buttonSearchB
@@ -376,7 +411,7 @@
             this.buttonSearchB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(176)))), ((int)(((byte)(65)))));
             this.buttonSearchB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSearchB.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.buttonSearchB.Location = new System.Drawing.Point(943, 17);
+            this.buttonSearchB.Location = new System.Drawing.Point(996, 15);
             this.buttonSearchB.Name = "buttonSearchB";
             this.buttonSearchB.Size = new System.Drawing.Size(87, 38);
             this.buttonSearchB.TabIndex = 89;
@@ -387,78 +422,20 @@
             // textBoxSearchBookB
             // 
             this.textBoxSearchBookB.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxSearchBookB.Location = new System.Drawing.Point(493, 24);
+            this.textBoxSearchBookB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearchBookB.Location = new System.Drawing.Point(628, 24);
             this.textBoxSearchBookB.Name = "textBoxSearchBookB";
-            this.textBoxSearchBookB.Size = new System.Drawing.Size(77, 27);
+            this.textBoxSearchBookB.Size = new System.Drawing.Size(77, 23);
             this.textBoxSearchBookB.TabIndex = 86;
             // 
             // textBoxSearchEntryB
             // 
             this.textBoxSearchEntryB.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxSearchEntryB.Location = new System.Drawing.Point(826, 23);
+            this.textBoxSearchEntryB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearchEntryB.Location = new System.Drawing.Point(909, 24);
             this.textBoxSearchEntryB.Name = "textBoxSearchEntryB";
-            this.textBoxSearchEntryB.Size = new System.Drawing.Size(77, 27);
+            this.textBoxSearchEntryB.Size = new System.Drawing.Size(77, 23);
             this.textBoxSearchEntryB.TabIndex = 88;
-            // 
-            // labelSearchSheetB
-            // 
-            this.labelSearchSheetB.AutoSize = true;
-            this.labelSearchSheetB.Location = new System.Drawing.Point(594, 27);
-            this.labelSearchSheetB.Name = "labelSearchSheetB";
-            this.labelSearchSheetB.Size = new System.Drawing.Size(44, 21);
-            this.labelSearchSheetB.TabIndex = 84;
-            this.labelSearchSheetB.Text = "Folio";
-            // 
-            // labelSearchBookB
-            // 
-            this.labelSearchBookB.AutoSize = true;
-            this.labelSearchBookB.Location = new System.Drawing.Point(441, 27);
-            this.labelSearchBookB.Name = "labelSearchBookB";
-            this.labelSearchBookB.Size = new System.Drawing.Size(46, 21);
-            this.labelSearchBookB.TabIndex = 83;
-            this.labelSearchBookB.Text = "Libro";
-            // 
-            // textBoxSearchNameB
-            // 
-            this.textBoxSearchNameB.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxSearchNameB.Location = new System.Drawing.Point(108, 24);
-            this.textBoxSearchNameB.Name = "textBoxSearchNameB";
-            this.textBoxSearchNameB.Size = new System.Drawing.Size(313, 27);
-            this.textBoxSearchNameB.TabIndex = 82;
-            // 
-            // labelSearchEntryB
-            // 
-            this.labelSearchEntryB.AutoSize = true;
-            this.labelSearchEntryB.Location = new System.Drawing.Point(753, 26);
-            this.labelSearchEntryB.Name = "labelSearchEntryB";
-            this.labelSearchEntryB.Size = new System.Drawing.Size(67, 21);
-            this.labelSearchEntryB.TabIndex = 85;
-            this.labelSearchEntryB.Text = "Partida";
-            // 
-            // labelSearchNameB
-            // 
-            this.labelSearchNameB.AutoSize = true;
-            this.labelSearchNameB.Location = new System.Drawing.Point(29, 27);
-            this.labelSearchNameB.Name = "labelSearchNameB";
-            this.labelSearchNameB.Size = new System.Drawing.Size(73, 21);
-            this.labelSearchNameB.TabIndex = 81;
-            this.labelSearchNameB.Text = "Nombre";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
-            this.panel4.Location = new System.Drawing.Point(577, 95);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(10, 318);
-            this.panel4.TabIndex = 87;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(132)))), ((int)(((byte)(73)))));
-            this.panel3.Location = new System.Drawing.Point(23, 429);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1115, 10);
-            this.panel3.TabIndex = 86;
             // 
             // dataGridViewBaptism
             // 
@@ -478,6 +455,63 @@
             this.dataGridViewBaptism.Size = new System.Drawing.Size(1077, 167);
             this.dataGridViewBaptism.TabIndex = 80;
             this.dataGridViewBaptism.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewBaptism_RowHeaderMouseDoubleClick);
+            // 
+            // labelSearchSheetB
+            // 
+            this.labelSearchSheetB.AutoSize = true;
+            this.labelSearchSheetB.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearchSheetB.Location = new System.Drawing.Point(711, 26);
+            this.labelSearchSheetB.Name = "labelSearchSheetB";
+            this.labelSearchSheetB.Size = new System.Drawing.Size(42, 20);
+            this.labelSearchSheetB.TabIndex = 84;
+            this.labelSearchSheetB.Text = "Folio";
+            // 
+            // labelSearchBookB
+            // 
+            this.labelSearchBookB.AutoSize = true;
+            this.labelSearchBookB.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearchBookB.Location = new System.Drawing.Point(579, 26);
+            this.labelSearchBookB.Name = "labelSearchBookB";
+            this.labelSearchBookB.Size = new System.Drawing.Size(44, 20);
+            this.labelSearchBookB.TabIndex = 83;
+            this.labelSearchBookB.Text = "Libro";
+            // 
+            // textBoxSearchNameB
+            // 
+            this.textBoxSearchNameB.BackColor = System.Drawing.SystemColors.Info;
+            this.textBoxSearchNameB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearchNameB.Location = new System.Drawing.Point(336, 24);
+            this.textBoxSearchNameB.Name = "textBoxSearchNameB";
+            this.textBoxSearchNameB.Size = new System.Drawing.Size(237, 23);
+            this.textBoxSearchNameB.TabIndex = 82;
+            // 
+            // labelSearchEntryB
+            // 
+            this.labelSearchEntryB.AutoSize = true;
+            this.labelSearchEntryB.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearchEntryB.Location = new System.Drawing.Point(842, 26);
+            this.labelSearchEntryB.Name = "labelSearchEntryB";
+            this.labelSearchEntryB.Size = new System.Drawing.Size(61, 20);
+            this.labelSearchEntryB.TabIndex = 85;
+            this.labelSearchEntryB.Text = "Partida";
+            // 
+            // labelSearchNameB
+            // 
+            this.labelSearchNameB.AutoSize = true;
+            this.labelSearchNameB.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearchNameB.Location = new System.Drawing.Point(262, 26);
+            this.labelSearchNameB.Name = "labelSearchNameB";
+            this.labelSearchNameB.Size = new System.Drawing.Size(68, 20);
+            this.labelSearchNameB.TabIndex = 81;
+            this.labelSearchNameB.Text = "Nombre";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
+            this.panel4.Location = new System.Drawing.Point(577, 95);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(10, 318);
+            this.panel4.TabIndex = 87;
             // 
             // panel1
             // 
@@ -825,13 +859,20 @@
             this.tabFirstComunion.Controls.Add(this.textBoxNameF);
             this.tabFirstComunion.Controls.Add(this.labelNameF);
             this.tabFirstComunion.Controls.Add(this.dateTimePickerFirstComunion);
-            this.tabFirstComunion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabFirstComunion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabFirstComunion.Location = new System.Drawing.Point(4, 22);
             this.tabFirstComunion.Name = "tabFirstComunion";
             this.tabFirstComunion.Size = new System.Drawing.Size(1160, 677);
             this.tabFirstComunion.TabIndex = 2;
             this.tabFirstComunion.Text = "Primera Comunión";
-            this.tabFirstComunion.Click += new System.EventHandler(this.tabFirstComunion_Click);
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(132)))), ((int)(((byte)(73)))));
+            this.panel8.Location = new System.Drawing.Point(23, 429);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1115, 10);
+            this.panel8.TabIndex = 93;
             // 
             // panel5
             // 
@@ -852,6 +893,7 @@
             // 
             // groupBoxSearchF
             // 
+            this.groupBoxSearchF.Controls.Add(this.dateTimePickerSearchF);
             this.groupBoxSearchF.Controls.Add(this.buttonSearchF);
             this.groupBoxSearchF.Controls.Add(this.textBoxSearchEntryF);
             this.groupBoxSearchF.Controls.Add(this.textBoxSearchSheetF);
@@ -869,12 +911,21 @@
             this.groupBoxSearchF.TabIndex = 87;
             this.groupBoxSearchF.TabStop = false;
             // 
+            // dateTimePickerSearchF
+            // 
+            this.dateTimePickerSearchF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerSearchF.Location = new System.Drawing.Point(6, 24);
+            this.dateTimePickerSearchF.Name = "dateTimePickerSearchF";
+            this.dateTimePickerSearchF.ShowCheckBox = true;
+            this.dateTimePickerSearchF.Size = new System.Drawing.Size(250, 23);
+            this.dateTimePickerSearchF.TabIndex = 93;
+            // 
             // buttonSearchF
             // 
             this.buttonSearchF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(176)))), ((int)(((byte)(65)))));
             this.buttonSearchF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSearchF.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.buttonSearchF.Location = new System.Drawing.Point(943, 17);
+            this.buttonSearchF.Location = new System.Drawing.Point(996, 15);
             this.buttonSearchF.Name = "buttonSearchF";
             this.buttonSearchF.Size = new System.Drawing.Size(87, 38);
             this.buttonSearchF.TabIndex = 92;
@@ -886,7 +937,7 @@
             // 
             this.textBoxSearchEntryF.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchEntryF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearchEntryF.Location = new System.Drawing.Point(826, 23);
+            this.textBoxSearchEntryF.Location = new System.Drawing.Point(909, 24);
             this.textBoxSearchEntryF.Name = "textBoxSearchEntryF";
             this.textBoxSearchEntryF.Size = new System.Drawing.Size(77, 23);
             this.textBoxSearchEntryF.TabIndex = 91;
@@ -895,7 +946,7 @@
             // 
             this.textBoxSearchSheetF.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchSheetF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearchSheetF.Location = new System.Drawing.Point(644, 23);
+            this.textBoxSearchSheetF.Location = new System.Drawing.Point(759, 24);
             this.textBoxSearchSheetF.Name = "textBoxSearchSheetF";
             this.textBoxSearchSheetF.Size = new System.Drawing.Size(77, 23);
             this.textBoxSearchSheetF.TabIndex = 90;
@@ -904,7 +955,7 @@
             // 
             this.textBoxSearchBookF.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchBookF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearchBookF.Location = new System.Drawing.Point(493, 24);
+            this.textBoxSearchBookF.Location = new System.Drawing.Point(628, 24);
             this.textBoxSearchBookF.Name = "textBoxSearchBookF";
             this.textBoxSearchBookF.Size = new System.Drawing.Size(77, 23);
             this.textBoxSearchBookF.TabIndex = 89;
@@ -912,27 +963,30 @@
             // labelSearchEntryF
             // 
             this.labelSearchEntryF.AutoSize = true;
-            this.labelSearchEntryF.Location = new System.Drawing.Point(753, 26);
+            this.labelSearchEntryF.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearchEntryF.Location = new System.Drawing.Point(842, 26);
             this.labelSearchEntryF.Name = "labelSearchEntryF";
-            this.labelSearchEntryF.Size = new System.Drawing.Size(67, 21);
+            this.labelSearchEntryF.Size = new System.Drawing.Size(61, 20);
             this.labelSearchEntryF.TabIndex = 88;
             this.labelSearchEntryF.Text = "Partida";
             // 
             // labelSearchSheetF
             // 
             this.labelSearchSheetF.AutoSize = true;
-            this.labelSearchSheetF.Location = new System.Drawing.Point(594, 27);
+            this.labelSearchSheetF.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearchSheetF.Location = new System.Drawing.Point(711, 26);
             this.labelSearchSheetF.Name = "labelSearchSheetF";
-            this.labelSearchSheetF.Size = new System.Drawing.Size(44, 21);
+            this.labelSearchSheetF.Size = new System.Drawing.Size(42, 20);
             this.labelSearchSheetF.TabIndex = 87;
             this.labelSearchSheetF.Text = "Folio";
             // 
             // labelSearchBookF
             // 
             this.labelSearchBookF.AutoSize = true;
-            this.labelSearchBookF.Location = new System.Drawing.Point(441, 27);
+            this.labelSearchBookF.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearchBookF.Location = new System.Drawing.Point(579, 26);
             this.labelSearchBookF.Name = "labelSearchBookF";
-            this.labelSearchBookF.Size = new System.Drawing.Size(46, 21);
+            this.labelSearchBookF.Size = new System.Drawing.Size(44, 20);
             this.labelSearchBookF.TabIndex = 86;
             this.labelSearchBookF.Text = "Libro";
             // 
@@ -959,25 +1013,26 @@
             // 
             this.textBoxSearchNameF.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchNameF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearchNameF.Location = new System.Drawing.Point(108, 24);
+            this.textBoxSearchNameF.Location = new System.Drawing.Point(336, 24);
             this.textBoxSearchNameF.Name = "textBoxSearchNameF";
-            this.textBoxSearchNameF.Size = new System.Drawing.Size(313, 23);
+            this.textBoxSearchNameF.Size = new System.Drawing.Size(237, 23);
             this.textBoxSearchNameF.TabIndex = 85;
             // 
             // labelSearchNameF
             // 
             this.labelSearchNameF.AutoSize = true;
-            this.labelSearchNameF.Location = new System.Drawing.Point(29, 27);
+            this.labelSearchNameF.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearchNameF.Location = new System.Drawing.Point(262, 26);
             this.labelSearchNameF.Name = "labelSearchNameF";
-            this.labelSearchNameF.Size = new System.Drawing.Size(77, 21);
+            this.labelSearchNameF.Size = new System.Drawing.Size(68, 20);
             this.labelSearchNameF.TabIndex = 84;
-            this.labelSearchNameF.Text = "Nombre:";
+            this.labelSearchNameF.Text = "Nombre";
             // 
             // textBoxIdF
             // 
             this.textBoxIdF.Location = new System.Drawing.Point(183, 26);
             this.textBoxIdF.Name = "textBoxIdF";
-            this.textBoxIdF.Size = new System.Drawing.Size(80, 27);
+            this.textBoxIdF.Size = new System.Drawing.Size(80, 26);
             this.textBoxIdF.TabIndex = 86;
             this.textBoxIdF.Text = "0";
             this.textBoxIdF.Visible = false;
@@ -1038,7 +1093,7 @@
             this.labelNotesF.AutoSize = true;
             this.labelNotesF.Location = new System.Drawing.Point(615, 220);
             this.labelNotesF.Name = "labelNotesF";
-            this.labelNotesF.Size = new System.Drawing.Size(56, 21);
+            this.labelNotesF.Size = new System.Drawing.Size(51, 20);
             this.labelNotesF.TabIndex = 68;
             this.labelNotesF.Text = "Notas";
             // 
@@ -1290,10 +1345,35 @@
             this.tabConfirmation.Size = new System.Drawing.Size(1160, 677);
             this.tabConfirmation.TabIndex = 3;
             this.tabConfirmation.Text = "Confirmación";
-            this.tabConfirmation.Click += new System.EventHandler(this.tabConfirmation_Click);
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(132)))), ((int)(((byte)(73)))));
+            this.panel11.Location = new System.Drawing.Point(23, 429);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(1115, 10);
+            this.panel11.TabIndex = 94;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
+            this.panel9.Location = new System.Drawing.Point(577, 95);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(10, 318);
+            this.panel9.TabIndex = 93;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(353, 33);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(67, 74);
+            this.pictureBox5.TabIndex = 92;
+            this.pictureBox5.TabStop = false;
             // 
             // groupBoxSearchC
             // 
+            this.groupBoxSearchC.Controls.Add(this.dateTimePickerSearchC);
             this.groupBoxSearchC.Controls.Add(this.buttonSearchC);
             this.groupBoxSearchC.Controls.Add(this.textBoxSearchEntryC);
             this.groupBoxSearchC.Controls.Add(this.textBoxSearchSheetC);
@@ -1311,12 +1391,21 @@
             this.groupBoxSearchC.TabIndex = 87;
             this.groupBoxSearchC.TabStop = false;
             // 
+            // dateTimePickerSearchC
+            // 
+            this.dateTimePickerSearchC.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerSearchC.Location = new System.Drawing.Point(6, 24);
+            this.dateTimePickerSearchC.Name = "dateTimePickerSearchC";
+            this.dateTimePickerSearchC.ShowCheckBox = true;
+            this.dateTimePickerSearchC.Size = new System.Drawing.Size(250, 23);
+            this.dateTimePickerSearchC.TabIndex = 93;
+            // 
             // buttonSearchC
             // 
             this.buttonSearchC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(176)))), ((int)(((byte)(65)))));
             this.buttonSearchC.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSearchC.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.buttonSearchC.Location = new System.Drawing.Point(943, 17);
+            this.buttonSearchC.Location = new System.Drawing.Point(996, 15);
             this.buttonSearchC.Name = "buttonSearchC";
             this.buttonSearchC.Size = new System.Drawing.Size(87, 38);
             this.buttonSearchC.TabIndex = 92;
@@ -1328,7 +1417,7 @@
             // 
             this.textBoxSearchEntryC.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchEntryC.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearchEntryC.Location = new System.Drawing.Point(826, 23);
+            this.textBoxSearchEntryC.Location = new System.Drawing.Point(909, 24);
             this.textBoxSearchEntryC.Name = "textBoxSearchEntryC";
             this.textBoxSearchEntryC.Size = new System.Drawing.Size(77, 23);
             this.textBoxSearchEntryC.TabIndex = 91;
@@ -1337,7 +1426,7 @@
             // 
             this.textBoxSearchSheetC.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchSheetC.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearchSheetC.Location = new System.Drawing.Point(644, 23);
+            this.textBoxSearchSheetC.Location = new System.Drawing.Point(759, 24);
             this.textBoxSearchSheetC.Name = "textBoxSearchSheetC";
             this.textBoxSearchSheetC.Size = new System.Drawing.Size(77, 23);
             this.textBoxSearchSheetC.TabIndex = 90;
@@ -1346,7 +1435,7 @@
             // 
             this.textBoxSearchBookC.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchBookC.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearchBookC.Location = new System.Drawing.Point(493, 24);
+            this.textBoxSearchBookC.Location = new System.Drawing.Point(628, 24);
             this.textBoxSearchBookC.Name = "textBoxSearchBookC";
             this.textBoxSearchBookC.Size = new System.Drawing.Size(77, 23);
             this.textBoxSearchBookC.TabIndex = 89;
@@ -1354,27 +1443,30 @@
             // labelSearchEntryC
             // 
             this.labelSearchEntryC.AutoSize = true;
-            this.labelSearchEntryC.Location = new System.Drawing.Point(753, 26);
+            this.labelSearchEntryC.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearchEntryC.Location = new System.Drawing.Point(842, 26);
             this.labelSearchEntryC.Name = "labelSearchEntryC";
-            this.labelSearchEntryC.Size = new System.Drawing.Size(67, 21);
+            this.labelSearchEntryC.Size = new System.Drawing.Size(61, 20);
             this.labelSearchEntryC.TabIndex = 88;
             this.labelSearchEntryC.Text = "Partida";
             // 
             // labelSearchSheetC
             // 
             this.labelSearchSheetC.AutoSize = true;
-            this.labelSearchSheetC.Location = new System.Drawing.Point(594, 27);
+            this.labelSearchSheetC.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearchSheetC.Location = new System.Drawing.Point(711, 26);
             this.labelSearchSheetC.Name = "labelSearchSheetC";
-            this.labelSearchSheetC.Size = new System.Drawing.Size(44, 21);
+            this.labelSearchSheetC.Size = new System.Drawing.Size(42, 20);
             this.labelSearchSheetC.TabIndex = 87;
             this.labelSearchSheetC.Text = "Folio";
             // 
             // labelSearchBookC
             // 
             this.labelSearchBookC.AutoSize = true;
-            this.labelSearchBookC.Location = new System.Drawing.Point(441, 27);
+            this.labelSearchBookC.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearchBookC.Location = new System.Drawing.Point(579, 26);
             this.labelSearchBookC.Name = "labelSearchBookC";
-            this.labelSearchBookC.Size = new System.Drawing.Size(46, 21);
+            this.labelSearchBookC.Size = new System.Drawing.Size(44, 20);
             this.labelSearchBookC.TabIndex = 86;
             this.labelSearchBookC.Text = "Libro";
             // 
@@ -1401,17 +1493,18 @@
             // 
             this.textBoxSearchNameC.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchNameC.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearchNameC.Location = new System.Drawing.Point(108, 24);
+            this.textBoxSearchNameC.Location = new System.Drawing.Point(336, 24);
             this.textBoxSearchNameC.Name = "textBoxSearchNameC";
-            this.textBoxSearchNameC.Size = new System.Drawing.Size(313, 23);
+            this.textBoxSearchNameC.Size = new System.Drawing.Size(237, 23);
             this.textBoxSearchNameC.TabIndex = 85;
             // 
             // labelSearchNameC
             // 
             this.labelSearchNameC.AutoSize = true;
-            this.labelSearchNameC.Location = new System.Drawing.Point(29, 27);
+            this.labelSearchNameC.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearchNameC.Location = new System.Drawing.Point(262, 26);
             this.labelSearchNameC.Name = "labelSearchNameC";
-            this.labelSearchNameC.Size = new System.Drawing.Size(73, 21);
+            this.labelSearchNameC.Size = new System.Drawing.Size(68, 20);
             this.labelSearchNameC.TabIndex = 84;
             this.labelSearchNameC.Text = "Nombre";
             // 
@@ -1729,10 +1822,35 @@
             this.tabMarriage.Size = new System.Drawing.Size(1160, 677);
             this.tabMarriage.TabIndex = 4;
             this.tabMarriage.Text = "Matrimonio";
-            this.tabMarriage.Click += new System.EventHandler(this.tabMarriage_Click);
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(132)))), ((int)(((byte)(73)))));
+            this.panel12.Location = new System.Drawing.Point(23, 465);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(1115, 10);
+            this.panel12.TabIndex = 94;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
+            this.panel10.Location = new System.Drawing.Point(577, 95);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(10, 362);
+            this.panel10.TabIndex = 93;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(353, 33);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(67, 74);
+            this.pictureBox8.TabIndex = 92;
+            this.pictureBox8.TabStop = false;
             // 
             // groupBoxSearchM
             // 
+            this.groupBoxSearchM.Controls.Add(this.dateTimePickerSearchM);
             this.groupBoxSearchM.Controls.Add(this.buttonSearchM);
             this.groupBoxSearchM.Controls.Add(this.textBoxSearchEntryM);
             this.groupBoxSearchM.Controls.Add(this.textBoxSearchBookM);
@@ -1749,12 +1867,21 @@
             this.groupBoxSearchM.TabIndex = 87;
             this.groupBoxSearchM.TabStop = false;
             // 
+            // dateTimePickerSearchM
+            // 
+            this.dateTimePickerSearchM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerSearchM.Location = new System.Drawing.Point(6, 24);
+            this.dateTimePickerSearchM.Name = "dateTimePickerSearchM";
+            this.dateTimePickerSearchM.ShowCheckBox = true;
+            this.dateTimePickerSearchM.Size = new System.Drawing.Size(250, 22);
+            this.dateTimePickerSearchM.TabIndex = 93;
+            // 
             // buttonSearchM
             // 
             this.buttonSearchM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(176)))), ((int)(((byte)(65)))));
             this.buttonSearchM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSearchM.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.buttonSearchM.Location = new System.Drawing.Point(943, 17);
+            this.buttonSearchM.Location = new System.Drawing.Point(996, 15);
             this.buttonSearchM.Name = "buttonSearchM";
             this.buttonSearchM.Size = new System.Drawing.Size(87, 38);
             this.buttonSearchM.TabIndex = 92;
@@ -1766,7 +1893,7 @@
             // 
             this.textBoxSearchEntryM.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchEntryM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearchEntryM.Location = new System.Drawing.Point(826, 23);
+            this.textBoxSearchEntryM.Location = new System.Drawing.Point(909, 24);
             this.textBoxSearchEntryM.Name = "textBoxSearchEntryM";
             this.textBoxSearchEntryM.Size = new System.Drawing.Size(77, 23);
             this.textBoxSearchEntryM.TabIndex = 91;
@@ -1775,7 +1902,7 @@
             // 
             this.textBoxSearchBookM.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchBookM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearchBookM.Location = new System.Drawing.Point(493, 24);
+            this.textBoxSearchBookM.Location = new System.Drawing.Point(628, 24);
             this.textBoxSearchBookM.Name = "textBoxSearchBookM";
             this.textBoxSearchBookM.Size = new System.Drawing.Size(77, 23);
             this.textBoxSearchBookM.TabIndex = 90;
@@ -1784,38 +1911,38 @@
             // 
             this.textBoxSearchNameM.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchNameM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearchNameM.Location = new System.Drawing.Point(108, 24);
+            this.textBoxSearchNameM.Location = new System.Drawing.Point(336, 24);
             this.textBoxSearchNameM.Name = "textBoxSearchNameM";
-            this.textBoxSearchNameM.Size = new System.Drawing.Size(313, 23);
+            this.textBoxSearchNameM.Size = new System.Drawing.Size(237, 23);
             this.textBoxSearchNameM.TabIndex = 89;
             // 
             // labelSearchEntryM
             // 
             this.labelSearchEntryM.AutoSize = true;
-            this.labelSearchEntryM.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSearchEntryM.Location = new System.Drawing.Point(753, 26);
+            this.labelSearchEntryM.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearchEntryM.Location = new System.Drawing.Point(842, 26);
             this.labelSearchEntryM.Name = "labelSearchEntryM";
-            this.labelSearchEntryM.Size = new System.Drawing.Size(67, 21);
+            this.labelSearchEntryM.Size = new System.Drawing.Size(61, 20);
             this.labelSearchEntryM.TabIndex = 88;
             this.labelSearchEntryM.Text = "Partida";
             // 
             // labelSearchBookM
             // 
             this.labelSearchBookM.AutoSize = true;
-            this.labelSearchBookM.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSearchBookM.Location = new System.Drawing.Point(441, 27);
+            this.labelSearchBookM.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearchBookM.Location = new System.Drawing.Point(579, 26);
             this.labelSearchBookM.Name = "labelSearchBookM";
-            this.labelSearchBookM.Size = new System.Drawing.Size(46, 21);
+            this.labelSearchBookM.Size = new System.Drawing.Size(44, 20);
             this.labelSearchBookM.TabIndex = 87;
             this.labelSearchBookM.Text = "Libro";
             // 
             // labelSearchNameM
             // 
             this.labelSearchNameM.AutoSize = true;
-            this.labelSearchNameM.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSearchNameM.Location = new System.Drawing.Point(29, 27);
+            this.labelSearchNameM.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearchNameM.Location = new System.Drawing.Point(262, 26);
             this.labelSearchNameM.Name = "labelSearchNameM";
-            this.labelSearchNameM.Size = new System.Drawing.Size(73, 21);
+            this.labelSearchNameM.Size = new System.Drawing.Size(68, 20);
             this.labelSearchNameM.TabIndex = 86;
             this.labelSearchNameM.Text = "Nombre";
             // 
@@ -1842,7 +1969,7 @@
             // 
             this.textBoxSearchSheetM.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSearchSheetM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearchSheetM.Location = new System.Drawing.Point(644, 23);
+            this.textBoxSearchSheetM.Location = new System.Drawing.Point(759, 24);
             this.textBoxSearchSheetM.Name = "textBoxSearchSheetM";
             this.textBoxSearchSheetM.Size = new System.Drawing.Size(77, 23);
             this.textBoxSearchSheetM.TabIndex = 85;
@@ -1850,10 +1977,10 @@
             // labelSearchSheetM
             // 
             this.labelSearchSheetM.AutoSize = true;
-            this.labelSearchSheetM.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSearchSheetM.Location = new System.Drawing.Point(594, 27);
+            this.labelSearchSheetM.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearchSheetM.Location = new System.Drawing.Point(711, 26);
             this.labelSearchSheetM.Name = "labelSearchSheetM";
-            this.labelSearchSheetM.Size = new System.Drawing.Size(44, 21);
+            this.labelSearchSheetM.Size = new System.Drawing.Size(42, 20);
             this.labelSearchSheetM.TabIndex = 84;
             this.labelSearchSheetM.Text = "Folio";
             // 
@@ -1986,6 +2113,14 @@
             this.groupBoxWifeM.TabStop = false;
             this.groupBoxWifeM.Text = "Esposa";
             // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.Brown;
+            this.panel14.Location = new System.Drawing.Point(79, 7);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(443, 10);
+            this.panel14.TabIndex = 27;
+            // 
             // labelWifeNameM
             // 
             this.labelWifeNameM.AutoSize = true;
@@ -2059,6 +2194,14 @@
             this.groupBoxHusbandM.TabIndex = 42;
             this.groupBoxHusbandM.TabStop = false;
             this.groupBoxHusbandM.Text = "Esposo";
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Brown;
+            this.panel13.Location = new System.Drawing.Point(79, 7);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(443, 10);
+            this.panel13.TabIndex = 26;
             // 
             // labelHusbandNameM
             // 
@@ -2363,9 +2506,9 @@
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel2.Controls.Add(this.pictureBoxPrint);
             this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Location = new System.Drawing.Point(189, 0);
+            this.panel2.Location = new System.Drawing.Point(550, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1165, 51);
+            this.panel2.Size = new System.Drawing.Size(804, 51);
             this.panel2.TabIndex = 87;
             // 
             // pictureBoxPrint
@@ -2404,81 +2547,6 @@
             this.panel7.Size = new System.Drawing.Size(1177, 10);
             this.panel7.TabIndex = 92;
             // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(132)))), ((int)(((byte)(73)))));
-            this.panel8.Location = new System.Drawing.Point(23, 429);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1115, 10);
-            this.panel8.TabIndex = 93;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(353, 33);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(67, 74);
-            this.pictureBox5.TabIndex = 92;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(353, 33);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(67, 74);
-            this.pictureBox8.TabIndex = 92;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
-            this.panel9.Location = new System.Drawing.Point(577, 95);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(10, 318);
-            this.panel9.TabIndex = 93;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(55)))));
-            this.panel10.Location = new System.Drawing.Point(577, 95);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(10, 362);
-            this.panel10.TabIndex = 93;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(132)))), ((int)(((byte)(73)))));
-            this.panel11.Location = new System.Drawing.Point(23, 429);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1115, 10);
-            this.panel11.TabIndex = 94;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(132)))), ((int)(((byte)(73)))));
-            this.panel12.Location = new System.Drawing.Point(23, 465);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(1115, 10);
-            this.panel12.TabIndex = 94;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.Brown;
-            this.panel13.Location = new System.Drawing.Point(79, 7);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(443, 10);
-            this.panel13.TabIndex = 26;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.Brown;
-            this.panel14.Location = new System.Drawing.Point(79, 7);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(443, 10);
-            this.panel14.TabIndex = 27;
-            // 
             // Archiver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2512,11 +2580,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFisrtComunion)).EndInit();
             this.tabConfirmation.ResumeLayout(false);
             this.tabConfirmation.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.groupBoxSearchC.ResumeLayout(false);
             this.groupBoxSearchC.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConfirmation)).EndInit();
             this.tabMarriage.ResumeLayout(false);
             this.tabMarriage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.groupBoxSearchM.ResumeLayout(false);
             this.groupBoxSearchM.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMarriage)).EndInit();
@@ -2533,8 +2603,6 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPrint)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2740,6 +2808,11 @@
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Label labelSearchDateB;
+        private System.Windows.Forms.DateTimePicker dateTimePickerSearchB;
+        private System.Windows.Forms.DateTimePicker dateTimePickerSearchF;
+        private System.Windows.Forms.DateTimePicker dateTimePickerSearchC;
+        private System.Windows.Forms.DateTimePicker dateTimePickerSearchM;
     }
 }
 

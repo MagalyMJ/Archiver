@@ -37,7 +37,7 @@ namespace Archiver
             textBoxGodFather1B.Text = "";
             textBoxGodFather2B.Text = "";
             textBoxStateB.Text = "";
-            textBoxMunicipalityB.Text = "";
+            textBoxRCB.Text = "";
             textBoxNotesB.Text = "";
             textBoxBookNumberB.Text = "";
             textBoxSheetNumberB.Text = "";
@@ -63,7 +63,7 @@ namespace Archiver
             textBoxGodFather1F.Text = "";
             textBoxGodFather2F.Text = "";
             textBoxStateF.Text = "";
-            textBoxMunicipalityF.Text = "";
+            textBoxRCF.Text = "";
             textBoxNotesF.Text = "";
             textBoxBookNumberF.Text = "";
             textBoxSheetNumberF.Text = "";
@@ -89,7 +89,7 @@ namespace Archiver
             textBoxGodFather1C.Text = "";
             textBoxGodFather2C.Text = "";
             textBoxStateC.Text = "";
-            textBoxMunicipalityC.Text = "";
+            textBoxRCC.Text = "";
             textBoxNotesC.Text = "";
             textBoxBookNumberC.Text = "";
             textBoxSheetNumberC.Text = "";
@@ -117,8 +117,9 @@ namespace Archiver
             textBoxHusbandFatherNameM.Text = "";
             textBoxGodFather1M.Text = "";
             textBoxGodFather2M.Text = "";
+            textBoxPlaceBaptismM.Text = "";
             textBoxStateM.Text = "";
-            textBoxMunicipalityM.Text = "";
+            textBoxRCM.Text = "";
             textBoxNotesM.Text = "";
             textBoxBookNumberM.Text = "";
             textBoxSheetNumberM.Text = "";
@@ -148,7 +149,7 @@ namespace Archiver
             else
                 baptism.gender = radioButtonMasculinB.Text;
             baptism.state = textBoxStateB.Text;
-            baptism.municipality = textBoxMunicipalityB.Text;
+            baptism.rc = textBoxRCB.Text;
             baptism.notes = textBoxNotesB.Text;
             int bookValue;
             if (int.TryParse(textBoxBookNumberB.Text, out bookValue))
@@ -215,7 +216,7 @@ namespace Archiver
             firstComunion.firstGodfather = textBoxGodFather1F.Text;
             firstComunion.secondGodfather = textBoxGodFather2F.Text;
             firstComunion.state = textBoxStateF.Text;
-            firstComunion.municipality = textBoxMunicipalityF.Text;
+            firstComunion.rc = textBoxRCF.Text;
             firstComunion.notes = textBoxNotesF.Text;
             int bookValue;
             if (int.TryParse(textBoxBookNumberF.Text, out bookValue))
@@ -282,7 +283,7 @@ namespace Archiver
             confirmation.firstGodfather = textBoxGodFather1C.Text;
             confirmation.secondGodfather = textBoxGodFather2C.Text;
             confirmation.state = textBoxStateC.Text;
-            confirmation.municipality = textBoxMunicipalityC.Text;
+            confirmation.rc = textBoxRCC.Text;
             confirmation.notes = textBoxNotesC.Text;
             int bookValue;
             if (int.TryParse(textBoxBookNumberC.Text, out bookValue))
@@ -351,8 +352,9 @@ namespace Archiver
             marriage.husbandFatherName = textBoxHusbandFatherNameM.Text;
             marriage.firstGodfather = textBoxGodFather1M.Text;
             marriage.secondGodfather = textBoxGodFather2M.Text;
+            marriage.placeBaptism = textBoxPlaceBaptismM.Text;
             marriage.state = textBoxStateM.Text;
-            marriage.municipality = textBoxMunicipalityM.Text;
+            marriage.rc = textBoxRCM.Text;
             marriage.notes = textBoxNotesM.Text;
             int bookValue;
             if (int.TryParse(textBoxBookNumberM.Text, out bookValue))
@@ -430,7 +432,7 @@ namespace Archiver
             textBoxGodFather1B.Text = dataGridViewBaptism.Rows[rowIndex].Cells[6].Value.ToString();
             textBoxGodFather2B.Text = dataGridViewBaptism.Rows[rowIndex].Cells[7].Value.ToString();
             textBoxStateB.Text = dataGridViewBaptism.Rows[rowIndex].Cells[8].Value.ToString();
-            textBoxMunicipalityB.Text = dataGridViewBaptism.Rows[rowIndex].Cells[9].Value.ToString();
+            textBoxRCB.Text = dataGridViewBaptism.Rows[rowIndex].Cells[9].Value.ToString();
             textBoxNotesB.Text = dataGridViewBaptism.Rows[rowIndex].Cells[10].Value.ToString();
             textBoxBookNumberB.Text = dataGridViewBaptism.Rows[rowIndex].Cells[11].Value.ToString();
             textBoxSheetNumberB.Text = dataGridViewBaptism.Rows[rowIndex].Cells[12].Value.ToString();
@@ -449,7 +451,7 @@ namespace Archiver
             textBoxGodFather1F.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[5].Value.ToString();
             textBoxGodFather2F.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[6].Value.ToString();
             textBoxStateF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[7].Value.ToString();
-            textBoxMunicipalityF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[8].Value.ToString();
+            textBoxRCF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[8].Value.ToString();
             textBoxNotesF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[9].Value.ToString();
             textBoxBookNumberF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[10].Value.ToString();
             textBoxSheetNumberF.Text = dataGridViewFisrtComunion.Rows[rowIndex].Cells[11].Value.ToString();
@@ -468,7 +470,7 @@ namespace Archiver
             textBoxGodFather1C.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[5].Value.ToString(); ;
             textBoxGodFather2C.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[6].Value.ToString(); ;
             textBoxStateC.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[7].Value.ToString(); ;
-            textBoxMunicipalityC.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[8].Value.ToString(); ;
+            textBoxRCC.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[8].Value.ToString(); ;
             textBoxNotesC.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[9].Value.ToString(); ;
             textBoxBookNumberC.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[10].Value.ToString(); ;
             textBoxSheetNumberC.Text = dataGridViewConfirmation.Rows[rowIndex].Cells[11].Value.ToString(); ;
@@ -490,11 +492,12 @@ namespace Archiver
             textBoxGodFather1M.Text = dataGridViewMarriage.Rows[rowIndex].Cells[8].Value.ToString();
             textBoxGodFather2M.Text = dataGridViewMarriage.Rows[rowIndex].Cells[9].Value.ToString();
             textBoxStateM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[10].Value.ToString();
-            textBoxMunicipalityM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[11].Value.ToString();
+            textBoxRCM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[11].Value.ToString();
             textBoxNotesM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[12].Value.ToString();
             textBoxBookNumberM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[13].Value.ToString();
             textBoxSheetNumberM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[14].Value.ToString();
             textBoxEntryNumberM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[15].Value.ToString();
+            textBoxPlaceBaptismM.Text = dataGridViewMarriage.Rows[rowIndex].Cells[16].Value.ToString();
         }
 
         private void buttonClearB_Click(object sender, EventArgs e)
@@ -1246,7 +1249,7 @@ namespace Archiver
                     foreach (Word.ContentControl today in todays)
                     {
                         Word.Range r = today.Range;
-                        r.Text = textBoxMunicipalityC.Text + ", " + textBoxStateC.Text + ", " + DateTime.Now.ToString("dd") + " de " + DateTime.Now.ToString("MMMM", new CultureInfo("es-ES")) + " de " + DateTime.Now.ToString("yyyy");
+                        r.Text = "AGUASCALIENTES, AGS., " + DateTime.Now.ToString("dd") + " de " + DateTime.Now.ToString("MMMM", new CultureInfo("es-ES")) + " de " + DateTime.Now.ToString("yyyy");
                         Word.Range todayRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, todayRange);
                     }

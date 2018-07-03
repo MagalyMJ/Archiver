@@ -23,7 +23,7 @@ namespace Archiver.archiverClasses
         public string secondGodfather { get; set; }
         public string gender { get; set; }
         public string state { get; set; }
-        public string municipality { get; set; }
+        public string rc { get; set; }
         public string notes { get; set; }
         public int bookNumber { get; set; }
         public int sheetNumber { get; set; }
@@ -41,7 +41,7 @@ namespace Archiver.archiverClasses
             try
             {
                 // Query
-                string sql = "SELECT Id, date, name, gender, father_name, mother_name, first_godfather, second_godfather, state, municipality, notes, book_number, sheet_number, entry_number from tbl_baptism" + options;
+                string sql = "SELECT Id, date, name, gender, father_name, mother_name, first_godfather, second_godfather, state, rc, notes, book_number, sheet_number, entry_number from tbl_baptism" + options;
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 conn.Open();
@@ -70,7 +70,7 @@ namespace Archiver.archiverClasses
             try
             {
                 // Query
-                string sql = "INSERT INTO tbl_baptism (date, name, gender, father_name, mother_name, first_godfather, second_godfather, state, municipality, notes, book_number, sheet_number, entry_number, created_at) VALUES (@date, @name, @gender, @father_name, @mother_name, @first_godfather, @second_godfather, @state, @municipality, @notes, @book_number, @sheet_number, @entry_number, @created_at)";
+                string sql = "INSERT INTO tbl_baptism (date, name, gender, father_name, mother_name, first_godfather, second_godfather, state, rc, notes, book_number, sheet_number, entry_number, created_at) VALUES (@date, @name, @gender, @father_name, @mother_name, @first_godfather, @second_godfather, @state, @rc, @notes, @book_number, @sheet_number, @entry_number, @created_at)";
 
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@date", baptism.date);
@@ -81,7 +81,7 @@ namespace Archiver.archiverClasses
                 cmd.Parameters.AddWithValue("@first_godfather", baptism.firstGodfather);
                 cmd.Parameters.AddWithValue("@second_godfather", baptism.secondGodfather);
                 cmd.Parameters.AddWithValue("@state", baptism.state);
-                cmd.Parameters.AddWithValue("@municipality", baptism.municipality);
+                cmd.Parameters.AddWithValue("@rc", baptism.rc);
                 cmd.Parameters.AddWithValue("@notes", baptism.notes);
                 cmd.Parameters.AddWithValue("@book_number", baptism.bookNumber);
                 cmd.Parameters.AddWithValue("@sheet_number", baptism.sheetNumber);
@@ -121,7 +121,7 @@ namespace Archiver.archiverClasses
             try
             {
                 // Query
-                string sql = "UPDATE tbl_baptism SET date = @date, name = @name, gender = @gender, father_name = @father_name, mother_name = @mother_name, first_godfather = @first_godfather, second_godfather = @second_godfather, state = @state, municipality = @municipality, notes = @notes, book_number = @book_number, sheet_number = @sheet_number, entry_number = @entry_number WHERE Id = @id";
+                string sql = "UPDATE tbl_baptism SET date = @date, name = @name, gender = @gender, father_name = @father_name, mother_name = @mother_name, first_godfather = @first_godfather, second_godfather = @second_godfather, state = @state, rc = @rc, notes = @notes, book_number = @book_number, sheet_number = @sheet_number, entry_number = @entry_number WHERE Id = @id";
 
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@date", baptism.date);
@@ -132,7 +132,7 @@ namespace Archiver.archiverClasses
                 cmd.Parameters.AddWithValue("@first_godfather", baptism.firstGodfather);
                 cmd.Parameters.AddWithValue("@second_godfather", baptism.secondGodfather);
                 cmd.Parameters.AddWithValue("@state", baptism.state);
-                cmd.Parameters.AddWithValue("@municipality", baptism.municipality);
+                cmd.Parameters.AddWithValue("@rc", baptism.rc);
                 cmd.Parameters.AddWithValue("@notes", baptism.notes);
                 cmd.Parameters.AddWithValue("@book_number", baptism.bookNumber);
                 cmd.Parameters.AddWithValue("@sheet_number", baptism.sheetNumber);

@@ -25,12 +25,13 @@ namespace Archiver.archiverClasses
         public string firstGodfather { get; set; }
         public string secondGodfather { get; set; }
         public string state { get; set; }
-        public string municipality { get; set; }
+        public string rc { get; set; }
         public string notes { get; set; }
         public int bookNumber { get; set; }
         public int sheetNumber { get; set; }
         public int entryNumber { get; set; }
         public DateTime created_at { get; set; }
+        public string placeBaptism { get; set; }
 
         static string myconnection = ConfigurationManager.ConnectionStrings["connstring"].ConnectionString;
 
@@ -43,7 +44,7 @@ namespace Archiver.archiverClasses
             try
             {
                 // Query
-                string sql = "SELECT Id, date, husband_name, wife_name, husband_father_name, husband_mother_name, wife_father_name, wife_mother_name, first_godfather, second_godfather, state, municipality, notes, book_number, sheet_number, entry_number from tbl_marriage" + options;
+                string sql = "SELECT Id, date, husband_name, wife_name, husband_father_name, husband_mother_name, wife_father_name, wife_mother_name, first_godfather, second_godfather, state, rc, notes, book_number, sheet_number, entry_number, place_baptism from tbl_marriage" + options;
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 conn.Open();
@@ -72,7 +73,7 @@ namespace Archiver.archiverClasses
             try
             {
                 // Query
-                string sql = "INSERT INTO tbl_marriage (date, husband_name, wife_name, husband_father_name, husband_mother_name, wife_father_name, wife_mother_name, first_godfather, second_godfather, state, municipality, notes, book_number, sheet_number, entry_number, created_at) VALUES (@date, @husband_name, @wife_name, @husband_father_name, @husband_mother_name, @wife_father_name, @wife_mother_name, @first_godfather, @second_godfather, @state, @municipality, @notes, @book_number, @sheet_number, @entry_number, @created_at)";
+                string sql = "INSERT INTO tbl_marriage (date, husband_name, wife_name, husband_father_name, husband_mother_name, wife_father_name, wife_mother_name, first_godfather, second_godfather, state, rc, notes, book_number, sheet_number, entry_number, created_at, place_baptism) VALUES (@date, @husband_name, @wife_name, @husband_father_name, @husband_mother_name, @wife_father_name, @wife_mother_name, @first_godfather, @second_godfather, @state, @rc, @notes, @book_number, @sheet_number, @entry_number, @created_at, @place_baptism)";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@date", marriage.date);
                 cmd.Parameters.AddWithValue("@husband_name", marriage.husbandName);
@@ -84,12 +85,13 @@ namespace Archiver.archiverClasses
                 cmd.Parameters.AddWithValue("@first_godfather", marriage.firstGodfather);
                 cmd.Parameters.AddWithValue("@second_godfather", marriage.secondGodfather);
                 cmd.Parameters.AddWithValue("@state", marriage.state);
-                cmd.Parameters.AddWithValue("@municipality", marriage.municipality);
+                cmd.Parameters.AddWithValue("@rc", marriage.rc);
                 cmd.Parameters.AddWithValue("@notes", marriage.notes);
                 cmd.Parameters.AddWithValue("@book_number", marriage.bookNumber);
                 cmd.Parameters.AddWithValue("@sheet_number", marriage.sheetNumber);
                 cmd.Parameters.AddWithValue("@entry_number", marriage.entryNumber);
                 cmd.Parameters.AddWithValue("@created_at", marriage.created_at);
+                cmd.Parameters.AddWithValue("@place_baptism", marriage.placeBaptism);
 
                 conn.Open();
                 int rows = cmd.ExecuteNonQuery();
@@ -124,7 +126,7 @@ namespace Archiver.archiverClasses
             try
             {
                 // Query
-                string sql = "UPDATE tbl_marriage SET date = @date, husband_name = @husband_name, wife_name = @wife_name, husband_father_name = @husband_father_name, husband_mother_name = @husband_mother_name, wife_father_name = @wife_father_name, wife_mother_name = @wife_mother_name, first_godfather = @first_godfather, second_godfather = @second_godfather, state = @state, municipality = @municipality, notes = @notes, book_number = @book_number, sheet_number = @sheet_number, entry_number = @entry_number WHERE Id = @id";
+                string sql = "UPDATE tbl_marriage SET date = @date, husband_name = @husband_name, wife_name = @wife_name, husband_father_name = @husband_father_name, husband_mother_name = @husband_mother_name, wife_father_name = @wife_father_name, wife_mother_name = @wife_mother_name, first_godfather = @first_godfather, second_godfather = @second_godfather, state = @state, rc = @rc, notes = @notes, book_number = @book_number, sheet_number = @sheet_number, entry_number = @entry_number, place_baptism = @place_baptism WHERE Id = @id";
 
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@date", marriage.date);
@@ -137,11 +139,12 @@ namespace Archiver.archiverClasses
                 cmd.Parameters.AddWithValue("@first_godfather", marriage.firstGodfather);
                 cmd.Parameters.AddWithValue("@second_godfather", marriage.secondGodfather);
                 cmd.Parameters.AddWithValue("@state", marriage.state);
-                cmd.Parameters.AddWithValue("@municipality", marriage.municipality);
+                cmd.Parameters.AddWithValue("@rc", marriage.rc);
                 cmd.Parameters.AddWithValue("@notes", marriage.notes);
                 cmd.Parameters.AddWithValue("@book_number", marriage.bookNumber);
                 cmd.Parameters.AddWithValue("@sheet_number", marriage.sheetNumber);
                 cmd.Parameters.AddWithValue("@entry_number", marriage.entryNumber);
+                cmd.Parameters.AddWithValue("@place_baptism", marriage.placeBaptism);
                 cmd.Parameters.AddWithValue("@id", marriage.Id);
 
                 conn.Open();

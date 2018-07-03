@@ -59,8 +59,8 @@
             this.buttonSaveB = new System.Windows.Forms.Button();
             this.textBoxNotesB = new System.Windows.Forms.TextBox();
             this.labelNotesB = new System.Windows.Forms.Label();
-            this.textBoxMunicipalityB = new System.Windows.Forms.TextBox();
-            this.labelMunicipalityB = new System.Windows.Forms.Label();
+            this.textBoxRCB = new System.Windows.Forms.TextBox();
+            this.labelRCB = new System.Windows.Forms.Label();
             this.textBoxStateB = new System.Windows.Forms.TextBox();
             this.labelStateB = new System.Windows.Forms.Label();
             this.textBoxEntryNumberB = new System.Windows.Forms.TextBox();
@@ -105,8 +105,8 @@
             this.buttonSaveF = new System.Windows.Forms.Button();
             this.textBoxNotesF = new System.Windows.Forms.TextBox();
             this.labelNotesF = new System.Windows.Forms.Label();
-            this.textBoxMunicipalityF = new System.Windows.Forms.TextBox();
-            this.labelMunicipalityF = new System.Windows.Forms.Label();
+            this.textBoxRCF = new System.Windows.Forms.TextBox();
+            this.labelRCF = new System.Windows.Forms.Label();
             this.textBoxStateF = new System.Windows.Forms.TextBox();
             this.labelStateF = new System.Windows.Forms.Label();
             this.textBoxEntryNumberF = new System.Windows.Forms.TextBox();
@@ -148,8 +148,8 @@
             this.buttonSaveC = new System.Windows.Forms.Button();
             this.textBoxNotesC = new System.Windows.Forms.TextBox();
             this.labelNotesC = new System.Windows.Forms.Label();
-            this.textBoxMunicipalityC = new System.Windows.Forms.TextBox();
-            this.labelMunicipalityC = new System.Windows.Forms.Label();
+            this.textBoxRCC = new System.Windows.Forms.TextBox();
+            this.labelRCC = new System.Windows.Forms.Label();
             this.textBoxStateC = new System.Windows.Forms.TextBox();
             this.labelStateC = new System.Windows.Forms.Label();
             this.textBoxEntryNumberC = new System.Windows.Forms.TextBox();
@@ -191,8 +191,8 @@
             this.buttonSaveM = new System.Windows.Forms.Button();
             this.textBoxNotesM = new System.Windows.Forms.TextBox();
             this.labelNotesM = new System.Windows.Forms.Label();
-            this.textBoxMunicipalityM = new System.Windows.Forms.TextBox();
-            this.labelMunicipalityM = new System.Windows.Forms.Label();
+            this.textBoxRCM = new System.Windows.Forms.TextBox();
+            this.labelRCM = new System.Windows.Forms.Label();
             this.textBoxStateM = new System.Windows.Forms.TextBox();
             this.labelStateM = new System.Windows.Forms.Label();
             this.groupBoxWifeM = new System.Windows.Forms.GroupBox();
@@ -237,6 +237,8 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.textBoxPlaceBaptismM = new System.Windows.Forms.TextBox();
+            this.labelPlaceBaptismM = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabBaptism.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -308,8 +310,8 @@
             this.tabBaptism.Controls.Add(this.buttonSaveB);
             this.tabBaptism.Controls.Add(this.textBoxNotesB);
             this.tabBaptism.Controls.Add(this.labelNotesB);
-            this.tabBaptism.Controls.Add(this.textBoxMunicipalityB);
-            this.tabBaptism.Controls.Add(this.labelMunicipalityB);
+            this.tabBaptism.Controls.Add(this.textBoxRCB);
+            this.tabBaptism.Controls.Add(this.labelRCB);
             this.tabBaptism.Controls.Add(this.textBoxStateB);
             this.tabBaptism.Controls.Add(this.labelStateB);
             this.tabBaptism.Controls.Add(this.textBoxEntryNumberB);
@@ -586,25 +588,25 @@
             this.labelNotesB.TabIndex = 74;
             this.labelNotesB.Text = "Notas";
             // 
-            // textBoxMunicipalityB
+            // textBoxRCB
             // 
-            this.textBoxMunicipalityB.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxMunicipalityB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxMunicipalityB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMunicipalityB.Location = new System.Drawing.Point(230, 354);
-            this.textBoxMunicipalityB.Name = "textBoxMunicipalityB";
-            this.textBoxMunicipalityB.Size = new System.Drawing.Size(318, 23);
-            this.textBoxMunicipalityB.TabIndex = 73;
+            this.textBoxRCB.BackColor = System.Drawing.SystemColors.Info;
+            this.textBoxRCB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxRCB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxRCB.Location = new System.Drawing.Point(230, 354);
+            this.textBoxRCB.Name = "textBoxRCB";
+            this.textBoxRCB.Size = new System.Drawing.Size(318, 23);
+            this.textBoxRCB.TabIndex = 73;
             // 
-            // labelMunicipalityB
+            // labelRCB
             // 
-            this.labelMunicipalityB.AutoSize = true;
-            this.labelMunicipalityB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMunicipalityB.Location = new System.Drawing.Point(139, 356);
-            this.labelMunicipalityB.Name = "labelMunicipalityB";
-            this.labelMunicipalityB.Size = new System.Drawing.Size(85, 21);
-            this.labelMunicipalityB.TabIndex = 72;
-            this.labelMunicipalityB.Text = "Municipio";
+            this.labelRCB.AutoSize = true;
+            this.labelRCB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRCB.Location = new System.Drawing.Point(183, 356);
+            this.labelRCB.Name = "labelRCB";
+            this.labelRCB.Size = new System.Drawing.Size(41, 21);
+            this.labelRCB.TabIndex = 72;
+            this.labelRCB.Text = "R.C.";
             // 
             // textBoxStateB
             // 
@@ -838,8 +840,8 @@
             this.tabFirstComunion.Controls.Add(this.buttonSaveF);
             this.tabFirstComunion.Controls.Add(this.textBoxNotesF);
             this.tabFirstComunion.Controls.Add(this.labelNotesF);
-            this.tabFirstComunion.Controls.Add(this.textBoxMunicipalityF);
-            this.tabFirstComunion.Controls.Add(this.labelMunicipalityF);
+            this.tabFirstComunion.Controls.Add(this.textBoxRCF);
+            this.tabFirstComunion.Controls.Add(this.labelRCF);
             this.tabFirstComunion.Controls.Add(this.textBoxStateF);
             this.tabFirstComunion.Controls.Add(this.labelStateF);
             this.tabFirstComunion.Controls.Add(this.textBoxEntryNumberF);
@@ -1097,25 +1099,25 @@
             this.labelNotesF.TabIndex = 68;
             this.labelNotesF.Text = "Notas";
             // 
-            // textBoxMunicipalityF
+            // textBoxRCF
             // 
-            this.textBoxMunicipalityF.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxMunicipalityF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxMunicipalityF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMunicipalityF.Location = new System.Drawing.Point(229, 352);
-            this.textBoxMunicipalityF.Name = "textBoxMunicipalityF";
-            this.textBoxMunicipalityF.Size = new System.Drawing.Size(318, 23);
-            this.textBoxMunicipalityF.TabIndex = 67;
+            this.textBoxRCF.BackColor = System.Drawing.SystemColors.Info;
+            this.textBoxRCF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxRCF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxRCF.Location = new System.Drawing.Point(229, 352);
+            this.textBoxRCF.Name = "textBoxRCF";
+            this.textBoxRCF.Size = new System.Drawing.Size(318, 23);
+            this.textBoxRCF.TabIndex = 67;
             // 
-            // labelMunicipalityF
+            // labelRCF
             // 
-            this.labelMunicipalityF.AutoSize = true;
-            this.labelMunicipalityF.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMunicipalityF.Location = new System.Drawing.Point(138, 354);
-            this.labelMunicipalityF.Name = "labelMunicipalityF";
-            this.labelMunicipalityF.Size = new System.Drawing.Size(85, 21);
-            this.labelMunicipalityF.TabIndex = 66;
-            this.labelMunicipalityF.Text = "Municipio";
+            this.labelRCF.AutoSize = true;
+            this.labelRCF.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRCF.Location = new System.Drawing.Point(183, 354);
+            this.labelRCF.Name = "labelRCF";
+            this.labelRCF.Size = new System.Drawing.Size(41, 21);
+            this.labelRCF.TabIndex = 66;
+            this.labelRCF.Text = "R.C.";
             // 
             // textBoxStateF
             // 
@@ -1319,8 +1321,8 @@
             this.tabConfirmation.Controls.Add(this.buttonSaveC);
             this.tabConfirmation.Controls.Add(this.textBoxNotesC);
             this.tabConfirmation.Controls.Add(this.labelNotesC);
-            this.tabConfirmation.Controls.Add(this.textBoxMunicipalityC);
-            this.tabConfirmation.Controls.Add(this.labelMunicipalityC);
+            this.tabConfirmation.Controls.Add(this.textBoxRCC);
+            this.tabConfirmation.Controls.Add(this.labelRCC);
             this.tabConfirmation.Controls.Add(this.textBoxStateC);
             this.tabConfirmation.Controls.Add(this.labelStateC);
             this.tabConfirmation.Controls.Add(this.textBoxEntryNumberC);
@@ -1578,25 +1580,25 @@
             this.labelNotesC.TabIndex = 56;
             this.labelNotesC.Text = "Notas";
             // 
-            // textBoxMunicipalityC
+            // textBoxRCC
             // 
-            this.textBoxMunicipalityC.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxMunicipalityC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxMunicipalityC.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMunicipalityC.Location = new System.Drawing.Point(230, 353);
-            this.textBoxMunicipalityC.Name = "textBoxMunicipalityC";
-            this.textBoxMunicipalityC.Size = new System.Drawing.Size(318, 23);
-            this.textBoxMunicipalityC.TabIndex = 55;
+            this.textBoxRCC.BackColor = System.Drawing.SystemColors.Info;
+            this.textBoxRCC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxRCC.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxRCC.Location = new System.Drawing.Point(230, 353);
+            this.textBoxRCC.Name = "textBoxRCC";
+            this.textBoxRCC.Size = new System.Drawing.Size(318, 23);
+            this.textBoxRCC.TabIndex = 55;
             // 
-            // labelMunicipalityC
+            // labelRCC
             // 
-            this.labelMunicipalityC.AutoSize = true;
-            this.labelMunicipalityC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMunicipalityC.Location = new System.Drawing.Point(139, 355);
-            this.labelMunicipalityC.Name = "labelMunicipalityC";
-            this.labelMunicipalityC.Size = new System.Drawing.Size(85, 21);
-            this.labelMunicipalityC.TabIndex = 54;
-            this.labelMunicipalityC.Text = "Municipio";
+            this.labelRCC.AutoSize = true;
+            this.labelRCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRCC.Location = new System.Drawing.Point(183, 355);
+            this.labelRCC.Name = "labelRCC";
+            this.labelRCC.Size = new System.Drawing.Size(41, 21);
+            this.labelRCC.TabIndex = 54;
+            this.labelRCC.Text = "R.C.";
             // 
             // textBoxStateC
             // 
@@ -1790,6 +1792,8 @@
             // tabMarriage
             // 
             this.tabMarriage.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabMarriage.Controls.Add(this.textBoxPlaceBaptismM);
+            this.tabMarriage.Controls.Add(this.labelPlaceBaptismM);
             this.tabMarriage.Controls.Add(this.panel12);
             this.tabMarriage.Controls.Add(this.panel10);
             this.tabMarriage.Controls.Add(this.pictureBox8);
@@ -1800,8 +1804,8 @@
             this.tabMarriage.Controls.Add(this.buttonSaveM);
             this.tabMarriage.Controls.Add(this.textBoxNotesM);
             this.tabMarriage.Controls.Add(this.labelNotesM);
-            this.tabMarriage.Controls.Add(this.textBoxMunicipalityM);
-            this.tabMarriage.Controls.Add(this.labelMunicipalityM);
+            this.tabMarriage.Controls.Add(this.textBoxRCM);
+            this.tabMarriage.Controls.Add(this.labelRCM);
             this.tabMarriage.Controls.Add(this.textBoxStateM);
             this.tabMarriage.Controls.Add(this.labelStateM);
             this.tabMarriage.Controls.Add(this.groupBoxWifeM);
@@ -2054,32 +2058,32 @@
             this.labelNotesM.TabIndex = 62;
             this.labelNotesM.Text = "Notas";
             // 
-            // textBoxMunicipalityM
+            // textBoxRCM
             // 
-            this.textBoxMunicipalityM.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxMunicipalityM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxMunicipalityM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMunicipalityM.Location = new System.Drawing.Point(752, 152);
-            this.textBoxMunicipalityM.Name = "textBoxMunicipalityM";
-            this.textBoxMunicipalityM.Size = new System.Drawing.Size(191, 23);
-            this.textBoxMunicipalityM.TabIndex = 61;
+            this.textBoxRCM.BackColor = System.Drawing.SystemColors.Info;
+            this.textBoxRCM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxRCM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxRCM.Location = new System.Drawing.Point(752, 173);
+            this.textBoxRCM.Name = "textBoxRCM";
+            this.textBoxRCM.Size = new System.Drawing.Size(191, 23);
+            this.textBoxRCM.TabIndex = 61;
             // 
-            // labelMunicipalityM
+            // labelRCM
             // 
-            this.labelMunicipalityM.AutoSize = true;
-            this.labelMunicipalityM.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMunicipalityM.Location = new System.Drawing.Point(615, 154);
-            this.labelMunicipalityM.Name = "labelMunicipalityM";
-            this.labelMunicipalityM.Size = new System.Drawing.Size(85, 21);
-            this.labelMunicipalityM.TabIndex = 60;
-            this.labelMunicipalityM.Text = "Municipio";
+            this.labelRCM.AutoSize = true;
+            this.labelRCM.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRCM.Location = new System.Drawing.Point(617, 175);
+            this.labelRCM.Name = "labelRCM";
+            this.labelRCM.Size = new System.Drawing.Size(41, 21);
+            this.labelRCM.TabIndex = 60;
+            this.labelRCM.Text = "R.C.";
             // 
             // textBoxStateM
             // 
             this.textBoxStateM.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxStateM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxStateM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxStateM.Location = new System.Drawing.Point(752, 119);
+            this.textBoxStateM.Location = new System.Drawing.Point(752, 144);
             this.textBoxStateM.Name = "textBoxStateM";
             this.textBoxStateM.Size = new System.Drawing.Size(191, 23);
             this.textBoxStateM.TabIndex = 59;
@@ -2088,7 +2092,7 @@
             // 
             this.labelStateM.AutoSize = true;
             this.labelStateM.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStateM.Location = new System.Drawing.Point(615, 121);
+            this.labelStateM.Location = new System.Drawing.Point(617, 147);
             this.labelStateM.Name = "labelStateM";
             this.labelStateM.Size = new System.Drawing.Size(64, 21);
             this.labelStateM.TabIndex = 58;
@@ -2265,7 +2269,7 @@
             this.textBoxEntryNumberM.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxEntryNumberM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxEntryNumberM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxEntryNumberM.Location = new System.Drawing.Point(752, 250);
+            this.textBoxEntryNumberM.Location = new System.Drawing.Point(752, 259);
             this.textBoxEntryNumberM.Name = "textBoxEntryNumberM";
             this.textBoxEntryNumberM.Size = new System.Drawing.Size(191, 23);
             this.textBoxEntryNumberM.TabIndex = 35;
@@ -2274,7 +2278,7 @@
             // 
             this.labelEntryNumberM.AutoSize = true;
             this.labelEntryNumberM.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEntryNumberM.Location = new System.Drawing.Point(615, 250);
+            this.labelEntryNumberM.Location = new System.Drawing.Point(615, 259);
             this.labelEntryNumberM.Name = "labelEntryNumberM";
             this.labelEntryNumberM.Size = new System.Drawing.Size(131, 21);
             this.labelEntryNumberM.TabIndex = 34;
@@ -2285,7 +2289,7 @@
             this.textBoxSheetNumberM.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxSheetNumberM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxSheetNumberM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSheetNumberM.Location = new System.Drawing.Point(752, 218);
+            this.textBoxSheetNumberM.Location = new System.Drawing.Point(752, 231);
             this.textBoxSheetNumberM.Name = "textBoxSheetNumberM";
             this.textBoxSheetNumberM.Size = new System.Drawing.Size(191, 23);
             this.textBoxSheetNumberM.TabIndex = 33;
@@ -2294,7 +2298,7 @@
             // 
             this.labelSheetNumberM.AutoSize = true;
             this.labelSheetNumberM.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSheetNumberM.Location = new System.Drawing.Point(615, 220);
+            this.labelSheetNumberM.Location = new System.Drawing.Point(617, 233);
             this.labelSheetNumberM.Name = "labelSheetNumberM";
             this.labelSheetNumberM.Size = new System.Drawing.Size(108, 21);
             this.labelSheetNumberM.TabIndex = 32;
@@ -2305,7 +2309,7 @@
             this.textBoxBookNumberM.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxBookNumberM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxBookNumberM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxBookNumberM.Location = new System.Drawing.Point(752, 185);
+            this.textBoxBookNumberM.Location = new System.Drawing.Point(752, 202);
             this.textBoxBookNumberM.Name = "textBoxBookNumberM";
             this.textBoxBookNumberM.Size = new System.Drawing.Size(191, 23);
             this.textBoxBookNumberM.TabIndex = 31;
@@ -2314,7 +2318,7 @@
             // 
             this.labelBookNumberM.AutoSize = true;
             this.labelBookNumberM.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBookNumberM.Location = new System.Drawing.Point(615, 187);
+            this.labelBookNumberM.Location = new System.Drawing.Point(617, 204);
             this.labelBookNumberM.Name = "labelBookNumberM";
             this.labelBookNumberM.Size = new System.Drawing.Size(110, 21);
             this.labelBookNumberM.TabIndex = 30;
@@ -2547,6 +2551,26 @@
             this.panel7.Size = new System.Drawing.Size(1177, 10);
             this.panel7.TabIndex = 92;
             // 
+            // textBoxPlaceBaptismM
+            // 
+            this.textBoxPlaceBaptismM.BackColor = System.Drawing.SystemColors.Info;
+            this.textBoxPlaceBaptismM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPlaceBaptismM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPlaceBaptismM.Location = new System.Drawing.Point(752, 115);
+            this.textBoxPlaceBaptismM.Name = "textBoxPlaceBaptismM";
+            this.textBoxPlaceBaptismM.Size = new System.Drawing.Size(191, 23);
+            this.textBoxPlaceBaptismM.TabIndex = 96;
+            // 
+            // labelPlaceBaptismM
+            // 
+            this.labelPlaceBaptismM.AutoSize = true;
+            this.labelPlaceBaptismM.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPlaceBaptismM.Location = new System.Drawing.Point(617, 117);
+            this.labelPlaceBaptismM.Name = "labelPlaceBaptismM";
+            this.labelPlaceBaptismM.Size = new System.Drawing.Size(131, 21);
+            this.labelPlaceBaptismM.TabIndex = 95;
+            this.labelPlaceBaptismM.Text = "Lugar bautismo";
+            // 
             // Archiver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2677,8 +2701,8 @@
         private System.Windows.Forms.DateTimePicker dateTimePickerFirstComunion;
         private System.Windows.Forms.TextBox textBoxNotesC;
         private System.Windows.Forms.Label labelNotesC;
-        private System.Windows.Forms.TextBox textBoxMunicipalityC;
-        private System.Windows.Forms.Label labelMunicipalityC;
+        private System.Windows.Forms.TextBox textBoxRCC;
+        private System.Windows.Forms.Label labelRCC;
         private System.Windows.Forms.TextBox textBoxStateC;
         private System.Windows.Forms.Label labelStateC;
         private System.Windows.Forms.TextBox textBoxEntryNumberC;
@@ -2700,22 +2724,22 @@
         private System.Windows.Forms.DateTimePicker dateTimePickerConfirmation;
         private System.Windows.Forms.TextBox textBoxNotesB;
         private System.Windows.Forms.Label labelNotesB;
-        private System.Windows.Forms.TextBox textBoxMunicipalityB;
-        private System.Windows.Forms.Label labelMunicipalityB;
+        private System.Windows.Forms.TextBox textBoxRCB;
+        private System.Windows.Forms.Label labelRCB;
         private System.Windows.Forms.TextBox textBoxStateB;
         private System.Windows.Forms.Label labelStateB;
         private System.Windows.Forms.RadioButton radioButtonMasculinB;
         private System.Windows.Forms.RadioButton radioButtonFemeninB;
         private System.Windows.Forms.TextBox textBoxNotesF;
         private System.Windows.Forms.Label labelNotesF;
-        private System.Windows.Forms.TextBox textBoxMunicipalityF;
-        private System.Windows.Forms.Label labelMunicipalityF;
+        private System.Windows.Forms.TextBox textBoxRCF;
+        private System.Windows.Forms.Label labelRCF;
         private System.Windows.Forms.TextBox textBoxStateF;
         private System.Windows.Forms.Label labelStateF;
         private System.Windows.Forms.TextBox textBoxNotesM;
         private System.Windows.Forms.Label labelNotesM;
-        private System.Windows.Forms.TextBox textBoxMunicipalityM;
-        private System.Windows.Forms.Label labelMunicipalityM;
+        private System.Windows.Forms.TextBox textBoxRCM;
+        private System.Windows.Forms.Label labelRCM;
         private System.Windows.Forms.TextBox textBoxStateM;
         private System.Windows.Forms.Label labelStateM;
         private System.Windows.Forms.Button buttonClearB;
@@ -2813,6 +2837,8 @@
         private System.Windows.Forms.DateTimePicker dateTimePickerSearchF;
         private System.Windows.Forms.DateTimePicker dateTimePickerSearchC;
         private System.Windows.Forms.DateTimePicker dateTimePickerSearchM;
+        private System.Windows.Forms.TextBox textBoxPlaceBaptismM;
+        private System.Windows.Forms.Label labelPlaceBaptismM;
     }
 }
 

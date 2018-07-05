@@ -35,6 +35,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabBaptism = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -170,6 +173,8 @@
             this.labelNameC = new System.Windows.Forms.Label();
             this.dateTimePickerConfirmation = new System.Windows.Forms.DateTimePicker();
             this.tabMarriage = new System.Windows.Forms.TabPage();
+            this.textBoxPlaceBaptismM = new System.Windows.Forms.TextBox();
+            this.labelPlaceBaptismM = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -237,9 +242,8 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.textBoxPlaceBaptismM = new System.Windows.Forms.TextBox();
-            this.labelPlaceBaptismM = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
+            this.tabHome.SuspendLayout();
             this.tabBaptism.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.groupBoxSearchB.SuspendLayout();
@@ -287,6 +291,9 @@
             // tabHome
             // 
             this.tabHome.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabHome.Controls.Add(this.label3);
+            this.tabHome.Controls.Add(this.label2);
+            this.tabHome.Controls.Add(this.label1);
             this.tabHome.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.tabHome.Location = new System.Drawing.Point(4, 22);
             this.tabHome.Margin = new System.Windows.Forms.Padding(0);
@@ -294,6 +301,39 @@
             this.tabHome.Size = new System.Drawing.Size(1160, 677);
             this.tabHome.TabIndex = 0;
             this.tabHome.Text = "Inicio";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label3.Location = new System.Drawing.Point(900, 621);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(129, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "01 449 914 1121";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(138, 621);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(423, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Lagos de Moreno 223, Fatima, 20130 Aguascalientes, Ags";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label1.Location = new System.Drawing.Point(128, 114);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(901, 79);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Templo de Nuestra Señora de Fatima";
             // 
             // tabBaptism
             // 
@@ -1827,6 +1867,26 @@
             this.tabMarriage.TabIndex = 4;
             this.tabMarriage.Text = "Matrimonio";
             // 
+            // textBoxPlaceBaptismM
+            // 
+            this.textBoxPlaceBaptismM.BackColor = System.Drawing.SystemColors.Info;
+            this.textBoxPlaceBaptismM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPlaceBaptismM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPlaceBaptismM.Location = new System.Drawing.Point(752, 115);
+            this.textBoxPlaceBaptismM.Name = "textBoxPlaceBaptismM";
+            this.textBoxPlaceBaptismM.Size = new System.Drawing.Size(191, 23);
+            this.textBoxPlaceBaptismM.TabIndex = 96;
+            // 
+            // labelPlaceBaptismM
+            // 
+            this.labelPlaceBaptismM.AutoSize = true;
+            this.labelPlaceBaptismM.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPlaceBaptismM.Location = new System.Drawing.Point(617, 117);
+            this.labelPlaceBaptismM.Name = "labelPlaceBaptismM";
+            this.labelPlaceBaptismM.Size = new System.Drawing.Size(131, 21);
+            this.labelPlaceBaptismM.TabIndex = 95;
+            this.labelPlaceBaptismM.Text = "Lugar bautismo";
+            // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(132)))), ((int)(((byte)(73)))));
@@ -2510,9 +2570,9 @@
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel2.Controls.Add(this.pictureBoxPrint);
             this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Location = new System.Drawing.Point(550, 0);
+            this.panel2.Location = new System.Drawing.Point(189, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(804, 51);
+            this.panel2.Size = new System.Drawing.Size(1165, 51);
             this.panel2.TabIndex = 87;
             // 
             // pictureBoxPrint
@@ -2551,26 +2611,6 @@
             this.panel7.Size = new System.Drawing.Size(1177, 10);
             this.panel7.TabIndex = 92;
             // 
-            // textBoxPlaceBaptismM
-            // 
-            this.textBoxPlaceBaptismM.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxPlaceBaptismM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxPlaceBaptismM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPlaceBaptismM.Location = new System.Drawing.Point(752, 115);
-            this.textBoxPlaceBaptismM.Name = "textBoxPlaceBaptismM";
-            this.textBoxPlaceBaptismM.Size = new System.Drawing.Size(191, 23);
-            this.textBoxPlaceBaptismM.TabIndex = 96;
-            // 
-            // labelPlaceBaptismM
-            // 
-            this.labelPlaceBaptismM.AutoSize = true;
-            this.labelPlaceBaptismM.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPlaceBaptismM.Location = new System.Drawing.Point(617, 117);
-            this.labelPlaceBaptismM.Name = "labelPlaceBaptismM";
-            this.labelPlaceBaptismM.Size = new System.Drawing.Size(131, 21);
-            this.labelPlaceBaptismM.TabIndex = 95;
-            this.labelPlaceBaptismM.Text = "Lugar bautismo";
-            // 
             // Archiver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2584,10 +2624,14 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Archiver";
             this.Text = "Archiver";
             this.TransparencyKey = System.Drawing.Color.White;
+            this.Load += new System.EventHandler(this.Archiver_Load);
             this.tabControl1.ResumeLayout(false);
+            this.tabHome.ResumeLayout(false);
+            this.tabHome.PerformLayout();
             this.tabBaptism.ResumeLayout(false);
             this.tabBaptism.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -2839,6 +2883,9 @@
         private System.Windows.Forms.DateTimePicker dateTimePickerSearchM;
         private System.Windows.Forms.TextBox textBoxPlaceBaptismM;
         private System.Windows.Forms.Label labelPlaceBaptismM;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

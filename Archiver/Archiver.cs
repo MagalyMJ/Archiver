@@ -11,6 +11,9 @@ using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using Word = Microsoft.Office.Interop.Word;
 using System.Globalization;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.IO;
 
 namespace Archiver
 {
@@ -21,10 +24,91 @@ namespace Archiver
             InitializeComponent();
         }
 
+        static string myconnection = ConfigurationManager.ConnectionStrings["connstring"].ConnectionString;
         BaptismClass baptism = new BaptismClass();
         FirstComunionClass firstComunion = new FirstComunionClass();
         ConfirmationClass confirmation = new ConfirmationClass();
         MarriageClass marriage = new MarriageClass();
+
+        private bool CheckDatabaseExist()
+        {
+            SqlConnection conn = new SqlConnection(myconnection);
+            try
+            {
+                conn.Open();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        private void GenerateDatabase()
+        {
+            List<string> cmds = new List<string>();
+            if (File.Exists(Application.StartupPath + "\\script.sql"));
+            {
+                TextReader tr = new StreamReader(Application.StartupPath + "\\script.sql");
+                string line = "";
+                string cmd = "";
+
+                while((line = tr.ReadLine()) != null)
+                {
+                    if (line.Trim().ToUpper() == "GO")
+                    {
+                        cmds.Add(cmd);
+                        cmd = "";
+                    }
+                    else
+                    {
+                        cmd += line + "\r\n";
+                    }
+                }
+
+                if (cmd.Length > 0)
+                {
+                    cmds.Add(cmd);
+                    cmd = "";
+                }
+
+                tr.Close();
+            }
+
+            if (cmds.Count > 0)
+            {
+                SqlCommand command = new SqlCommand();
+                command.Connection = new SqlConnection(myconnection);
+                command.CommandType = CommandType.Text;
+                command.Connection.Open();
+                for (int i = 0; i < cmds.Count; i++)
+                {
+                    command.CommandText = cmds[i];
+                    command.ExecuteNonQuery();
+                }
+                command.Connection.Close();
+            }
+        }
+
+        private void Archiver_Load(object sender, EventArgs e)
+        {
+            if (!CheckDatabaseExist())
+            {
+                try
+                {
+                    GenerateDatabase();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
+            }
+        }
 
         // Clear baptism text boxes
         public void clearBaptism()
@@ -1249,7 +1333,7 @@ namespace Archiver
                     foreach (Word.ContentControl today in todays)
                     {
                         Word.Range r = today.Range;
-                        r.Text = "AGUASCALIENTES, AGS., " + DateTime.Now.ToString("dd") + " de " + DateTime.Now.ToString("MMMM", new CultureInfo("es-ES")) + " de " + DateTime.Now.ToString("yyyy");
+                        r.Text = "AGUASCALIENTES, AGS., " + DateTime.Now.ToString("dd") + "-" + DateTime.Now.ToString("MMMM", new CultureInfo("es-ES")) + "-" + DateTime.Now.ToString("yyyy");
                         Word.Range todayRange = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, todayRange);
                     }
@@ -1262,7 +1346,7 @@ namespace Archiver
             {
                 object objMissing = System.Reflection.Missing.Value;
                 Word.Application objWord = new Word.Application();
-                string route = Application.StartupPath + @"\acta_matrimonio_primera_comunion.docx";
+                string route = Application.StartupPath + @"\acta_matrimonio_bautismo.docx";
                 object param = route;
                 Word.Document objDoc = objWord.Documents.Open(param, ref objMissing);
 
@@ -1394,7 +1478,7 @@ namespace Archiver
                     foreach (Word.ContentControl parent2 in parents2)
                     {
                         Word.Range r = parent2.Range;
-                        r.Text = textBoxWifeFatherNameM.Text + " Y " + textBoxWifeMotherNameM;
+                        r.Text = textBoxWifeFatherNameM.Text + " Y " + textBoxWifeMotherNameM.Text;
                         Word.Range parent2Range = r;
                         objDoc.ContentControls.Add(Word.WdContentControlType.wdContentControlText, parent2Range);
                     }
